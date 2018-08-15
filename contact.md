@@ -4,10 +4,11 @@ title: Contact
 permalink: /contact/
 ---
 
+**Emil Tin**  
+Københavns Kommune
 
-
-**David Otterdahl**  
+**Karl-Fredrik Johansson**  
 Trafikverket
 
-**Emil Tin**  
-City of Copenhagen
+**Martin Kalisczcuk**
+Vejdirektoratet

@@ -7,8 +7,8 @@ layout: page
 
 <img src="rsmp.png">
 
-**RSMP** is on open, modern, lightweight and flexible protocol for communication between traffic lights, other road side equipment and traffic management systems.
+**RSMP** er en åben, moderne og let og fleksibel protokol til kommunikation mellem trafiksignaler, andet veksideudstyr og trafikledelsessystemer.
 
-**RSMP Nordic** is an organisation/collaboration currently being establish by the Swedish road authority (Trafikverket), the danish road authority (Vejdirektoratet), the City of Stockholm and the City of Copenhagen to coordinate the development of RSMP and and promote the standard in the Nordic region. We welcome all interested Nordic partners to join the collaboration.
+**RSMP Nordic** er en organisation / et samarbejde under etablering Trafikverket i Sverige, Vejdirektoratet i Sverige, Stockholms Stad samt Københavns Kommune. Formålet er at koordinere udviklingen af RSMP og promovere standarden i norden. Alle interesserede partnere er velkommen til at deltage i samarbejdet.
 
-[Read more](/about)
+[Læs mere](/about)
