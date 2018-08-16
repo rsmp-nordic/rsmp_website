@@ -5,9 +5,12 @@
 layout: page
 ---
 
-<img src="rsmp.png">
+<img src="Oresund-Kattegat-Skagerrak_rgb_480px.jpg" alight="right">
 
 **RSMP** er en åben, moderne og fleksibel protokol til kommunikation mellem trafiksignaler, vejsideudstyr og trafikledelsessystemer.
+
+<img src="rsmp.png">
+
 
 **RSMP Nordic** er en organisation under etablering af Trafikverket i Sverige, Vejdirektoratet i Danmark, Stockholms Stad samt Københavns Kommune. Formålet er at koordinere udviklingen af RSMP og promovere standarden i norden. Alle interesserede partnere er velkommen til at deltage i samarbejdet.
 
