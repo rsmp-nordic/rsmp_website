@@ -6,13 +6,9 @@ permalink: /contact/
 
 **Emil Tin**  
 Københavns Kommune  
-<a href="mailto:zf0f@tmf.kk.dk">zf0f@tmf.kk.dk</a>
+Teknik- og Miljøforvaltningen  
+Byens Anvendelse  
+Trafik  
 
-**Karl-Fredrik Johansson**   
-Trafikverket  
-<a href="mailto:karl-fredrik@trafikverket.se">karl-fredrik@trafikverket.se</a>
-
-**Martin Kalisczcuk**  
-Vejdirektoratet  
-<a href="mailto:mak@vd.dk">mak@vd.dk</a>
-
+<a href="mailto:zf0f@tmf.kk.dk">zf0f@tmf.kk.dk</a>  
++45 23 69 59 86
