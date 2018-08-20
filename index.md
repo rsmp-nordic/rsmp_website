@@ -1,11 +1,10 @@
 ---
 layout: page
-title: Velkommen til RSMP Nordic
 ---
 
 <div style="float:right; margin-left: 50px; margin-bottom: 20px;" markdown="1">
 
-![Interreg Øresund Kattegat Skagerak Logo]({{ "/Interreg_OKS_407px.jpg"}})
+![Interreg Øresund Kattegat Skagerak Logo]({{ "assets/Interreg_OKS_407px.jpg"}})
 
 </div>
 
@@ -17,5 +16,5 @@ RSMP Nordic er støttet af Interreg Øresund-Kattegat-Skagerak.
 
 [Læs mere.](/about)
 
-![RSMP banner]({{"/rsmp.png"}})
+![RSMP banner]({{"assets/rsmp.png"}})
 
