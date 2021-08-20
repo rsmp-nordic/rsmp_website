@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<h4>Posted on {{ page.date | date_to_string }}</h4>
+<h1>{{ page.title }}</h1>
+
+{{ content }}
+
+<hr>
+
+<div class="post-nav">
+  <div>
+    {% if page.previous.url %}
+    <a href="{{page.previous.url}}">&larr;&nbsp;{{page.previous.title}}</a>
+    {% endif %}
+  </div>
+  <div class="post-nav-next">
+    {% if page.next.url %}
+    <a href="{{page.next.url}}">{{page.next.title}}&nbsp;&rarr;</a>
+    {% endif %}
+  </div>
+</div>
