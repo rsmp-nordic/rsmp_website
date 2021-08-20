@@ -1,12 +1,10 @@
 ---
-layout: page
+layout: home
+nav_exclude: true
 ---
 
-<div style="float:right; margin-left: 50px; margin-bottom: 20px;" markdown="1">
-
-![Interreg Øresund Kattegat Skagerak Logo]({{ "assets/Interreg_OKS_407px.jpg"}})
-
-</div>
+# RSMP Nordic
+![RSMP banner]({{"assets/images/rsmp_nordic_banner.jpg"}})
 
 **RSMP** is on open, modern, lightweight and flexible protocol for communication between traffic lights, other road side equipment and traffic management systems.
 
@@ -14,7 +12,5 @@ layout: page
 
 RSMP Nordic is supported by Interreg Øresund-Kattegat-Skagerak.
 
-[Read more](/about)
-
-![RSMP banner]({{"assets/rsmp.png"}})
+![Interreg Øresund Kattegat Skagerak Logo]({{ "assets/images/Interreg_OKS_407px.jpg"}})
 
