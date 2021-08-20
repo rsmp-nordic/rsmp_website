@@ -14,7 +14,7 @@ RSMP (Roadside Message Protocol) was developed as an open protocol by the Swedis
 
 RSMP is an  open modern and lightweight protocol, based on JSON messages. It can be easily extended via Signal Exchange List, which are maintained for different types of equipments, like traffic signals and variable messages signs.
 
-View the [RSMP documentation](/documentation).
+View the [RSMP documentation]({% link pages/specification.md %}).
 
 # The need for Nordic RSMP collaboration
 As the use of RSMP grows in the Nordic region, there’s a need for an organisation that can manage the development of the standard, for the benefit of all involved. A closer collaboration will make it possible to pool development resources and share knowledge, and ensure that the protocol doesn’t diverge into smaller national variants.
