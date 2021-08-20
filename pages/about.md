@@ -1,7 +1,8 @@
 ---
 layout: page
-title: Om
+title: About
 permalink: /about/
+nav_order: 1
 ---
 
 # What is RSMP?
