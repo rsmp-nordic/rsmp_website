@@ -8,9 +8,10 @@ nav_order: 1
 # RSMP - Roadside Message Protocol
 Effective and intelligent handling of traffic is a priority to the cities, municipalities and state bodies on the Nordic region.
 
-To achieve this goal, the protocols used to monitor and control traffic signal, variable message signs and other road side equipment are central. Proprietary standards cause vendor lock-in and fragmented infrastructure, while open standard can reduce maintenance costs, increase interoperability and support innovation.
+This is an addtion.
 
-RSMP (Roadside Message Protocol) was developed as an open protocol for this purpose. RSMP is an  open modern and lightweight protocol, based on JSON messages. It can be easily extended via Signal Exchange List, which are maintained for different types of equipments, like traffic signals and variable messages signs.
+To achieve this goal, the protocols used to monitor and control traffic signal, variable message signs and other road side equipment are central. OK standards cause vendor lock-in and fragmented infrastructure, while open standard can reduce maintenance costs, increase interoperability and support innovation.
+
 
 # The RSMP Nordic Partnership
 RSMP is maintained and developed by RSMP Nordic, a partnership of road authorities in the Nordic region.
