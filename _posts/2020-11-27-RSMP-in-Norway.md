@@ -20,6 +20,6 @@ On the other hand we are part of a larger collaboration and owe thanks to especi
 
 If you want to know more about the Norwegian solution you can contact:
 
-Bente on bente.christensen@vegvesen.no
+Bente on [bente.christensen@vegvesen.no](mailto:bente.christensen@vegvesen.no)
 
-Dimos on dimos.kyriakou@bym.oslo.kommune.no
+Dimos on [dimos.kyriakou@bym.oslo.kommune.no](mailto:dimos.kyriakou@bym.oslo.kommune.no)
