@@ -10,23 +10,24 @@
 }
 
 ol.blog {
-  ::before {
-    display: none;
-  }
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  li {
+  /*  remove bullet */
+  > li {
+    &::before {
+      display: none;
+    }
+
+    padding: 0;
     margin-top: 2em;
     margin-bottom: 4em;
-    h3 {
-      margin-top: 1em;
-      margin-bottom: 1em;
-    }
-    h4 {
+
+    > h4 {
       margin-top: 0;
       margin-bottom: 0;
     }
+
+    > h3 {
+      margin-top: 1em;
+      margin-bottom: 1em;
+    }
   }
 }
-
