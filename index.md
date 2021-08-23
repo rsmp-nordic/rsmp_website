@@ -14,3 +14,7 @@ RSMP Nordic is supported by Interreg Øresund-Kattegat-Skagerak.
 
 ![Interreg Øresund Kattegat Skagerak Logo]({{ "assets/images/Interreg_OKS_407px.jpg"}})
 
+
+
+# Partners
+

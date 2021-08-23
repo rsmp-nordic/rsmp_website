@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Autumn 2021 Working Group Meetings"
+title:  "Working Group Meetings, Autumn 2021"
 date:   2021-07-13
 ---
 
