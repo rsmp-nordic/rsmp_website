@@ -9,14 +9,24 @@
   text-align: right;
 }
 
-ul.blog {
-  list-style: none;
+ol.blog {
+  ::before {
+    display: none;
+  }
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  li {
+    margin-top: 2em;
+    margin-bottom: 4em;
+    h3 {
+      margin-top: 1em;
+      margin-bottom: 1em;
+    }
+    h4 {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
 }
 
-ul.blog li {
-  margin-bottom: 4em;
-}
-
-ul.blog li div.header h4 {
-  margin-bottom: 0em;
-}

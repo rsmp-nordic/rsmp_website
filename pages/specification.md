@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Technical
-permalink: /Technical/
+permalink: /technical/
 nav_order: 3
 ---
 
