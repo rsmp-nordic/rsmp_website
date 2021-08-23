@@ -2,7 +2,7 @@
 layout: page
 title: Organization
 permalink: /organization/
-nav_order: 3
+nav_order: 2
 ---
 
 # Organization
