@@ -4,10 +4,18 @@
     <img src="{{ include.image.url }}" style="max-width: {{ include.max-width }};" alt="{{ include.image.alt }}"/>
   </div>
   <figcaption>
-    Image by {{ include.image.caption }}
     {% if include.image.license %}
-    <a href="{{ include.image.license.url }}">{{ include.image.license.description }}</a>
+      Image: 
+      {% if include.image.license. %}
+        {% if include.image.license.url %}
+          <a href="{{ include.image.license.url }}">{{ include.image.license.description }}</a>,
+        {% else %}
+          {{ include.image.license.description }},
+        {% endif %}
+      {% endif %}
     {% endif %}
+    {{ include.image.attribution }}
+
   </figcaption>
 </figure>
 {% endif %}

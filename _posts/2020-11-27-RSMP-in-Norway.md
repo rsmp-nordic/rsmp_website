@@ -4,7 +4,7 @@ title:  "RSMP is on its way in Norway, too"
 date:   2020-11-27
 image:
   url: /assets/images/oslo_tram.jpg
-  caption: Jorge Franganillo
+  attribution: Jorge Franganillo
   license:
     description: CC BY 2.0
     url: https://creativecommons.org/licenses/by/2.0/

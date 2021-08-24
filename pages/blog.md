@@ -10,7 +10,7 @@ nav_order: 5
 <ol class="blog">
   {% for post in site.posts %}
     <li>
-      <h4>Posted on {{ post.date | date_to_string }}</h4>
+      <h4>{{ post.date | date_to_string }}</h4>
       <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
       {{ post.excerpt }}
     </li>
