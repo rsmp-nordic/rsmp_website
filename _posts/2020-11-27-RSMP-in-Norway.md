@@ -10,8 +10,6 @@ image:
     url: https://creativecommons.org/licenses/by/2.0/
 ---
 
-{{ page.my_hash.some_attr }}
-
 The road authorities and cities in the counties of Oslo and Viken – covering about 23,000 km2 in the southern part of Norway – have joined forces around RSMP.
 
 It began with a wish for traffic control in a central cloud solution. First phase is a bus priority system to optimize public transport and minimize CO2 emissions.
