@@ -7,7 +7,6 @@ image:
   attribution: City of Copenhagen
   license:
     description: Copyright
-diagram: /assets/images/management_via_rsmp.png
 ---
 
 The traffic signals play an important role in the flow of traffic in most cities. The City of Copenhagen has traditionally used time-controlled signal programs, eg morning program, afternoon program and evening program.
@@ -38,7 +37,7 @@ RSMP allows you to subscribe to data at a fixed interval, or you can choose to h
 ## Management via RSMP
 RSMP can also be used to control traffic signals. Signal programs can e.g. can be changed and views on variable boards can be changed.
 
-![RSMP scenario management]({{ page.diagram }})
+![RSMP scenario management](/assets/images/management_via_rsmp.png)
 
 ## Scenario management with MobiMaestro and RSMP
 MobiMaestro integrates data from a variety of sources. In addition to data retrieved via RSMP, data on road works is received from the municipality’s GIS system, bus data from Movia and car data from INRIX. MobiMaestro also estimates travel times and number of stops for cyclists and crossing times for pedestrians, based on how the traffic signals change.
