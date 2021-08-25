@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Connecting the Swedish Transport Administrations traffic controllers with RSMP"
+title:  "Connecting Swedish Transport Administration TLCs with RSMP"
 date:   2020-05-04
 image:
   url: /assets/images/more-sta-controllers.png
