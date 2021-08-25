@@ -3,9 +3,10 @@
   <div class="image-container">
     <img src="{{ include.image.url }}" style="max-width: {{ include.max-width }};" alt="{{ include.image.alt }}"/>
   </div>
+  {% if include.image.license or include.image.attribution %}
   <figcaption>
+    Image: 
     {% if include.image.license %}
-      Image: 
       {% if include.image.license. %}
         {% if include.image.license.url %}
           <a href="{{ include.image.license.url }}">{{ include.image.license.description }}</a>,
@@ -15,7 +16,7 @@
       {% endif %}
     {% endif %}
     {{ include.image.attribution }}
-
   </figcaption>
+  {% endif %}
 </figure>
 {% endif %}
