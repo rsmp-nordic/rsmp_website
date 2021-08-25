@@ -132,7 +132,7 @@ The secretariat help facilitate user group activities, but participants are expe
 
 Anyone interested can join the RSMP user groups.
 
-## Secretariat
+### Secretariat
 
 #### Tasks
  
@@ -198,13 +198,13 @@ RSMP is maintained as an open protocol. This means that the RSMP specification a
  
 Specifications and software tools published as part of the RSMP Nordic partnership will:
  
-be attributed to RSMP Nordic
+- be attributed to RSMP Nordic
  
-have joint authorship, and all contributors will hold the same copyright
+- have joint authorship, and all contributors will hold the same copyright
  
-be published using a license approved by the Open Source Initiative [https://opensource.org](https://opensource.org/). The [MIT Open Source License](https://opensource.org/licenses/MIT)will be the default license used.
+- be published using a license approved by the Open Source Initiative [https://opensource.org](https://opensource.org/). The [MIT Open Source License](https://opensource.org/licenses/MIT)will be the default license used.
  
-be published on [https://github](https://github/). Contributions like commits and pull request will therefore be governed by the [GitHub Terms of Service](https://docs.github.com/en/github/site-policy/github-terms-of-service). The terms ensure that contributions will be governed by the license already specified in relevant repository.
+- be published on [https://github](https://github.com). Contributions like commits and pull request will therefore be governed by the [GitHub Terms of Service](https://docs.github.com/en/github/site-policy/github-terms-of-service). The terms ensure that contributions will be governed by the license already specified in the relevant repository.
 
 ## Funding
  
