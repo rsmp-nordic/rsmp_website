@@ -1,12 +1,21 @@
 .post-nav {
   display: flex;
+  align-items: center;
 }
 .post-nav div {
   /* flex-grow, flex-shrink, flex-basis */
   flex: 1 1 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.post-nav-prev {
+  text-align: left;
+  margin-right: 20px
 }
 .post-nav-next {
   text-align: right;
+  margin-left: 20px
 }
 
 ol.blog {

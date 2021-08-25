@@ -15,12 +15,12 @@ layout: default
 <div class="post-nav">
   <div>
     {% if page.previous.url %}
-    <a href="{{page.previous.url}}">&larr;&nbsp;{{page.previous.title}}</a>
+    <a href="{{page.previous.url}}">&larr;&nbsp;<span>{{page.previous.title}}</span></a>
     {% endif %}
   </div>
   <div class="post-nav-next">
     {% if page.next.url %}
-    <a href="{{page.next.url}}">{{page.next.title}}&nbsp;&rarr;</a>
+    <a href="{{page.next.url}}"><span>{{page.next.title}}</span>&nbsp;&rarr;</a>
     {% endif %}
   </div>
 </div>
