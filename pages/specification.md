@@ -7,15 +7,26 @@ parent: Technical
 ---
 
 # RSMP Specification
-The RSMP Specification defines the required message formats and behaviour for communicating via RSMP. Core is common to all types of equipment, while a Signal Exchange List relates to a specific type of equipment.
+The RSMP Specification defines the message formats and behaviour for communicating via RSMP.
+
+- Core defines messages and behavior common to all types of equipment.
+- Signal Exchange Lists (SXL)s define the messages for a particular type of equipment, e.g. Traffic Light Controllers. So far, RSMP Nordic has standardized an SXL only for traffic light controllers, but SXLs for other types of equipment as planned.
+
+### GitHub
+The RSMP specifications are maintained on [GitHub](https://github.com/rsmp-nordic).
+
+Each repository on GitHub has its own issue tracker, which is used to keep track of errors, proposed improvements, etc. You are welcome to ask questions or report errors on GitHub, you just need an account on GitHub, which is quick and free to create.
+
+### JSON Schema
+The RSMP specification is also documented as [JSON Schema](https://github.com/rsmp-nordic/rsmp_schema), which makes it possible automatically to validate the format of RSMP messages.
 
 ## Core
-The core specification common to all RSMP implementations and equipment types.
+The core specification defines the basic message structure and behavior common to all implementations and equipment types.
 
 View the [GitHub repository](https://github.com/rsmp-nordic/rsmp_core).
 
 | --- | --- |
-| 3.1.5 (latest) | [Online][core_3.1.5_online], [PDF][core_3.1.5_pdf] |
+| 3.1.5 (latest release) | [Online][core_3.1.5_online], [PDF][core_3.1.5_pdf] |
 | 3.1.4          | [Online][core_3.1.4_online], [PDF][core_3.1.4_pdf] |
 | 3.1.3          | [Online][core_3.1.3_online], [PDF][core_3.1.3_pdf] |
 | 3.1.2          | [Online][core_3.1.2_online], [PDF][core_3.1.2_pdf] |
@@ -39,7 +50,7 @@ The SXL specification for Traffic Light Controllers.
 View the [GitHub repository](https://github.com/rsmp-nordic/rsmp_sxl_traffic_lights).
 
 | --- | --- |
-| 1.0.15 (latest)| [Online][tlc_1.0.15_online], [Excel][tlc_1.0.15_excel], [PDF][tlc_1.0.15_pdf] |
+| 1.0.15 (latest release)| [Online][tlc_1.0.15_online], [Excel][tlc_1.0.15_excel], [PDF][tlc_1.0.15_pdf] |
 | 1.0.14         | [GitHub][tlc_1.0.14_github], [Excel][tlc_1.0.14_excel] |
 | 1.0.13         | [GitHub][tlc_1.0.13_github], [Excel][tlc_1.0.13_excel] |
 
