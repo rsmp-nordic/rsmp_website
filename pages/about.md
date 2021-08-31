@@ -6,7 +6,7 @@ nav_order: 1
 ---
 
 # About
-RSMP Nordic is the partnership of Nordic road authorities behind the RSMP protocol.
+RSMP Nordic is the partnership of Nordic road authorities behind the [RSMP protocol]({% link pages/documentation.md %}).
 
 ## Organization
 The RSMP Nordic structure as defined in the [RSMP Nordic Charter]({% link pages/charter.md %}):

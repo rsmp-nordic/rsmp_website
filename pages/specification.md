@@ -2,8 +2,8 @@
 layout: page
 title: Specification
 permalink: /specification/
-nav_order: 1
-parent: Technical
+nav_order: 2
+parent: Documentation
 ---
 
 # RSMP Specification

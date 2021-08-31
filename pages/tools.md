@@ -2,8 +2,8 @@
 layout: page
 title: Tools
 permalink: /tools/
-nav_order: 2
-parent: Technical
+nav_order: 3
+parent: Documentation
 ---
 
 # RSMP Tools
