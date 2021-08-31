@@ -5,69 +5,54 @@ permalink: /about/
 nav_order: 1
 ---
 
-# An Open Approach to Roadside Equipment
-Effective and intelligent handling of traffic has a priority in Nordic cities, municipalities and road authorities.
+# About
+RSMP Nordic is the partnership of Nordic road authorities behind the RSMP protocol.
 
-Proprietary protocols often cause vendor lock-in and make it hard to switch suppliers and lead to fragmented infrastructure. Often parallel monitoring systems are requird. This increase costs for road authorities.
+## Organization
+The RSMP Nordic structure as defined in the [RSMP Nordic Charter]({% link pages/charter.md %}):
 
-Open protocols can reduce maintenance costs, increase interoperability and support innovation.
+![Organizational Structure](/assets/images/organization.png)
 
-RSMP (Roadside Message Protocol) was developed with this in mind, as an open, modern and lightweight protocol to meet the need of road authorities.
+### Steering Group
+The steering group is responsible for overall coordination and strategic decisions and has representatives from only public road authorities.
 
-RSMP can be easily extended via Signal Exchange List, which are maintained for different types of equipments, like traffic signals and variable messages signs.
+Denmark, Sweden, Norway, and Finland each have two permanent seats in the steering group, but can invite other RSMP Nordic road authority partners to fill remaining seats.
 
-There is no license fee for using RSMP, and the specification and supporting open-source tools can be used freely.
+### Technical Board
+The board is responsible for technical coordination and decisions and for maintaining the RSMP protocol, tools, and technical roadmaps.
 
-## Meeting Different Needs
-RSMP is suitable for a wide range of use-cases, from small municipalities with only few traffic lights and basic needs, to larger road authorities with complex setups that include a lot of equipment and the need for advanced traffic management.
+The board reviews technical proposals from these working groups and decides which proposals are accepted.
 
-Example of what RSMP can be used for:
+The board has representatives from only public road authorities and is appointed by the board.
 
- - Monitor roadside equipment, e.g. keep an eye out for errors on traffic signals or variable message signs.
- - Manage traffic, e.g. by changing signal programs, change green times, or change content on variable message signs.
- - Collect data from equipment such as counting stations or bicycle barometers.
- - Prioritize different types of traffic such as bicycles, buses, and trams.
- - Automate traffic scenario management for optimizing daily traffic flows and handling traffic incidents.
+### Secretariat
+The secretariat provides administrative and logistical support and helps organize meetings, and works as the entry point for [general queries]({% link pages/contact.md %}).
 
-## Equipment Types
-RSMP is currently used across the Nordic region for monitoring and managing different types of equipment.
+### Working Group
+The working group discusses technical drafts and issues and produce proposals for review by the board.
 
-|---|---|
-| **Traffic Light Controllers** | traffic management, signal plans, detector logics and I/O, traffic data, status and alarms | 
-| **Variable Messages Signs** | change display content, upload bitmaps, status and alarms |
-| **Traffic Counters** | aquire traffic data, status and alarms |
-| **Payment Systems** | status and alarms
-| **Street Lightning Systems** | status and alarms |
+Working groups can have representatives from road authorities, suppliers, or any other RSMP Nordic partner.
 
-So far, RSMP Nordic has standardized an SXL only for traffic light controllers, but SXLs for other types of equipment as planned. Other types of equipment currently used custom SXLs. There's nothing wrong with custom SXLs, but standardizing SXLs provide benefits to road authorities.
+Anyone interested can join the RSMP working group, but only RSMP Nordic partners can co-author technical proposals.
 
-## Traffic Light Controller Functionality
-RSMP include an extensive set of messages and alarms for working with traffic light controllers.
+### User Group
+The user group in an informal forum or networks for sharing knowledge about RSMP and its use. The user group also provide input and feedback to working groups.
 
-|---|---|
-| **System** | Version, Clock, Mode, Restart, Security, Config Checksum, Config Download |
-| **Modes** | Fixed time, Yellow Flash, Traffic Situations, Emergency Routes |
-| **Signal Plans** | Change plan, Timetable, Calendar, Offset time, Cycle time, Dynamic Bands |
-| **Signal Groups** | Force Green, Force Red, Time to Green |
-| **Input/Output** | Force Green/Red, Sensitivity |
-| **Detector Logics** | Force Active |
-| **Traffic Data** | Volume, Speed, Occupancy, Classification |
-| **Alarms** | Hardware, Network, Lamps, Push Buttons, Doors, Detectors |
-| **Status** | Request, Subscribe, On change or by interval |
+Anyone interested can join the RSMP user group.
+
+## Join RSMP Nordic
+All interested road authorities and industry partners are welcome to join the RSMP Nordic partnership. Participation is governed by the [RSMP Nordic Charter]({% link pages/charter.md %}).
+
+There is no partnership fee and you're free to leave anytime you like.
+
+To join the RSMP Nordic parternship, all you need to do is sign and return the RSMP Nordic Partnership Agreement, which basically just states that you agree to work in accordance with the [RSMP Nordic Charter]({% link pages/charter.md %}).
+
+You're welcome t [contact us]({% link pages/contact.md %}) if you have any questions.
+
+### Why Join?
+When joining RSMP Nordic, you will be listed as a partner on the RSMP Nordic website. By doing so, you show your support for RSMP as an open, flexible protocol.
+
+As an industry partner, becoming an RSMP Nordic partner will give you the opportunity to co-author tehnical proposals. You will also show road authorities that you're committed to providing RMSP-compliant equipment/systems.
 
 
-## Benefits
-An open protocol like RSMP stimulates innovation and market competition, reduce maintenance costs and make it easier for equipment from different vendors to work together.
 
-With RSMP, a road authority can achieve:
-
- - A single protocol for communication between all roadside equipment.
- - A single monitoring systems that covers equipment for different vendors.
- - Greater freedom to change equipment and vendors.
-
-## Supporting EU-standardisation
-The EU is working on several ITS standards, e.g. in the CEN TC278/WG17 working group. RSMP Nordic supports this work and welcome European standards, as long as they are of high quality and meet the needs of the Nordic region.
-
-European standards will take time to develop and the current approach is to build on regional standards to provide a graceful transition into new EU-standards. We maintain RSMP as a regional standard that can be interfaced or replaced with European standards once they are ready.
-
-RSMP Nordic will provide a constructive Nordic voice in the ongoing EU standardisation process.

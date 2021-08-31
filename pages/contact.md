@@ -8,19 +8,19 @@ nav_order: 5
 # Contact
 
 ## Technical Issues
-For technical questions, please consider asking directly in the relevant [GitHub repository](https://github.com/rsmp-nordic). 
+For technical questions, please ask directly in the relevant [GitHub repository](https://github.com/rsmp-nordic). 
 
 ## Joining RSMP Nordic
-Read about how you [join RSMP Nordic]({% link pages/join.md %}) 
+Read about how to [join RSMP Nordic]({% link pages/about.md %}) 
 
-## General Inquiries
-General inquiries, including questions about RSMP Nordic partnership, User Groups and Working Groups, should be send to the  the RSMP Nordic secretariat. Please contact one of these persons:
+## Secretariat
+Contact the secretariat for general inquiries, including questions about RSMP Nordic partnership, the user groups and working groups.
 
 ### Jos van Vlerken
 City of Copenhagen  
 Technical and Environmental Department  
 Traffic  
-[zf0f@kk.dk](mailto:zf0f@tmf.kk.dk)  
+[cz9y@kk.dk](mailto:cz9y@kk.dk)  
 
 ### David Otterdahl
 Swedish Transport Administration  
