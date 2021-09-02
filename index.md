@@ -36,20 +36,6 @@ With RSMP, road authorities can achieve:
  - A single monitoring systems that covers equipment from different vendors.
  - Greater freedom to change equipment and suppliers.
 
-## Backed by Nordic Road Authorities
-RSMP is maintained and develop by the [RSMP Nordic partnership]({% link pages/activities.md %}) of Nordic road authorities. We strive to meet the need of both small and big road authorities.
-
-RSMP has been proven on street since 2011 by major Nordic players such as the Swedish Transport Administration and the City of Copenhagen. The use of RSMP is growing across the Nordics.
-
-![Stockholm Municipality]({{ "assets/images/logo_stockholm.png"}}){:class='logo'}
-![Danish Road Directorate]({{ "assets/images/logo_vd.jpg"}}){:class='logo'}
-![Copenhagen Municipality]({{ "assets/images/logo_kk.png"}}){:class='logo'}
-![Swedish Transport Administration]({{ "assets/images/logo_tv.png"}}){:class='logo'}
-![Norwegian Public Roads Administration]({{ "assets/images/logo_sv.jpg"}}){:class='logo'}
-
-## Supported by the Industry
-A growing list of suppliers provide equipment and systems that suport RSMP.
-
 ## Equipment Types
 RSMP is currently used across the Nordic region for monitoring and managing different types of equipment.
 
@@ -76,6 +62,25 @@ RSMP include an extensive set of messages and alarms for working with traffic li
 | **Alarms** | Hardware, Network, Lamps, Push Buttons, Doors, Detectors |
 | **Status** | Request, Subscribe, On change or by interval |
 
+## Backed by Nordic Road Authorities
+RSMP is maintained and develop by the [RSMP Nordic partnership]({% link pages/activities.md %}) of Nordic road authorities. We strive to meet the need of both small and big road authorities.
+
+RSMP has been proven on street since 2011 by major Nordic players such as the Swedish Transport Administration and the City of Copenhagen. The use of RSMP is growing across the Nordics.
+
+![Stockholm Municipality]({{ "assets/images/logo_stockholm.png"}}){:class='logo'}
+![Danish Road Directorate]({{ "assets/images/logo_vd.jpg"}}){:class='logo'}
+![Copenhagen Municipality]({{ "assets/images/logo_kk.png"}}){:class='logo'}
+![Swedish Transport Administration]({{ "assets/images/logo_tv.png"}}){:class='logo'}
+![Norwegian Public Roads Administration]({{ "assets/images/logo_sv.jpg"}}){:class='logo'}
+
+## Supported by the Industry
+A growing list of suppliers provide equipment and systems that suport RSMP.
+
+## Supported by EU Interreg
+RSMP Nordic has received funding from EU Interreg Øresund-Kattegat-Skagerak.
+
+![Interreg Øresund Kattegat Skagerak Logo]({{ "assets/images/Interreg_OKS_407px.jpg"}})
+
 ## RSMP and EU Standardisation
 The EU is working on several ITS standards, e.g. in the CEN TC278/WG17 working group. RSMP Nordic supports this work and welcome European standards, as long as they are of high quality and meet the needs of the Nordic region.
 
@@ -94,9 +99,4 @@ The RSMP Nordic partnership is open for anyone interested in RSMP, both road aut
 We share knowledge and needs in the [User Group]({% link pages/activities.md %}), and meet in in the [Working Group]({% link pages/activities.md %}) to discuss and develop the next versions of the specifications and tools.
 
 There is no RSMP Nordic partnership fee.
-
-## Supported by EU Interreg
-RSMP Nordic has received funding from EU Interreg Øresund-Kattegat-Skagerak.
-
-![Interreg Øresund Kattegat Skagerak Logo]({{ "assets/images/Interreg_OKS_407px.jpg"}})
 
