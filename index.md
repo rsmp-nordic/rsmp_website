@@ -41,6 +41,12 @@ RSMP is maintained and develop by the [RSMP Nordic partnership]({% link pages/ac
 
 RSMP has been proven on street since 2011 by major Nordic players such as the Swedish Transport Administration and the City of Copenhagen. The use of RSMP is growing across the Nordics.
 
+![Stockholm Municipality]({{ "assets/images/logo_stockholm.png"}}){:class='logo'}
+![Danish Road Directorate]({{ "assets/images/logo_vd.jpg"}}){:class='logo'}
+![Copenhagen Municipality]({{ "assets/images/logo_kk.png"}}){:class='logo'}
+![Swedish Transport Administration]({{ "assets/images/logo_tv.png"}}){:class='logo'}
+![Norwegian Public Roads Administration]({{ "assets/images/logo_sv.jpg"}}){:class='logo'}
+
 ## Supported by the Industry
 A growing list of suppliers provide equipment and systems that suport RSMP.
 
