@@ -1,15 +1,16 @@
 ---
-layout: home
-nav_exclude: true
+layout: page
+title: About
+nav_order: 1
 ---
 
 ![RSMP banner](/assets/images/rsmp_nordic_banner.jpg)
 
 # A Nordic Approach to Roadside Equipment
 {: .fs-10}
-RSMP is an open and modern protocol for communication between traffic lights, road side equipment and central monitoring and traffic management systems.
+RSMP is an open and [modern protocol]({% link pages/documentation.md %}) for communication between traffic lights, road side equipment and central monitoring and traffic management systems.
 
-RSMP is maintained by the [RSMP Nordic partnership]({% link pages/about.md %}) of Nordic road authorities and has no license fees. It's supported by [open-source tools]({% link pages/tools.md %}) for development and validation.
+RSMP is maintained by the [RSMP Nordic partnership]({% link pages/activities.md %}) of Nordic road authorities and has no license fees. It's supported by [open-source tools]({% link pages/tools.md %}) for development and validation.
 
 Because RSMP is open and vendor-neutral protocol, road authortities are free to mix equipment and systems from different suppliers.
 
@@ -36,7 +37,7 @@ With RSMP, road authorities can achieve:
  - Greater freedom to change equipment and suppliers.
 
 ## Backed by Nordic Road Authorities
-RSMP is maintained and develop by the [RSMP Nordic partnership]({% link pages/about.md %}) of Nordic road authorities. We strive to meet the need of both small and big road authorities.
+RSMP is maintained and develop by the [RSMP Nordic partnership]({% link pages/activities.md %}) of Nordic road authorities. We strive to meet the need of both small and big road authorities.
 
 RSMP has been proven on street since 2011 by major Nordic players such as the Swedish Transport Administration and the City of Copenhagen. The use of RSMP is growing across the Nordics.
 
@@ -86,7 +87,7 @@ The RSMP Nordic partnership is open for anyone interested in RSMP, both road aut
 
 We share knowledge and needs in the [User Group]({% link pages/activities.md %}), and meet in in the [Working Group]({% link pages/activities.md %}) to discuss and develop the next versions of the specifications and tools.
 
-[Participation]({% link pages/about.md %}) in RSMP Nordic is free.
+There is no RSMP Nordic partnership fee.
 
 ## Supported by EU Interreg
 RSMP Nordic has received funding from EU Interreg Øresund-Kattegat-Skagerak.
