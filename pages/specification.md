@@ -40,7 +40,7 @@ View the [GitHub repository](https://github.com/rsmp-nordic/rsmp_core).
 [core_3.1.3_pdf]: https://github.com/rsmp-nordic/rsmp_core/releases/download/v3.1.3/rsmp-spec-3.1.3.pdf
 [core_3.1.3_online]: https://github.com/rsmp-nordic/rsmp_core/blob/v3.1.3/rst/rsmp.rst
 
-[core_3.1.2_pdf]: https://github.com/rsmp-nordic/rsmp_core/releases/download/v3.1.3/rsmp-spec-3.1.2.pdf
+[core_3.1.2_pdf]: https://github.com/rsmp-nordic/rsmp_core/releases/download/v3.1.2/rsmp-spec-3.1.2.pdf
 [core_3.1.2_online]: https://github.com/rsmp-nordic/rsmp_core/blob/v3.1.2/rst/rsmp.rst
 
 
