@@ -43,13 +43,13 @@ A benefit of JSON is that it's human-readable, making development and debugging 
 The [Core specifications]({% link pages/specification.md %}) defines messages and behavior common to all types of equipment.
 
 ### Signal Exchange Lists (SXLs)
-Signal Exchange Lists define the messages for a particular type of equipment, eg. Traffic Light Controllers.
+Signal Exchange Lists define the messages for a particular type of equipment, e.g. Traffic Light Controllers.
 
 So far, RSMP Nordic has standardized an SXL only for traffic light controllers, but SXLs for other types of equipment are planned.
 
 You can define your own SXL if you need to support a special types of equipment, although RSMP Nordic strongly recommend using a standardized SXL whenever possible.
 
-In situations where you really need to add a particular functionality or messages that are not available in a standardized SXL, it's possible to add your own custom messages. However, RSMP Nordic strongly recommend that you avoid this, because you can easily loose the benefits of using a vendor-neutral protocol. Any special message implemented by a single (or a few) vendors will make it harder to switch vendor, and will not be supported by eg. RSMP Nordic tools for automated validation.
+In situations where you really need to add a particular functionality or messages that are not available in a standardized SXL, it's possible to add your own custom messages. However, RSMP Nordic strongly recommend that you avoid this, because you can easily loose the benefits of using a vendor-neutral protocol. Any special message implemented by a single (or a few) vendors will make it harder to switch vendor, and will not be supported by e.g. RSMP Nordic tools for automated validation.
 
 If you have this type of needs that you feel are not currently met by the standardized SXLs, we encourage you to instead join the RSMP [User Group or Working Group]({% link pages/activities.md %}) and discuss your needs. It might make sense to include the required messages in upcoming SXL versions.
 

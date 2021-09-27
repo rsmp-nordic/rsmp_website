@@ -21,8 +21,8 @@ RSMP is suitable for a wide range of use-cases, from small municipalities with o
 
 Example of what RSMP can be used for:
 
- - Monitor roadside equipment, eg. keep an eye out for errors on traffic signals or variable message signs.
- - Manage traffic, eg. by changing signal programs, change green times, or change content on variable message signs.
+ - Monitor roadside equipment, e.g. keep an eye out for errors on traffic signals or variable message signs.
+ - Manage traffic, e.g. by changing signal programs, change green times, or change content on variable message signs.
  - Collect data from equipment such as counting stations or bicycle barometers.
  - Prioritize different types of traffic such as bicycles, buses, and trams.
  - Automate traffic scenario management for optimizing daily traffic flows and handling traffic incidents.
@@ -82,7 +82,7 @@ RSMP Nordic has received funding from EU Interreg Öresund-Kattegat-Skagerak.
 ![Interreg Øresund Kattegat Skagerak Logo]({{ "assets/images/Interreg_OKS_407px.jpg"}})
 
 ## RSMP and EU Standardization
-The EU is working on several ITS standards, eg. in the CEN TC278/WG17 working group. RSMP Nordic supports this work and welcomes European standards as long as they are of high quality and meet the needs of the Nordic region.
+The EU is working on several ITS standards, e.g. in the CEN TC278/WG17 working group. RSMP Nordic supports this work and welcomes European standards as long as they are of high quality and meet the needs of the Nordic region.
 
 European standards will take time to develop and the current approach is to build on regional standards to provide a graceful transition into new EU-standards. We maintain RSMP as a regional standard that can be interfaced or replaced with European standards once they are ready.
 
