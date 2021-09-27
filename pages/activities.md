@@ -8,7 +8,7 @@ nav_order: 2
 # Activities
 RSMP Nordic is the partnership of Nordic road authorities behind the [RSMP protocol]({% link pages/documentation.md %}).
 
-We maintains the RSMP specification and related open-source tools and facilitate knowledge sharing related to RSMP in the RSMP User Group and Working Groups.
+We maintain the RSMP specification and related open-source tools and facilitate knowledge sharing related to RSMP in the RSMP User Group and Working Groups.
 
 The RSMP Nordic organization as defined in the [RSMP Nordic Charter]({% link pages/charter.md %})
 
@@ -33,12 +33,12 @@ RSMP Nordic coordination, strategy, resource planning and administration is hand
 The secretariat provides administrative and logistical support and helps organize meetings. The secretariat is also the entry point for [general queries]({% link pages/contact.md %}).
 
 ### Technical Board
-The RSMP Nordic Board is responsible for technical coordination and decisions, and maintain the RSMP roadmap. The board reviews technical proposals from the working group and decides which proposals are accepted.
+The RSMP Nordic Board is responsible for technical coordination and decisions and maintains the RSMP roadmap. The board reviews technical proposals from the working group and decides which proposals are accepted.
 
-The board has representatives from only public road authorities and is appointed by the board.
+The board has representatives from public road authorities only and is appointed by the Steering Group.
 
 ### Steering Group
-The steering group is responsible for overall coordination and strategic decisions and has representatives from only public road authorities.
+The steering group is responsible for overall coordination and strategic decisions and has representatives from public road authorities only.
 
 Denmark, Sweden, Norway, and Finland each have permanent seats in the steering group, but can invite other RSMP Nordic road authority partners to fill remaining seats.
 
@@ -55,4 +55,3 @@ You're welcome to [contact us]({% link pages/contact.md %}) if you have any ques
 When joining RSMP Nordic, you will be listed as a partner on the RSMP Nordic website. By doing so, you show your support for RSMP as an open, flexible protocol.
 
 As an industry partner, becoming an RSMP Nordic partner will give you the opportunity to co-author tehnical proposals. You will also show road authorities that you're committed to providing RMSP-compliant equipment/systems.
-
