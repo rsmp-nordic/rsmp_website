@@ -10,12 +10,12 @@ parent: Documentation
 The RSMP Specification defines the message formats and behaviour for communicating via RSMP.
 
 - Core defines messages and behavior common to all types of equipment.
-- Signal Exchange Lists (SXL)s define the messages for a particular type of equipment, e.g. Traffic Light Controllers. So far, RSMP Nordic has standardized an SXL only for traffic light controllers, but SXLs for other types of equipment as planned.
+- Signal Exchange Lists (SXLs) define the messages for a particular type of equipment, eg. Traffic Light Controllers. So far, RSMP Nordic has standardized an SXL only for traffic light controllers, but SXLs for other types of equipment are planned.
 
 ### GitHub
 The RSMP specifications are maintained on [GitHub](https://github.com/rsmp-nordic).
 
-Each repository on GitHub has its own issue tracker, which is used to keep track of errors, proposed improvements, etc. You are welcome to ask questions or report errors on GitHub, you just need an account on GitHub, which is quick and free to create.
+Each repository on GitHub has its own issue tracker that is used to keep track of errors, proposed improvements, etc. You are welcome to ask questions or report errors on GitHub; you just need an account on GitHub, which is quick and free to create.
 
 ### JSON Schema
 The RSMP specification is also documented as [JSON Schema](https://github.com/rsmp-nordic/rsmp_schema), which makes it possible automatically to validate the format of RSMP messages.
