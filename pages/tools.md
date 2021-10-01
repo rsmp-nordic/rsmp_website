@@ -16,7 +16,7 @@ This includes both GUI and command-line tools for validation and interacting wit
 See all our [GitHub repositories](https://github.com/rsmp-nordic).
 
 ## RSMP Simulator
-The [RSMP Simulator ](https://github.com/rsmp-nordic/rsmp_simulator) is a Windows application written in C# that can be used for manual testing of RSMP implementations. You can download it along with its documentation from the ![release page](https://github.com/rsmp-nordic/rsmp_simulator/releases).
+The [RSMP Simulator ](https://github.com/rsmp-nordic/rsmp_simulator) is a Windows application written in C# that can be used for manual testing of RSMP implementations. You can download it along with its documentation from the [release page](https://github.com/rsmp-nordic/rsmp_simulator/releases).
 
 ![RSMP Simulator](/assets/images/simulator_1.0.1.5.png)
 
