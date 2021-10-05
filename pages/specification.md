@@ -32,16 +32,16 @@ View the [GitHub repository](https://github.com/rsmp-nordic/rsmp_core).
 | 3.1.2          | [Online][core_3.1.2_online], [PDF][core_3.1.2_pdf] |
 
 [core_3.1.5_pdf]: https://github.com/rsmp-nordic/rsmp_core/releases/download/v3.1.5/rsmp-spec-3.1.5.pdf
-[core_3.1.5_online]: https://rsmp-nordic.github.io/rsmp_core/
+[core_3.1.5_online]: https://rsmp-nordic.org/rsmp_specifications/core/3.1.5
 
 [core_3.1.4_pdf]: https://github.com/rsmp-nordic/rsmp_core/releases/download/v3.1.4/rsmp-spec-3.1.4.pdf
-[core_3.1.4_online]: https://github.com/rsmp-nordic/rsmp_core/blob/v3.1.4/rst/rsmp.rst
+[core_3.1.4_online]: https://rsmp-nordic.org/rsmp_specifications/core/3.1.4
 
 [core_3.1.3_pdf]: https://github.com/rsmp-nordic/rsmp_core/releases/download/v3.1.3/rsmp-spec-3.1.3.pdf
-[core_3.1.3_online]: https://github.com/rsmp-nordic/rsmp_core/blob/v3.1.3/rst/rsmp.rst
+[core_3.1.3_online]: https://rsmp-nordic.org/rsmp_specifications/core/3.1.3
 
 [core_3.1.2_pdf]: https://github.com/rsmp-nordic/rsmp_core/releases/download/v3.1.2/rsmp-spec-3.1.2.pdf
-[core_3.1.2_online]: https://github.com/rsmp-nordic/rsmp_core/blob/v3.1.2/rst/rsmp.rst
+[core_3.1.2_online]: https://rsmp-nordic.org/rsmp_specifications/core/3.1.2
 
 
 ## Traffic Light Controller SXL
@@ -56,12 +56,10 @@ View the [GitHub repository](https://github.com/rsmp-nordic/rsmp_sxl_traffic_lig
 
 [tlc_1.0.15_pdf]: https://github.com/rsmp-nordic/rsmp_sxl_traffic_lights/releases/download/1.0.15/sxl-tlc-1.0.15.pdf
 [tlc_1.0.15_excel]: https://github.com/rsmp-nordic/rsmp_sxl_traffic_lights/releases/download/1.0.15/SXL_Traffic_Controller_ver_1_0_15-2020-10-30.xlsx
-[tlc_1.0.15_online]: https://rsmp-nordic.github.io/rsmp_sxl_traffic_lights/
+[tlc_1.0.15_online]: http://rsmp-nordic.org/rsmp_specifications/rsmp_sxl_traffic_lights/1.0.15/
 
-[tlc_1.0.14_pdf]: hhttps://github.com/rsmp-nordic/rsmp_sxl_traffic_lights/releases/download/1.0.15/sxl-tlc-1.0.15.pdf
 [tlc_1.0.14_excel]: https://github.com/rsmp-nordic/rsmp_sxl_traffic_lights/releases/download/1.0.14/SXL_Traffic_Controller_ver_1_0_14-2017-10-30.xlsx
-[tlc_1.0.14_github]: https://github.com/rsmp-nordic/rsmp_sxl_traffic_lights/blob/b7978b45623bf37c1a3ccefa879b6a18e13a210a/sxl_traffic_controller.md
+[tlc_1.0.14_github]: https://github.com/rsmp-nordic/rsmp_sxl_traffic_lights/blob/1.0.14/sxl_traffic_controller.md
 
-[tlc_1.0.13_pdf]: hhttps://github.com/rsmp-nordic/rsmp_sxl_traffic_lights/releases/download/1.0.15/sxl-tlc-1.0.15.pdf
 [tlc_1.0.13_excel]: https://github.com/rsmp-nordic/rsmp_sxl_traffic_lights/releases/download/1.0.13/SXL_Traffic_Controller_ver_1_0_13-2017-06-26.xlsx
-[tlc_1.0.13_github]: https://github.com/rsmp-nordic/rsmp_sxl_traffic_lights/blob/3d1ea78184b958e1cfb6527b67df093eea893caa/sxl_traffic_controller.md
+[tlc_1.0.13_github]: https://github.com/rsmp-nordic/rsmp_sxl_traffic_lights/blob/1.0.13/sxl_traffic_controller.md
