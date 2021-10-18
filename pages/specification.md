@@ -27,7 +27,7 @@ View the [GitHub repository](https://github.com/rsmp-nordic/rsmp_core).
 
 | --- | --- |
 | 3.2 (draft)    | [Online][core_3.2_online] |
-| 3.1.5 (latest release) | [Online][core_3.1.5_online], [PDF][core_3.1.5_pdf] |
+| **3.1.5 (latest release)** | [Online][core_3.1.5_online], [PDF][core_3.1.5_pdf] |
 | 3.1.4          | [Online][core_3.1.4_online], [PDF][core_3.1.4_pdf] |
 | 3.1.3          | [Online][core_3.1.3_online], [PDF][core_3.1.3_pdf] |
 | 3.1.2          | [Online][core_3.1.2_online], [PDF][core_3.1.2_pdf] |
@@ -54,7 +54,7 @@ View the [GitHub repository](https://github.com/rsmp-nordic/rsmp_sxl_traffic_lig
 
 | --- | --- |
 | 1.1 (draft)    | [Online][tlc_1.1_online] |
-| 1.0.15 (latest release)| [Online][tlc_1.0.15_online], [Excel][tlc_1.0.15_excel], [PDF][tlc_1.0.15_pdf] |
+| **1.0.15 (latest release)**| [Online][tlc_1.0.15_online], [Excel][tlc_1.0.15_excel], [PDF][tlc_1.0.15_pdf] |
 | 1.0.14         | [GitHub][tlc_1.0.14_github], [Excel][tlc_1.0.14_excel] |
 | 1.0.13         | [GitHub][tlc_1.0.13_github], [Excel][tlc_1.0.13_excel] |
 
