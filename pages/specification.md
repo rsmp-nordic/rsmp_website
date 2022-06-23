@@ -26,13 +26,14 @@ The core specification defines the basic message structure and behavior common t
 View the [GitHub repository](https://github.com/rsmp-nordic/rsmp_core).
 
 | --- | --- |
-| 3.2 (draft)    | [Online][core_3.2_online] |
-| **3.1.5 (latest release)** | [Online][core_3.1.5_online], [PDF][core_3.1.5_pdf] |
+| **3.2 (latest release)**  | [Online][core_3.2_online], [PDF][core_3.2_pdf]|
+| 3.1.5          | [Online][core_3.1.5_online], [PDF][core_3.1.5_pdf] |
 | 3.1.4          | [Online][core_3.1.4_online], [PDF][core_3.1.4_pdf] |
 | 3.1.3          | [Online][core_3.1.3_online], [PDF][core_3.1.3_pdf] |
 | 3.1.2          | [Online][core_3.1.2_online], [PDF][core_3.1.2_pdf] |
 
-[core_3.2_online]: http://rsmp-nordic.org/rsmp_specifications/core/3.2-draft
+[core_3.2_online]: https://github.com/rsmp-nordic/rsmp_core/releases/download/v3.2/rsmp-spec-3.2.pdf
+[core_3.2_online]: https://rsmp-nordic.org/rsmp_specifications/core/3.2
 
 [core_3.1.5_pdf]: https://github.com/rsmp-nordic/rsmp_core/releases/download/v3.1.5/rsmp-spec-3.1.5.pdf
 [core_3.1.5_online]: https://rsmp-nordic.org/rsmp_specifications/core/3.1.5
@@ -53,12 +54,13 @@ The SXL specification for Traffic Light Controllers.
 View the [GitHub repository](https://github.com/rsmp-nordic/rsmp_sxl_traffic_lights).
 
 | --- | --- |
-| 1.1 (draft)    | [Online][tlc_1.1_online] |
-| **1.0.15 (latest release)**| [Online][tlc_1.0.15_online], [Excel][tlc_1.0.15_excel], [PDF][tlc_1.0.15_pdf] |
+| **1.1 (latest release)** | [Online][tlc_1.1_online] [PDF][tlc_1.1.pdf] |
+| 1.0.15         | [Online][tlc_1.0.15_online], [Excel][tlc_1.0.15_excel], [PDF][tlc_1.0.15_pdf] |
 | 1.0.14         | [GitHub][tlc_1.0.14_github], [Excel][tlc_1.0.14_excel] |
 | 1.0.13         | [GitHub][tlc_1.0.13_github], [Excel][tlc_1.0.13_excel] |
 
-[tlc_1.1_online]: http://rsmp-nordic.org/rsmp_specifications/rsmp_sxl_traffic_lights/1.1-draft
+[tlc_1.1_pdf]: https://github.com/rsmp-nordic/rsmp_sxl_traffic_lights/releases/download/1.0.15/sxl-tlc-1.1.pdf
+[tlc_1.1_online]: https://rsmp-nordic.org/rsmp_specifications/rsmp_sxl_traffic_lights/1.1
 
 [tlc_1.0.15_pdf]: https://github.com/rsmp-nordic/rsmp_sxl_traffic_lights/releases/download/1.0.15/sxl-tlc-1.0.15.pdf
 [tlc_1.0.15_excel]: https://github.com/rsmp-nordic/rsmp_sxl_traffic_lights/releases/download/1.0.15/SXL_Traffic_Controller_ver_1_0_15-2020-10-30.xlsx
