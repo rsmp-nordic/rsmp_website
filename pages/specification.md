@@ -32,7 +32,7 @@ View the [GitHub repository](https://github.com/rsmp-nordic/rsmp_core).
 | 3.1.3          | [Online][core_3.1.3_online], [PDF][core_3.1.3_pdf] |
 | 3.1.2          | [Online][core_3.1.2_online], [PDF][core_3.1.2_pdf] |
 
-[core_3.2_online]: https://github.com/rsmp-nordic/rsmp_core/releases/download/v3.2/rsmp-spec-3.2.pdf
+[core_3.2_pdf]: https://github.com/rsmp-nordic/rsmp_core/releases/download/v3.2/rsmp-spec-3.2.pdf
 [core_3.2_online]: https://rsmp-nordic.org/rsmp_specifications/core/3.2
 
 [core_3.1.5_pdf]: https://github.com/rsmp-nordic/rsmp_core/releases/download/v3.1.5/rsmp-spec-3.1.5.pdf
@@ -54,7 +54,7 @@ The SXL specification for Traffic Light Controllers.
 View the [GitHub repository](https://github.com/rsmp-nordic/rsmp_sxl_traffic_lights).
 
 | --- | --- |
-| **1.1 (latest release)** | [Online][tlc_1.1_online] [PDF][tlc_1.1.pdf] |
+| **1.1 (latest release)** | [Online][tlc_1.1_online], [PDF][tlc_1.1.pdf] |
 | 1.0.15         | [Online][tlc_1.0.15_online], [Excel][tlc_1.0.15_excel], [PDF][tlc_1.0.15_pdf] |
 | 1.0.14         | [GitHub][tlc_1.0.14_github], [Excel][tlc_1.0.14_excel] |
 | 1.0.13         | [GitHub][tlc_1.0.13_github], [Excel][tlc_1.0.13_excel] |
