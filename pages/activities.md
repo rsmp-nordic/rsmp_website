@@ -3,6 +3,7 @@ layout: page
 title: Activities
 permalink: /activities/
 nav_order: 2
+has_children: true
 ---
 
 # Activities
