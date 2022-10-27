@@ -2,7 +2,8 @@
 layout: page
 title: Charter
 permalink: /charter/
-nav_exclude: true
+nav_order: 1
+parent: Activities
 ---
 
 # RSMP Nordic Charter
