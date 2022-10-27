@@ -72,7 +72,7 @@ The steering group can have no more than seven 11 members.
  
 No partner can have more than one representative in the steering group.
  
-Denmark, Sweden, Norway, and Finland each have one two permanent seats. The partners from each of these countries together decide who will represent them, and can change their representatives whenever they like. For example, the partners from Denmark chose one two danish partner to represent them in the steering group. In case of disagreement, the two partners who joined RSMP Nordic first will represent them.
+Denmark, Sweden, Norway, and Finland each have two permanent seats. The partners from each of these countries together decide who will represent them, and can change their representatives whenever they like. For example, the partners from Denmark chose  two danish partner to represent them in the steering group. In case of disagreement, the two partners who joined RSMP Nordic first will represent them.
  
 The permanent members can agree to invite any other RSMP Nordic partners to fill remaining seats, respecting the limitations described above. All non-permanent partners thus invited leave the steering group on the first coming March 1st, unless the permanent members agree to ask the partner to stay.
  
