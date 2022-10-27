@@ -48,7 +48,8 @@ RSMP Nordic promotes the use of RSMP by explaining the benefits and use cases.
 
 ### Overview
  
-![RSMP Nordic Organizational Chart]()
+![RSMP Nordic Organizational Chart](/assets/images/organization.png)
+
 
 ### Steering Group
 
