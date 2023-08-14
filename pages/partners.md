@@ -22,9 +22,6 @@ RSMP Nordic is the partnership behind the [RSMP protocol]({% link pages/document
 [The City of Oslo](https://www.oslo.kommune.no)
 
 
-## Industry
-
-
 ## Join RSMP Nordic
 All interested road authorities and companies are welcome to join the RSMP Nordic partnership. There is no partnership fee.
 
