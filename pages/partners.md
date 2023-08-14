@@ -28,7 +28,8 @@ RSMP Nordic is the partnership behind the [RSMP protocol]({% link pages/document
 ## Join RSMP Nordic
 All interested road authorities and companies are welcome to join the RSMP Nordic partnership. There is no partnership fee.
 
-To join, please sign and return the RSMP Nordic Partnership Agreement. By signing, you agree to work in accordance with the [RSMP Nordic Charter]({% link pages/charter.md %}).
+To join, please sign and return the [RSMP Nordic Partnership Agreement (PDF)](/assets/pdf/rsmp_nordic_partnership_form.pdf){:target="_blank"}{:rel="noopener noreferrer"}.
+By signing, you agree to work in accordance with the [RSMP Nordic Charter]({% link pages/charter.md %}).
 
 When joining RSMP Nordic, you will be listed as a partner here on the RSMP Nordic website. By doing so, you show your support for RSMP as an open, flexible protocol.
 
