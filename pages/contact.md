@@ -16,11 +16,11 @@ Read about how to [join RSMP Nordic]({% link pages/activities.md %})
 ## Secretariat
 Contact the secretariat for general inquiries, including questions about RSMP Nordic partnership, the user groups and working groups.
 
-### Jos van Vlerken
+### Emil Tin
 City of Copenhagen  
 Technical and Environmental Department  
-Traffic  
-[cz9y@kk.dk](mailto:cz9y@kk.dk)  
+Traffic
+[zf0f@kk.dk](mailto:zf0f@kk.dk)  
 
 ### David Otterdahl
 Swedish Transport Administration  
