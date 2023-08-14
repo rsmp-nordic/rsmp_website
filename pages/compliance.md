@@ -14,12 +14,10 @@ RSMP Nordic offers [open source tools]({% link pages/documentation.md %}) that c
 ## Test Hub
 RMSP Nordic hosts a RSMP Test Hub, where we automatically run the RSMP Validator tests daily against a set of equipment from various suppliers. The results are published here.
 
-| Device | Test Runs | Note |
-|--|--|--|
-| [![Gem TLC](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/gem_tlc.yml/badge.svg?branch=master&event=push)](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/gem_tlc.yml) | [View runs](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/gem_tlc.yml?query=branch%3Amaster) | TLC emulator from RSMP Nordic |
-| [![Dynniq EC-2](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/dynniq_ec2.yml/badge.svg?event=schedule)](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/dynniq_ec2.yml) | [View runs](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/dynniq_ec2.yml?query=event%3Aschedule) | Physical device |
-| [![Swarco ITC-2](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/swarco_itc2.yml/badge.svg?event=schedule)](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/swarco_itc2.yml) | [View runs](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/swarco_itc2.yml?query=event%3Aschedule) | Software simulator |
-| [![Swarco ITC-3](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/swarco_itc3.yml/badge.svg?event=schedule)](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/swarco_itc3.yml) | [View runs](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/swarco_itc3.yml?query=event%3Aschedule) | Physical device |
+[![Gem TLC](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/gem_tlc.yml/badge.svg?branch=master&event=push)](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/gem_tlc.yml)
+[![Dynniq EC-2](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/dynniq_ec2.yml/badge.svg?branch=master&event=schedule)](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/dynniq_ec2.yml)
+[![Swarco ITC-2](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/swarco_itc2.yml/badge.svg?branch=master&event=schedule)](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/swarco_itc2.yml)
+[![Swarco ITC-3](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/swarco_itc3.yml/badge.svg?branch=master&event=schedule)](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/swarco_itc3.yml)
 
 Note: Until the [RMSP Validator](https://github.com/rsmp-nordic/rsmp_validator) reaches version 1.0, test results are preliminary.
 
