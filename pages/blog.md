@@ -2,7 +2,7 @@
 layout: page
 title: Blog
 permalink: /blog/
-nav_order: 5
+nav_order: 6
 ---
 
 # Blog
