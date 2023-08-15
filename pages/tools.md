@@ -23,20 +23,17 @@ The [RSMP Simulator ](https://github.com/rsmp-nordic/rsmp_simulator) is a Window
 ## RSMP Validator
 The [RSMP Validator](https://rsmp-nordic.github.io/rsmp_validator) is a command-line tool based on Ruby and RSpec that can be used for automated validation of RSMP implementations.
 
-## RSMP Building Blocks
+## RSMP Libraries
 We also maintain several Ruby gems (libraries) for working with RSMP.
 
 The RSMP Validator is built on these building blocks, but you can also use them yourself to build new or specialized RSMP tools.
 
 ### RSMP Ruby Gem
-The [RSMP gem](https://github.com/rsmp-nordic/rsmp) is a Ruby library for handling RMSP communication.
+The [RSMP gem](https://github.com/rsmp-nordic/rsmp) is a Ruby library for handling RMSP communication and schema validation.
 
 It also includes command-line tools that make it easy to run an RSMP site or supervisor on the command line and view messages as they are exchanged.
 
 ![RSMP CLI Supervisor](/assets/images/cli_supervisor.png)
-
-### RSMP Schemer Gem
-The [RSMP Schemer gem](https://github.com/rsmp-nordic/rsmp_schemer) is a Ruby library that makes it easy to validate RSMP messages against specific versions of the RSMP JSON Schemas.
 
 ### RSMP Schema
 A [JSON Schema](https://github.com/rsmp-nordic/rsmp_schema) for automatically validating the format of RSMP messages.
