@@ -45,13 +45,4 @@ Denmark, Sweden, Norway, and Finland each have permanent seats in the steering g
 Road authorities that have a special interest in the future and strategic development of RSMP might want to join the Steering Group. Please [contact]({% link pages/contact.md %}) us for more information.
 
 ## Join RSMP Nordic
-All interested road authorities and industry partners are welcome to join the RSMP Nordic partnership. There is no partnership fee.
-
-To join, please sign and return the RSMP Nordic Partnership Agreement. By signing, you agree to work in accordance with the [RSMP Nordic Charter]({% link pages/charter.md %}).
-
-You're welcome to [contact us]({% link pages/contact.md %}) if you have any questions.
-
-### Why Join?
-When joining RSMP Nordic, you will be listed as a partner on the RSMP Nordic website. By doing so, you show your support for RSMP as an open, flexible protocol.
-
-As an industry partner, becoming an RSMP Nordic partner will give you the opportunity to co-author tehnical proposals. You will also show road authorities that you're committed to providing RSMP-compliant equipment/systems.
+All interested road authorities and industry partners are welcome to [join the RSMP Nordic partnership]({% link pages/join.md %}). There is no partnership fee.

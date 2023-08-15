@@ -95,9 +95,10 @@ Although RSMP Nordic focuses on the needs of Nordic road authorities, RSMP is a 
 Road authorities from all parts in the world are welcome to join RSMP Nordic
 
 ## Participate
-The RSMP Nordic partnership is open for anyone interested in RSMP, both road authorities, suppliers, and consultants.
+Anyone interested in RSMP, both road authorities, suppliers, consultants, knowledge institutions, etc. can [join the RSMP Nordic partnership]({% link pages/join.md %}).
 
-We share knowledge and needs in the [User Group]({% link pages/activities.md %}), and meet in in the [Working Group]({% link pages/activities.md %}) to discuss and develop the next versions of the specifications and tools.
+We share knowledge and needs in the [User Group]({% link pages/activities.md %}) and meet in in the [Working Group]({% link pages/activities.md %}) to discuss and develop the next versions of the specifications and tools.
 
 There is no RSMP Nordic partnership fee.
+
 
