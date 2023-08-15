@@ -30,9 +30,9 @@ A non-profit public entity, responsible for managing road or traffic.
  
 RSMP Nordic is a partnership which helps road authorities reach their goals related to sustainable traffic, climate, quality of life, and other areas that make use of on-street equipment.
  
-RSMP Nordic supports road authorities by developing and promoting RMSP (Roadside Message Protocol) as an open, modern, lightweight, flexible, and interoperable protocol for communication between traffic lights, road-side equipment and central traffic management and monitoring systems from different venders.
+RSMP Nordic supports road authorities by developing and promoting RSMP (Roadside Message Protocol) as an open, modern, lightweight, flexible, and interoperable protocol for communication between traffic lights, road-side equipment and central traffic management and monitoring systems from different venders.
  
-RSMP Nordic also supports suppliers and knowledge institution in implementing and maintaining high quality RMSP implementations for business or research purposes.
+RSMP Nordic also supports suppliers and knowledge institution in implementing and maintaining high quality RSMP implementations for business or research purposes.
 
 ## Main Activities
  

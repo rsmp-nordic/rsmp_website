@@ -29,7 +29,7 @@ We also maintain several Ruby gems (libraries) for working with RSMP.
 The RSMP Validator is built on these building blocks, but you can also use them yourself to build new or specialized RSMP tools.
 
 ### RSMP Ruby Gem
-The [RSMP gem](https://github.com/rsmp-nordic/rsmp) is a Ruby library for handling RMSP communication and schema validation.
+The [RSMP gem](https://github.com/rsmp-nordic/rsmp) is a Ruby library for handling RSMP communication and schema validation.
 
 It also includes command-line tools that make it easy to run an RSMP site or supervisor on the command line and view messages as they are exchanged.
 

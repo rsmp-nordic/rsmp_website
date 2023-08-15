@@ -54,4 +54,4 @@ You're welcome to [contact us]({% link pages/contact.md %}) if you have any ques
 ### Why Join?
 When joining RSMP Nordic, you will be listed as a partner on the RSMP Nordic website. By doing so, you show your support for RSMP as an open, flexible protocol.
 
-As an industry partner, becoming an RSMP Nordic partner will give you the opportunity to co-author tehnical proposals. You will also show road authorities that you're committed to providing RMSP-compliant equipment/systems.
+As an industry partner, becoming an RSMP Nordic partner will give you the opportunity to co-author tehnical proposals. You will also show road authorities that you're committed to providing RSMP-compliant equipment/systems.

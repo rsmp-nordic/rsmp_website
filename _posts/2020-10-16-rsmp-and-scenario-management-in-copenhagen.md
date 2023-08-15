@@ -49,6 +49,6 @@ Input to a scenario can e.g. be a time, day of the week, traffic volumes or trav
 Output can e.g. be changing signal programs or changing messages on variable boards. For example. via RSMP, signal program can be changed with the command M0002 at all intersections on a corridor, or content on variable boards can be changed.
 
 ## More flexibility with RSMP
-RMSP allows for dynamic change of green times with the command M0014. This means that you are not limited to switching between predetermined signal programs. It only requires that you have once defined a number of dynamic bands in the signal program. Then you can move the bands via RSMP and thus change the distribution of green times between the different directions and signal groups at the intersection.
+RSMP allows for dynamic change of green times with the command M0014. This means that you are not limited to switching between predetermined signal programs. It only requires that you have once defined a number of dynamic bands in the signal program. Then you can move the bands via RSMP and thus change the distribution of green times between the different directions and signal groups at the intersection.
 
 Scenarios may involve equipment from different vendors as they all communicate via RSMP. Thus, maintenance and operation can be simplified, and you get increased flexibility. For example. For example, a MobiMaestro scenario can control traffic signals from both Swarco and Dynniq.
