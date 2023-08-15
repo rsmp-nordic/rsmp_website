@@ -63,23 +63,24 @@ RSMP include an extensive set of messages and alarms for working with traffic li
 | **Status** | Request, Subscribe, On change or by interval |
 
 ## Backed by Nordic Road Authorities
-RSMP is maintained and developed by the [RSMP Nordic partnership]({% link pages/activities.md %}) of Nordic road authorities. We strive to meet the need of both small and big road authorities.
+RSMP is maintained and developed by the [RSMP Nordic partnership]({% link pages/activities.md %}) of Nordic road authorities and industry partners.
+
+We strive to meet the need of both small and big road authorities.
 
 RSMP has been proven on street since 2011 by major Nordic players such as the Swedish Transport Administration and the City of Copenhagen. The use of RSMP is growing across the Nordics.
 
-![Stockholm Municipality]({{ "assets/images/logo_stockholm.png"}}){:class='logo'}
-![Danish Road Directorate]({{ "assets/images/logo_vd.jpg"}}){:class='logo'}
-![Copenhagen Municipality]({{ "assets/images/logo_kk.png"}}){:class='logo'}
-![Swedish Transport Administration]({{ "assets/images/logo_tv.png"}}){:class='logo'}
-![Norwegian Public Roads Administration]({{ "assets/images/logo_sv.jpg"}}){:class='logo'}
+![Danish Road Directorate]({{ "/assets/logos/logo_vd.jpg"}}){:class='logo'}
+![Swedish Transport Administration]({{ "/assets/logos/logo_tv.png"}}){:class='logo'}
+![Norwegian Public Roads Administration]({{ "/assets/logos/logo_sv.jpg"}}){:class='logo'}
+![Copenhagen Municipality]({{ "/assets/logos/logo_kk.png"}}){:class='logo'}
+![Stockholm Municipality]({{ "/assets/logos/logo_stockholm.png"}}){:class='logo'}
 
-## Supported by the Industry
-A growing list of suppliers provide equipment and systems that support RSMP.
+See the [full list of partners]({% link pages/partners.md %}) and read how to [become a partner]({% link pages/partners.md %}).
 
 ## Supported by EU Interreg
 RSMP Nordic has received funding from EU Interreg Öresund-Kattegat-Skagerak.
 
-![Interreg Øresund Kattegat Skagerak Logo]({{ "assets/images/Interreg_OKS_407px.jpg"}})
+![Interreg Øresund Kattegat Skagerak Logo]({{ "/assets/images/Interreg_OKS_407px.jpg"}})
 
 ## RSMP and EU Standardization
 The EU is working on several ITS standards, e.g. in the CEN TC278/WG17 working group. RSMP Nordic supports this work and welcomes European standards as long as they are of high quality and meet the needs of the Nordic region.

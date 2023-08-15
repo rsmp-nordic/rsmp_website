@@ -3,16 +3,21 @@ layout: page
 title: Compliance
 permalink: /compliance/
 nav_order: 4
-parent: Documentation
 ---
 
 # Compliance
 
-## Tools
-RSMP Nordic offers [open source tools]({% link pages/documentation.md %}) that can be used to check and document compliance to the RSMP specification. These tools can be used by suppliers, road authorities or anyone else that would like to validate or experience with equipment or supervisor systems.
+## Validation Tools
+RSMP Nordic does not offer certifications. Instead we offer [open source tools]({% link pages/documentation.md %}) that can be used to check and document compliance to the RSMP specification.
+
+These validation tools can be used by suppliers, road authorities or anyone else that would like to validate or experience with equipment or supervisor systems.
+
+As a road authority, you can require venders to use the validation tools to document compliance to the RSMP specifications.
+
+As a vendor, you can use the tools during development and testing of products, and to document compliance to the RSMP specifications.
 
 ## Test Hub
-RMSP Nordic hosts a RSMP Test Hub, where we automatically run the RSMP Validator tests daily against a set of equipment from various suppliers. The results are published here.
+RMSP Nordic hosts a RSMP Test Hub, where we automatically run the RSMP Validator tests daily against equipment from various suppliers. The current results are published here.
 
 | Device | Test Runs | Note |
 |--|--|--|
@@ -23,4 +28,4 @@ RMSP Nordic hosts a RSMP Test Hub, where we automatically run the RSMP Validator
 
 Note: Until the [RMSP Validator](https://github.com/rsmp-nordic/rsmp_validator) reaches version 1.0, test results are preliminary.
 
-If you're a supplier with equipment that you would like included in our Test Hub, please contact the [RSMP Nordic secretariat]({% link pages/documentation.md %}).
+Supplier that would like their equipment included in our Test Hub are encouraged to contact the [secretariat]({% link pages/contact.md %}).
