@@ -46,7 +46,7 @@ RSMP is currently used across the Nordic region for monitoring and managing diff
 | **Payment Systems** | statuses and alarms
 | **Street Lightning Systems** | statuses and alarms |
 
-So far, RSMP Nordic has standardized an SXL only for traffic light controllers, but SXLs for other types of equipment as planned. Other types of equipment currently used custom SXLs. There's nothing wrong with custom SXLs, but standardizing SXLs provide benefits to road authorities.
+So far, RSMP Nordic has standardized an SXL only for traffic light controllers, but SXLs for other types of equipments are coming. Other types of equipment currently used custom SXLs. There's nothing wrong with custom SXLs, but standardizing SXLs provide benefits to road authorities.
 
 ## Traffic Light Controller Functionality
 RSMP include an extensive set of messages and alarms for working with traffic light controllers.

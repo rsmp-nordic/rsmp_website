@@ -6,81 +6,79 @@ nav_order: 2
 parent: Activities
 ---
 
-## Working Groups
-The RSMP Nordic Working Groups discuss technical issues and produce proposals for review by the Board. The working groups are where we shape the next versions of the RSMP specifications.
+# Working Groups
+The RSMP Nordic Working Groups discuss specific topics and produce proposals for review by the Board. The working groups are where we shape the next versions of the RSMP specifications.
 
-Anyone interested can [join]({% link pages/activities.md %}) the RSMP working groups, but only RSMP Nordic partners can be listed as co-authors of proposals.
+Most working groups focus on technical issues, like developing the RSMP specification and tools, but workings groups can also handle things like communication, outreach or funding.
+
+The working groups reflect the latest Activity Plan agreed by the Steering Group, and can also be created ad-hoc by the Board as needed.
+
+Meeting summaries can be found at our main RSMP [discussion area](https://github.com/orgs/rsmp-nordic/discussions/categories/working-groups).
+
+Anyone interested can join the RSMP working groups, but only RSMP Nordic partners can be listed as co-authors of proposals. Please contact the [secretariat]({% link pages/contact.md %}) for more info.
+
 
 ## Core
-#### Task
-Develop and maintain the core RSMP specification.
+Maintain and develop the core RSMP specification which defines the basic message structure and behavior that is common for all types of equipment.
 
 #### Timeline
-Next scheduled releases is 3.3 planned for autumn 2023.
+Continously, with a yearly release around October.
 
-#### Activity
-Online meetings as needed.
+#### Schedule
+Biweekly online meetings.
+
 
 ## Traffic Light Controllers
-#### Task
-Develop and maintain the SXL (signal exchange list) for Traffic Light Controllers.
+Maintain and develop the SXL (Signal Exchange List) for Traffic Light Controllers.
 
 #### Timeline
-Next scheduled releases is 1.2 planned for autumn 2023.
+Continously, with a yearly release around October.
 
-#### Activity
-Online Meetings as needed.
+#### Schedule
+Biweekly online meetings.
 
-## Version 4 Exploration
-#### Task
-Research the opportunities of a core version 4.0, as well the resources and risk that would be involved.
 
-Version 4.0 would be a version with some larger changes that solve some of the limitations of the existing specification. 
-Questions to be answered include:
+## Support for RSMP in LISA and similar systems
+Investigate what's required for RSMP support in LISA and similar software packages. This includes dialogue with relevant partners, and cosnidering what new RSMP messages needed in the SXL for Traffic Light Controllers.
 
--	Resources required for specification development?
--	Resource required to implement in systems/equipment
--	Opportunities and value, it could provide. What’s the use-cases and current needs?
--	Risks involved
-
-The goal will be to answer these questions and provide a recommendation on whether and when to move ahead with Core 4.0 or focus on more conservative releases of the 3.x series.
+The output will be a recommendation to the board and steering group.
 
 #### Timeline
-There is no release schedule yet for the possible v4 release.
+Recommendation to Steering Group by autumn 2024.
 
--	End of 2022: Initial draft
--	Start of 2023 invite suppliers to comment on the draft
--	2023: Detailing of draft
--	End of 2023: Decision on whether to move ahead with a v4, or stay on the 3.x series
--	Autumn 2024: Release
+#### Schedule
+Ad-hoc
 
-The above timeline might change.
 
-#### Activity
-Online meetings every second week.
+## SXL Standardization
+Standardize and publish SXLs for other types of equipment.
 
-## Variable Messages Signs, Traffic Counters and other types of equipment
-#### Task
 RSMP can be used for many different types of equipment, and this is indeed already the case in many cities. However, only the SXL for Traffic Light Controllers have been standardized by RSMP Nordic all other uses of RSMP for other types of equipment rely on custom SXLs. This means every project reinvent the same type of messages, and that equipment and systems using these custom SXLs are incompatible.
 
-The task of the working group is to standardize and publish SXLs for other types of equipment. 
-
-The tentative list of equipment types include:
-
--	Variable Message Signs
--	Traffic Counters
-- I/O devices
-
-Work could potentially utilize improvements in Core 4.0 for SXL modules, in case a v4 is implemented, which is the topic of the Version 4 Exploration working group. The two working groups must therefore coordinate.
+The initial proposed list of equipment types to support include, Variable Message Signs, Traffic Counters and I/O devices.
 
 #### Timeline
-Initial timeline: 
+Release in spring 2024 (tentative).
 
-- Invite suppliers to working group: 2023
-- Tentative release: autumn 2023
-- Note that the activity plan had October 2022 as a tentative release schedule, but this is no longer possible.
+#### Schedule
+Biweekly online meetings.
 
-The timeline might change.
 
-#### Activity
-Online meetings once per month.
+## RSMP 4
+Research the opportunities of a core version 4.0, as well the resources and risk that would be involved.
+
+Version 4.0 would include larger changes that solve some of the limitations of the existing specification but might not be backwards compatible.
+
+Questions to be answered include:
+
+-	Opportunities and benefits?
+-	Resources required?
+-	Risks involved?
+
+The goal is to answer these questions and provide a recommendation on whether and when to move ahead with Core 4.0 or focus on more conservative releases of the 3.x series.
+
+#### Timeline
+Decision on v4 at end of 2023, release in 2024 (expected to move).
+
+#### Schedule
+Biweekly online meetings.

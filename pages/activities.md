@@ -25,7 +25,7 @@ Some meetings are only for road authorities, while others are open to anyone int
 ## Working Groups
 The RSMP Nordic Working Groups discuss technical issues and produce proposals for review by the Board. The working groups are where we shape the next versions of the RSMP specifications.
 
-Anyone interested can [join]({% link pages/activities.md %}) the RSMP working groups, but only RSMP Nordic partners can be listed as co-authors of proposals.
+Anyone interested can join the RSMP [Working Groups]({% link pages/groups.md %}), but only RSMP Nordic partners can be listed as co-authors of proposals.
 
 ## Coordination
 RSMP Nordic coordination, strategy, resource planning and administration is handled by the following groups.
