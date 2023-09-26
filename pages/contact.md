@@ -22,6 +22,12 @@ Technical and Environmental Department
 Traffic
 [zf0f@kk.dk](mailto:zf0f@kk.dk)  
 
+### Dia Bækgaard Pedersen
+City of Copenhagen  
+Technical and Environmental Department  
+Traffic
+[lh0t@kk.dk](mailto:lh0t@kk.dk)  
+
 ### David Otterdahl
 Swedish Transport Administration  
 [david.otterdahl@trafikverket.se](mailto:david.otterdahl@trafikverket.se)  
