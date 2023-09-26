@@ -19,15 +19,16 @@ Contact the secretariat for general inquiries, including questions about RSMP No
 ### Emil Tin
 City of Copenhagen  
 Technical and Environmental Department  
-Traffic
+Traffic  
 [zf0f@kk.dk](mailto:zf0f@kk.dk)  
 
 ### Dia Bækgaard Pedersen
 City of Copenhagen  
 Technical and Environmental Department  
-Traffic
+Traffic  
 [lh0t@kk.dk](mailto:lh0t@kk.dk)  
 
 ### David Otterdahl
 Swedish Transport Administration  
+Maintenance, Technology & Environment  
 [david.otterdahl@trafikverket.se](mailto:david.otterdahl@trafikverket.se)  
