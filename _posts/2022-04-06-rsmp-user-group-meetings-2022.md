@@ -1,13 +1,12 @@
 ---
 layout: post
-title:  "RSMP User Group Meetings 2022"
-date:   2022-04-06
-image:
-  url: /assets/images/trangravsbroen.jpg
-  attribution: John Seb Barber
-  license:
-    description: CC0 BY 2.0
-    url: https://creativecommons.org/licenses/by/2.0/
+title: "RSMP User Group Meetings 2022"
+date: 2022-04-06
+image: /assets/images/trangravsbroen.jpg
+image_attribution: John Seb Barber
+image_license:
+  description: CC0 BY 2.0
+  url: https://creativecommons.org/licenses/by/2.0/
 ---
 
 The RSMP Nordic group is pleased to announce the successful launch of a new series of online User Group Meetings, covering a range of topics relevant to users of RSMP.

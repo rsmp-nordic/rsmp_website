@@ -1,10 +1,9 @@
 ---
 layout: post
-title:  "RSMP and MobiMaestro in Copenhagen"
-date:   2020-06-12
-image:
-  url: /assets/images/mm_screenshot.png
-  attribution: City of Copenhagen
+title: "RSMP and MobiMaestro in Copenhagen"
+date: 2020-06-12
+image: /assets/images/mm_screenshot.png
+image_attribution: City of Copenhagen
 ---
 
 When the city of Copenhagen replaced all traffic light controllers in a tender in 2012, they decided to switch to RSMP as the communication protocol for monitoring and management of all road side equipment.

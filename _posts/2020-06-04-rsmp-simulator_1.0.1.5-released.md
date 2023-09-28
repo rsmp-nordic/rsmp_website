@@ -1,9 +1,8 @@
 ---
 layout: post
-title:  "RSMP Simulator 1.0.1.5 released"
-date:   2020-06-04
-image:
-  url: /assets/images/simulator_1.0.1.5.png
+title: "RSMP Simulator 1.0.1.5 released"
+date: 2020-06-04
+image: /assets/images/simulator_1.0.1.5.png
 ---
 
 The RSMP simulator (for Windows) has been updated to version 1.0.1.5

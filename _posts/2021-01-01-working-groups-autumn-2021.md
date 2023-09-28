@@ -1,13 +1,12 @@
 ---
 layout: post
-title:  "Working Group Meetings, Autumn 2021"
-date:   2021-07-13
-image:
-  url: /assets/images/wrenches.jpg
-  attribution: Anders Illum
-  license:
-    description: CC BY-NC-ND 2.0
-    url: https://creativecommons.org/licenses/by-nc-nd/2.0/
+title: "Working Group Meetings, Autumn 2021"
+date: 2021-07-13
+image: /assets/images/wrenches.jpg
+image_attribution: Anders Illum
+image_license:
+  description: CC BY-NC-ND 2.0
+  url: https://creativecommons.org/licenses/by-nc-nd/2.0/
 ---
 
  To work on the next version of the RSMP specification, a series of Working Group meetings have been schedules in the autumn of 2021.

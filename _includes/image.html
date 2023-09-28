@@ -1,21 +1,19 @@
 {% if page.image %}
 <figure>
   <div class="image-container">
-    <img src="{{ include.image.url }}" style="max-width: {{ include.max-width }};" alt="{{ include.image.alt }}"/>
+    <img src="{{ include.image }}" style="max-width: {{ include.max-width }};" alt="{{ include.image_alt }}"/>
   </div>
-  {% if include.image.license or include.image.attribution %}
+  {% if include.image_license or include.image_attribution %}
   <figcaption>
     Image: 
-    {% if include.image.license %}
-      {% if include.image.license. %}
-        {% if include.image.license.url %}
-          <a href="{{ include.image.license.url }}">{{ include.image.license.description }}</a>,
-        {% else %}
-          {{ include.image.license.description }},
-        {% endif %}
+    {% if include.image_license %}
+      {% if include.image_license.url %}
+        <a href="{{ include.image_license.url }}">{{ include.image_license.description }}</a>,
+      {% else %}
+        {{ include.image_license.description }},
       {% endif %}
     {% endif %}
-    {{ include.image.attribution }}
+    {{ include.image_attribution }}
   </figcaption>
   {% endif %}
 </figure>

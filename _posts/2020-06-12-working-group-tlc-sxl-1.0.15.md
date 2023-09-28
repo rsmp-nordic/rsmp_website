@@ -1,13 +1,12 @@
 ---
 layout: post
-title:  "Working Group: TLC SXL 1.0.15"
-date:   2020-06-12
-image:
-  url: /assets/images/stockhlom_evening_intersection.jpg
-  attribution: Elaine / Flickr:bazz
-  license:
-    description: CC BY-NC 2.0
-    url: https://creativecommons.org/licenses/by-nc/2.0/
+title: "Working Group: TLC SXL 1.0.15"
+date: 2020-06-12
+image: /assets/images/stockhlom_evening_intersection.jpg
+image_attribution: Elaine / Flickr:bazz
+image_license:
+  description: CC BY-NC 2.0
+  url: https://creativecommons.org/licenses/by-nc/2.0/
 ---
 
 On June 18th at 12am-2pm, RSMP Nordic invites supplier, road authorities and other interested parties to an online working group workshop on the upcoming SXL 1.0.15 for Traffic Light Controllers, schedules for release later this year.

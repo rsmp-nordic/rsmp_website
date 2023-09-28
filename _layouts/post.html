@@ -3,7 +3,8 @@ layout: default
 ---
 
 <div class="blog-post">
-  {% include image.html image=page.image %}
+  {% include image.html image=page.image image_attribution=page.image_attribution
+        image_license=page.image_license %}
   <h4>Posted on {{ page.date | date_to_string }}</h4>
   <h1>{{ page.title }}</h1>
 

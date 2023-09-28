@@ -1,13 +1,12 @@
 ---
 layout: post
-title:  "RSMP for Bus Priority"
-date:   2020-08-12
-image:
-  url: /assets/images/busses_magasin.jpg
-  attribution: Jacob Surland
-  license:
-    description: CC BY-NC-ND 2.0
-    url: https://creativecommons.org/licenses/by-nc-nd/2.0/
+title: "RSMP for Bus Priority"
+date: 2020-08-12
+image: /assets/images/busses_magasin.jpg
+image_attribution: Jacob Surland
+image_license:
+  description: CC BY-NC-ND 2.0
+  url: https://creativecommons.org/licenses/by-nc-nd/2.0/
 ---
 
 Using RSMP it has never been easier for road authorities to manage and optimize bus priority.

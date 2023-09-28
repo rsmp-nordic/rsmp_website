@@ -1,10 +1,9 @@
 ---
 layout: post
-title:  "RSMP and Traffic Light Coordination"
-date:   2020-10-16
-image:
-  url: /assets/images/coordination.png
-  attribution: City of Copenhagen
+title: "RSMP and Traffic Light Coordination"
+date: 2020-10-16
+image: /assets/images/coordination.png
+image_attribution: City of Copenhagen
 ---
 
 Unlike other protocols, RSMP supports communication directly between traffic controllers in order to enable coordination. Coordination allows for several intersections to be controlled together in a coordinated control mode. This can be used to achieve green wave between intersections.
