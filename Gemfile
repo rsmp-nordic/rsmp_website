@@ -4,7 +4,7 @@ gem "github-pages", group: :jekyll_plugins   # includes jekyll, sass, etc
 gem "just-the-docs"   # jekyll theme
 
 group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.6"
+  gem "jekyll-feed"
   gem 'jekyll-redirect-from'
 end
 
