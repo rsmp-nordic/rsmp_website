@@ -2,11 +2,10 @@
 layout: post
 title:  "RSMP and Scenario Management in Copenhagen"
 date:   2020-10-16
-image:
-  url: /assets/images/cykel_vms_nørrebrogade.jpg
-  attribution: City of Copenhagen
-  license:
-    description: Copyright
+image: /assets/images/cykel_vms_nørrebrogade.jpg
+image_attribution: City of Copenhagen
+image_license:
+  description: Copyright
 ---
 
 The traffic signals play an important role in the flow of traffic in most cities. The City of Copenhagen has traditionally used time-controlled signal programs, eg morning program, afternoon program and evening program.

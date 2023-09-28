@@ -1,10 +1,9 @@
 ---
 layout: post
-title:  "French Authorities Considering RSMP"
-date:   2023-09-22
-image:
-  url: /assets/images/vms_france.jpg
-  attribution: Yannick Maurizot
+title: "French Authorities Considering RSMP"
+date: 2023-09-22
+image: /assets/images/vms_france.jpg
+image_attribution: "Yannick Maurizot"
 ---
 
 _French road authorities have contacted RSMP Nordic about possible use of RSMP in France. In this blog post, we asked Christophe Damas from [Cerema](https://www.cerema.fr/en) to talk about the French interest in RSMP._

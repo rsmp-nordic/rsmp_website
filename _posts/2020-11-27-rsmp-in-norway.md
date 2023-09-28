@@ -1,13 +1,12 @@
 ---
 layout: post
-title:  "RSMP is on its way in Norway, too"
-date:   2020-11-27
-image:
-  url: /assets/images/oslo_tram.jpg
-  attribution: Jorge Franganillo
-  license:
-    description: CC BY 2.0
-    url: https://creativecommons.org/licenses/by/2.0/
+title: "RSMP is on its way in Norway, too"
+date: 2020-11-27
+image: /assets/images/oslo_tram.jpg
+image_attribution: Jorge Franganillo
+image_license:
+  description: CC BY 2.0
+  url: https://creativecommons.org/licenses/by/2.0/
 ---
 
 The road authorities and cities in the counties of Oslo and Viken – covering about 23,000 km2 in the southern part of Norway – have joined forces around RSMP.

@@ -1,9 +1,8 @@
 ---
 layout: post
-title:  "RSMP Supports LHOVRA"
-date:  2020-08-21
-image:
-  url: /assets/images/lhovra-intersection.png
+title: "RSMP Supports LHOVRA"
+date: 2020-08-21
+image: /assets/images/lhovra-intersection.png
 ---
 
 Since the very beginning, signalized intersections have been controlled by traffic signal controllers that had a predetermined function. The predetermined function is characterized by constant cycle length and phase sequence which remains equal from cycle to cycle.

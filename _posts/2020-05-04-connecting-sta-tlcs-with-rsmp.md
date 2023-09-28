@@ -1,9 +1,8 @@
 ---
 layout: post
-title:  "Connecting Swedish Transport Administration TLCs with RSMP"
-date:   2020-05-04
-image:
-  url: /assets/images/more-sta-controllers.png
+title: "Connecting Swedish Transport Administration TLCs with RSMP"
+date: 2020-05-04
+image: /assets/images/more-sta-controllers.png
 ---
 
 The Swedish Transport Administration – Trafikverket (STA) has about 527 traffic controllers nationwide. Since 2011 there has been an ongoing task of connecting the traffic controllers using RSMP.
