@@ -57,13 +57,13 @@ The SXL specification for Traffic Light Controllers.
 View the [GitHub repository](https://github.com/rsmp-nordic/rsmp_sxl_traffic_lights).
 
 | --- | --- |
-| 1.1.1 (draft)  | [Online][tlc_1.1.1_online] |
+| 1.2 (draft)    | [Online][tlc_1.2_online] |
 | **1.1 (latest release)** | [Online][tlc_1.1_online], [Excel][tlc_1.1_excel], [PDF][tlc_1.1_pdf] |
 | 1.0.15         | [Online][tlc_1.0.15_online], [Excel][tlc_1.0.15_excel], [PDF][tlc_1.0.15_pdf] |
 | 1.0.14         | [GitHub][tlc_1.0.14_github], [Excel][tlc_1.0.14_excel] |
 | 1.0.13         | [GitHub][tlc_1.0.13_github], [Excel][tlc_1.0.13_excel] |
 
-[tlc_1.1.1_online]: https://rsmp-nordic.github.io/rsmp_specifications/rsmp_sxl_traffic_lights/1.1.1
+[tlc_1.2_online]: https://rsmp-nordic.github.io/rsmp_specifications/rsmp_sxl_traffic_lights/1.2
 
 [tlc_1.1_pdf]: https://github.com/rsmp-nordic/rsmp_sxl_traffic_lights/releases/download/1.1/sxl-tlc-1.1.pdf
 [tlc_1.1_excel]: https://github.com/rsmp-nordic/rsmp_sxl_traffic_lights/releases/download/1.1/SXL_Traffic_Controller_ver_1_1.xlsx
