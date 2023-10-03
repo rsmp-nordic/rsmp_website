@@ -64,8 +64,8 @@ View the [GitHub repository](https://github.com/rsmp-nordic/rsmp_sxl_traffic_lig
 | 1.0.14         | [GitHub][tlc_1.0.14_github], [Excel][tlc_1.0.14_excel] |
 | 1.0.13         | [GitHub][tlc_1.0.13_github], [Excel][tlc_1.0.13_excel] |
 
-[tlc_1.2_pdf]: https://github.com/rsmp-nordic/rsmp_sxl_traffic_lights/releases/download/1.2/sxl-tlc-1.2.pdf
-[tlc_1.2_excel]: https://github.com/rsmp-nordic/rsmp_sxl_traffic_lights/releases/download/1.2/SXL_Traffic_Controller_ver_1_2.xlsx
+[tlc_1.2_pdf]: https://github.com/rsmp-nordic/rsmp_sxl_traffic_lights/releases/download/v1.2/sxl-tlc-1.2.pdf
+[tlc_1.2_excel]: https://github.com/rsmp-nordic/rsmp_sxl_traffic_lights/releases/download/v1.2/SXL_Traffic_Controller_ver_1_2.xlsx
 [tlc_1.2_online]: https://rsmp-nordic.github.io/rsmp_specifications/rsmp_sxl_traffic_lights/1.2
 
 [tlc_1.1_pdf]: https://github.com/rsmp-nordic/rsmp_sxl_traffic_lights/releases/download/1.1/sxl-tlc-1.1.pdf
