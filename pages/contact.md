@@ -11,7 +11,7 @@ nav_order: 7
 For technical questions, please ask directly in the relevant [GitHub repository](https://github.com/rsmp-nordic). 
 
 ## Join RSMP Nordic
-Read about to become an [RSMP Partner]({% link pages/join.md %}).
+Read how to become an [RSMP Partner]({% link pages/join.md %}).
 
 ## Secretariat
 Contact the secretariat for general inquiries, including questions about RSMP Nordic partnership, the user groups and working groups.
