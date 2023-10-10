@@ -70,7 +70,7 @@ The steering group appoints the board and the secretariat and can replace member
  
 The steering group has representatives from only public road authorities, or non-profit organizations representing road authorities.
  
-The steering group can have no more than seven 11 members.
+The steering group can have no more than 11 members.
  
 No partner can have more than one representative in the steering group.
  
