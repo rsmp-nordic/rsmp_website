@@ -15,6 +15,7 @@ The [RSMP specifications]({% link pages/documentation.md %}) and [open-source to
 ![Norwegian Public Roads Administration]({{ "/assets/logos/logo_sv.jpg"}}){:class='logo'}
 ![Copenhagen Municipality]({{ "/assets/logos/logo_kk.png"}}){:class='logo'}
 ![Stockholm Municipality]({{ "/assets/logos/logo_stockholm.png"}}){:class='logo'}
+![Oulu Municipality]({{ "/assets/logos/Logo_Oulu_S.png"}}){:class='logo'}
 
 ## Public Authorities
 ### National
@@ -26,6 +27,7 @@ The [RSMP specifications]({% link pages/documentation.md %}) and [open-source to
 - [The City of Copenhagen, Denmark](https://www.kk.dk)
 - [The City of Stockholm, Sweden](https://start.stockholm)
 - [The City of Oslo, Norway](https://www.oslo.kommune.no)
+- [The City of Oulu, Finland](https://www.ouka.fi/en)
 
 ## Join the RSMP Nordic Partnership
 All interested road authorities, industry partners, knowledge institution, interest groups, etc. are welcome to [join RSMP Nordic.]({% link pages/join.md %}).
