@@ -16,12 +16,14 @@ The [RSMP specifications]({% link pages/documentation.md %}) and [open-source to
 ![Copenhagen Municipality]({{ "/assets/logos/logo_kk.png"}}){:class='logo'}
 ![Stockholm Municipality]({{ "/assets/logos/logo_stockholm.png"}}){:class='logo'}
 ![Oulu Municipality]({{ "/assets/logos/Logo_Oulu_S.png"}}){:class='logo'}
+![Fintraffic]({{ "/assets/logos/Fintraffic_vaakalogo_musta_rgb.png"}}){:class='logo'}
 
 ## Public Authorities
 ### National
 - [The Swedish Road Administration](https://www.trafikverket.se)
 - [The Norwegian Public Roads Administration](https://www.vegvesen.no)
 - [The Danish Road Directorate](https://www.vejdirektoratet.dk)
+- [Fintraffic](https://www.fintraffic.fi/en)
 
 ### Municipalities
 - [The City of Copenhagen, Denmark](https://www.kk.dk)
