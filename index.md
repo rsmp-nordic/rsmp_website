@@ -72,10 +72,11 @@ RSMP has been proven on street since 2011 by major Nordic players such as the Sw
 ![Danish Road Directorate]({{ "/assets/logos/logo_vd.jpg"}}){:class='logo'}
 ![Swedish Transport Administration]({{ "/assets/logos/logo_tv.png"}}){:class='logo'}
 ![Norwegian Public Roads Administration]({{ "/assets/logos/logo_sv.jpg"}}){:class='logo'}
+![Fintraffic]({{ "/assets/logos/Logo_Fintraffic.png"}}){:class='logo'}
 ![Copenhagen Municipality]({{ "/assets/logos/logo_kk.png"}}){:class='logo'}
 ![Stockholm Municipality]({{ "/assets/logos/logo_stockholm.png"}}){:class='logo'}
 
-See the [full list of partners]({% link pages/partners.md %}) and read how to [become a partner]({% link pages/partners.md %}).
+See the [full list of partners]({% link pages/partners.md %}) and read how to [become a partner]({% link pages/join.md %}).
 
 ## Supported by EU Interreg
 RSMP Nordic has received funding from EU Interreg Öresund-Kattegat-Skagerak.
