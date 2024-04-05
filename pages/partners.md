@@ -20,7 +20,7 @@ The [RSMP specifications]({% link pages/documentation.md %}) and [open-source to
 
 ![Technolution]({{ "/assets/logos/Logo_Technolution.jpg"}}){:class='logo'}
 ![SWARCO Sweden]({{ "/assets/logos/logo_swarco.png"}}){:class='logo'}
-![Yunex Traffic]({{ "/assets/logos/logo_yunex.jpg"}}){:class='logo'}
+![Yunex Traffic]({{ "/assets/logos/logo_yunex.png"}}){:class='logo'}
 
 ## Public Authorities
 ### National
