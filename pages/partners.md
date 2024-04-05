@@ -41,6 +41,7 @@ The [RSMP specifications]({% link pages/documentation.md %}) and [open-source to
 ### Equipment
 - [SWARCO Sweden](https://www.swarco.com/companies/swarco-sverige-ab)
 - [SWARCO Technology](https://www.swarco.com/companies/swarco-technology-aps)
+- [Yunex Traffic](https://www.yunextraffic.com)
 
 ## Missing from the Parter List?
 If your organization or company works with RSMP but is missing from the list above, you're welcome to contact the [secretariat]({% link pages/contact.md %}).
