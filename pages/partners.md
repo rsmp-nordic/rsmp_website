@@ -18,7 +18,7 @@ The [RSMP specifications]({% link pages/documentation.md %}) and [open-source to
 ![Oulu Municipality]({{ "/assets/logos/Logo_Oulu_S.png"}}){:class='logo'}
 ![Fintraffic]({{ "/assets/logos/Logo_Fintraffic.png"}}){:class='logo'}
 
-![SWARCO Sweden]({{ "/assets/logos/SWARCO_logo_small.png"}}){:class='logo'}
+![SWARCO Sweden]({{ "/assets/logos/logo_swarco.png"}}){:class='logo'}
 ![Technolution]({{ "/assets/logos/Logo_Technolution.jpg"}}){:class='logo'}
 
 ## Public Authorities
