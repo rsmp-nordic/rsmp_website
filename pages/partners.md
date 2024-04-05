@@ -34,7 +34,7 @@ The [RSMP specifications]({% link pages/documentation.md %}) and [open-source to
 - [The City of Oslo, Norway](https://www.oslo.kommune.no)
 - [The City of Oulu, Finland](https://www.ouka.fi/en)
 
-### Industry
+## Industry
 - [SWARCO Sweden](https://www.swarco.com/companies/swarco-sverige-ab)
 - [Technolution](https://www.technolution.com)
 
