@@ -18,6 +18,9 @@ The [RSMP specifications]({% link pages/documentation.md %}) and [open-source to
 ![Oulu Municipality]({{ "/assets/logos/Logo_Oulu_S.png"}}){:class='logo'}
 ![Fintraffic]({{ "/assets/logos/Logo_Fintraffic.png"}}){:class='logo'}
 
+![SWARCO Sweden]({{ "/assets/logos/SWARCO_logo_small.png"}}){:class='logo'}
+![Technolution]({{ "/assets/logos/Logo_Technolution.jpg"}}){:class='logo'}
+
 ## Public Authorities
 ### National
 - [The Swedish Road Administration](https://www.trafikverket.se)
@@ -30,6 +33,13 @@ The [RSMP specifications]({% link pages/documentation.md %}) and [open-source to
 - [The City of Stockholm, Sweden](https://start.stockholm)
 - [The City of Oslo, Norway](https://www.oslo.kommune.no)
 - [The City of Oulu, Finland](https://www.ouka.fi/en)
+
+### Industry
+- [SWARCO Sweden](https://www.swarco.com/companies/swarco-sverige-ab)
+- [Technolution](https://www.technolution.com)
+
+## Missing from the Parter List?
+If your organization or company works with RSMP but is missing from the list above, you're welcome to contact the [secretariat]({% link pages/contact.md %}).
 
 ## Join the RSMP Nordic Partnership
 All interested road authorities, industry partners, knowledge institution, interest groups, etc. are welcome to [join RSMP Nordic.]({% link pages/join.md %}).
