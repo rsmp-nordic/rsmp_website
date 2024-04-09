@@ -17,6 +17,7 @@ The [RSMP specifications]({% link pages/documentation.md %}) and [open-source to
 ![Stockholm Municipality]({{ "/assets/logos/logo_stockholm.png"}}){:class='logo'}
 ![Oulu Municipality]({{ "/assets/logos/Logo_Oulu_S.png"}}){:class='logo'}
 ![Fintraffic]({{ "/assets/logos/Logo_Fintraffic.png"}}){:class='logo'}
+![City of Malmo]({{ "/assets/logos/Logo_City_of_Malmo.jpg"}}){:class='logo'}
 
 ![Technolution]({{ "/assets/logos/Logo_Technolution.jpg"}}){:class='logo'}
 ![SWARCO Sweden]({{ "/assets/logos/logo_swarco.png"}}){:class='logo'}
@@ -34,6 +35,7 @@ The [RSMP specifications]({% link pages/documentation.md %}) and [open-source to
 - [The City of Stockholm, Sweden](https://start.stockholm)
 - [The City of Oslo, Norway](https://www.oslo.kommune.no)
 - [The City of Oulu, Finland](https://www.ouka.fi/en)
+- [The City of Malmo, Sweden](https://www.sydsverige.dk/)
 
 ## Industry
 ### Systems
