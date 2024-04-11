@@ -39,7 +39,7 @@ The [RSMP specifications]({% link pages/documentation.md %}) and [open-source to
 - [The City of Oslo, Norway](https://www.oslo.kommune.no)
 - [The City of Oulu, Finland](https://www.ouka.fi/en)
 - [The City of Malmo, Sweden](https://www.sydsverige.dk/)
-- [Göteborg, Sweden](https://www.goteborg.com/)
+- [The City of Göteborg, Sweden](https://www.goteborg.com/)
 
 ## Industry
 ### Systems
