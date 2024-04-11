@@ -24,6 +24,7 @@ The [RSMP specifications]({% link pages/documentation.md %}) and [open-source to
 ![Technolution]({{ "/assets/logos/Logo_Technolution.jpg"}}){:class='logo'}
 ![SWARCO Sweden]({{ "/assets/logos/logo_swarco.png"}}){:class='logo'}
 ![Yunex Traffic]({{ "/assets/logos/logo_yunex.png"}}){:class='logo'}
+![La Semaforica]({{ "/assets/logos/Logo_La_Semaforica.png"}}){:class='logo'}
 
 ## Public Authorities
 ### National
@@ -48,6 +49,7 @@ The [RSMP specifications]({% link pages/documentation.md %}) and [open-source to
 - [SWARCO Sweden](https://www.swarco.com/companies/swarco-sverige-ab)
 - [SWARCO Technology](https://www.swarco.com/companies/swarco-technology-aps)
 - [Yunex Traffic](https://www.yunextraffic.com)
+- [La Semaforica](https://lasemaforica.com/)
 
 ## Missing from the Parter List?
 If your organization or company works with RSMP but is missing from the list above, you're welcome to contact the [secretariat]({% link pages/contact.md %}).
