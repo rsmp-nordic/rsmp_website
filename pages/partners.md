@@ -51,7 +51,7 @@ The [RSMP specifications]({% link pages/documentation.md %}) and [open-source to
 - [Yunex Traffic](https://www.yunextraffic.com)
 - [La Semaforica](https://lasemaforica.com/)
 
-## Missing from the Parter List?
+## Missing from the Partner List?
 If your organization or company works with RSMP but is missing from the list above, you're welcome to contact the [secretariat]({% link pages/contact.md %}).
 
 ## Join the RSMP Nordic Partnership
