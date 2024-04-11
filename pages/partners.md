@@ -24,7 +24,7 @@ The [RSMP specifications]({% link pages/documentation.md %}) and [open-source to
 ![Technolution]({{ "/assets/logos/Logo_Technolution.jpg"}}){:class='logo'}
 ![SWARCO Sweden]({{ "/assets/logos/logo_swarco.png"}}){:class='logo'}
 ![Yunex Traffic]({{ "/assets/logos/logo_yunex.png"}}){:class='logo'}
-![La Semaforica]({{ "/assets/logos/Logo_La_Semaforica.png"}}){:class='logo'}
+![La Semaforica]({{ "/assets/logos/Logo_La_Semaforica.jpg"}}){:class='logo'}
 
 ## Public Authorities
 ### National
