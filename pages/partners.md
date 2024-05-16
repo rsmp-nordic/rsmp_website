@@ -20,7 +20,7 @@ The [RSMP specifications]({% link pages/documentation.md %}) and [open-source to
 ![City of Malmo]({{ "/assets/logos/Logo_City_of_Malmo.jpg"}}){:class='logo'}
 ![City of Oslo]({{ "/assets/logos/Logo_Oslo.png"}}){:class='logo'}
 ![Göteborg]({{ "/assets/logos/Logo_Göteborg.png"}}){:class='logo'}
-![French Department of Transport]({{ "/assets/logos/![Göteborg]({{ "/assets/logos/Frankrigs Transport Ministerium logo.png"}}){:class='logo'}
+![French Department of Transport]({{ "/assets/logos/Frankrigs Transport Ministerium logo.png"}}){:class='logo'}
 
 ![Technolution]({{ "/assets/logos/Logo_Technolution.jpg"}}){:class='logo'}
 ![SWARCO Sweden]({{ "/assets/logos/logo_swarco.png"}}){:class='logo'}
