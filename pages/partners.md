@@ -21,6 +21,7 @@ The [RSMP specifications]({% link pages/documentation.md %}) and [open-source to
 ![City of Oslo]({{ "/assets/logos/Logo_Oslo.png"}}){:class='logo'}
 ![Göteborg]({{ "/assets/logos/Logo_Göteborg.png"}}){:class='logo'}
 ![French Department of Transport]({{ "/assets/logos/Frankrigs Transport Ministerium logo.png"}}){:class='logo'}
+![Cerema]({{ "/assets/logos/Logo RF Cerema vertical ENG.jpg"}}){:class='logo'}
 
 ![Technolution]({{ "/assets/logos/Logo_Technolution.jpg"}}){:class='logo'}
 ![SWARCO Sweden]({{ "/assets/logos/logo_swarco.png"}}){:class='logo'}
@@ -35,7 +36,8 @@ The [RSMP specifications]({% link pages/documentation.md %}) and [open-source to
 - [The Danish Road Directorate](https://www.vejdirektoratet.dk)
 - [Fintraffic](https://www.fintraffic.fi/en)
 - [French Department of Transport](https://www.ecologie.gouv.fr/politiques/transport-routier)
-- 
+- [Cerema](https://www.cerema.fr/en)
+ 
 ### Municipalities
 - [The City of Copenhagen, Denmark](https://www.kk.dk)
 - [The City of Stockholm, Sweden](https://start.stockholm)
