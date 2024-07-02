@@ -81,18 +81,18 @@ Participation in working groups does not require appointment by the steering gro
 ## Technical Board
 
 - David Otterdahl, Swedish Transport Administration.
-  - - 1. Emil Tin, City of Copenhagen.
-            2.  Rafael Couto Figueiredo, Danish Road Directorate.
-            3.  Stefan Sparv, City of Stockholm.
+- Emil Tin, City of Copenhagen.
+- Rafael Couto Figueiredo, Danish Road Directorate.
+- Stefan Sparv, City of Stockholm.
 
 ## Secretariat
 
 The secretariat is appointed by the Steering Group.
 
-- - - 1. David Otterdahl, Swedish Transport Administration.
-            2.  Emil Tin, City of Copenhagen.
-            3.  Dia Bækgaard Pedersen, City of Copenhagen.
-            4.  Jørgen Remme Tresse, City of Oslo.
+- David Otterdahl, Swedish Transport Administration.
+- Emil Tin, City of Copenhagen.
+- Dia Bækgaard Pedersen, City of Copenhagen.
+- Jørgen Remme Tresse, City of Oslo.
 
 ## Resources
 
@@ -122,9 +122,9 @@ City of Oulu to be determined.
 
 ### France
 
-French Department of Transport 2 hours/month.
+French Department of Transport to be determined.
 
-CERAMA 2 hours/month.
+CERAMA to be determined.
 
 ## Activities
 
