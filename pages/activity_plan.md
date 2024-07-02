@@ -7,11 +7,9 @@ parent: Activities
 ---
 
 # RSMP Nordic Activity Plan 2024-2025
-
 Revision 2, 2024-06-06
 
 ## About
-
 This document describes the RSMP Nordic activity and resource plan for Q3 2024 – Q3 2025.
 
 The purpose and format of activity plans is outlined in the RSMP Charter, see <https://rsmp-nordic.org/charter>.
@@ -21,7 +19,6 @@ The previous activity plan was for the period Q3 2021 – Q3 2022. We got a lot 
 This activity plan therefore picks up from the previous activity plan. It starts from Q3 2024, and as usual covers a one-year period.
 
 ## Summary
-
 There is significant use of RSMP in Finland, and partners Fintraffic and the City of Oulu have now joined the Steering Group.
 
 After a constructive dialogue with French road authorities and industry it looks increasingly likely that France will adopt RSMP. This could be a big leap forward for RSMP. The French Department of Transport, and CEREMA, Centre for Studies and Expertise on Risks, the Environment, Mobility and Urban Planning have joined the steering group as guests.
@@ -39,56 +36,40 @@ Many partners would like to see official certification of RMSP equipment and sys
 RSMP could potentially grow into a European protocol, and there could be opportunities for EU-funding. This is a strategic question for the Steering Group to consider.
 
 ## Steering Group
-
 Partners from each country choose their two representatives, according to the RSMP Nordic Charter. The RSMP charter allows 11 members in the steering group, and it will have 10 in the upcoming period.
 
 ### Sweden
-
-Swedish Transport Administration
-
+Swedish Transport Administration  
 City of Stockholm
 
 ### Denmark
-
-Danish Road Authority
-
+Danish Road Authority  
 City of Copenhagen
 
 ### Norway
-
-Norwegian Public Roads Administration
-
+Norwegian Public Roads Administration  
 City of Oslo
 
 ### Finland
-
-Fintraffic
-
+Fintraffic  
 City of Oulu
 
 ### France
-
-Department of Transport
-
+Department of Transport  
 CEREMA
 
 ## Appointments
-
 Members of the Technical Board and Secretariat are appointed by the steering group.
 
 Participation in working groups does not require appointment by the steering group.
 
 ## Technical Board
-
 - David Otterdahl, Swedish Transport Administration.
 - Emil Tin, City of Copenhagen.
 - Rafael Couto Figueiredo, Danish Road Directorate.
 - Stefan Sparv, City of Stockholm.
 
 ## Secretariat
-
-The secretariat is appointed by the Steering Group.
-
 - David Otterdahl, Swedish Transport Administration.
 - Emil Tin, City of Copenhagen.
 - Dia Bækgaard Pedersen, City of Copenhagen.
@@ -97,34 +78,24 @@ The secretariat is appointed by the Steering Group.
 ## Resources
 
 ### Sweden
-
-Swedish Road Authority 12 hours/week.
-
-City of Stockholm 2 hours/week.
+Swedish Road Authority, 12 hours/week.  
+City of Stockholm, 2 hours/week.
 
 ### Denmark
-
-City of Copenhagen 12 hours/week.
-
-Danish Road Authority 1 hours/week.
+City of Copenhagen, 12 hours/week.  
+Danish Road Authority, hours to bedetermined.
 
 ### Norway
-
-Norwegian Public Roads Administration to be determined.
-
-City of Oslo 4 hour/week.
+Norwegian Public Roads Administration, hours to be determined.  
+City of Oslo, 4 hour/week.
 
 ### Finland
-
-Fintraffic to be determined.
-
-City of Oulu to be determined.
+Fintraffic, hours to be determined.  
+City of Oulu, hours to be determined.
 
 ### France
-
-French Department of Transport to be determined.
-
-CERAMA to be determined.
+French Department of Transport, hours to be determined.  
+CERAMA, hours to be determined.
 
 ## Activities
 
