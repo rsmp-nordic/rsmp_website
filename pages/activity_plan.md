@@ -90,7 +90,7 @@ Norwegian Public Roads Administration, hours to be determined.
 City of Oslo, 4 hour/week.
 
 ### Finland
-Fintraffic, hours to be determined.  
+Fintraffic, 2 hours/week.  
 City of Oulu, hours to be determined.
 
 ### France
