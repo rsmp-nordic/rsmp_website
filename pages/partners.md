@@ -28,6 +28,7 @@ The [RSMP specifications]({% link pages/documentation.md %}) and [open-source to
 ![Yunex Traffic]({{ "/assets/logos/logo_yunex.png"}}){:class='logo'}
 ![La Semaforica]({{ "/assets/logos/Logo_La_Semaforica.jpg"}}){:class='logo'}
 ![Cross]({{ "/assets/logos/Logo_Cross.jpg"}}){:class='logo'}
+![Kapsch]({{ "/assets/logos/Logo_Kapsch_Claim.jpg"}}){:class='logo'}
 
 ## Public Authorities
 ### National
@@ -56,6 +57,7 @@ The [RSMP specifications]({% link pages/documentation.md %}) and [open-source to
 - [Yunex Traffic](https://www.yunextraffic.com)
 - [La Semaforica](https://lasemaforica.com/)
 - [Cross](https://www.cross-traffic.com/en/)
+- [Kapsch](https://www.kapsch.net/en)
 
 ## Missing from the Partner List?
 If your organization or company works with RSMP but is missing from the list above, you're welcome to contact the [secretariat]({% link pages/contact.md %}).
