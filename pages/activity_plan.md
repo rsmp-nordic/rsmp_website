@@ -7,7 +7,7 @@ parent: Activities
 ---
 
 # RSMP Nordic Activity Plan 2024-2025
-Revision 2, 2024-06-06
+Revision 3, 2024-08-13
 
 ## About
 This document describes the RSMP Nordic activity and resource plan for Q3 2024 – Q3 2025.
@@ -66,7 +66,6 @@ Participation in working groups does not require appointment by the steering gro
 ## Technical Board
 - David Otterdahl, Swedish Transport Administration.
 - Emil Tin, City of Copenhagen.
-- Rafael Couto Figueiredo, Danish Road Directorate.
 - Stefan Sparv, City of Stockholm.
 
 ## Secretariat
@@ -83,7 +82,6 @@ City of Stockholm, 2 hours/week.
 
 ### Denmark
 City of Copenhagen, 12 hours/week.  
-Danish Road Authority, hours to bedetermined.
 
 ### Norway
 Norwegian Public Roads Administration, hours to be determined.  
