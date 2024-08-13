@@ -15,6 +15,9 @@ The RSMP Nordic organization as defined in the [RSMP Nordic Charter]({% link pag
 
 ![Organizational Structure](/assets/images/organization.png)
 
+## Meeting Summaries
+Stay updated by browing meeting summaries from the different RSMP Nordic groups at our [GitHub Discussions area](https://github.com/orgs/rsmp-nordic/discussions).
+
 ## User Group
 The RSMP Nordic User Group in a network for sharing knowledge about RSMP and its practical use. The user group also provide input to the technical working group.
 
