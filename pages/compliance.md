@@ -17,13 +17,13 @@ As a road authority, you can require venders to use the validation tools to docu
 As a vendor, you can use the tools during development and testing of products, and to document compliance to the RSMP specifications.
 
 ## Test Hub
-RSMP Nordic hosts a RSMP Test Hub, where we automatically run the RSMP Validator tests daily against equipment from various suppliers. The current results are published here.
+RSMP Nordic hosts a RSMP Test Hub, which automatically runs the RSMP Validator tests every night against equipment from various suppliers. The latest results are published here. Click on *View Run* to see details and older test runs.
 
 | Device | Test Runs | Note |
 |--|--|--|
-| [![Gem TLC](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/gem_tlc.yml/badge.svg?branch=main&event=push)](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/gem_tlc.yml) | [View runs](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/gem_tlc.yml?query=branch%3Amaster) | TLC emulator from RSMP Nordic. |
-| [![Dynniq EC-2](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/dynniq_ec2.yml/badge.svg?branch=main&event=schedule)](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/dynniq_ec2.yml) | [View runs](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/dynniq_ec2.yml?query=event%3Aschedule) | Physical device. Development has stopped on EC2. |
-| [![Swarco ITC-3](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/swarco_itc3.yml/badge.svg?branch=main&event=schedule)](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/swarco_itc3.yml) | [View runs](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/swarco_itc3.yml?query=event%3Aschedule) | Physical device. |
+| [![Gem TLC](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/gem_tlc.yaml/badge.svg?branch=main&event=schedule)](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/gem_tlc.yaml) | [View runs](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/gem_tlc.yaml?query=branch=main&event=schedule) | TLC emulator from RSMP Nordic. |
+| [![Swarco ITC-3](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/swarco_itc3.yaml/badge.svg?branch=main&event=schedule)](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/swarco_itc3.yaml) | [View runs](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/swarco_itc3.yaml?query=branch=main&event=schedule) | Physical device. |
+| [![La Semaforica Cartesio](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/semaforica_cartesio.yaml/badge.svg?branch=main&event=schedule)](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/semaforica_cartesio.yaml) | [View runs](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/semaforica_cartesio.yaml?query=branch=main&event=schedule) | Physical device. |
 
 Note: Until the [RSMP Validator](https://github.com/rsmp-nordic/rsmp_validator) reaches version 1.0, test results are preliminary.
 
