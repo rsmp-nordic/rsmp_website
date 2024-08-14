@@ -89,7 +89,7 @@ City of Oslo, 4 hour/week.
 
 ### Finland
 Fintraffic, 2 hours/week.  
-City of Oulu, hours to be determined.
+City of Oulu, 2 hours/week.
 
 ### France
 French Department of Transport, hours to be determined.  
