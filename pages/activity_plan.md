@@ -284,7 +284,7 @@ Describe potential scenarios for how certification would be organized and run. W
 
 The existing testing tools could probably be utilized. We’ll consider how these tools can be utilized, expanded, or otherwise provide value. And/or whether new tools are needed.
 
-## Communication
+### Communication
 
 A strong partnership around RSMP will benefit all partners, by providing more resources and knowledge sharing.
 
@@ -296,27 +296,27 @@ New suppliers supporting RSMP will likewise increase competition.
 
 Expanding the RSMP eco-system depends on several factors including the RSMP specification and the organization behind it, the range and quality of RSMP implementations, as well as documentation and communication. Sharing RSMP success stories, the visions behind it is in the benefit of the RSMP Nordic partnership, which is why communication should not be ignored.
 
-### Refine the rsmp-nordic.org website: ongoing
+#### Refine the rsmp-nordic.org website: ongoing
 
 Additional info was added, pages edited, etc. Keeping the website updated is a continuous activity.
 
-### Tell about RSMP and RSMP Nordic at conferences, webinars, etc.: ongoing
+#### Tell about RSMP and RSMP Nordic at conferences, webinars, etc.: ongoing
 
 We gave a presentation at an important national conference in Paris on road equipment, attended by all relevant French authorities and vendors. The central topic of the conference was the adoption of RSMP in France.
 
 We will continue to attend relevant conferences to inform about RSMP, when possible.
 
-### Organize RSMP Nordic User Group meetings: ongoing
+#### Organize RSMP Nordic User Group meetings: ongoing
 
 The user group in ongoing and meets online every second week. We propose delegating the facilitation to a new partner.
 
-### Invite relevant road authorities: ongoing
+#### Invite relevant road authorities: ongoing
 
 Finland have joined Steering Group, represented by Fintraffic (national) and Oulu (municipal).
 
 France is getting closer to adapting RSMP nationally and have been invited to the Steering Group as guest members, represented by the Department of Transportation and CEREMA (Centre for Studies on Risks, the Environment, Mobility and Urban Planning).
 
-### Encourage new suppliers to support RSMP: ongoing
+#### Encourage new suppliers to support RSMP: ongoing
 
 Yunix are working on supporting RSMP in their TLCs and have been selected to provide equipment in Norway.
 
@@ -332,7 +332,7 @@ A new Finish company LightMotion is working on traffic light controllers with RS
 
 We will continue to provide information that makes it easy and attractive for new suppliers to implement RMSP in their products. This includes both equipment and supervisor systems.
 
-### Engage in Nordic and European standardization activities: ongoing
+#### Engage in Nordic and European standardization activities: ongoing
 
 RSMP is not alone. There are other protocols, standards and initiatives that overlap with RSMP. We should engage in European initiatives to ensure that we understand the trends and possibilities in this space, as well as inform others about our needs and visions. This will help us ensure that RSMP plays a meaningful role and will provide value to road authorities now and in the future.
 
@@ -340,7 +340,7 @@ The Swedish Transport Administration participates in NordicWays 3 which is engag
 
 French partners have a strong representation in EU-groups on standardization. France has mentioned the possibility of working towards RSMP as an EU-standard. This is a strategic question that we would like to invite the steering group to consider.
 
-### Strategic communication: new
+#### Strategic communication: new
 
 We should get better at telling the RSMP success stories, how much it's used, etc. This includes internal communication.
 
@@ -348,13 +348,13 @@ We should get better at telling the RSMP success stories, how much it's used, et
 - Maintain the RSMP Nordic website with up-to-data information about benefits, existing use, etc.
 - Use important channels, like LinkedIn to share information about RSMP to current and potential users of RSMP.
 
-### Yearly RSMP Symposium
+#### Yearly RSMP Symposium: new
 
 Arrange a yearly physical meet-up, with presentations, workshops, etc. We previously arranged two successful RSMP Symposiums and should do it again and make it a yearly occurrence event.
 
 It can perhaps happen during Intertraffic, ITS Europe or other big European conferences.
 
-## EU-Funding
+### EU-Funding
 
 Because RSMP Nordic is a Nordic/European partnership, there should be many opportunities for EU-funding.
 
@@ -366,34 +366,34 @@ EU-funding requires investing time upfront. We need to identify suitable activit
 
 We should draw on the experience and skills we already have in this area.
 
-### Identify opportunities: new
+#### Identify opportunities: new
 
 Identify projects and funding opportunities and figure out which ones best fit our needs. Find partners that have experience and can help.
 
-### Write applications: new
+#### Write applications: new
 
 Getting funding depends on writing a good application. We can either do it ourselves, or involve partners that specialize in this like IMEC.
 
-### Implementation: new
+#### Implementation: new
 
 If we receive funding, we need a setup that ensures implementation, reporting, etc.
 
-## Administration
+### Administration
 
 Administrative tasks will be handled by the secretariat.
 
-### Maintain membership list: ongoing
+#### Maintain membership list: ongoing
 
 The list is being maintained by the secretariat, currently by the City of Copenhagen.
 
-### Facilitate Steering Group meetings: ongoing
+#### Facilitate Steering Group meetings: ongoing
 
 There has been gaps in the meetings, due to the extended sick leave of Emil Tin, but they are now running again.
 
-### Facilitate User Group meetings: ongoing
+#### Facilitate User Group meetings: ongoing
 
 Continue to organize and facilitate RSMP User Group meetings, where all users of RSMP can exchange knowledge and experience related to RSMP.
 
-### Look into opportunities for additional EU funding: ongoing
+#### Look into opportunities for additional EU funding: ongoing
 
 We have briefly looked at some options but did not find good matches. There are probably many opportunities, e.g. from EU programs, especially if we start having a broader European use and partner group.
