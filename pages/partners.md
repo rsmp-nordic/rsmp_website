@@ -50,6 +50,7 @@ The [RSMP specifications]({% link pages/documentation.md %}) and [open-source to
 ## Industry
 ### Systems
 - [Technolution](https://www.technolution.com)
+- [Tecsen](https://www.tecsen.it/)
 
 ### Equipment
 - [SWARCO Sweden](https://www.swarco.com/companies/swarco-sverige-ab)
