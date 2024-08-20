@@ -29,6 +29,7 @@ The [RSMP specifications]({% link pages/documentation.md %}) and [open-source to
 ![La Semaforica]({{ "/assets/logos/Logo_La_Semaforica.jpg"}}){:class='logo'}
 ![Cross]({{ "/assets/logos/Logo_Cross.jpg"}}){:class='logo'}
 ![Kapsch]({{ "/assets/logos/Logo_Kapsch_Claim.jpg"}}){:class='logo'}
+![Tecsen]({{ "/assets/logos/Logo_tecsen.png"}}){:class='logo'}
 
 ## Public Authorities
 ### National
