@@ -11,12 +11,22 @@ The RSMP Nordic Working Groups discuss specific topics and produce proposals for
 
 Most working groups focus on technical issues, like developing the RSMP specification and tools, but workings groups can also handle things like communication, outreach or funding.
 
-The working groups reflect the latest Activity Plan agreed by the Steering Group, and can also be created ad-hoc by the Board as needed.
+The working groups reflect the latest [Activity Plan]({% link pages/activity_plan.md %}) agreed by the Steering Group, and can also be created ad-hoc by the Board as needed.
 
 Meeting summaries can be found at our main RSMP [discussion area](https://github.com/orgs/rsmp-nordic/discussions/categories/working-groups).
 
 Anyone interested can join the RSMP working groups, but only RSMP Nordic partners can be listed as co-authors of proposals. Please contact the [secretariat]({% link pages/contact.md %}) for more info.
 
+Working group meetings happend every second week, on odd week numbers:
+
+|            | Tuesday       | Thursday                      |
+|------------|---------------|-------------------------------|
+| 10-11AM    | Core          | SXL Traffic Light Controllers |
+| 11-11AM    | Security      | Traffic Light Programming     |
+| 11-12AM    | _break_       | _break_                       |
+| 12AM - 1PM | RSMP 4        | SXL Standardization           |
+
+Meetings are run via Microsoft Teams. To be receive meeting invitations, please contact the [secretariat]({% link pages/contact.md %}).
 
 ## Core
 Maintain and develop the core RSMP specification which defines the basic message structure and behavior that is common for all types of equipment.
@@ -24,44 +34,13 @@ Maintain and develop the core RSMP specification which defines the basic message
 #### Timeline
 Continously, with a yearly release around October.
 
-#### Schedule
-Biweekly online meetings.
 
-
-## Traffic Light Controllers
-Maintain and develop the SXL (Signal Exchange List) for Traffic Light Controllers.
+## Security
+Discusion and security, including encryption and certificate handling in RSMP.
+Coordinate with the Core WG.
 
 #### Timeline
-Continously, with a yearly release around October.
-
-#### Schedule
-Biweekly online meetings.
-
-
-## Support for RSMP in LISA and similar systems
-Investigate what's required for RSMP support in LISA and similar software packages. This includes dialogue with relevant partners, and cosnidering what new RSMP messages needed in the SXL for Traffic Light Controllers.
-
-The output will be a recommendation to the board and steering group.
-
-#### Timeline
-Recommendation to Steering Group by autumn 2024.
-
-#### Schedule
-Ad-hoc
-
-
-## SXL Standardization
-Standardize and publish SXLs for other types of equipment.
-
-RSMP can be used for many different types of equipment, and this is indeed already the case in many cities. However, only the SXL for Traffic Light Controllers have been standardized by RSMP Nordic all other uses of RSMP for other types of equipment rely on custom SXLs. This means every project reinvent the same type of messages, and that equipment and systems using these custom SXLs are incompatible.
-
-The initial proposed list of equipment types to support include, Variable Message Signs, Traffic Counters and I/O devices.
-
-#### Timeline
-Release in spring 2024 (tentative).
-
-#### Schedule
-Biweekly online meetings.
+Continously.
 
 
 ## RSMP 4
@@ -78,7 +57,29 @@ Questions to be answered include:
 The goal is to answer these questions and provide a recommendation on whether and when to move ahead with Core 4.0 or focus on more conservative releases of the 3.x series.
 
 #### Timeline
-Decision on v4 at end of 2023, release in 2024 (expected to move).
+Decision on v4 in 2025 (tentative).
 
-#### Schedule
-Biweekly online meetings.
+
+## Traffic Light Controllers
+Maintain and develop the SXL (Signal Exchange List) for Traffic Light Controllers.
+
+#### Timeline
+Continously, with a yearly release around October.
+
+
+## Traffic Light Programming
+Using RSMP to make it easier for program traffic light controllers. Includes creating an intial open specification for TLC programs, to enhance interoperable workflows.
+
+#### Timeline
+Q3 2024 - Q3 2025.  
+
+
+## SXL Standardization
+Standardize and publish SXLs for other types of equipment.
+
+RSMP can be used for many different types of equipment, and this is indeed already the case in many cities. However, only the SXL for Traffic Light Controllers have been standardized by RSMP Nordic all other uses of RSMP for other types of equipment rely on custom SXLs. This means every project reinvent the same type of messages, and that equipment and systems using these custom SXLs are incompatible.
+
+The initial proposed list of equipment types to support include, Variable Message Signs, Traffic Counters and I/O devices.
+
+#### Timeline
+Release of SXL for other types of equipment (beyond TLCs) in Q3 2025 (tentative).
