@@ -30,6 +30,7 @@ The [RSMP specifications]({% link pages/documentation.md %}) and [open-source to
 ![Cross]({{ "/assets/logos/Logo_Cross.jpg"}}){:class='logo'}
 ![Kapsch]({{ "/assets/logos/Logo_Kapsch_Claim.jpg"}}){:class='logo'}
 ![Tecsen]({{ "/assets/logos/Logo_tecsen.png"}}){:class='logo'}
+![Asist]({{ "/assets/logos/ASIST logo.jpg"}}){:class='logo'}
 
 ## Public Authorities
 ### National
@@ -52,6 +53,7 @@ The [RSMP specifications]({% link pages/documentation.md %}) and [open-source to
 ### Systems
 - [Technolution](https://www.technolution.com)
 - [Tecsen](https://www.tecsen.it/)
+- [Asist](https://www.asist.si/).
 
 ### Equipment
 - [SWARCO Sweden](https://www.swarco.com/companies/swarco-sverige-ab)
