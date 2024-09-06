@@ -24,6 +24,7 @@ Note: The validator has been in active use for several years, but until the [RSM
 Suppliers that would like their equipment included in our Test Hub are encouraged to contact the [secretariat]({% link pages/contact.md %}).
 
 ### Test Results for Devices
+
 | Device | Test Runs | Note |
 |--|--|--|
 | ![Gem TLC](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/gem_tlc.yaml/badge.svg?branch=main) | [View](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/gem_tlc.yaml?query=branch=main) | RSMP Nordic command-line TLC emulator. |
@@ -37,7 +38,7 @@ At this point, only the initial handshake is tested, as well as reception of agg
 
 Theese tets can therefore not yet be taken as an indication of whether a central system has a a full and correct RSMP implementation.
 
-| Ssytem | Test Runs | Note |
+| System | Test Runs | Note |
 |--|--|--|
 | ![Gem Supervisor](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/gem_supervisor.yaml/badge.svg?branch=main) | [View](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/gem_supervisor.yaml?query=branch=main) | RSMP Nordic command-line supervisor. |
 | ![TECSEN TMacs](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/tecsen_tmacs.yaml/badge.svg?branch=main&event=schedule) | [View](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/tecsen_tmacs.yaml?query=branch=main&event=schedule) | TECSEN TMacs system. |
