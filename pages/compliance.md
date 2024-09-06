@@ -27,8 +27,8 @@ Suppliers that would like their equipment included in our Test Hub are encourage
 
 | Device | Test Runs | Note |
 |--|--|--|
-| ![Gem TLC](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/gem_tlc.yaml/badge.svg?branch=main) | [View](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/gem_tlc.yaml?query=branch=main) | RSMP Nordic command-line TLC emulator. |
-| ![Swarco ITC-3](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/swarco_itc3.yaml/badge.svg?branch=main&event=schedule) | [View](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/swarco_itc3.yaml?query=branch=main&event=schedule) | Swarco ITC-3. |
+| ![Gem TLC](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/gem_tlc.yaml/badge.svg?branch=main) | [View](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/gem_tlc.yaml?query=branch=main) | RSMP Nordic command-line TLC emulator |
+| ![Swarco ITC-3](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/swarco_itc3.yaml/badge.svg?branch=main&event=schedule) | [View](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/swarco_itc3.yaml?query=branch=main&event=schedule) | Swarco ITC-3 |
 | ![La Semaforica TECSEN Cartesio](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/semaforica_cartesio.yaml/badge.svg?branch=main&event=schedule) | [View](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/semaforica_cartesio.yaml?query=branch=main&event=schedule) | La Semaforica TECSEN Cartesio |
 
 ### Test Results for Central Systems
@@ -40,6 +40,6 @@ Theese tets can therefore not yet be taken as an indication of whether a central
 
 | System | Test Runs | Note |
 |--|--|--|
-| ![Gem Supervisor](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/gem_supervisor.yaml/badge.svg?branch=main) | [View](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/gem_supervisor.yaml?query=branch=main) | RSMP Nordic command-line supervisor. |
-| ![TECSEN TMacs](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/tecsen_tmacs.yaml/badge.svg?branch=main&event=schedule) | [View](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/tecsen_tmacs.yaml?query=branch=main&event=schedule) | TECSEN TMacs system. |
+| ![Gem Supervisor](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/gem_supervisor.yaml/badge.svg?branch=main) | [View](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/gem_supervisor.yaml?query=branch=main) | RSMP Nordic command-line supervisor |
+| ![TECSEN TMacs](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/tecsen_tmacs.yaml/badge.svg?branch=main&event=schedule) | [View](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/tecsen_tmacs.yaml?query=branch=main&event=schedule) | TECSEN TMacs system |
 
