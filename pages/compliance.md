@@ -19,12 +19,26 @@ As a vendor, you can use the tools during development and testing of products, a
 ## Test Hub
 RSMP Nordic hosts a RSMP Test Hub, which automatically runs the RSMP Validator tests every night against equipment from various suppliers. The latest results are published here. Click on *View Run* to see details and older test runs.
 
+Note: The validator has been in active use for several years, but until the [RSMP Validator](https://github.com/rsmp-nordic/rsmp_validator) reaches version 1.0, test results are preliminary. 
+
+Suppliers that would like their equipment included in our Test Hub are encouraged to contact the [secretariat]({% link pages/contact.md %}).
+
+### Test Results for Devices
 | Device | Test Runs | Note |
 |--|--|--|
-| [![Gem TLC](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/gem_tlc.yaml/badge.svg?branch=main)](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/gem_tlc.yaml) | [View runs](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/gem_tlc.yaml?query=branch=main) | TLC emulator from RSMP Nordic. |
-| [![Swarco ITC-3](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/swarco_itc3.yaml/badge.svg?branch=main&event=schedule)](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/swarco_itc3.yaml) | [View runs](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/swarco_itc3.yaml?query=branch=main&event=schedule) | Physical device. |
-| [![La Semaforica Cartesio](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/semaforica_cartesio.yaml/badge.svg?branch=main&event=schedule)](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/semaforica_cartesio.yaml) | [View runs](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/semaforica_cartesio.yaml?query=branch=main&event=schedule) | Physical device. |
+| ![Gem TLC](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/gem_tlc.yaml/badge.svg?branch=main) | [View](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/gem_tlc.yaml?query=branch=main) | RSMP Nordic command-line TLC emulator. |
+| ![Swarco ITC-3](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/swarco_itc3.yaml/badge.svg?branch=main&event=schedule) | [View](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/swarco_itc3.yaml?query=branch=main&event=schedule) | Swarco ITC-3. |
+| ![La Semaforica TECSEN Cartesio](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/semaforica_cartesio.yaml/badge.svg?branch=main&event=schedule) | [View](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/semaforica_cartesio.yaml?query=branch=main&event=schedule) | La Semaphorica TECSEN Cartesio |
 
-Note: Until the [RSMP Validator](https://github.com/rsmp-nordic/rsmp_validator) reaches version 1.0, test results are preliminary.
+### Test Results for Central Systems
+Note: Testing of central system is still rudimentary because the RSMP Validator will acts as a site during testing, and commands and status requests can only by initiated from the supervisor.
 
-Supplier that would like their equipment included in our Test Hub are encouraged to contact the [secretariat]({% link pages/contact.md %}).
+At this point, only the initial handshake is tested, as well as reception of aggregated status. 
+
+Theese tets can therefore not yet be taken as an indication of whether a central system has a a full and correct RSMP implementation.
+
+| Ssytem | Test Runs | Note |
+|--|--|--|
+| ![Gem Supervisor](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/gem_supervisor.yaml/badge.svg?branch=main) | [View](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/gem_supervisor.yaml?query=branch=main) | RSMP Nordic command-line supervisor. |
+| ![TECSEN TMacs](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/tecsen_tmacs.yaml/badge.svg?branch=main&event=schedule) | [View](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/tecsen_tmacs.yaml?query=branch=main&event=schedule) | TECSEN TMacs system. |
+
