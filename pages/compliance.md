@@ -17,7 +17,7 @@ As a road authority, you can require venders to use the validation tools to docu
 As a vendor, you can use the tools during development and testing of products, and to document compliance to the RSMP specifications.
 
 ## Test Hub
-RSMP Nordic hosts a RSMP Test Hub, which automatically runs the RSMP Validator tests every night against equipment from various suppliers. The latest results are published here. Click on *View Run* to see details and older test runs.
+RSMP Nordic hosts a RSMP Test Hub, which automatically runs the RSMP Validator tests every night against equipment and systems from various suppliers. The latest results are published here. Click on *Test Runs/View* to see details and older test runs.
 
 Note: The validator has been in active use for several years, but until the [RSMP Validator](https://github.com/rsmp-nordic/rsmp_validator) reaches version 1.0, test results are preliminary. 
 
@@ -34,9 +34,7 @@ Suppliers that would like their equipment included in our Test Hub are encourage
 ### Test Results for Central Systems
 Note: Testing of central system is still rudimentary because the RSMP Validator will acts as a site during testing, and commands and status requests can only by initiated from the supervisor.
 
-At this point, only the initial handshake is tested, as well as reception of aggregated status. 
-
-Theese tets can therefore not yet be taken as an indication of whether a central system has a a full and correct RSMP implementation.
+At this point, only the initial handshake is tested, as well as reception of aggregated status. These are therefore not an indication of whether a central system has a a full and correct support for specific types of equipment. 
 
 | System | Test Runs | Note |
 |--|--|--|
