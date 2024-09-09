@@ -34,7 +34,7 @@ Suppliers that would like their equipment included in our Test Hub are encourage
 ### Test Results for Central Systems
 Note: Testing of central system is still rudimentary because the RSMP Validator will acts as a site during testing, and commands and status requests can only by initiated from the supervisor.
 
-At this point, only the initial handshake is tested, as well as reception of aggregated status. These are therefore not an indication of whether a central system has a a full and correct support for specific types of equipment. 
+At this point, only the initial handshake is tested, as well as reception of aggregated status. Results are therefore not an indication of whether a central system has full and correct support for specific types of equipment. 
 
 | System | Test Runs | Note |
 |--|--|--|
