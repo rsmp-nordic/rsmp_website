@@ -21,8 +21,8 @@ Working group meetings happend every second week, on odd week numbers:
 
 |            | Tuesday       | Thursday                      |
 |------------|---------------|-------------------------------|
-| 10-11AM    | Core          | SXL Traffic Light Controllers |
-| 11-11AM    | Security      | Traffic Light Programming     |
+|  9-101AM    | Core          | SXL Traffic Light Controllers |
+| 10-11AM    | Security      | Traffic Light Programming     |
 | 11-12AM    | _break_       | _break_                       |
 | 12AM - 1PM | RSMP 4        | SXL Standardization           |
 
