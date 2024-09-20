@@ -9,7 +9,7 @@ parent: Documentation
 # Design
 RSMP is a general protocol for communication between supervision systems and road side equipment, and direct communication between road side equipment. The aim is to offer a standardized protocol that works the same way regardless of supplier or type of road side equipment.
 
-More technical details can be found in the [Core specification](https://rsmp-nordic.github.io/rsmp_specifications/core/3.2.1/) and in [Documentation]({% link pages/documentation.md %}).
+More technical details can be found in the [Core specification](https://rsmp-nordic.github.io/rsmp_core/3.2.2/) and in [Documentation]({% link pages/documentation.md %}).
 
 ### Transport Protocol
 RSMP communication is based on TCP sockets. HTTP is not used. Because TCP sockets are full duplex, both sides can send and receive data at the same time.
