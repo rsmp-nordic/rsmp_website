@@ -17,7 +17,6 @@ Please contact the secretariat for general inquiries, including questions about 
 City of Copenhagen  
 Technical and Environmental Department  
 Traffic  
-[lh0t@kk.dk](mailto:lh0t@kk.dk)
 
 ### Jørgen Remme Tresse
 City of Oslo  
