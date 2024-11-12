@@ -16,12 +16,13 @@ The RSMP Test Hub uses GitHub Actions to run tests.
 ```mermaid
 graph LR
 GitHub <--> Runner
-Runner <--> Device/System
+Runner <--> Validator
+Validator <-->|RSMP| Device/System
 ```
 
 You install GitHub Runner on a Linux server (or docker container). The runner must be able to contact GitHub and your device/system.
 
-Note that the device/system should NOT installed in the field, because testing will send commands, raise alarms, etc. which could cause unsafe situation.
+Note that you should NOT test device/system on street or in production, because testing will send commands, raise alarms, etc. which could cause unsafe situation.
 
 When testing is initiated on GitHub, the runner installs all required software, including Ruby, Ruby gems and the RSMP Validator. The runner then runs the Validator, which connects to the device/system using RSMP. Testing then involves exchanging RSMP message while validating messages structure and flow.
 
