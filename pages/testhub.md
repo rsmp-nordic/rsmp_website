@@ -42,7 +42,8 @@ You should check the [latest version of the GitHub Runner](https://github.com/ac
 The instructions include a unique token. To receive a unique token for your device/equipment please contact the [secretariat]({% link pages/contact.md %}).
 
 
-__Download__
+Download:
+```
 # Create a folder
 $ mkdir actions-runner && cd actions-runner
 # Download the latest runner package
@@ -51,10 +52,13 @@ $ curl -o actions-runner-linux-x64-2.320.0.tar.gz -L https://github.com/actions/
 $ echo "93ac1b7ce743ee85b5d386f5c1787385ef07b3d7c728ff66ce0d3813d5f46900 actions-runner-linux-x64-2.320.0.tar.gz" | shasum -a 256 -c
 # Extract the installer
 $ tar xzf ./actions-runner-linux-x64-2.320.0.tar.gz
+```
 
-__Configure__
+Configure:
+```
 # Create the runner and start the configuration experience
 # <token> must be replace with a unique token provided by RSMP Nordic.
 $ ./config.sh --url https://github.com/rsmp-nordic/rsmp_validator --token <token>
 # Last step, run it!
 $ ./run.sh
+```
