@@ -30,6 +30,7 @@ The [RSMP specifications]({% link pages/documentation.md %}) and [open-source to
 ![Swedish Transport Administration]({{ "/assets/logos/logo_tv.png"}}){:class='logo'}
 ![Technolution]({{ "/assets/logos/Logo_Technolution.jpg"}}){:class='logo'}
 ![Tecsen]({{ "/assets/logos/Logo_tecsen.png"}}){:class='logo'}
+![VisuaLED]({{ "/assets/logos/visualed_black_scaled.png"}}){:class='logo'}
 ![Yunex Traffic]({{ "/assets/logos/logo_yunex.png"}}){:class='logo'}
 
 ## Public Authorities
@@ -62,6 +63,7 @@ The [RSMP specifications]({% link pages/documentation.md %}) and [open-source to
 - [Lightmotion](https://lightmotion.fi/)
 - [SWARCO Sweden](https://www.swarco.com/companies/swarco-sverige-ab)
 - [SWARCO Technology](https://www.swarco.com/companies/swarco-technology-aps)
+- [Visualed](https://visualed.dk/)
 - [Yunex Traffic](https://www.yunextraffic.com)
 
 ## Missing from the Partner List?
