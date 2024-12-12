@@ -53,6 +53,7 @@ The [RSMP specifications]({% link pages/documentation.md %}) and [open-source to
 ## Industry
 ### Systems
 - [Asist](https://www.asist.si/)
+- [Kapsch](https://www.kapsch.net/en)
 - [Technolution](https://www.technolution.com)
 - [Tecsen](https://www.tecsen.it/)
 
