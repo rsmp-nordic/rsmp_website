@@ -26,6 +26,7 @@ The core specification defines the basic message structure and behavior common t
 View the [GitHub repository](https://github.com/rsmp-nordic/rsmp_core).
 
 | --- | --- |
+| 3.3.0 (draft)  | [Online][core_3.3.0_online] |
 | **3.2.2 (latest release)** | [Online][core_3.2.2_online], [PDF][core_3.2.2_pdf] |
 | 3.2.1          | [Online][core_3.2.1_online], [PDF][core_3.2.1_pdf] |
 | 3.2            | [Online][core_3.2_online],   [PDF][core_3.2_pdf]   |
@@ -33,6 +34,8 @@ View the [GitHub repository](https://github.com/rsmp-nordic/rsmp_core).
 | 3.1.4          | [Online][core_3.1.4_online], [PDF][core_3.1.4_pdf] |
 | 3.1.3          | [Online][core_3.1.3_online], [PDF][core_3.1.3_pdf] |
 | 3.1.2          | [Online][core_3.1.2_online], [PDF][core_3.1.2_pdf] |
+
+[core_3.3.0_online]: https://rsmp-nordic.github.io/rsmp_core/3.3.0/
 
 [core_3.2.2_pdf]: https://github.com/rsmp-nordic/rsmp_core/releases/download/v3.2.2/rsmp-spec-3.2.2.pdf
 [core_3.2.2_online]: https://rsmp-nordic.github.io/rsmp_core/3.2.2/
