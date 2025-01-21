@@ -47,7 +47,7 @@ You must install the Github Runner on a Linux system. The following instructions
 
 The instructions include a unique token. To receive a unique token for your device/equipment, please contact the [Secretariat]({% link pages/contact.md %}).
 
-1. Download
+First download and install the runner:
 ```
 # Create a folder
 $ mkdir actions-runner && cd actions-runner
@@ -59,7 +59,7 @@ $ echo "93ac1b7ce743ee85b5d386f5c1787385ef07b3d7c728ff66ce0d3813d5f46900 actions
 $ tar xzf ./actions-runner-linux-x64-2.320.0.tar.gz
 ```
 
-2. Configure
+And then configure and run it:
 ```
 # Create the runner and start the configuration experience
 # <token> must be replace with a unique token provided by RSMP Nordic.
