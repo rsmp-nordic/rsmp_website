@@ -14,11 +14,6 @@ More technical details can be found in the [Core specification](https://rsmp-nor
 ### Transport Protocol
 RSMP communication is based on TCP sockets. HTTP is not used. Because TCP sockets are full duplex, both sides can send and receive data at the same time.
 
-### Object Model
-RSMP protocol uses the [Datex II](https://datex2.eu) metamodel as its object model. The meta-model consists of a set of rules that describe how classes and objects are defined.
-
-The reason why the Datex II metamodel has been adopted is that it will eventually provide the possibility for this protocol to become an international standard that can later be included with the object model for Datex II.
-
 ### Message Structure
 RSMP messages use the [JSON](https://www.json.org/json-en.html) format. For example, here's an Aggregated Status mesage:
 
