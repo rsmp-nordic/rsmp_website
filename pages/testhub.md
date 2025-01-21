@@ -36,6 +36,7 @@ Tests are run every night and also whenever there are commits to the Validator r
 The test hub can run tests on a matrix of core and SXL versions. We recommend running on the widest possible range of versions.
 
 ## Getting Started
+### Installing GitHub Runner
 The following instructions are provided as a guideline, but could change.
 
 Check the [GitHub runner docs](https://docs.github.com/en/actions/hosting-your-own-runners) for the latests documentation.
@@ -46,7 +47,6 @@ You must install the Github Runner on a Linux system. The following instructions
 
 The instructions include a unique token. To receive a unique token for your device/equipment, please contact the [Secretariat]({% link pages/contact.md %}).
 
-### Instructions
 1. Download
 ```
 # Create a folder
@@ -67,3 +67,23 @@ $ ./config.sh --url https://github.com/rsmp-nordic/rsmp_validator --token <token
 # Last step, run it!
 $ ./run.sh
 ```
+
+### Test Config
+You need to create a test config for the device to be tested. The config describes what components and elements to tests. For example, a config for a traffic light controller lists signal plans, inputs, etc. to use when testing. It also defines various timeouts.
+
+You should use an [existing configuration](https://github.com/rsmp-nordic/rsmp_validator/tree/main/config) as a starting point, and modify it to fit your device.
+
+You can run the RSMP Validator locally to check  that your config is correct.
+
+When the config is ready, please open open a [Pull Request](https://github.com/rsmp-nordic/rsmp_validator/pulls) in the RSMP Validator repository with the file.
+
+### Workflow file
+RSMP core members will create a GitHub Actions workflow file responsible for running the RSMP Validator on your runner machine, using your test config and communicating with your device.
+
+To create the workflow file, we need the following information from you:
+
+- what is the manyfacturer and model name of the device?
+- what core versions does the device support?
+- what sxl version is the device using?
+
+Once the config and workflow files are merged, tests will run daily according to the schedule define in the workflow file. The default is nightly at 22:00 CET, as well as when relevant pull requests are opened.
