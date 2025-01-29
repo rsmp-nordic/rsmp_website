@@ -21,10 +21,11 @@ Working group meetings happend every second week, on odd week numbers:
 
 |            | Tuesday       | Thursday                      |
 |------------|---------------|-------------------------------|
-|  9-101AM    | Core          | SXL Traffic Light Controllers |
+|  9-101AM   | Core          | SXL Traffic Light Controllers |
 | 10-11AM    | Security      | Traffic Light Programming     |
 | 11-12AM    | _break_       | _break_                       |
 | 12AM - 1PM | RSMP 4        | SXL Standardization           |
+| 1PM -  2PM | Tools         |                               |
 
 Meetings are run via Microsoft Teams. To be receive meeting invitations, please contact the [secretariat]({% link pages/contact.md %}).
 
@@ -59,6 +60,11 @@ The goal is to answer these questions and provide a recommendation on whether an
 #### Timeline
 Decision on v4 in 2025 (tentative).
 
+## Tools
+Maintain and develop tools for RSMP testing, validation, etc.
+
+#### Timeline
+Continously. Usuallt release of Core and SXL specifications are supported by released of the testing tools.
 
 ## Traffic Light Controllers
 Maintain and develop the SXL (Signal Exchange List) for Traffic Light Controllers.
