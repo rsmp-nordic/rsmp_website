@@ -13,7 +13,7 @@ We encourage you to [get your equipment or system included in the RSMP Test Hub]
 
 
 ## Equipment Compliance
-Click on *Test Runs* to see details and older test runs.
+Click on *View* under Test Runs to see details of all the latest as well as previous test runs.
 
 
 | Device | Test Runs | Note |
@@ -35,7 +35,5 @@ At this point, only the initial handshake is tested, as well as reception of agg
 
 
 ## Notes on Results
-The validator has been in active use for several years, but until the [RSMP Validator](https://github.com/rsmp-nordic/rsmp_validator) reaches version 1.0, test results are preliminary. 
-
-We run tests on a matrix of all RSMP Core and SXL versions. We expect to expand the result section to provide more details about results for specific versions, individual tests, compliance over time, etc.
+We run tests on a matrix of RSMP Core and SXL versions. We plan to expand the result section to provide more details about results for specific versions, individual tests, compliance over time, etc. Until then you can view the test runs to inspect details.
 
