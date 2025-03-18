@@ -12,9 +12,9 @@ RSMP Compliance is checked by the RSMP [Test Hub]({% link pages/testhub.md %}). 
 We encourage you to [get your equipment or system included in the RSMP Test Hub]({% link pages/testhub.md %}) so you can showcase your compliance below.
 
 ## Coverage
-The Validator mainly tests the protocol layer. This includes checking that the correct message types are send in he right order, and with a valid structure. It does only limited validation of values and behaviour.
+The Validator mainly tests the protocol layer. This includes checking that the correct message types are send in the right order, and with a valid structure. It includes only limited validation of behavioural aspects.
 
-For example, for traffic ligth controllers, it checks that you can can send a command to change the signal plan, and the associated status then reports the new signal plan. But it does not (yet) check how the signal groups are actually changing.
+For example, for traffic ligth controllers, it checks that you can can send a command to change the signal plan, and that the associated status then reports the new signal plan. But it does not (yet) check how the signal groups are actually change states.
 
 We expect to expand the test suite over time to cover more behavioural aspects.
 
