@@ -26,7 +26,7 @@ Only one version of the SXL is tested.
 Click 'View' under Details to see details of latest and earlier test runs.
 View [core versions](https://rsmp-nordic.org/specification/).
 
-| Comtroller | Core | SXL | Status | Test Runs |
+| Comtroller | Core | SXL | Status | Runs |
 |--|--|--|--|--|
 | RSMP Nordic [CLI TLC](https://github.com/rsmp-nordic/rsmp) | 3.1.2 to 3.2.2 | 1.2.1 | ![Gem TLC](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/gem_tlc.yaml/badge.svg?branch=main) | [Details](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/gem_tlc.yaml?query=branch=main) |
 | Cross [RS4S/RS4T](https://www.cross-traffic.com/en/traffic-light-controllers/) | 3.1.2 to 3.2.2 | 1.2.1 | ![Cross RS4S/RS4S](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/cross_rs4s.yaml/badge.svg?branch=main&event=schedule) | [Details](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/cross_rs4s.yaml?query=branch=main&event=schedule) |
@@ -42,7 +42,7 @@ At this point, only the initial handshake is tested, as well as reception of agg
 
 The validator connects using the traffic light controller SXL.
 
-| System | Core | SXL | Status | Test Runs |
+| System | Core | SXL | Status | Runs |
 |--|--|--|--|--|
 | RSMP Nordic [CLI supervisor](https://github.com/rsmp-nordic/rsmp) |  3.1.2 to 3.2.2 | 1.2.1 | ![Gem Supervisor](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/gem_supervisor.yaml/badge.svg?branch=main) | [Details](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/gem_supervisor.yaml?query=branch=main) |
 | TECSEN [TMacs](https://www.tmacs.it/en/) | 3.2.2 | 1.2.1 | ![TECSEN TMacs](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/tecsen_tmacs.yaml/badge.svg?branch=main&event=schedule) | [Details](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/tecsen_tmacs.yaml?query=branch=main&event=schedule) |
