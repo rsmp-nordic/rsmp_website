@@ -47,9 +47,7 @@ The validator connects using the traffic light controller SXL.
 | RSMP Nordic [CLI supervisor](https://github.com/rsmp-nordic/rsmp) |  3.1.2 to 3.2.2 | 1.2.1 | ![Gem Supervisor](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/gem_supervisor.yaml/badge.svg?branch=main) | [Details](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/gem_supervisor.yaml?query=branch=main) |
 | TECSEN [TMacs](https://www.tmacs.it/en/) | 3.2.2 | 1.2.1 | ![TECSEN TMacs](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/tecsen_tmacs.yaml/badge.svg?branch=main&event=schedule) | [Details](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/tecsen_tmacs.yaml?query=branch=main&event=schedule) |
 
-## Core versions
-See the list of available [core versions](https://rsmp-nordic.org/specification/).
+## Core and SXL versions
+View available [core and SXL versions](https://rsmp-nordic.org/specification/).
 
-## Notes on Results
-We run tests on a matrix of RSMP Core and SXL versions. We plan to expand the result section to provide more details about results for specific versions, individual tests, compliance over time, etc. Until then you can view the test runs to inspect details.
 
