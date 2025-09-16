@@ -28,7 +28,7 @@ View [core versions](https://rsmp-nordic.org/specification/).
 
 | Comtroller | Core | SXL | Status | Test Runs |
 |--|--|--|--|--|
-| RSMP Nordic [command-line TLC](https://github.com/rsmp-nordic/rsmp) | 3.1.2 to 3.2.2 | 1.2.1 | ![Gem TLC](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/gem_tlc.yaml/badge.svg?branch=main) | [Details](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/gem_tlc.yaml?query=branch=main) |
+| RSMP Nordic [CLI TLC](https://github.com/rsmp-nordic/rsmp) | 3.1.2 to 3.2.2 | 1.2.1 | ![Gem TLC](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/gem_tlc.yaml/badge.svg?branch=main) | [Details](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/gem_tlc.yaml?query=branch=main) |
 | Cross [RS4S/RS4T](https://www.cross-traffic.com/en/traffic-light-controllers/) | 3.1.2 to 3.2.2 | 1.2.1 | ![Cross RS4S/RS4S](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/cross_rs4s.yaml/badge.svg?branch=main&event=schedule) | [Details](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/cross_rs4s.yaml?query=branch=main&event=schedule) |
 | Kapsch [EcoTrafiX](https://www.kapsch.net/_Resources/Persistent/f9e0a0525985dc4a9d0b3cb6b67476c0b1257b1c/Kapsch_EcoTrafiX-Controller-16_Datasheet-EN.pdf) | 3.1.2 to 3.2.2 | 1.2.1 | ![Kapsch ETX](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/kapsch_etx.yaml/badge.svg?branch=main&event=schedule) | [Details](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/kapsch_etx.yaml?query=branch=main&event=schedule) |
 | La Semaforica TECSEN [Cartesio](https://lasemaforica.com/en/products/cartesio-highest-processing-power-interactive-traffic-controllers/) | 3.1.2 to 3.2.2 | 1.2.1 | ![La Semaforica TECSEN Cartesio](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/semaforica_cartesio.yaml/badge.svg?branch=main&event=schedule) | [Details](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/semaforica_cartesio.yaml?query=branch=main&event=schedule) |
@@ -44,7 +44,7 @@ The validator connects using the traffic light controller SXL.
 
 | System | Core | SXL | Status | Test Runs |
 |--|--|--|--|--|
-| RSMP Nordic [command-line supervisor](https://github.com/rsmp-nordic/rsmp) |  3.1.2 to 3.2.2 | 1.2.1 | ![Gem Supervisor](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/gem_supervisor.yaml/badge.svg?branch=main) | [Details](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/gem_supervisor.yaml?query=branch=main) |
+| RSMP Nordic [CLI supervisor](https://github.com/rsmp-nordic/rsmp) |  3.1.2 to 3.2.2 | 1.2.1 | ![Gem Supervisor](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/gem_supervisor.yaml/badge.svg?branch=main) | [Details](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/gem_supervisor.yaml?query=branch=main) |
 | TECSEN [TMacs](https://www.tmacs.it/en/) | 3.2.2 | 1.2.1 | ![TECSEN TMacs](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/tecsen_tmacs.yaml/badge.svg?branch=main&event=schedule) | [Details](https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/tecsen_tmacs.yaml?query=branch=main&event=schedule) |
 
 ## Core versions
