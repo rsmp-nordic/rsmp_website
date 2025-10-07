@@ -66,13 +66,15 @@ Participation in working groups does not require appointment by the steering gro
 ## Technical Board
 - David Otterdahl, Swedish Transport Administration.
 - Emil Tin, City of Copenhagen.
-- Stefan Sparv, City of Stockholm.
+- Juho Neuvonen, Fintraffic. 
 
 ## Secretariat
 - David Otterdahl, Swedish Transport Administration.
 - Emil Tin, City of Copenhagen.
 - Dia Bækgaard Pedersen, City of Copenhagen.
-- Jørgen Remme Tresse, City of Oslo.
+- Tanjamaria Ballhorn, City of Copenhagen.
+- Dimos Kyriakou, City of Oslo.
+
 
 ## Resources
 
