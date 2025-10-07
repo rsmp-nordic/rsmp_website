@@ -18,10 +18,6 @@ City of Copenhagen
 Technical and Environmental Department  
 Traffic  
 
-### Jørgen Remme Tresse
-City of Oslo  
-[jorgen.tresse@bym.oslo.kommune.no](mailto:jorgen.tresse@bym.oslo.kommune.no)
-
 ### David Otterdahl
 Swedish Transport Administration  
 Maintenance, Technology & Environment  
@@ -32,3 +28,13 @@ City of Copenhagen
 Technical and Environmental Department  
 Traffic  
 [zf0f@kk.dk](mailto:zf0f@kk.dk)  
+
+### Tanjamaria Ballhorn
+City of Copenhagen
+Technical and Environmental Department  
+Traffic  
+[tanpro@kk.dk](mailto:tanpro@kk.dk)
+
+### Dimos Kyriakou
+City of Oslo  
+[dimos.kyriakou@bym.oslo.kommune.no](mailto:dimos.kyriakou@bym.oslo.kommune.no)
