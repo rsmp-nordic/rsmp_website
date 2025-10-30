@@ -1,9 +1,7 @@
 ---
 layout: page
 title: Activity Plan
-permalink: /plan/
-nav_order: 2
-parent: Activities
+permalink: /plan-2024-25/
 ---
 
 # RSMP Nordic Activity Plan 2024-2025
