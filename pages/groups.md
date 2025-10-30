@@ -11,7 +11,7 @@ The RSMP Nordic Working Groups discuss specific topics and produce proposals for
 
 Most working groups focus on technical issues, like developing the RSMP specification and tools, but workings groups can also handle things like communication, outreach or funding.
 
-The working groups reflect the latest [Activity Plan]({% link pages/activity_plan.md %}) agreed by the Steering Group, and can also be created ad-hoc by the Board as needed.
+The working groups reflect the latest [Activity Plan]({% link pages/activity_plan_2025_26.md %}) agreed by the Steering Group, and can also be created ad-hoc by the Board as needed.
 
 Meeting summaries can be found at our main RSMP [discussion area](https://github.com/orgs/rsmp-nordic/discussions/categories/working-groups).
 
