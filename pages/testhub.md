@@ -6,7 +6,7 @@ parent: Documentation
 ---
 
 # RSMP Test Hub
-The RSMP Test Hub is used for continuous validation of RSMP compliance of equipment and systems. Results cna optionally be published at the [compliance page]({% link pages/compliance.md %}).
+The RSMP Test Hub is used for continuous validation of RSMP compliance of equipment and systems. Results can optionally be published at the [compliance page]({% link pages/compliance.md %}).
 
 You should not test device/system located on street or in production, because testing will send commands, raise alarms, etc. which can interfere with normal operation and cause unsafe situation.
 
@@ -29,7 +29,7 @@ When testing is initiated on GitHub, the runner installs all required software, 
 
 The test results are then reported back to GitHub.
 
-Finally, we can optionally show your device/system with a validation flag at our [compliance page]({% link pages/compliance.md %}).
+Finally, we optionally show your device/system with a validation flag at our [compliance page]({% link pages/compliance.md %}).
 
 Tests are run every night and also whenever there are commits to the Validator repo. We recommend you have your device/system permamently setup for testing, to always show up-to-date test results.
 
