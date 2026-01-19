@@ -85,7 +85,7 @@ The secretariat is appointed by the Steering Group.
 | Denmark | City of Copenhagen | 12 |
 | Norway | Norwegian Public Roads Administration | To be determined |
 | Norway | City of Oslo | 4 |
-| Finland | Fintraffic | To be determined |
+| Finland | Fintraffic | 2 |
 | Finland | City of Oulu | 2 |
 | France | Ascquer | 2 |
 | France | French Department of Transport | 2 |
