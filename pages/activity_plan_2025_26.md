@@ -79,7 +79,7 @@ The secretariat is appointed by the Steering Group.
 30 hours/week has been pledged in total. A few additional partners are expected to pledge hours, but the number is not yet known.
 
 | Country | Organization | Committed hours/week |
-|---|---:|---:|
+|---|---|---:|
 | Sweden | Swedish Road Authority | 6 |
 | Sweden | City of Stockholm | 2 |
 | Denmark | City of Copenhagen | 12 |
