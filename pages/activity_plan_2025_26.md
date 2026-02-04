@@ -89,7 +89,7 @@ The secretariat is appointed by the Steering Group.
 | Finland | City of Oulu | 2 |
 | France | Ascquer | 2 |
 | France | French Department of Transport | 2 |
-| France | CEREMA | To be determined |
+| France | CEREMA | 4 |
 
 ## Activities
 
