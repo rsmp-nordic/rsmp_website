@@ -9,7 +9,7 @@ parent: Documentation
 # Design
 RSMP is a general protocol for communication between supervision systems and road side equipment, and direct communication between road side equipment. The aim is to offer a standardized protocol that works the same way regardless of supplier or type of road side equipment.
 
-More technical details can be found in the [Core specification](https://rsmp-nordic.github.io/rsmp_core/3.2.2/) and in [Documentation]({% link pages/documentation.md %}).
+More technical details can be found in the [RSMP specifications]({% link pages/specification.md %}) and in [Documentation]({% link pages/documentation.md %}).
 
 ### Transport Protocol
 RSMP communication is based on TCP sockets. HTTP is not used. Because TCP sockets are full duplex, both sides can send and receive data at the same time.
@@ -47,4 +47,3 @@ You can define your own SXL if you need to support a special types of equipment,
 In situations where you really need to add a particular functionality or messages that are not available in a standardized SXL, it's possible to add your own custom messages. However, RSMP Nordic strongly recommend that you avoid this, because you can easily loose the benefits of using a vendor-neutral protocol. Any special message implemented by a single (or a few) vendors will make it harder to switch vendor, and will not be supported by e.g. RSMP Nordic tools for automated validation.
 
 If you have this type of needs that you feel are not currently met by the standardized SXLs, we encourage you to instead join the RSMP [User Group or Working Group]({% link pages/activities.md %}) and discuss your needs. It might make sense to include the required messages in upcoming SXL versions.
-

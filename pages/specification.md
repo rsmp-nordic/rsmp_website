@@ -18,7 +18,9 @@ The RSMP specifications are maintained on [GitHub](https://github.com/rsmp-nordi
 Each repository on GitHub has its own issue tracker that is used to keep track of errors, proposed improvements, etc. You are welcome to ask questions or report errors on GitHub; you just need an account on GitHub, which is quick and free to create.
 
 ### JSON Schema
-The RSMP specification is also documented as [JSON Schema](https://github.com/rsmp-nordic/rsmp_schema), which makes it possible automatically to validate the format of RSMP messages.
+The RSMP specification is also documented as JSON Schema, which makes it possible automatically to validate the format of RSMP messages.
+
+JSON Schemas are now maintained together with the [Core](https://github.com/rsmp-nordic/rsmp_core) and [SXL](https://github.com/rsmp-nordic/rsmp_sxl_traffic_lights) specifications and are distributed with the [`rsmp` Ruby gem](https://github.com/rsmp-nordic/rsmp). The older [`rsmp_schema`](https://github.com/rsmp-nordic/rsmp_schema) repository and gem are deprecated and will no longer be updated.
 
 ## Core
 The core specification defines the basic message structure and behavior common to all implementations and equipment types.

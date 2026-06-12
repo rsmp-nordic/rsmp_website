@@ -21,22 +21,25 @@ The [RSMP Simulator ](https://github.com/rsmp-nordic/rsmp_simulator) is a Window
 ![RSMP Simulator](/assets/images/simulator_1.0.1.5.png)
 
 ## RSMP Validator
-The [RSMP Validator](https://rsmp-nordic.github.io/rsmp_validator) is a command-line tool based on Ruby and RSpec that can be used for automated validation of RSMP implementations.
+The [RSMP Validator](https://rsmp-nordic.github.io/rsmp_validator) is a command-line tool based on Ruby and Sus that can be used for automated validation of RSMP implementations.
+
+It is distributed as the `rsmp-validator` Ruby gem and can be run with the `rsmp-validator` command. See the [validator documentation](https://rsmp-nordic.github.io/rsmp_validator/) for installation, Docker usage and configuration.
 
 ## RSMP Libraries
-We also maintain several Ruby gems (libraries) for working with RSMP.
+We also maintain Ruby libraries and reusable schemas for working with RSMP.
 
 The RSMP Validator is built on these building blocks, but you can also use them yourself to build new or specialized RSMP tools.
 
 ### RSMP Ruby Gem
 The [RSMP gem](https://github.com/rsmp-nordic/rsmp) is a Ruby library for handling RSMP communication and schema validation.
 
-It also includes command-line tools that make it easy to run an RSMP site or supervisor on the command line and view messages as they are exchanged.
+It includes JSON Schemas for supported Core and SXL versions, as well as command-line tools that make it easy to run an RSMP site or supervisor and view messages as they are exchanged.
 
 ![RSMP CLI Supervisor](/assets/images/cli_supervisor.png)
 
-### RSMP Schema
-A [JSON Schema](https://github.com/rsmp-nordic/rsmp_schema) for automatically validating the format of RSMP messages.
+### RSMP JSON Schemas
+JSON Schemas for RSMP Core and SXL specifications are now maintained together with the specification repositories and distributed with the `rsmp` gem.
 
+The older [`rsmp_schema`](https://github.com/rsmp-nordic/rsmp_schema) repository and gem are deprecated and will no longer be updated.
 
 
