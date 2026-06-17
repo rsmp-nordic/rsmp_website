@@ -12,7 +12,9 @@ module RSMP
     module Compliance
       # Reads completed workflow runs and compliance artifacts from GitHub Actions.
       class GitHubClient
-        def initialize(repo:, token:, events: %w[schedule])
+        DEFAULT_EVENTS = %w[schedule].freeze
+
+        def initialize(repo:, token:, events: DEFAULT_EVENTS)
           @repo = repo
           @token = token
           @events = events
@@ -66,7 +68,9 @@ module RSMP
         end
 
         def workflow_run_params(event)
-          { 'branch' => 'main', 'event' => event, 'status' => 'completed', 'per_page' => '100' }
+          params = { 'event' => event, 'status' => 'completed', 'per_page' => '100' }
+          params['branch'] = 'main' unless event == 'pull_request'
+          params
         end
 
         def run_artifacts(run_id)

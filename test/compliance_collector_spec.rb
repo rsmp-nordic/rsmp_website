@@ -210,3 +210,21 @@ describe RSMP::Website::Compliance::Collector do
     end
   end
 end
+
+describe RSMP::Website::Compliance::GitHubClient do
+  it 'does not filter pull request workflow runs by main branch' do
+    client = RSMP::Website::Compliance::GitHubClient.new(repo: 'rsmp-nordic/rsmp_validator', token: 'token')
+
+    expect(client.send(:workflow_run_params, 'schedule')).to be == {
+      'branch' => 'main',
+      'event' => 'schedule',
+      'status' => 'completed',
+      'per_page' => '100'
+    }
+    expect(client.send(:workflow_run_params, 'pull_request')).to be == {
+      'event' => 'pull_request',
+      'status' => 'completed',
+      'per_page' => '100'
+    }
+  end
+end
