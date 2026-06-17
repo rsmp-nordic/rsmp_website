@@ -2,7 +2,6 @@
 
 require 'json'
 require 'net/http'
-require 'open3'
 require 'tmpdir'
 require 'time'
 require 'uri'
@@ -87,7 +86,7 @@ module RSMP
 
         def download_zip(artifact_id, zip_path)
           path = "/repos/#{@repo}/actions/artifacts/#{artifact_id}/zip"
-          run_gh_api(path, '--output', zip_path)
+          File.binwrite(zip_path, download_binary(api_uri(path)))
         end
 
         def unzip_reports(dir)
@@ -114,6 +113,16 @@ module RSMP
           end
         end
 
+        def download_binary(uri, limit = 5)
+          raise 'Too many redirects while downloading artifact' if limit <= 0
+
+          response = perform_get(uri)
+          return download_binary(URI(response['location']), limit - 1) if response.is_a?(Net::HTTPRedirection)
+
+          raise_for_response(response)
+          response.body
+        end
+
         def request(uri)
           Net::HTTP::Get.new(uri).tap do |request|
             request['Accept'] = 'application/vnd.github+json'
@@ -126,11 +135,6 @@ module RSMP
           return if response.is_a?(Net::HTTPSuccess)
 
           raise "GitHub API failed: #{response.code} #{response.body}"
-        end
-
-        def run_gh_api(*args)
-          output, status = Open3.capture2e({ 'GH_TOKEN' => @token }, 'gh', 'api', *args)
-          raise "gh api failed: #{output}" unless status.success?
         end
 
         def parse_time(value)
