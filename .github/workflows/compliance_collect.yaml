@@ -39,7 +39,7 @@ jobs:
 
       - name: Collect compliance data
         working-directory: rsmp_website
-        run: bundle exec ruby exe/compliance-collector --website-dir . --data-dir ../rsmp_website_compliance_data --events schedule,pull_request
+        run: bundle exec ruby exe/compliance-collector --website-dir . --data-dir ../rsmp_website_compliance_data
         env:
           GH_TOKEN: ${{ secrets.RSMP_VALIDATOR_READ_TOKEN || github.token }}
 
