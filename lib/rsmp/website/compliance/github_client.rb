@@ -123,19 +123,19 @@ module RSMP
           response.body
         end
 
-def request(uri)
-  Net::HTTP::Get.new(uri).tap do |request|
-    next unless github_api_uri?(uri)
+        def request(uri)
+          Net::HTTP::Get.new(uri).tap do |request|
+            next unless github_api_uri?(uri)
 
-    request['Accept'] = 'application/vnd.github+json'
-    request['Authorization'] = "Bearer #{@token}" if @token && @token != ''
-    request['X-GitHub-Api-Version'] = '2022-11-28'
-  end
-end
+            request['Accept'] = 'application/vnd.github+json'
+            request['Authorization'] = "Bearer #{@token}" if @token && @token != ''
+            request['X-GitHub-Api-Version'] = '2022-11-28'
+          end
+        end
 
-def github_api_uri?(uri)
-  uri.hostname == 'api.github.com'
-end
+        def github_api_uri?(uri)
+          uri.hostname == 'api.github.com'
+        end
 
         def raise_for_response(response)
           return if response.is_a?(Net::HTTPSuccess)

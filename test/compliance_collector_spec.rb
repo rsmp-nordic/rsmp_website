@@ -229,13 +229,13 @@ describe RSMP::Website::Compliance::GitHubClient do
   end
 
   it 'does not send GitHub auth headers to artifact storage redirects' do
-  client = RSMP::Website::Compliance::GitHubClient.new(repo: 'rsmp-nordic/rsmp_validator', token: 'token')
+    client = RSMP::Website::Compliance::GitHubClient.new(repo: 'rsmp-nordic/rsmp_validator', token: 'token')
 
-  github_request = client.send(:request, URI('https://api.github.com/repos/rsmp-nordic/rsmp_validator'))
-  storage_request = client.send(:request, URI('https://example.blob.core.windows.net/artifact.zip'))
+    github_request = client.send(:request, URI('https://api.github.com/repos/rsmp-nordic/rsmp_validator'))
+    storage_request = client.send(:request, URI('https://example.blob.core.windows.net/artifact.zip'))
 
-  expect(github_request['Authorization']).to be == 'Bearer token'
-  expect(storage_request['Authorization']).to be == nil
-  expect(storage_request['X-GitHub-Api-Version']).to be == nil
+    expect(github_request['Authorization']).to be == 'Bearer token'
+    expect(storage_request['Authorization']).to be == nil
+    expect(storage_request['X-GitHub-Api-Version']).to be == nil
   end
 end
