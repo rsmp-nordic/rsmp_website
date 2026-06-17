@@ -101,7 +101,7 @@ module RSMP
           JSON.parse(response.body)
         end
 
-        def api_uri(path, params)
+        def api_uri(path, params = {})
           URI("https://api.github.com#{path}").tap do |uri|
             uri.query = URI.encode_www_form(params) unless params.empty?
           end
