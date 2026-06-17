@@ -1,0 +1,131 @@
+{% assign targets = include.targets %}
+
+{% if targets.size > 0 %}
+<table>
+  <thead>
+    <tr>
+      <th>{{ include.name_heading }}</th>
+      <th>Newest passed</th>
+      <th>Latest run</th>
+      <th>Latest pass</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for target in targets %}
+      {% assign latest_run = target.latest_run %}
+      {% assign latest_pass = target.latest_passing_run %}
+      {% assign newest_passed_version = target.passed_versions | first %}
+      <tr>
+        <td>
+          {% if target.product_url %}
+            <a href="{{ target.product_url }}">{{ target.name }}</a>
+          {% else %}
+            {{ target.name }}
+          {% endif %}
+          {% if target.details_url %}
+            <br>
+            <a href="{{ target.details_url }}">Workflow runs</a>
+          {% endif %}
+        </td>
+        <td>
+          {% if newest_passed_version %}
+            Core {{ newest_passed_version.core }}
+            <br>
+            SXLs:
+            {% for passed_version in target.passed_versions %}
+              {% if passed_version.core == newest_passed_version.core and passed_version.sxls %}
+                <br>
+                {% for sxl in passed_version.sxls %}
+                  {{ sxl[0] }} {{ sxl[1] }}{% unless forloop.last %}, {% endunless %}
+                {% endfor %}
+              {% endif %}
+            {% endfor %}
+          {% else %}
+            No passing version
+          {% endif %}
+        </td>
+        <td>
+          {% if latest_run %}
+            {% include compliance_run_date.html time=latest_run.completed_at url=latest_run.run_url %}
+            <br>
+            {% include compliance_run_version_summary.html run=latest_run %}
+          {% else %}
+            Not run
+          {% endif %}
+        </td>
+        <td>
+          {% if latest_pass %}
+            {% include compliance_run_date.html time=latest_pass.completed_at url=latest_pass.run_url %}
+            <br>
+            {% include compliance_run_version_summary.html run=latest_pass %}
+          {% else %}
+            No passing run
+          {% endif %}
+        </td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+{% for target in targets %}
+<h3>{{ target.name }} Version Support</h3>
+
+{% if target.versions.size > 0 %}
+<table>
+  <thead>
+    <tr>
+      <th>Core</th>
+      <th>SXLs</th>
+      <th>Latest status</th>
+      <th>Latest run</th>
+      <th>Latest pass</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for version in target.versions %}
+      <tr>
+        <td>{{ version.core }}</td>
+        <td>
+          {% if version.sxls %}
+            {% for sxl in version.sxls %}
+              {{ sxl[0] }} {{ sxl[1] }}{% unless forloop.last %}<br>{% endunless %}
+            {% endfor %}
+          {% else %}
+            -
+          {% endif %}
+        </td>
+        <td>{{ version.last_status | capitalize }}</td>
+        <td>
+          {% if version.latest_run %}
+            {% assign latest_test_count = version.latest_run.test_count %}
+            {% assign latest_failed_count = version.latest_run.failed_count %}
+            {% assign latest_errored_count = version.latest_run.errored_count %}
+            {% assign latest_passed_count = latest_test_count | minus: latest_failed_count | minus: latest_errored_count %}
+            {% include compliance_run_date.html time=version.latest_run.completed_at url=version.latest_run.run_url %}
+            <br>
+            {% if latest_passed_count == latest_test_count %}All {{ latest_test_count }} passed{% else %}{{ latest_passed_count }}/{{ latest_test_count }} passed{% endif %}{% if latest_failed_count > 0 %}, {{ latest_failed_count }} failed{% endif %}{% if latest_errored_count > 0 %}, {{ latest_errored_count }} errors{% endif %}
+          {% else %}
+            Not run
+          {% endif %}
+        </td>
+        <td>
+          {% if version.latest_passing_run %}
+            {% assign passing_test_count = version.latest_passing_run.test_count %}
+            {% include compliance_run_date.html time=version.latest_passing_run.completed_at url=version.latest_passing_run.run_url %}
+            <br>
+            All {{ passing_test_count }} passed
+          {% else %}
+            No passing run
+          {% endif %}
+        </td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% else %}
+No version results have been collected yet.
+{% endif %}
+{% endfor %}
+{% else %}
+No compliance results have been collected yet.
+{% endif %}

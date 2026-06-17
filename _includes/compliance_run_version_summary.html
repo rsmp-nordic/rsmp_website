@@ -1,0 +1,74 @@
+{% assign cells = include.run.cells %}
+{% assign core_versions = '' %}
+{% assign failed_core_versions = '' %}
+{% assign core_total = 0 %}
+{% assign core_failed = 0 %}
+
+{% for cell in cells %}
+  {% assign core_token = '|' | append: cell.core | append: '|' %}
+  {% unless core_versions contains core_token %}
+    {% assign core_versions = core_versions | append: core_token %}
+    {% assign core_total = core_total | plus: 1 %}
+  {% endunless %}
+  {% unless cell.status == 'passed' %}
+    {% unless failed_core_versions contains core_token %}
+      {% assign failed_core_versions = failed_core_versions | append: core_token %}
+      {% assign core_failed = core_failed | plus: 1 %}
+    {% endunless %}
+  {% endunless %}
+{% endfor %}
+
+{% if core_total > 0 %}
+  {% assign core_passed = core_total | minus: core_failed %}
+  {% if core_failed == 0 %}
+    All {{ core_total }} core {% if core_total == 1 %}version{% else %}versions{% endif %} passed.
+  {% else %}
+    {{ core_passed }}/{{ core_total }} core {% if core_total == 1 %}version{% else %}versions{% endif %} passed.
+  {% endif %}
+{% endif %}
+
+{% assign sxl_names = '' %}
+{% for cell in cells %}
+  {% for sxl in cell.sxls %}
+    {% assign sxl_name_token = '|' | append: sxl[0] | append: '|' %}
+    {% unless sxl_names contains sxl_name_token %}
+      {% assign sxl_names = sxl_names | append: sxl_name_token %}
+    {% endunless %}
+  {% endfor %}
+{% endfor %}
+
+{% assign sxl_name_list = sxl_names | split: '|' %}
+{% for sxl_name in sxl_name_list %}
+  {% if sxl_name != '' %}
+    {% assign sxl_versions = '' %}
+    {% assign failed_sxl_versions = '' %}
+    {% assign sxl_total = 0 %}
+    {% assign sxl_failed = 0 %}
+    {% for cell in cells %}
+      {% for sxl in cell.sxls %}
+        {% if sxl[0] == sxl_name %}
+          {% assign sxl_version_token = '|' | append: sxl[1] | append: '|' %}
+          {% unless sxl_versions contains sxl_version_token %}
+            {% assign sxl_versions = sxl_versions | append: sxl_version_token %}
+            {% assign sxl_total = sxl_total | plus: 1 %}
+          {% endunless %}
+          {% unless cell.status == 'passed' %}
+            {% unless failed_sxl_versions contains sxl_version_token %}
+              {% assign failed_sxl_versions = failed_sxl_versions | append: sxl_version_token %}
+              {% assign sxl_failed = sxl_failed | plus: 1 %}
+            {% endunless %}
+          {% endunless %}
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+    {% if sxl_total > 0 %}
+      {% assign sxl_passed = sxl_total | minus: sxl_failed %}
+      <br>
+      {% if sxl_failed == 0 %}
+        {% if sxl_total == 1 %}The 1 SXL {{ sxl_name }} version passed.{% else %}All {{ sxl_total }} SXL {{ sxl_name }} versions passed.{% endif %}
+      {% else %}
+        {{ sxl_passed }}/{{ sxl_total }} SXL {{ sxl_name }} {% if sxl_total == 1 %}version{% else %}versions{% endif %} passed.
+      {% endif %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
