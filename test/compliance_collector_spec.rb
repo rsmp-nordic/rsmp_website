@@ -9,17 +9,6 @@ module ComplianceCollectorSpec
     def initialize(reports)
       @reports = reports
       @since_values = []
-    
-it 'does not send GitHub auth headers to artifact storage redirects' do
-  client = RSMP::Website::Compliance::GitHubClient.new(repo: 'rsmp-nordic/rsmp_validator', token: 'token')
-
-  github_request = client.send(:request, URI('https://api.github.com/repos/rsmp-nordic/rsmp_validator'))
-  storage_request = client.send(:request, URI('https://example.blob.core.windows.net/artifact.zip'))
-
-  expect(github_request['Authorization']).to be == 'Bearer token'
-  expect(storage_request['Authorization']).to be == nil
-  expect(storage_request['Accept']).to be == nil
-end
 end
 
     def reports_since(since:)
@@ -237,5 +226,16 @@ describe RSMP::Website::Compliance::GitHubClient do
       'status' => 'completed',
       'per_page' => '100'
     }
+  end
+
+  it 'does not send GitHub auth headers to artifact storage redirects' do
+  client = RSMP::Website::Compliance::GitHubClient.new(repo: 'rsmp-nordic/rsmp_validator', token: 'token')
+
+  github_request = client.send(:request, URI('https://api.github.com/repos/rsmp-nordic/rsmp_validator'))
+  storage_request = client.send(:request, URI('https://example.blob.core.windows.net/artifact.zip'))
+
+  expect(github_request['Authorization']).to be == 'Bearer token'
+  expect(storage_request['Authorization']).to be == nil
+  expect(storage_request['X-GitHub-Api-Version']).to be == nil
   end
 end
