@@ -10,7 +10,8 @@ options = {
   data_dir: '../rsmp_website_compliance_data',
   lookback_days: RSMP::Website::Compliance::Collector::DEFAULT_LOOKBACK_DAYS,
   overlap_days: RSMP::Website::Compliance::Collector::DEFAULT_OVERLAP_DAYS,
-  full: false
+  full: false,
+  events: RSMP::Website::Compliance::GitHubClient::DEFAULT_EVENTS
 }
 
 OptionParser.new do |parser|
@@ -39,12 +40,16 @@ OptionParser.new do |parser|
   parser.on('--full', 'Ignore existing compliance-data summary and rebuild from the lookback window') do
     options[:full] = true
   end
+
+  parser.on('--events EVENTS', 'Comma-separated GitHub Actions events to collect') do |events|
+    options[:events] = events.split(',').map(&:strip).reject(&:empty?)
+  end
 end.parse!
 
 token = ENV['GH_TOKEN'] || ENV.fetch('GITHUB_TOKEN', nil)
 abort 'GH_TOKEN or GITHUB_TOKEN is required' unless token && token != ''
 
-github = RSMP::Website::Compliance::GitHubClient.new(repo: options[:repo], token: token)
+github = RSMP::Website::Compliance::GitHubClient.new(repo: options[:repo], token: token, events: options[:events])
 
 RSMP::Website::Compliance::Collector.new(
   github: github,

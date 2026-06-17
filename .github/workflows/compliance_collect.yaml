@@ -2,7 +2,8 @@ name: Collect Compliance Results
 
 on:
   schedule:
-    - cron: '30 1 * * *'
+    # GitHub cron is UTC; this is 06:00 in Copenhagen during daylight saving time.
+    - cron: '0 4 * * *'
   workflow_dispatch:
 
 permissions:
@@ -38,7 +39,7 @@ jobs:
 
       - name: Collect compliance data
         working-directory: rsmp_website
-        run: bundle exec ruby exe/compliance-collector --website-dir . --data-dir ../rsmp_website_compliance_data
+        run: bundle exec ruby exe/compliance-collector --website-dir . --data-dir ../rsmp_website_compliance_data --events schedule,pull_request
         env:
           GH_TOKEN: ${{ secrets.RSMP_VALIDATOR_READ_TOKEN || github.token }}
 
