@@ -103,7 +103,13 @@
 {% endif %}
 
 {% for target in targets %}
-<h4>{{ target.name }}</h4>
+{% assign target_anchor = target.id | default: target.name | slugify | prepend: 'compliance-' %}
+<h4 id="{{ target_anchor }}" class="compliance-device-heading">
+  {{ target.name }}
+  {% if target.product_url %}
+    <a class="compliance-product-link" href="{{ target.product_url }}" title="Product page" aria-label="Product page for {{ target.name }}">↗</a>
+  {% endif %}
+</h4>
 
 {% if target.versions.size > 0 %}
 <table>
@@ -115,7 +121,7 @@
       <th>Passed</th>
       <th>Status</th>
     </tr>
-    {% for version in target.versions %}
+    {% for version in target.core_versions %}
       <tr>
         <td>core {{ version.core }}</td>
         <td>
@@ -130,22 +136,20 @@
         <td>{% include compliance_overview_cell.html version=version %}</td>
       </tr>
     {% endfor %}
-    {% for version in target.versions %}
-      {% for sxl in version.sxls %}
-        <tr>
-          <td>{{ sxl[0] }} {{ sxl[1] }}</td>
-          <td>
-            {% include compliance_last_30_days.html stats=version.last_30_days %}
-          </td>
-          <td>
-            {% include compliance_run_result.html run=version.latest_run %}
-          </td>
-          <td>
-            {% include compliance_run_result.html run=version.latest_passing_run missing_text="No passing run" %}
-          </td>
-          <td>{% include compliance_overview_cell.html version=version %}</td>
-        </tr>
-      {% endfor %}
+    {% for sxl_version in target.sxl_versions %}
+      <tr>
+        <td>{{ sxl_version.name }} {{ sxl_version.version }}</td>
+        <td>
+          {% include compliance_last_30_days.html stats=sxl_version.last_30_days %}
+        </td>
+        <td>
+          {% include compliance_run_result.html run=sxl_version.latest_run %}
+        </td>
+        <td>
+          {% include compliance_run_result.html run=sxl_version.latest_passing_run missing_text="No passing run" %}
+        </td>
+        <td>{% include compliance_overview_cell.html version=sxl_version %}</td>
+      </tr>
     {% endfor %}
   </tbody>
 </table>

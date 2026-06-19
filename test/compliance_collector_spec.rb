@@ -163,7 +163,143 @@ describe RSMP::Website::Compliance::Summary do
       'total_runs' => 1,
       'pass_percentage' => 100.0
     }
+    expect(summary['core_versions']).to be == [
+      {
+        'core' => '3.3.0',
+        'last_status' => 'passed',
+        'latest_run' => summary['latest_run'].slice('run_id', 'run_attempt', 'run_url', 'event', 'completed_at',
+                                                    'status').merge(
+                                                      'test_count' => 0,
+                                                      'failed_count' => 0,
+                                                      'errored_count' => 0
+                                                    ),
+        'latest_passing_run' => summary['latest_passing_run'].slice('run_id', 'run_attempt', 'run_url', 'event',
+                                                                    'completed_at', 'status').merge(
+                                                                      'test_count' => 0,
+                                                                      'failed_count' => 0,
+                                                                      'errored_count' => 0
+                                                                    ),
+        'last_30_days' => {
+          'passed_runs' => 1,
+          'total_runs' => 1,
+          'pass_percentage' => 100.0
+        }
+      },
+      {
+        'core' => '3.2.2',
+        'last_status' => 'passed',
+        'latest_run' => summary['latest_run'].slice('run_id', 'run_attempt', 'run_url', 'event', 'completed_at',
+                                                    'status').merge(
+                                                      'test_count' => 0,
+                                                      'failed_count' => 0,
+                                                      'errored_count' => 0
+                                                    ),
+        'latest_passing_run' => summary['latest_passing_run'].slice('run_id', 'run_attempt', 'run_url', 'event',
+                                                                    'completed_at', 'status').merge(
+                                                                      'test_count' => 0,
+                                                                      'failed_count' => 0,
+                                                                      'errored_count' => 0
+                                                                    ),
+        'last_30_days' => {
+          'passed_runs' => 1,
+          'total_runs' => 1,
+          'pass_percentage' => 100.0
+        }
+      }
+    ]
+    expect(summary['sxl_versions']).to be == [
+      {
+        'name' => 'tlc',
+        'version' => '1.2.1',
+        'last_status' => 'passed',
+        'latest_run' => summary['latest_run'].slice('run_id', 'run_attempt', 'run_url', 'event', 'completed_at',
+                                                    'status').merge(
+                                                      'test_count' => 0,
+                                                      'failed_count' => 0,
+                                                      'errored_count' => 0
+                                                    ),
+        'latest_passing_run' => summary['latest_passing_run'].slice('run_id', 'run_attempt', 'run_url', 'event',
+                                                                    'completed_at', 'status').merge(
+                                                                      'test_count' => 0,
+                                                                      'failed_count' => 0,
+                                                                      'errored_count' => 0
+                                                                    ),
+        'last_30_days' => {
+          'passed_runs' => 2,
+          'total_runs' => 2,
+          'pass_percentage' => 100.0
+        }
+      }
+    ]
     expect((summary['last_30_days']['pass_percentage'] - 75.0).abs < 0.01).to be == true
+  end
+
+  it 'aggregates core rows across sxl versions' do
+    runs = {
+      'demo' => [
+        {
+          'target_id' => 'demo',
+          'run_id' => 2,
+          'run_attempt' => 1,
+          'run_url' => 'https://example.test/2',
+          'event' => 'schedule',
+          'completed_at' => '2026-06-17T00:00:01Z',
+          'status' => 'failed',
+          'passed_cells' => 1,
+          'total_cells' => 2,
+          'cells' => [
+            {
+              'core' => '3.3.0',
+              'sxls' => { 'tlc' => '1.0.7' },
+              'status' => 'passed',
+              'test_count' => 10,
+              'failed_count' => 0,
+              'errored_count' => 0
+            },
+            {
+              'core' => '3.3.0',
+              'sxls' => { 'tlc' => '1.2.1' },
+              'status' => 'failed',
+              'test_count' => 10,
+              'failed_count' => 1,
+              'errored_count' => 0
+            }
+          ]
+        }
+      ]
+    }
+
+    summary = RSMP::Website::Compliance::Summary.new(
+      targets: [ComplianceCollectorSpec.target],
+      runs_by_target: runs,
+      previous_summary: { 'targets' => [] },
+      now: Time.utc(2026, 6, 17, 8, 0, 0)
+    ).to_h['targets'].first
+
+    expect(summary['versions'].count { |version| version['core'] == '3.3.0' }).to be == 2
+    expect(summary['core_versions']).to be == [
+      {
+        'core' => '3.3.0',
+        'last_status' => 'failed',
+        'latest_run' => {
+          'run_id' => 2,
+          'run_attempt' => 1,
+          'run_url' => 'https://example.test/2',
+          'event' => 'schedule',
+          'completed_at' => '2026-06-17T00:00:01Z',
+          'status' => 'failed',
+          'test_count' => 20,
+          'failed_count' => 1,
+          'errored_count' => 0
+        },
+        'latest_passing_run' => nil,
+        'last_30_days' => {
+          'passed_runs' => 1,
+          'total_runs' => 2,
+          'pass_percentage' => 50.0
+        }
+      }
+    ]
   end
 
   it 'keeps an older latest pass when the new run fails' do
@@ -242,6 +378,11 @@ describe RSMP::Website::Compliance::Collector do
 
         version = data['targets'].first['versions'].find { |item| item['core'] == '3.2.2' }
         expect(version['last_30_days']).to be == {
+          'passed_runs' => 1,
+          'total_runs' => 2,
+          'pass_percentage' => 50.0
+        }
+        expect(data['targets'].first['sxl_versions'].first['last_30_days']).to be == {
           'passed_runs' => 1,
           'total_runs' => 2,
           'pass_percentage' => 50.0

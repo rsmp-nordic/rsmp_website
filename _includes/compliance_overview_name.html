@@ -1,7 +1,4 @@
 {% assign target = include.target %}
+{% assign target_anchor = target.id | default: target.name | slugify | prepend: 'compliance-' %}
 
-{% if target.product_url %}
-  <a href="{{ target.product_url }}">{{ target.name }}</a>
-{% else %}
-  {{ target.name }}
-{% endif %}
+<a href="#{{ target_anchor }}">{{ target.name }}</a>
