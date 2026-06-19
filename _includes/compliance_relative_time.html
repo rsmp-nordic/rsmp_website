@@ -1,0 +1,23 @@
+<script>
+  document.querySelectorAll('time[data-relative-time]').forEach(function(element) {
+    var date = new Date(element.dateTime);
+    if (Number.isNaN(date.getTime())) return;
+
+    var relativeSeconds = Math.round((date.getTime() - Date.now()) / 1000);
+    var relativeUnits = [
+      ['year', 31536000],
+      ['month', 2592000],
+      ['week', 604800],
+      ['day', 86400],
+      ['hour', 3600],
+      ['minute', 60],
+      ['second', 1]
+    ];
+    var formatter = new Intl.RelativeTimeFormat('en', { numeric: 'auto' });
+    var unit = relativeUnits.find(function(candidate) {
+      return Math.abs(relativeSeconds) >= candidate[1] || candidate[0] == 'second';
+    });
+
+    element.textContent = formatter.format(Math.round(relativeSeconds / unit[1]), unit[0]);
+  });
+</script>

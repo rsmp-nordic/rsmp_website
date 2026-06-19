@@ -46,26 +46,4 @@ The validator connects using the traffic light controller SXL.
 ## Core and SXL versions
 View available [core and SXL versions](https://rsmp-nordic.org/specification/).
 
-<script>
-  document.querySelectorAll('time[data-relative-time]').forEach(function(element) {
-    var date = new Date(element.dateTime);
-    if (Number.isNaN(date.getTime())) return;
-
-    var seconds = Math.round((date.getTime() - Date.now()) / 1000);
-    var units = [
-      ['year', 31536000],
-      ['month', 2592000],
-      ['week', 604800],
-      ['day', 86400],
-      ['hour', 3600],
-      ['minute', 60],
-      ['second', 1]
-    ];
-    var formatter = new Intl.RelativeTimeFormat('en', { numeric: 'auto' });
-    var unit = units.find(function(candidate) {
-      return Math.abs(seconds) >= candidate[1] || candidate[0] == 'second';
-    });
-
-    element.textContent = formatter.format(Math.round(seconds / unit[1]), unit[0]);
-  });
-</script>
+{% include compliance_relative_time.html %}
