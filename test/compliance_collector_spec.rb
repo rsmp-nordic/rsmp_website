@@ -1,4 +1,5 @@
 require 'json'
+require 'fileutils'
 require 'tmpdir'
 require_relative '../lib/rsmp/website/compliance/collector'
 
@@ -9,7 +10,7 @@ module ComplianceCollectorSpec
     def initialize(reports)
       @reports = reports
       @since_values = []
-end
+    end
 
     def reports_since(since:)
       @since_values << since
@@ -72,6 +73,28 @@ end
     }
   end
 
+  def stored_run(run_id, status, completed_at)
+    run_summary(run_id, status, completed_at, status == 'passed' ? 1 : 0).merge(
+      'total_cells' => 1,
+      'cells' => [
+        {
+          'core' => '3.2.2',
+          'sxls' => { 'tlc' => '1.2.1' },
+          'status' => status,
+          'test_count' => 10,
+          'failed_count' => failed_count(status),
+          'errored_count' => 0
+        }
+      ]
+    )
+  end
+
+  def write_run(data_dir, target_id, run)
+    dir = File.join(data_dir, 'runs', target_id)
+    FileUtils.mkdir_p(dir)
+    File.write(File.join(dir, "#{run.fetch('run_id')}-#{run.fetch('run_attempt')}.json"), JSON.pretty_generate(run))
+  end
+
   def version_summary(core, status, completed_at)
     run = {
       'run_id' => 1,
@@ -125,11 +148,21 @@ describe RSMP::Website::Compliance::Summary do
     ).to_h['targets'].first
 
     expect(summary['latest_run']['run_id']).to be == 2
+    expect(summary['latest_run'].key?('cells')).to be == false
+    expect(summary['latest_run']['version_summary']).to be == {
+      'core' => { 'passed_versions' => 2, 'total_versions' => 2 },
+      'sxls' => [{ 'name' => 'tlc', 'passed_versions' => 1, 'total_versions' => 1 }]
+    }
     expect(summary['latest_passing_run']['run_id']).to be == 2
     expect(summary['passed_versions']).to be == [
       { 'core' => '3.3.0', 'sxls' => { 'tlc' => '1.2.1' } },
       { 'core' => '3.2.2', 'sxls' => { 'tlc' => '1.2.1' } }
     ]
+    expect(summary['versions'].find { |version| version['core'] == '3.3.0' }['last_30_days']).to be == {
+      'passed_runs' => 1,
+      'total_runs' => 1,
+      'pass_percentage' => 100.0
+    }
     expect((summary['last_30_days']['pass_percentage'] - 75.0).abs < 0.01).to be == true
   end
 
@@ -184,11 +217,50 @@ describe RSMP::Website::Compliance::Collector do
     end
   end
 
+  it 'uses stored run files to calculate per-version recent pass rates' do
+    Dir.mktmpdir do |website_dir|
+      Dir.mktmpdir do |data_dir|
+        File.write(File.join(data_dir, 'summary.json'),
+                   "#{JSON.pretty_generate(ComplianceCollectorSpec.previous_summary)}\n")
+        ComplianceCollectorSpec.write_run(
+          data_dir,
+          'demo',
+          ComplianceCollectorSpec.stored_run(1, 'failed', '2026-06-10T00:00:00Z')
+        )
+        github = ComplianceCollectorSpec::FakeGitHub.new([
+                                                           ComplianceCollectorSpec.report(2, 1, '3.2.2', 'passed',
+                                                                                          '2026-06-17T00:00:00Z')
+                                                         ])
+
+        data = RSMP::Website::Compliance::Collector.new(
+          github: github,
+          website_dir: website_dir,
+          data_dir: data_dir,
+          source_repo: 'rsmp-nordic/rsmp_validator',
+          now: Time.utc(2026, 6, 17, 8, 0, 0)
+        ).collect
+
+        version = data['targets'].first['versions'].find { |item| item['core'] == '3.2.2' }
+        expect(version['last_30_days']).to be == {
+          'passed_runs' => 1,
+          'total_runs' => 2,
+          'pass_percentage' => 50.0
+        }
+        expect(data['targets'].first['recent_runs'].any? { |run| run.key?('cells') }).to be == false
+      end
+    end
+  end
+
   it 'ignores previous data branch summary in full mode' do
     Dir.mktmpdir do |website_dir|
       Dir.mktmpdir do |data_dir|
         File.write(File.join(data_dir, 'summary.json'),
                    "#{JSON.pretty_generate(ComplianceCollectorSpec.previous_summary)}\n")
+        ComplianceCollectorSpec.write_run(
+          data_dir,
+          'demo',
+          ComplianceCollectorSpec.stored_run(1, 'failed', '2026-06-10T00:00:00Z')
+        )
         github = ComplianceCollectorSpec::FakeGitHub.new([
                                                            ComplianceCollectorSpec.report(2, 1, '3.2.2', 'passed',
                                                                                           '2026-06-17T00:00:00Z')
@@ -206,6 +278,11 @@ describe RSMP::Website::Compliance::Collector do
         expect(github.since_values.first).to be == Time.utc(2026, 5, 3, 8, 0, 0)
         expect(data['targets'].first['latest_run']['run_id']).to be == 2
         expect(data['targets'].first['versions'].length).to be == 1
+        expect(data['targets'].first['versions'].first['last_30_days']).to be == {
+          'passed_runs' => 1,
+          'total_runs' => 1,
+          'pass_percentage' => 100.0
+        }
       end
     end
   end

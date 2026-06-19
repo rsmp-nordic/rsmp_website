@@ -32,11 +32,11 @@ module RSMP
         private
 
         def latest_run
-          latest_record([@previous['latest_run'], *@runs])
+          compact_run(latest_record([@previous['latest_run'], *@runs]))
         end
 
         def latest_passing_run
-          latest_record([@previous['latest_passing_run'], *new_passing_runs])
+          compact_run(latest_passing_run_record)
         end
 
         def new_passing_runs
@@ -44,7 +44,11 @@ module RSMP
         end
 
         def best_run
-          latest_passing_run || best_partial_run([@previous['best_run'], *@runs].compact)
+          compact_run(latest_passing_run_record || best_partial_run([@previous['best_run'], *@runs].compact))
+        end
+
+        def latest_passing_run_record
+          @latest_passing_run_record ||= latest_record([@previous['latest_passing_run'], *new_passing_runs])
         end
 
         def recent_runs
@@ -58,12 +62,19 @@ module RSMP
         end
 
         def compact_run(run)
-          run.slice('target_id', 'run_id', 'run_attempt', 'run_url', 'event', 'completed_at', 'status', 'passed_cells',
-                    'total_cells')
+          return nil unless run
+
+          compact = run.slice('target_id', 'run_id', 'run_attempt', 'run_url', 'event', 'completed_at', 'status',
+                              'passed_cells', 'total_cells')
+          version_summary = run_version_summary(run)
+          compact['version_summary'] = version_summary if version_summary
+          compact
         end
 
         def versions
-          @versions ||= TargetVersions.new(previous: @previous['versions'], runs: @runs).to_a
+          @versions ||= TargetVersions.new(previous: @previous['versions'], runs: @runs).to_a.map do |version|
+            version.merge('last_30_days' => version_last_month_stats(version))
+          end
         end
 
         def passed_versions
@@ -74,6 +85,67 @@ module RSMP
           total = recent_runs.sum { |run| run['total_cells'].to_i }
           passed = recent_runs.sum { |run| run['passed_cells'].to_i }
           { 'passed_cells' => passed, 'total_cells' => total, 'pass_percentage' => pass_percentage(passed, total) }
+        end
+
+        def version_last_month_stats(version)
+          cells = recent_full_runs.flat_map { |run| Array(run['cells']) }.select { |cell| version_cell?(version, cell) }
+          total = cells.size
+          passed = cells.count { |cell| cell['status'] == 'passed' }
+          { 'passed_runs' => passed, 'total_runs' => total, 'pass_percentage' => pass_percentage(passed, total) }
+        end
+
+        def recent_full_runs
+          @recent_full_runs ||= @runs.select { |run| within_last_month?(run['completed_at']) }
+        end
+
+        def version_cell?(version, cell)
+          version['core'] == cell['core'] && normalize_sxls(version['sxls']) == normalize_sxls(cell['sxls'])
+        end
+
+        def normalize_sxls(sxls)
+          sxls.to_h.transform_keys(&:to_s).transform_values(&:to_s).sort.to_h
+        end
+
+        def run_version_summary(run)
+          return run['version_summary'] if run['version_summary']
+
+          cells = Array(run['cells'])
+          return nil if cells.empty?
+
+          { 'core' => version_counts(cells), 'sxls' => sxl_version_counts(cells) }
+        end
+
+        def version_counts(cells)
+          statuses = cells.each_with_object({}) do |cell, versions|
+            version = cell['core'].to_s
+            next if version.empty?
+
+            versions[version] = version_passed?(versions[version], cell)
+          end
+          version_count_summary(statuses)
+        end
+
+        def sxl_version_counts(cells)
+          statuses = cells.each_with_object({}) do |cell, sxls|
+            normalize_sxls(cell['sxls']).each do |name, version|
+              sxls[name] ||= {}
+              sxls[name][version] = version_passed?(sxls[name][version], cell)
+            end
+          end
+          statuses.sort.map do |name, versions|
+            { 'name' => name }.merge(version_count_summary(versions))
+          end
+        end
+
+        def version_passed?(previous, cell)
+          status = cell['status'] == 'passed'
+          previous.nil? ? status : previous && status
+        end
+
+        def version_count_summary(statuses)
+          total = statuses.size
+          passed = statuses.count { |_version, status| status }
+          { 'passed_versions' => passed, 'total_versions' => total }
         end
 
         def pass_percentage(passed, total)

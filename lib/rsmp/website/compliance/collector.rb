@@ -29,16 +29,18 @@ module RSMP
 
         def collect
           previous_summary = @full ? empty_summary : @store.read_summary
+          stored_runs = @full ? {} : @store.read_runs_by_target
           reports = @github.reports_since(since: since_for(previous_summary))
           targets = targets_from_reports(reports)
-          runs = runs_by_target(targets, reports)
+          new_runs = runs_by_target(targets, reports)
+          summary_runs = merge_runs_by_target(stored_runs, new_runs)
           summary = Summary.new(
             targets: targets,
-            runs_by_target: runs,
+            runs_by_target: summary_runs,
             previous_summary: previous_summary,
             now: @now
           ).to_h
-          write_data(summary, runs)
+          write_data(summary, new_runs)
           summary
         end
 
@@ -49,6 +51,23 @@ module RSMP
             target_reports = reports.select { |report| report.dig('target', 'id') == target.fetch('id') }
             [target.fetch('id'), RunBuilder.new(target, target_reports).runs]
           end
+        end
+
+        def merge_runs_by_target(stored_runs, new_runs)
+          target_ids = stored_runs.keys | new_runs.keys
+          target_ids.to_h do |target_id|
+            [target_id, merge_runs(stored_runs[target_id], new_runs[target_id])]
+          end
+        end
+
+        def merge_runs(stored_runs, new_runs)
+          merged = Array(stored_runs).to_h { |run| [run_key(run), run] }
+          Array(new_runs).each { |run| merged[run_key(run)] = run }
+          merged.values
+        end
+
+        def run_key(run)
+          [run['run_id'], run['run_attempt']]
         end
 
         def targets_from_reports(reports)

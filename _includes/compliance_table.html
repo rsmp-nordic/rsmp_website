@@ -1,82 +1,118 @@
 {% assign targets = include.targets %}
 
 {% if targets.size > 0 %}
+{% assign core_versions = '' %}
+{% assign tlc_versions = '' %}
+
+{% for target in targets %}
+  {% for version in target.versions %}
+    {% assign core_token = '|' | append: version.core | append: '|' %}
+    {% unless core_versions contains core_token %}
+      {% assign core_versions = core_versions | append: core_token %}
+    {% endunless %}
+
+    {% assign tlc_version = version.sxls.tlc %}
+    {% if tlc_version %}
+      {% assign tlc_token = '|' | append: tlc_version | append: '|' %}
+      {% unless tlc_versions contains tlc_token %}
+        {% assign tlc_versions = tlc_versions | append: tlc_token %}
+      {% endunless %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+
+<h3>Core Versions</h3>
 <table>
   <thead>
     <tr>
       <th>{{ include.name_heading }}</th>
-      <th>Newest passed</th>
-      <th>Latest run</th>
-      <th>Latest pass</th>
+      {% assign core_version_list = core_versions | split: '|' %}
+      {% for core_version in core_version_list reversed %}
+        {% if core_version != '' %}
+          <th>{{ core_version }}</th>
+        {% endif %}
+      {% endfor %}
     </tr>
   </thead>
   <tbody>
     {% for target in targets %}
-      {% assign latest_run = target.latest_run %}
-      {% assign latest_pass = target.latest_passing_run %}
-      {% assign newest_passed_version = target.passed_versions | first %}
       <tr>
         <td>
-          {% if target.product_url %}
-            <a href="{{ target.product_url }}">{{ target.name }}</a>
-          {% else %}
-            {{ target.name }}
-          {% endif %}
-          {% if target.details_url %}
-            <br>
-            <a href="{{ target.details_url }}">Workflow runs</a>
-          {% endif %}
+          {% include compliance_overview_name.html target=target %}
         </td>
-        <td>
-          {% if newest_passed_version %}
-            Core {{ newest_passed_version.core }}
-            <br>
-            SXLs:
-            {% for passed_version in target.passed_versions %}
-              {% if passed_version.core == newest_passed_version.core and passed_version.sxls %}
-                <br>
-                {% for sxl in passed_version.sxls %}
-                  {{ sxl[0] }} {{ sxl[1] }}{% unless forloop.last %}, {% endunless %}
-                {% endfor %}
+        {% for core_version in core_version_list reversed %}
+          {% if core_version != '' %}
+            {% assign matched_version = nil %}
+            {% for version in target.versions %}
+              {% if version.core == core_version %}
+                {% assign matched_version = version %}
+                {% break %}
               {% endif %}
             {% endfor %}
-          {% else %}
-            No passing version
+            <td>{% include compliance_overview_cell.html version=matched_version %}</td>
           {% endif %}
-        </td>
-        <td>
-          {% if latest_run %}
-            {% include compliance_run_date.html time=latest_run.completed_at url=latest_run.run_url %}
-            <br>
-            {% include compliance_run_version_summary.html run=latest_run %}
-          {% else %}
-            Not run
-          {% endif %}
-        </td>
-        <td>
-          {% if latest_pass %}
-            {% include compliance_run_date.html time=latest_pass.completed_at url=latest_pass.run_url %}
-            <br>
-            {% include compliance_run_version_summary.html run=latest_pass %}
-          {% else %}
-            No passing run
-          {% endif %}
-        </td>
+        {% endfor %}
       </tr>
     {% endfor %}
   </tbody>
 </table>
 
+{% assign tlc_version_list = tlc_versions | split: '|' %}
+{% assign has_tlc_versions = false %}
+{% for tlc_version in tlc_version_list %}
+  {% if tlc_version != '' %}
+    {% assign has_tlc_versions = true %}
+  {% endif %}
+{% endfor %}
+
+{% if has_tlc_versions %}
+<h3>TLC SXL Versions</h3>
+<table>
+  <thead>
+    <tr>
+      <th>{{ include.name_heading }}</th>
+      {% for tlc_version in tlc_version_list reversed %}
+        {% if tlc_version != '' %}
+          <th>{{ tlc_version }}</th>
+        {% endif %}
+      {% endfor %}
+    </tr>
+  </thead>
+  <tbody>
+    {% for target in targets %}
+      <tr>
+        <td>
+          {% include compliance_overview_name.html target=target %}
+        </td>
+        {% for tlc_version in tlc_version_list reversed %}
+          {% if tlc_version != '' %}
+            {% assign matched_version = nil %}
+            {% for version in target.versions %}
+              {% if version.sxls.tlc == tlc_version %}
+                {% assign matched_version = version %}
+                {% break %}
+              {% endif %}
+            {% endfor %}
+            <td>{% include compliance_overview_cell.html version=matched_version %}</td>
+          {% endif %}
+        {% endfor %}
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endif %}
+
 {% for target in targets %}
-<h3>{{ target.name }} Version Support</h3>
+<h3>{{ target.name }} Core Support</h3>
 
 {% if target.versions.size > 0 %}
 <table>
   <thead>
     <tr>
       <th>Core</th>
-      <th>SXLs</th>
+      <th>With</th>
       <th>Latest status</th>
+      <th>Last 30 days</th>
       <th>Latest run</th>
       <th>Latest pass</th>
     </tr>
@@ -96,27 +132,13 @@
         </td>
         <td>{{ version.last_status | capitalize }}</td>
         <td>
-          {% if version.latest_run %}
-            {% assign latest_test_count = version.latest_run.test_count %}
-            {% assign latest_failed_count = version.latest_run.failed_count %}
-            {% assign latest_errored_count = version.latest_run.errored_count %}
-            {% assign latest_passed_count = latest_test_count | minus: latest_failed_count | minus: latest_errored_count %}
-            {% include compliance_run_date.html time=version.latest_run.completed_at url=version.latest_run.run_url %}
-            <br>
-            {% if latest_passed_count == latest_test_count %}All {{ latest_test_count }} passed{% else %}{{ latest_passed_count }}/{{ latest_test_count }} passed{% endif %}{% if latest_failed_count > 0 %}, {{ latest_failed_count }} failed{% endif %}{% if latest_errored_count > 0 %}, {{ latest_errored_count }} errors{% endif %}
-          {% else %}
-            Not run
-          {% endif %}
+          {% include compliance_last_30_days.html stats=version.last_30_days %}
         </td>
         <td>
-          {% if version.latest_passing_run %}
-            {% assign passing_test_count = version.latest_passing_run.test_count %}
-            {% include compliance_run_date.html time=version.latest_passing_run.completed_at url=version.latest_passing_run.run_url %}
-            <br>
-            All {{ passing_test_count }} passed
-          {% else %}
-            No passing run
-          {% endif %}
+          {% include compliance_run_result.html run=version.latest_run %}
+        </td>
+        <td>
+          {% include compliance_run_result.html run=version.latest_passing_run missing_text="No passing run" %}
         </td>
       </tr>
     {% endfor %}
@@ -124,6 +146,45 @@
 </table>
 {% else %}
 No version results have been collected yet.
+{% endif %}
+
+<h3>{{ target.name }} SXL Support</h3>
+
+{% if target.versions.size > 0 %}
+<table>
+  <thead>
+    <tr>
+      <th>SXL</th>
+      <th>With</th>
+      <th>Latest status</th>
+      <th>Last 30 days</th>
+      <th>Latest run</th>
+      <th>Latest pass</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for version in target.versions %}
+      {% for sxl in version.sxls %}
+        <tr>
+          <td>{{ sxl[0] }} {{ sxl[1] }}</td>
+          <td>Core {{ version.core }}</td>
+          <td>{{ version.last_status | capitalize }}</td>
+          <td>
+            {% include compliance_last_30_days.html stats=version.last_30_days %}
+          </td>
+          <td>
+            {% include compliance_run_result.html run=version.latest_run %}
+          </td>
+          <td>
+            {% include compliance_run_result.html run=version.latest_passing_run missing_text="No passing run" %}
+          </td>
+        </tr>
+      {% endfor %}
+    {% endfor %}
+  </tbody>
+</table>
+{% else %}
+No SXL results have been collected yet.
 {% endif %}
 {% endfor %}
 {% else %}

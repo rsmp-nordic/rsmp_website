@@ -20,6 +20,17 @@ module RSMP
           empty_summary
         end
 
+        def read_runs_by_target
+          Dir[File.join(runs_path, '*', '*.json')].each_with_object({}) do |path, runs|
+            run = read_json(path)
+            next unless run
+
+            target_id = File.basename(File.dirname(path))
+            runs[target_id] ||= []
+            runs[target_id] << run
+          end
+        end
+
         def write_summary(summary)
           ensure_dirs
           File.write(summary_path, pretty_json(summary))
@@ -36,16 +47,26 @@ module RSMP
           { 'generated_at' => nil, 'targets' => [] }
         end
 
+        def read_json(path)
+          JSON.parse(File.read(path))
+        rescue JSON::ParserError
+          nil
+        end
+
         def pretty_json(data)
           "#{JSON.pretty_generate(data)}\n"
         end
 
         def ensure_dirs
-          FileUtils.mkdir_p(File.join(@data_dir, 'runs'))
+          FileUtils.mkdir_p(runs_path)
         end
 
         def summary_path
           File.join(@data_dir, 'summary.json')
+        end
+
+        def runs_path
+          File.join(@data_dir, 'runs')
         end
 
         def run_target_dir(target_id)

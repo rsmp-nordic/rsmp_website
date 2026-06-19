@@ -61,7 +61,7 @@ View available [core and SXL versions](https://rsmp-nordic.org/specification/).
       ['minute', 60],
       ['second', 1]
     ];
-    var formatter = new Intl.RelativeTimeFormat(undefined, { numeric: 'auto' });
+    var formatter = new Intl.RelativeTimeFormat('en', { numeric: 'auto' });
     var unit = units.find(function(candidate) {
       return Math.abs(seconds) >= candidate[1] || candidate[0] == 'second';
     });

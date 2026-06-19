@@ -1,0 +1,14 @@
+{% assign run = include.run %}
+{% assign missing_text = include.missing_text | default: "Not run" %}
+
+{% if run %}
+  {% assign test_count = run.test_count | default: 0 %}
+  {% assign failed_count = run.failed_count | default: 0 %}
+  {% assign errored_count = run.errored_count | default: 0 %}
+  {% assign passed_count = test_count | minus: failed_count | minus: errored_count %}
+  {% include compliance_run_date.html time=run.completed_at url=run.run_url %}
+  <br>
+  {% if passed_count == test_count %}All {{ test_count }} passed{% else %}{{ passed_count }}/{{ test_count }} passed{% endif %}{% if failed_count > 0 %}, {{ failed_count }} failed{% endif %}{% if errored_count > 0 %}, {{ errored_count }} errors{% endif %}
+{% else %}
+  {{ missing_text }}
+{% endif %}

@@ -1,0 +1,10 @@
+{% assign stats = include.stats %}
+{% assign total_runs = stats.total_runs | default: 0 %}
+
+{% if total_runs > 0 %}
+  {{ stats.pass_percentage }}%
+  <br>
+  {{ stats.passed_runs }}/{{ total_runs }} passed
+{% else %}
+  No recent runs
+{% endif %}
