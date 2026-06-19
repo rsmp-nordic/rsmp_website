@@ -1,7 +1,14 @@
 {% assign version = include.version %}
 
 {% if version and version.last_30_days.passed_runs > 0 %}
-  {% if version.last_status == 'passed' %}√{% else %}(√){% endif %}
-  <br>
-  {% include compliance_run_date.html time=version.latest_passing_run.completed_at url=version.latest_passing_run.run_url %}
+  {% assign latest_pass = version.latest_passing_run %}
+  {% assign symbol = '√' %}
+  {% unless version.last_status == 'passed' %}
+    {% assign symbol = '(√)' %}
+  {% endunless %}
+  {% if latest_pass.run_url %}
+    <a href="{{ latest_pass.run_url }}" title="{{ latest_pass.completed_at | date: "%Y-%m-%d %H:%M UTC" }}">{{ symbol }}</a>
+  {% else %}
+    <span title="{{ latest_pass.completed_at | date: "%Y-%m-%d %H:%M UTC" }}">{{ symbol }}</span>
+  {% endif %}
 {% endif %}

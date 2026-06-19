@@ -21,13 +21,13 @@
   {% endfor %}
 {% endfor %}
 
-<h3>Core Versions</h3>
-<table>
+<h3>Core</h3>
+<table class="compliance-matrix">
   <thead>
     <tr>
       <th>{{ include.name_heading }}</th>
-      {% assign core_version_list = core_versions | split: '|' %}
-      {% for core_version in core_version_list reversed %}
+      {% assign core_version_list = core_versions | split: '|' | sort_natural %}
+      {% for core_version in core_version_list %}
         {% if core_version != '' %}
           <th>{{ core_version }}</th>
         {% endif %}
@@ -40,7 +40,7 @@
         <td>
           {% include compliance_overview_name.html target=target %}
         </td>
-        {% for core_version in core_version_list reversed %}
+        {% for core_version in core_version_list %}
           {% if core_version != '' %}
             {% assign matched_version = nil %}
             {% for version in target.versions %}
@@ -57,7 +57,7 @@
   </tbody>
 </table>
 
-{% assign tlc_version_list = tlc_versions | split: '|' %}
+{% assign tlc_version_list = tlc_versions | split: '|' | sort_natural %}
 {% assign has_tlc_versions = false %}
 {% for tlc_version in tlc_version_list %}
   {% if tlc_version != '' %}
@@ -66,12 +66,12 @@
 {% endfor %}
 
 {% if has_tlc_versions %}
-<h3>TLC SXL Versions</h3>
-<table>
+<h3>Traffic Light Controller SXL</h3>
+<table class="compliance-matrix">
   <thead>
     <tr>
       <th>{{ include.name_heading }}</th>
-      {% for tlc_version in tlc_version_list reversed %}
+      {% for tlc_version in tlc_version_list %}
         {% if tlc_version != '' %}
           <th>{{ tlc_version }}</th>
         {% endif %}
@@ -84,7 +84,7 @@
         <td>
           {% include compliance_overview_name.html target=target %}
         </td>
-        {% for tlc_version in tlc_version_list reversed %}
+        {% for tlc_version in tlc_version_list %}
           {% if tlc_version != '' %}
             {% assign matched_version = nil %}
             {% for version in target.versions %}
@@ -103,34 +103,21 @@
 {% endif %}
 
 {% for target in targets %}
-<h3>{{ target.name }} Core Support</h3>
+<h4>{{ target.name }}</h4>
 
 {% if target.versions.size > 0 %}
 <table>
-  <thead>
-    <tr>
-      <th>Core</th>
-      <th>With</th>
-      <th>Latest status</th>
-      <th>Last 30 days</th>
-      <th>Latest run</th>
-      <th>Latest pass</th>
-    </tr>
-  </thead>
   <tbody>
+    <tr class="compliance-section-row">
+      <th>Version</th>
+      <th>30 Days</th>
+      <th>Latest</th>
+      <th>Passed</th>
+      <th>Status</th>
+    </tr>
     {% for version in target.versions %}
       <tr>
-        <td>{{ version.core }}</td>
-        <td>
-          {% if version.sxls %}
-            {% for sxl in version.sxls %}
-              {{ sxl[0] }} {{ sxl[1] }}{% unless forloop.last %}<br>{% endunless %}
-            {% endfor %}
-          {% else %}
-            -
-          {% endif %}
-        </td>
-        <td>{{ version.last_status | capitalize }}</td>
+        <td>core {{ version.core }}</td>
         <td>
           {% include compliance_last_30_days.html stats=version.last_30_days %}
         </td>
@@ -140,35 +127,13 @@
         <td>
           {% include compliance_run_result.html run=version.latest_passing_run missing_text="No passing run" %}
         </td>
+        <td>{% include compliance_overview_cell.html version=version %}</td>
       </tr>
     {% endfor %}
-  </tbody>
-</table>
-{% else %}
-No version results have been collected yet.
-{% endif %}
-
-<h3>{{ target.name }} SXL Support</h3>
-
-{% if target.versions.size > 0 %}
-<table>
-  <thead>
-    <tr>
-      <th>SXL</th>
-      <th>With</th>
-      <th>Latest status</th>
-      <th>Last 30 days</th>
-      <th>Latest run</th>
-      <th>Latest pass</th>
-    </tr>
-  </thead>
-  <tbody>
     {% for version in target.versions %}
       {% for sxl in version.sxls %}
         <tr>
           <td>{{ sxl[0] }} {{ sxl[1] }}</td>
-          <td>Core {{ version.core }}</td>
-          <td>{{ version.last_status | capitalize }}</td>
           <td>
             {% include compliance_last_30_days.html stats=version.last_30_days %}
           </td>
@@ -178,6 +143,7 @@ No version results have been collected yet.
           <td>
             {% include compliance_run_result.html run=version.latest_passing_run missing_text="No passing run" %}
           </td>
+          <td>{% include compliance_overview_cell.html version=version %}</td>
         </tr>
       {% endfor %}
     {% endfor %}

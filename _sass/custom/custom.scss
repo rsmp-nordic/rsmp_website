@@ -67,3 +67,39 @@ img.logo {
   margin: 30px;
   padding: 0;
 }
+
+table.compliance-matrix {
+  width: 100%;
+  min-width: 0;
+  table-layout: fixed;
+}
+
+table.compliance-matrix th,
+table.compliance-matrix td {
+  width: auto;
+  min-width: 0;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+  text-align: center;
+  white-space: nowrap;
+}
+
+table.compliance-matrix th:first-child,
+table.compliance-matrix td:first-child {
+  width: 31%;
+  min-width: 11rem;
+  text-align: left;
+  white-space: normal;
+}
+
+tr.compliance-section-row th,
+tr.compliance-section-row td {
+  background: $grey-lt-000;
+  color: $grey-dk-200;
+  font-weight: 600;
+}
+
+tr.compliance-section-row th:first-child,
+tr.compliance-section-row td:first-child {
+  text-align: left;
+}
