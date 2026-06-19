@@ -1,0 +1,26 @@
+{
+  "target_id": "kapsch-etx",
+  "run_id": 27726270559,
+  "run_attempt": 1,
+  "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/27726270559",
+  "event": "schedule",
+  "completed_at": "2026-06-18T13:48:45Z",
+  "status": "passed",
+  "passed_cells": 1,
+  "total_cells": 1,
+  "cells": [
+    {
+      "core": "3.2.1",
+      "status": "passed",
+      "test_count": 129,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-kapsch-etx-core-3.2.1-run-27726270559-815-1.log",
+      "report_artifact": "compliance-kapsch-etx-core-3.2.1-run-27726270559-815-1.json",
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    }
+  ]
+}
