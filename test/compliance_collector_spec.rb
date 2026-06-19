@@ -168,17 +168,9 @@ describe RSMP::Website::Compliance::Summary do
         'core' => '3.3.0',
         'last_status' => 'passed',
         'latest_run' => summary['latest_run'].slice('run_id', 'run_attempt', 'run_url', 'event', 'completed_at',
-                                                    'status').merge(
-                                                      'test_count' => 0,
-                                                      'failed_count' => 0,
-                                                      'errored_count' => 0
-                                                    ),
+                                                    'status'),
         'latest_passing_run' => summary['latest_passing_run'].slice('run_id', 'run_attempt', 'run_url', 'event',
-                                                                    'completed_at', 'status').merge(
-                                                                      'test_count' => 0,
-                                                                      'failed_count' => 0,
-                                                                      'errored_count' => 0
-                                                                    ),
+                                                                    'completed_at', 'status'),
         'last_30_days' => {
           'passed_runs' => 1,
           'total_runs' => 1,
@@ -189,17 +181,9 @@ describe RSMP::Website::Compliance::Summary do
         'core' => '3.2.2',
         'last_status' => 'passed',
         'latest_run' => summary['latest_run'].slice('run_id', 'run_attempt', 'run_url', 'event', 'completed_at',
-                                                    'status').merge(
-                                                      'test_count' => 0,
-                                                      'failed_count' => 0,
-                                                      'errored_count' => 0
-                                                    ),
+                                                    'status'),
         'latest_passing_run' => summary['latest_passing_run'].slice('run_id', 'run_attempt', 'run_url', 'event',
-                                                                    'completed_at', 'status').merge(
-                                                                      'test_count' => 0,
-                                                                      'failed_count' => 0,
-                                                                      'errored_count' => 0
-                                                                    ),
+                                                                    'completed_at', 'status'),
         'last_30_days' => {
           'passed_runs' => 1,
           'total_runs' => 1,
@@ -213,17 +197,9 @@ describe RSMP::Website::Compliance::Summary do
         'version' => '1.2.1',
         'last_status' => 'passed',
         'latest_run' => summary['latest_run'].slice('run_id', 'run_attempt', 'run_url', 'event', 'completed_at',
-                                                    'status').merge(
-                                                      'test_count' => 0,
-                                                      'failed_count' => 0,
-                                                      'errored_count' => 0
-                                                    ),
+                                                    'status'),
         'latest_passing_run' => summary['latest_passing_run'].slice('run_id', 'run_attempt', 'run_url', 'event',
-                                                                    'completed_at', 'status').merge(
-                                                                      'test_count' => 0,
-                                                                      'failed_count' => 0,
-                                                                      'errored_count' => 0
-                                                                    ),
+                                                                    'completed_at', 'status'),
         'last_30_days' => {
           'passed_runs' => 2,
           'total_runs' => 2,
@@ -288,11 +264,21 @@ describe RSMP::Website::Compliance::Summary do
           'event' => 'schedule',
           'completed_at' => '2026-06-17T00:00:01Z',
           'status' => 'failed',
-          'test_count' => 20,
+          'test_count' => 10,
           'failed_count' => 1,
           'errored_count' => 0
         },
-        'latest_passing_run' => nil,
+        'latest_passing_run' => {
+          'run_id' => 2,
+          'run_attempt' => 1,
+          'run_url' => 'https://example.test/2',
+          'event' => 'schedule',
+          'completed_at' => '2026-06-17T00:00:01Z',
+          'status' => 'passed',
+          'test_count' => 10,
+          'failed_count' => 0,
+          'errored_count' => 0
+        },
         'last_30_days' => {
           'passed_runs' => 1,
           'total_runs' => 2,

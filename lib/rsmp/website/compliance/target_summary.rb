@@ -194,23 +194,13 @@ module RSMP
         end
 
         def merge_axis_run(previous, fields, run, cells)
-          latest = cell_group_run_summary(run, cells)
-          previous_pass = previous&.fetch('latest_passing_run', nil)
-          latest_pass = if latest['status'] == 'passed'
-                          latest
-                        elsif same_run?(previous_pass, latest)
-                          nil
-                        else
-                          previous_pass
-                        end
+          cell_runs = cells.map { |cell| cell_run_summary(run, cell) }
+          latest = latest_cell_record(cell_runs)
+          latest_pass = latest_record([previous&.fetch('latest_passing_run', nil), *cell_runs.select do |cell_run|
+            cell_run['status'] == 'passed'
+          end])
           latest = latest_record([previous&.fetch('latest_run', nil), latest])
           axis_version(fields, latest, latest_pass)
-        end
-
-        def same_run?(left, right)
-          return false unless left && right
-
-          left['run_id'] == right['run_id'] && left['run_attempt'] == right['run_attempt']
         end
 
         def axis_version(fields, latest, latest_pass)
@@ -221,12 +211,9 @@ module RSMP
           )
         end
 
-        def cell_group_run_summary(run, cells)
+        def cell_run_summary(run, cell)
           run.slice('run_id', 'run_attempt', 'run_url', 'event', 'completed_at').merge(
-            'status' => cells.all? { |cell| cell['status'] == 'passed' } ? 'passed' : 'failed',
-            'test_count' => cells.sum { |cell| cell['test_count'].to_i },
-            'failed_count' => cells.sum { |cell| cell['failed_count'].to_i },
-            'errored_count' => cells.sum { |cell| cell['errored_count'].to_i }
+            cell.slice('status', 'test_count', 'failed_count', 'errored_count')
           )
         end
 
@@ -294,6 +281,16 @@ module RSMP
           records.compact.each_with_index.max_by do |record, index|
             [record['completed_at'] || '', record['run_attempt'].to_i, index]
           end&.first
+        end
+
+        def latest_cell_record(records)
+          records.compact.each_with_index.max_by do |record, index|
+            [record['completed_at'] || '', record['run_attempt'].to_i, failed_status?(record), index]
+          end&.first
+        end
+
+        def failed_status?(record)
+          record['status'] == 'passed' ? 0 : 1
         end
 
         def best_partial_run(runs)
