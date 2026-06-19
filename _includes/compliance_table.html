@@ -117,8 +117,8 @@
     <tr class="compliance-section-row">
       <th>Version</th>
       <th>30 Days</th>
-      <th>Latest</th>
       <th>Passed</th>
+      <th>Latest</th>
       <th>Status</th>
     </tr>
     {% for version in target.core_versions %}
@@ -128,10 +128,14 @@
           {% include compliance_last_30_days.html stats=version.last_30_days %}
         </td>
         <td>
-          {% include compliance_run_result.html run=version.latest_run %}
+          {% if version.latest_passing_run %}
+            {% include compliance_run_date.html time=version.latest_passing_run.completed_at url=version.latest_passing_run.run_url %}
+          {% else %}
+            No passing run
+          {% endif %}
         </td>
         <td>
-          {% include compliance_run_result.html run=version.latest_passing_run missing_text="No passing run" %}
+          {% include compliance_run_result.html run=version.latest_run %}
         </td>
         <td>{% include compliance_overview_cell.html version=version %}</td>
       </tr>
@@ -143,10 +147,14 @@
           {% include compliance_last_30_days.html stats=sxl_version.last_30_days %}
         </td>
         <td>
-          {% include compliance_run_result.html run=sxl_version.latest_run %}
+          {% if sxl_version.latest_passing_run %}
+            {% include compliance_run_date.html time=sxl_version.latest_passing_run.completed_at url=sxl_version.latest_passing_run.run_url %}
+          {% else %}
+            No passing run
+          {% endif %}
         </td>
         <td>
-          {% include compliance_run_result.html run=sxl_version.latest_passing_run missing_text="No passing run" %}
+          {% include compliance_run_result.html run=sxl_version.latest_run %}
         </td>
         <td>{% include compliance_overview_cell.html version=sxl_version %}</td>
       </tr>

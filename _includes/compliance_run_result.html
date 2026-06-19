@@ -5,12 +5,14 @@
   {% assign test_count = run.test_count | default: 0 %}
   {% assign failed_count = run.failed_count | default: 0 %}
   {% assign errored_count = run.errored_count | default: 0 %}
-  {% include compliance_run_date.html time=run.completed_at url=run.run_url %}
   {% if failed_count > 0 or errored_count > 0 %}
     {% assign unsuccessful_count = failed_count | plus: errored_count %}
-    <br>
-    {{ unsuccessful_count }}/{{ test_count }} failed{% if errored_count > 0 %}, {{ errored_count }} errors{% endif %}
+    {{ unsuccessful_count }}/{{ test_count }} tests failed{% if errored_count > 0 %}, {{ errored_count }} errors{% endif %}
+  {% else %}
+    All {{ test_count }} tests passed
   {% endif %}
+  <br>
+  {% include compliance_run_date.html time=run.completed_at url=run.run_url %}
 {% else %}
   {{ missing_text }}
 {% endif %}
