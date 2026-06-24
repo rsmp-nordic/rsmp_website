@@ -20,13 +20,13 @@ jobs:
 
     steps:
       - name: Checkout website main
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           ref: main
           path: rsmp_website
 
       - name: Checkout website compliance data
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           ref: compliance-data
           path: rsmp_website_compliance_data
