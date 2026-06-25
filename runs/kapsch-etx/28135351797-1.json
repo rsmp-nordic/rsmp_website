@@ -1,0 +1,462 @@
+{
+  "target_id": "kapsch-etx",
+  "run_id": 28135351797,
+  "run_attempt": 1,
+  "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/28135351797",
+  "event": "schedule",
+  "completed_at": "2026-06-24T23:46:24Z",
+  "status": "failed",
+  "passed_cells": 0,
+  "total_cells": 7,
+  "cells": [
+    {
+      "core": "3.1.2",
+      "status": "failed",
+      "test_count": 147,
+      "failed_count": 3,
+      "errored_count": 0,
+      "log_artifact": "validator-kapsch-etx-core-3.1.2-run-28135351797-836-1.log",
+      "report_artifact": "compliance-kapsch-etx-core-3.1.2-run-28135351797-836-1.json",
+      "failures": [
+        {
+          "id": "test/site/tlc/modes_spec.rb:169",
+          "message": "describe Site::Tlc::Modes it yellow flash can be activated with M0001 test/site/tlc/modes_spec.rb:168\n\t✗ .. Matched 2/3 with {\"S0007\" => {\"status\" => {{/^True(,True)*$/ => \"True\"} => true}}, \"S0011\" => {\"status\" => {{/^False(,False)*$/ => \"False\"} => true}}, \"S0005\" => {\"status\" => {\"False\" => nil}}} test/site/tlc/modes_spec.rb:169",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/modes_spec.rb",
+            "line": 169
+          },
+          "type": "Sus::Assertions::Assert"
+        },
+        {
+          "id": "test/site/tlc/modes_spec.rb:185",
+          "message": "describe Site::Tlc::Modes it yellow flash affects all signal groups test/site/tlc/modes_spec.rb:184\n\t✗ .. Matched 2/3 with {\"S0007\" => {\"status\" => {{/^True(,True)*$/ => \"True\"} => true}}, \"S0011\" => {\"status\" => {{/^False(,False)*$/ => \"False\"} => true}}, \"S0005\" => {\"status\" => {\"False\" => nil}}} test/site/tlc/modes_spec.rb:185",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/modes_spec.rb",
+            "line": 185
+          },
+          "type": "Sus::Assertions::Assert"
+        },
+        {
+          "id": "test/site/tlc/modes_spec.rb:234",
+          "message": "describe Site::Tlc::Modes it dark mode can be activated with M0001 test/site/tlc/modes_spec.rb:233\n\t✗ .. Matched 2/3 with {\"S0007\" => {\"status\" => {{/^True(,True)*$/ => \"True\"} => true}}, \"S0011\" => {\"status\" => {{/^False(,False)*$/ => \"False\"} => true}}, \"S0005\" => {\"status\" => {\"False\" => nil}}} test/site/tlc/modes_spec.rb:234",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/modes_spec.rb",
+            "line": 234
+          },
+          "type": "Sus::Assertions::Assert"
+        }
+      ],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.1.3",
+      "status": "failed",
+      "test_count": 145,
+      "failed_count": 3,
+      "errored_count": 0,
+      "log_artifact": "validator-kapsch-etx-core-3.1.3-run-28135351797-836-1.log",
+      "report_artifact": "compliance-kapsch-etx-core-3.1.3-run-28135351797-836-1.json",
+      "failures": [
+        {
+          "id": "test/site/tlc/modes_spec.rb:169",
+          "message": "describe Site::Tlc::Modes it yellow flash can be activated with M0001 test/site/tlc/modes_spec.rb:168\n\t✗ .. Matched 2/3 with {\"S0007\" => {\"status\" => {{/^True(,True)*$/ => \"True\"} => true}}, \"S0011\" => {\"status\" => {{/^False(,False)*$/ => \"False\"} => true}}, \"S0005\" => {\"status\" => {\"False\" => nil}}} test/site/tlc/modes_spec.rb:169",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/modes_spec.rb",
+            "line": 169
+          },
+          "type": "Sus::Assertions::Assert"
+        },
+        {
+          "id": "test/site/tlc/modes_spec.rb:185",
+          "message": "describe Site::Tlc::Modes it yellow flash affects all signal groups test/site/tlc/modes_spec.rb:184\n\t✗ .. Matched 2/3 with {\"S0007\" => {\"status\" => {{/^True(,True)*$/ => \"True\"} => true}}, \"S0011\" => {\"status\" => {{/^False(,False)*$/ => \"False\"} => true}}, \"S0005\" => {\"status\" => {\"False\" => nil}}} test/site/tlc/modes_spec.rb:185",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/modes_spec.rb",
+            "line": 185
+          },
+          "type": "Sus::Assertions::Assert"
+        },
+        {
+          "id": "test/site/tlc/modes_spec.rb:234",
+          "message": "describe Site::Tlc::Modes it dark mode can be activated with M0001 test/site/tlc/modes_spec.rb:233\n\t✗ .. Matched 2/3 with {\"S0007\" => {\"status\" => {{/^True(,True)*$/ => \"True\"} => true}}, \"S0011\" => {\"status\" => {{/^False(,False)*$/ => \"False\"} => true}}, \"S0005\" => {\"status\" => {\"False\" => nil}}} test/site/tlc/modes_spec.rb:234",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/modes_spec.rb",
+            "line": 234
+          },
+          "type": "Sus::Assertions::Assert"
+        }
+      ],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.1.4",
+      "status": "failed",
+      "test_count": 143,
+      "failed_count": 5,
+      "errored_count": 1,
+      "log_artifact": "validator-kapsch-etx-core-3.1.4-run-28135351797-836-1.log",
+      "report_artifact": "compliance-kapsch-etx-core-3.1.4-run-28135351797-836-1.json",
+      "failures": [
+        {
+          "id": "test/site/core/message_buffer_spec.rb:110",
+          "message": "describe Message Buffer it preserves buffered status timestamps from before reconnect test/site/core/message_buffer_spec.rb:104\n\t✗ expected buffered status timestamp 2026-06-24 23:35:50 UTC to be before reconnect 2026-06-24 23:35:49 UTC test/site/core/message_buffer_spec.rb:110",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/core/message_buffer_spec.rb",
+            "line": 110
+          },
+          "type": "Sus::Assertions::Assert"
+        },
+        {
+          "id": "test/site/tlc/modes_spec.rb:108",
+          "message": "describe Site::Tlc::Modes it fixed time control can be activated with M0007 test/site/tlc/modes_spec.rb:107\n\t✗ .. Matched 0/1 with {\"S0009\" => {\"status\" => {/^False(,False)*$/ => nil}}} test/site/tlc/modes_spec.rb:108",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/modes_spec.rb",
+            "line": 108
+          },
+          "type": "Sus::Assertions::Assert"
+        },
+        {
+          "id": "test/site/tlc/modes_spec.rb:169",
+          "message": "describe Site::Tlc::Modes it yellow flash can be activated with M0001 test/site/tlc/modes_spec.rb:168\n\t✗ .. Matched 0/1 with {\"S0011\" => {\"status\" => {/^True(,True)*$/ => nil}}} test/site/tlc/modes_spec.rb:169",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/modes_spec.rb",
+            "line": 169
+          },
+          "type": "Sus::Assertions::Assert"
+        },
+        {
+          "id": "test/site/tlc/modes_spec.rb:185",
+          "message": "describe Site::Tlc::Modes it yellow flash affects all signal groups test/site/tlc/modes_spec.rb:184\n\t✗ .. Matched 0/1 with {\"S0011\" => {\"status\" => {/^True(,True)*$/ => nil}}} test/site/tlc/modes_spec.rb:185",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/modes_spec.rb",
+            "line": 185
+          },
+          "type": "Sus::Assertions::Assert"
+        },
+        {
+          "id": "test/site/tlc/modes_spec.rb:234",
+          "message": "describe Site::Tlc::Modes it dark mode can be activated with M0001 test/site/tlc/modes_spec.rb:233\n\t✗ .. Matched 2/3 with {\"S0007\" => {\"status\" => {{/^True(,True)*$/ => \"True\"} => true}}, \"S0011\" => {\"status\" => {{/^False(,False)*$/ => \"False\"} => true}}, \"S0005\" => {\"status\" => {\"False\" => nil}}} test/site/tlc/modes_spec.rb:234",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/modes_spec.rb",
+            "line": 234
+          },
+          "type": "Sus::Assertions::Assert"
+        },
+        {
+          "id": "test/site/tlc/modes_spec.rb:60",
+          "message": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.47.0/lib/rsmp/message.rb:171:in 'RSMP::Message#validate': RSMP::SchemaError: Received invalid StatusResponse (RSMP::Validator::Helpers::Connection::UncaughtException)\n\tfrom /mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.47.0/lib/rsmp/proxy/modules/receive.rb:71:in 'RSMP::Proxy::Modules::Receive#process_packet'\n\tfrom /mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.47.0/lib/rsmp/proxy/modules/tasks.rb:39:in 'RSMP::Proxy::Modules::Tasks#read_line'\n\tfrom /mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.47.0/lib/rsmp/proxy/modules/tasks.rb:19:in 'block in RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.47.0/lib/rsmp/proxy/modules/tasks.rb:18:in 'Kernel#loop'\n\tfrom /mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.47.0/lib/rsmp/proxy/modules/tasks.rb:18:in 'RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.47.0/lib/rsmp/proxy/modules/tasks.rb:11:in 'block in RSMP::Proxy::Modules::Tasks#start_reader'\n\tfrom /mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.40.0/lib/async/task.rb:224:in 'block in Async::Task#run'\n\tfrom /mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.40.0/lib/async/task.rb:521:in 'block in Async::Task#schedule'",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/modes_spec.rb",
+            "line": 60
+          },
+          "type": "Sus::Assertions::Error"
+        }
+      ],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.1.5",
+      "status": "failed",
+      "test_count": 141,
+      "failed_count": 4,
+      "errored_count": 0,
+      "log_artifact": "validator-kapsch-etx-core-3.1.5-run-28135351797-836-1.log",
+      "report_artifact": "compliance-kapsch-etx-core-3.1.5-run-28135351797-836-1.json",
+      "failures": [
+        {
+          "id": "test/site/core/message_buffer_spec.rb:110",
+          "message": "describe Message Buffer it preserves buffered status timestamps from before reconnect test/site/core/message_buffer_spec.rb:104\n\t✗ expected buffered status timestamp 2026-06-24 23:12:39 UTC to be before reconnect 2026-06-24 23:12:38 UTC test/site/core/message_buffer_spec.rb:110",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/core/message_buffer_spec.rb",
+            "line": 110
+          },
+          "type": "Sus::Assertions::Assert"
+        },
+        {
+          "id": "test/site/tlc/modes_spec.rb:169",
+          "message": "describe Site::Tlc::Modes it yellow flash can be activated with M0001 test/site/tlc/modes_spec.rb:168\n\t✗ .. Matched 2/3 with {\"S0007\" => {\"status\" => {{/^True(,True)*$/ => \"True\"} => true}}, \"S0011\" => {\"status\" => {{/^False(,False)*$/ => \"False\"} => true}}, \"S0005\" => {\"status\" => {\"False\" => nil}}} test/site/tlc/modes_spec.rb:169",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/modes_spec.rb",
+            "line": 169
+          },
+          "type": "Sus::Assertions::Assert"
+        },
+        {
+          "id": "test/site/tlc/modes_spec.rb:185",
+          "message": "describe Site::Tlc::Modes it yellow flash affects all signal groups test/site/tlc/modes_spec.rb:184\n\t✗ .. Matched 2/3 with {\"S0007\" => {\"status\" => {{/^True(,True)*$/ => \"True\"} => true}}, \"S0011\" => {\"status\" => {{/^False(,False)*$/ => \"False\"} => true}}, \"S0005\" => {\"status\" => {\"False\" => nil}}} test/site/tlc/modes_spec.rb:185",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/modes_spec.rb",
+            "line": 185
+          },
+          "type": "Sus::Assertions::Assert"
+        },
+        {
+          "id": "test/site/tlc/modes_spec.rb:234",
+          "message": "describe Site::Tlc::Modes it dark mode can be activated with M0001 test/site/tlc/modes_spec.rb:233\n\t✗ .. Matched 2/3 with {\"S0007\" => {\"status\" => {{/^True(,True)*$/ => \"True\"} => true}}, \"S0011\" => {\"status\" => {{/^False(,False)*$/ => \"False\"} => true}}, \"S0005\" => {\"status\" => {\"False\" => nil}}} test/site/tlc/modes_spec.rb:234",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/modes_spec.rb",
+            "line": 234
+          },
+          "type": "Sus::Assertions::Assert"
+        }
+      ],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.2.0",
+      "status": "failed",
+      "test_count": 132,
+      "failed_count": 7,
+      "errored_count": 0,
+      "log_artifact": "validator-kapsch-etx-core-3.2.0-run-28135351797-836-1.log",
+      "report_artifact": "compliance-kapsch-etx-core-3.2.0-run-28135351797-836-1.json",
+      "failures": [
+        {
+          "id": "test/site/core/message_buffer_spec.rb:94",
+          "message": "expect [\"recent\"] to\n\tbe == [\"old\"]\n\t\t✗ assertion failed test/site/core/message_buffer_spec.rb:94",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/core/message_buffer_spec.rb",
+            "line": 94
+          },
+          "type": "Sus::Assertions"
+        },
+        {
+          "id": "test/site/core/message_buffer_spec.rb:110",
+          "message": "describe Message Buffer it preserves buffered status timestamps from before reconnect test/site/core/message_buffer_spec.rb:104\n\t✗ expected buffered status timestamp 2026-06-24 23:18:36 UTC to be before reconnect 2026-06-24 23:18:34 UTC test/site/core/message_buffer_spec.rb:110",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/core/message_buffer_spec.rb",
+            "line": 110
+          },
+          "type": "Sus::Assertions::Assert"
+        },
+        {
+          "id": "test/site/tlc/modes_spec.rb:169",
+          "message": "describe Site::Tlc::Modes it yellow flash can be activated with M0001 test/site/tlc/modes_spec.rb:168\n\t✗ .. Matched 2/3 with {\"S0007\" => {\"status\" => {{/^True(,True)*$/ => \"True\"} => true}}, \"S0011\" => {\"status\" => {{/^False(,False)*$/ => \"False\"} => true}}, \"S0005\" => {\"status\" => {\"False\" => nil}}} test/site/tlc/modes_spec.rb:169",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/modes_spec.rb",
+            "line": 169
+          },
+          "type": "Sus::Assertions::Assert"
+        },
+        {
+          "id": "test/site/tlc/modes_spec.rb:185",
+          "message": "describe Site::Tlc::Modes it yellow flash affects all signal groups test/site/tlc/modes_spec.rb:184\n\t✗ .. Matched 2/3 with {\"S0007\" => {\"status\" => {{/^True(,True)*$/ => \"True\"} => true}}, \"S0011\" => {\"status\" => {{/^False(,False)*$/ => \"False\"} => true}}, \"S0005\" => {\"status\" => {\"False\" => nil}}} test/site/tlc/modes_spec.rb:185",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/modes_spec.rb",
+            "line": 185
+          },
+          "type": "Sus::Assertions::Assert"
+        },
+        {
+          "id": "test/site/tlc/modes_spec.rb:234",
+          "message": "describe Site::Tlc::Modes it dark mode can be activated with M0001 test/site/tlc/modes_spec.rb:233\n\t✗ .. Matched 2/3 with {\"S0007\" => {\"status\" => {{/^True(,True)*$/ => \"True\"} => true}}, \"S0011\" => {\"status\" => {{/^False(,False)*$/ => \"False\"} => true}}, \"S0005\" => {\"status\" => {\"False\" => nil}}} test/site/tlc/modes_spec.rb:234",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/modes_spec.rb",
+            "line": 234
+          },
+          "type": "Sus::Assertions::Assert"
+        },
+        {
+          "id": "test/site/tlc/signal_priority_spec.rb:64",
+          "message": "describe Site::Tlc::SignalPriority it becomes completed when cancelled test/site/tlc/signal_priority_spec.rb:63\n\t✗ Priority request did not reach state activated within 10s test/site/tlc/signal_priority_spec.rb:64",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/signal_priority_spec.rb",
+            "line": 64
+          },
+          "type": "Sus::Assertions::Assert"
+        },
+        {
+          "id": "test/site/tlc/signal_priority_spec.rb:110",
+          "message": "describe Site::Tlc::SignalPriority it becomes stale if not cancelled test/site/tlc/signal_priority_spec.rb:109\n\t✗ Priority request did not reach state activated within 10s test/site/tlc/signal_priority_spec.rb:110",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/signal_priority_spec.rb",
+            "line": 110
+          },
+          "type": "Sus::Assertions::Assert"
+        }
+      ],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.2.1",
+      "status": "failed",
+      "test_count": 132,
+      "failed_count": 8,
+      "errored_count": 1,
+      "log_artifact": "validator-kapsch-etx-core-3.2.1-run-28135351797-836-1.log",
+      "report_artifact": "compliance-kapsch-etx-core-3.2.1-run-28135351797-836-1.json",
+      "failures": [
+        {
+          "id": "test/site/core/message_buffer_spec.rb:94",
+          "message": "expect [\"recent\"] to\n\tbe == [\"old\"]\n\t\t✗ assertion failed test/site/core/message_buffer_spec.rb:94",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/core/message_buffer_spec.rb",
+            "line": 94
+          },
+          "type": "Sus::Assertions"
+        },
+        {
+          "id": "test/site/core/message_buffer_spec.rb:110",
+          "message": "describe Message Buffer it preserves buffered status timestamps from before reconnect test/site/core/message_buffer_spec.rb:104\n\t✗ expected buffered status timestamp 2026-06-24 23:29:38 UTC to be before reconnect 2026-06-24 23:29:36 UTC test/site/core/message_buffer_spec.rb:110",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/core/message_buffer_spec.rb",
+            "line": 110
+          },
+          "type": "Sus::Assertions::Assert"
+        },
+        {
+          "id": "test/site/tlc/alarm_spec.rb:57",
+          "message": "describe Site::Tlc::Alarm it can acknowledge A0302 test/site/tlc/alarm_spec.rb:56\n\t✗ .. Matched 0/2 with {\"S0029\" => {\"status\" => {/^.{3}1/ => nil}}, \"S0003\" => {\"inputstatus\" => {/^.{3}0/ => nil}}} test/site/tlc/alarm_spec.rb:57",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/alarm_spec.rb",
+            "line": 57
+          },
+          "type": "Sus::Assertions::Assert"
+        },
+        {
+          "id": "test/site/tlc/modes_spec.rb:169",
+          "message": "describe Site::Tlc::Modes it yellow flash can be activated with M0001 test/site/tlc/modes_spec.rb:168\n\t✗ .. Matched 2/3 with {\"S0007\" => {\"status\" => {{/^True(,True)*$/ => \"True\"} => true}}, \"S0011\" => {\"status\" => {{/^False(,False)*$/ => \"False\"} => true}}, \"S0005\" => {\"status\" => {\"False\" => nil}}} test/site/tlc/modes_spec.rb:169",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/modes_spec.rb",
+            "line": 169
+          },
+          "type": "Sus::Assertions::Assert"
+        },
+        {
+          "id": "test/site/tlc/modes_spec.rb:185",
+          "message": "describe Site::Tlc::Modes it yellow flash affects all signal groups test/site/tlc/modes_spec.rb:184\n\t✗ .. Matched 2/3 with {\"S0007\" => {\"status\" => {{/^True(,True)*$/ => \"True\"} => true}}, \"S0011\" => {\"status\" => {{/^False(,False)*$/ => \"False\"} => true}}, \"S0005\" => {\"status\" => {\"False\" => nil}}} test/site/tlc/modes_spec.rb:185",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/modes_spec.rb",
+            "line": 185
+          },
+          "type": "Sus::Assertions::Assert"
+        },
+        {
+          "id": "test/site/tlc/modes_spec.rb:234",
+          "message": "describe Site::Tlc::Modes it dark mode can be activated with M0001 test/site/tlc/modes_spec.rb:233\n\t✗ .. Matched 2/3 with {\"S0007\" => {\"status\" => {{/^True(,True)*$/ => \"True\"} => true}}, \"S0011\" => {\"status\" => {{/^False(,False)*$/ => \"False\"} => true}}, \"S0005\" => {\"status\" => {\"False\" => nil}}} test/site/tlc/modes_spec.rb:234",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/modes_spec.rb",
+            "line": 234
+          },
+          "type": "Sus::Assertions::Assert"
+        },
+        {
+          "id": "test/site/tlc/signal_priority_spec.rb:64",
+          "message": "describe Site::Tlc::SignalPriority it becomes completed when cancelled test/site/tlc/signal_priority_spec.rb:63\n\t✗ Priority request did not reach state activated within 10s test/site/tlc/signal_priority_spec.rb:64",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/signal_priority_spec.rb",
+            "line": 64
+          },
+          "type": "Sus::Assertions::Assert"
+        },
+        {
+          "id": "test/site/tlc/signal_priority_spec.rb:110",
+          "message": "describe Site::Tlc::SignalPriority it becomes stale if not cancelled test/site/tlc/signal_priority_spec.rb:109\n\t✗ Priority request did not reach state activated within 10s test/site/tlc/signal_priority_spec.rb:110",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/signal_priority_spec.rb",
+            "line": 110
+          },
+          "type": "Sus::Assertions::Assert"
+        },
+        {
+          "id": "test/site/tlc/alarm_spec.rb:28",
+          "message": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.47.0/lib/rsmp/proxy/proxy.rb:222:in 'block in RSMP::Proxy#sxl_interface': RSMP::Schema::UnknownSchemaTypeError: SXL tlc is not accepted on this connection (RSMP::Validator::Helpers::Connection::UncaughtException)\n\tfrom /mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.47.0/lib/rsmp/proxy/proxy.rb:221:in 'Hash#fetch'\n\tfrom /mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.47.0/lib/rsmp/proxy/proxy.rb:221:in 'RSMP::Proxy#sxl_interface'\n\tfrom /mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.47.0/lib/rsmp/proxy/proxy.rb:227:in 'RSMP::Proxy#tlc'\n\tfrom /mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/helpers/input.rb:9:in 'RSMP::Validator::Helpers::Input#force_input_and_confirm'\n\tfrom /mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/helpers/alarms.rb:38:in 'RSMP::Validator::Helpers::Alarms#run_alarm_lifecycle'\n\tfrom /mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/helpers/alarms.rb:13:in 'RSMP::Validator::Helpers::Alarms#with_alarm_activated'\n\tfrom test/site/tlc/alarm_spec.rb:35:in 'block (4 levels) in <top (required)>'\n\tfrom /mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/helpers/connection.rb:33:in 'block in RSMP::Validator::Helpers::Connection#with_site'\n\tfrom /mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/tester.rb:25:in 'RSMP::Validator::Tester#connected'\n\tfrom /mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/site_tester.rb:11:in 'RSMP::Validator::SiteTester.connected'\n\tfrom /mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/helpers/connection.rb:32:in 'Kernel#public_send'\n\tfrom /mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/helpers/connection.rb:32:in 'RSMP::Validator::Helpers::Connection#with_site'\n\tfrom test/site/tlc/alarm_spec.rb:28:in 'block (3 levels) in <top (required)>'\n\tfrom /mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:67:in 'block in Sus::It#handle_skip'\n\tfrom /mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:66:in 'Kernel#catch'\n\tfrom /mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:66:in 'Sus::It#handle_skip'\n\tfrom /mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:56:in 'block (2 levels) in Sus::It#call'\n\tfrom /mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/async_context.rb:8:in 'block in RSMP::Validator::AsyncContext#around'\n\tfrom /mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.40.0/lib/async/task.rb:224:in 'block in Async::Task#run'\n\tfrom /mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.40.0/lib/async/task.rb:521:in 'block in Async::Task#schedule'",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/alarm_spec.rb",
+            "line": 28
+          },
+          "type": "Sus::Assertions::Error"
+        }
+      ],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.2.2",
+      "status": "failed",
+      "test_count": 132,
+      "failed_count": 7,
+      "errored_count": 0,
+      "log_artifact": "validator-kapsch-etx-core-3.2.2-run-28135351797-836-1.log",
+      "report_artifact": "compliance-kapsch-etx-core-3.2.2-run-28135351797-836-1.json",
+      "failures": [
+        {
+          "id": "test/site/core/message_buffer_spec.rb:94",
+          "message": "expect [\"recent\"] to\n\tbe == [\"old\"]\n\t\t✗ assertion failed test/site/core/message_buffer_spec.rb:94",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/core/message_buffer_spec.rb",
+            "line": 94
+          },
+          "type": "Sus::Assertions"
+        },
+        {
+          "id": "test/site/core/message_buffer_spec.rb:110",
+          "message": "describe Message Buffer it preserves buffered status timestamps from before reconnect test/site/core/message_buffer_spec.rb:104\n\t✗ expected buffered status timestamp 2026-06-24 23:42:10 UTC to be before reconnect 2026-06-24 23:42:08 UTC test/site/core/message_buffer_spec.rb:110",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/core/message_buffer_spec.rb",
+            "line": 110
+          },
+          "type": "Sus::Assertions::Assert"
+        },
+        {
+          "id": "test/site/tlc/modes_spec.rb:169",
+          "message": "describe Site::Tlc::Modes it yellow flash can be activated with M0001 test/site/tlc/modes_spec.rb:168\n\t✗ .. Matched 2/3 with {\"S0007\" => {\"status\" => {{/^True(,True)*$/ => \"True\"} => true}}, \"S0011\" => {\"status\" => {{/^False(,False)*$/ => \"False\"} => true}}, \"S0005\" => {\"status\" => {\"False\" => nil}}} test/site/tlc/modes_spec.rb:169",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/modes_spec.rb",
+            "line": 169
+          },
+          "type": "Sus::Assertions::Assert"
+        },
+        {
+          "id": "test/site/tlc/modes_spec.rb:185",
+          "message": "describe Site::Tlc::Modes it yellow flash affects all signal groups test/site/tlc/modes_spec.rb:184\n\t✗ .. Matched 2/3 with {\"S0007\" => {\"status\" => {{/^True(,True)*$/ => \"True\"} => true}}, \"S0011\" => {\"status\" => {{/^False(,False)*$/ => \"False\"} => true}}, \"S0005\" => {\"status\" => {\"False\" => nil}}} test/site/tlc/modes_spec.rb:185",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/modes_spec.rb",
+            "line": 185
+          },
+          "type": "Sus::Assertions::Assert"
+        },
+        {
+          "id": "test/site/tlc/modes_spec.rb:234",
+          "message": "describe Site::Tlc::Modes it dark mode can be activated with M0001 test/site/tlc/modes_spec.rb:233\n\t✗ .. Matched 2/3 with {\"S0007\" => {\"status\" => {{/^True(,True)*$/ => \"True\"} => true}}, \"S0011\" => {\"status\" => {{/^False(,False)*$/ => \"False\"} => true}}, \"S0005\" => {\"status\" => {\"False\" => nil}}} test/site/tlc/modes_spec.rb:234",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/modes_spec.rb",
+            "line": 234
+          },
+          "type": "Sus::Assertions::Assert"
+        },
+        {
+          "id": "test/site/tlc/signal_priority_spec.rb:64",
+          "message": "describe Site::Tlc::SignalPriority it becomes completed when cancelled test/site/tlc/signal_priority_spec.rb:63\n\t✗ Priority request did not reach state activated within 10s test/site/tlc/signal_priority_spec.rb:64",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/signal_priority_spec.rb",
+            "line": 64
+          },
+          "type": "Sus::Assertions::Assert"
+        },
+        {
+          "id": "test/site/tlc/signal_priority_spec.rb:110",
+          "message": "describe Site::Tlc::SignalPriority it becomes stale if not cancelled test/site/tlc/signal_priority_spec.rb:109\n\t✗ Priority request did not reach state activated within 10s test/site/tlc/signal_priority_spec.rb:110",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/signal_priority_spec.rb",
+            "line": 110
+          },
+          "type": "Sus::Assertions::Assert"
+        }
+      ],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    }
+  ]
+}
