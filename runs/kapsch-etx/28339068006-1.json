@@ -1,0 +1,190 @@
+{
+  "target_id": "kapsch-etx",
+  "run_id": 28339068006,
+  "run_attempt": 1,
+  "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/28339068006",
+  "event": "schedule",
+  "completed_at": "2026-06-28T23:37:49Z",
+  "status": "failed",
+  "passed_cells": 2,
+  "total_cells": 7,
+  "cells": [
+    {
+      "core": "3.1.2",
+      "status": "passed",
+      "test_count": 147,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-kapsch-etx-core-3.1.2-run-28339068006-841-1.log",
+      "report_artifact": "compliance-kapsch-etx-core-3.1.2-run-28339068006-841-1.json",
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.1.3",
+      "status": "passed",
+      "test_count": 145,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-kapsch-etx-core-3.1.3-run-28339068006-841-1.log",
+      "report_artifact": "compliance-kapsch-etx-core-3.1.3-run-28339068006-841-1.json",
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.1.4",
+      "status": "failed",
+      "test_count": 143,
+      "failed_count": 1,
+      "errored_count": 0,
+      "log_artifact": "validator-kapsch-etx-core-3.1.4-run-28339068006-841-1.log",
+      "report_artifact": "compliance-kapsch-etx-core-3.1.4-run-28339068006-841-1.json",
+      "failures": [
+        {
+          "id": "test/site/core/message_buffer_spec.rb:110",
+          "message": "describe Message Buffer it preserves buffered status timestamps from before reconnect test/site/core/message_buffer_spec.rb:104\n\t✗ expected buffered status timestamp 2026-06-28 23:35:12 UTC to be before reconnect 2026-06-28 23:35:10 UTC test/site/core/message_buffer_spec.rb:110",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/core/message_buffer_spec.rb",
+            "line": 110
+          },
+          "type": "Sus::Assertions::Assert"
+        }
+      ],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.1.5",
+      "status": "failed",
+      "test_count": 141,
+      "failed_count": 1,
+      "errored_count": 0,
+      "log_artifact": "validator-kapsch-etx-core-3.1.5-run-28339068006-841-1.log",
+      "report_artifact": "compliance-kapsch-etx-core-3.1.5-run-28339068006-841-1.json",
+      "failures": [
+        {
+          "id": "test/site/core/message_buffer_spec.rb:110",
+          "message": "describe Message Buffer it preserves buffered status timestamps from before reconnect test/site/core/message_buffer_spec.rb:104\n\t✗ expected buffered status timestamp 2026-06-28 23:16:30 UTC to be before reconnect 2026-06-28 23:16:28 UTC test/site/core/message_buffer_spec.rb:110",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/core/message_buffer_spec.rb",
+            "line": 110
+          },
+          "type": "Sus::Assertions::Assert"
+        }
+      ],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.2.0",
+      "status": "failed",
+      "test_count": 132,
+      "failed_count": 3,
+      "errored_count": 0,
+      "log_artifact": "validator-kapsch-etx-core-3.2.0-run-28339068006-841-1.log",
+      "report_artifact": "compliance-kapsch-etx-core-3.2.0-run-28339068006-841-1.json",
+      "failures": [
+        {
+          "id": "test/site/core/message_buffer_spec.rb:94",
+          "message": "expect [\"recent\"] to\n\tbe == [\"old\"]\n\t\t✗ assertion failed test/site/core/message_buffer_spec.rb:94",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/core/message_buffer_spec.rb",
+            "line": 94
+          },
+          "type": "Sus::Assertions"
+        },
+        {
+          "id": "test/site/core/message_buffer_spec.rb:110",
+          "message": "describe Message Buffer it preserves buffered status timestamps from before reconnect test/site/core/message_buffer_spec.rb:104\n\t✗ expected buffered status timestamp 2026-06-28 23:10:26 UTC to be before reconnect 2026-06-28 23:10:25 UTC test/site/core/message_buffer_spec.rb:110",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/core/message_buffer_spec.rb",
+            "line": 110
+          },
+          "type": "Sus::Assertions::Assert"
+        },
+        {
+          "id": "test/site/tlc/signal_priority_spec.rb:46",
+          "message": "describe Site::Tlc::SignalPriority it status can be subscribed to with S0033 test/site/tlc/signal_priority_spec.rb:45\n\t✗ .. Matched 0/1 with {\"S0033\" => {\"status\" => {nil => nil}}} test/site/tlc/signal_priority_spec.rb:46",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/signal_priority_spec.rb",
+            "line": 46
+          },
+          "type": "Sus::Assertions::Assert"
+        }
+      ],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.2.1",
+      "status": "failed",
+      "test_count": 132,
+      "failed_count": 2,
+      "errored_count": 0,
+      "log_artifact": "validator-kapsch-etx-core-3.2.1-run-28339068006-841-1.log",
+      "report_artifact": "compliance-kapsch-etx-core-3.2.1-run-28339068006-841-1.json",
+      "failures": [
+        {
+          "id": "test/site/core/message_buffer_spec.rb:94",
+          "message": "expect [\"recent\"] to\n\tbe == [\"old\"]\n\t\t✗ assertion failed test/site/core/message_buffer_spec.rb:94",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/core/message_buffer_spec.rb",
+            "line": 94
+          },
+          "type": "Sus::Assertions"
+        },
+        {
+          "id": "test/site/core/message_buffer_spec.rb:110",
+          "message": "describe Message Buffer it preserves buffered status timestamps from before reconnect test/site/core/message_buffer_spec.rb:104\n\t✗ expected buffered status timestamp 2026-06-28 23:21:40 UTC to be before reconnect 2026-06-28 23:21:39 UTC test/site/core/message_buffer_spec.rb:110",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/core/message_buffer_spec.rb",
+            "line": 110
+          },
+          "type": "Sus::Assertions::Assert"
+        }
+      ],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.2.2",
+      "status": "failed",
+      "test_count": 132,
+      "failed_count": 2,
+      "errored_count": 0,
+      "log_artifact": "validator-kapsch-etx-core-3.2.2-run-28339068006-841-1.log",
+      "report_artifact": "compliance-kapsch-etx-core-3.2.2-run-28339068006-841-1.json",
+      "failures": [
+        {
+          "id": "test/site/core/message_buffer_spec.rb:94",
+          "message": "expect [\"recent\"] to\n\tbe == [\"old\"]\n\t\t✗ assertion failed test/site/core/message_buffer_spec.rb:94",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/core/message_buffer_spec.rb",
+            "line": 94
+          },
+          "type": "Sus::Assertions"
+        },
+        {
+          "id": "test/site/core/message_buffer_spec.rb:110",
+          "message": "describe Message Buffer it preserves buffered status timestamps from before reconnect test/site/core/message_buffer_spec.rb:104\n\t✗ expected buffered status timestamp 2026-06-28 23:26:26 UTC to be before reconnect 2026-06-28 23:26:24 UTC test/site/core/message_buffer_spec.rb:110",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/core/message_buffer_spec.rb",
+            "line": 110
+          },
+          "type": "Sus::Assertions::Assert"
+        }
+      ],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    }
+  ]
+}
