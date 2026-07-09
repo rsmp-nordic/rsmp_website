@@ -1,0 +1,134 @@
+{
+  "target_id": "kapsch-etx",
+  "run_id": 28982035810,
+  "run_attempt": 1,
+  "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/28982035810",
+  "event": "schedule",
+  "completed_at": "2026-07-08T23:51:03Z",
+  "status": "failed",
+  "passed_cells": 4,
+  "total_cells": 7,
+  "cells": [
+    {
+      "core": "3.1.2",
+      "status": "passed",
+      "test_count": 147,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-kapsch-etx-core-3.1.2-run-28982035810-855-1.log",
+      "report_artifact": "compliance-kapsch-etx-core-3.1.2-run-28982035810-855-1.json",
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.1.3",
+      "status": "passed",
+      "test_count": 145,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-kapsch-etx-core-3.1.3-run-28982035810-855-1.log",
+      "report_artifact": "compliance-kapsch-etx-core-3.1.3-run-28982035810-855-1.json",
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.1.4",
+      "status": "passed",
+      "test_count": 143,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-kapsch-etx-core-3.1.4-run-28982035810-855-1.log",
+      "report_artifact": "compliance-kapsch-etx-core-3.1.4-run-28982035810-855-1.json",
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.1.5",
+      "status": "passed",
+      "test_count": 141,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-kapsch-etx-core-3.1.5-run-28982035810-855-1.log",
+      "report_artifact": "compliance-kapsch-etx-core-3.1.5-run-28982035810-855-1.json",
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.2.0",
+      "status": "failed",
+      "test_count": 132,
+      "failed_count": 1,
+      "errored_count": 0,
+      "log_artifact": "validator-kapsch-etx-core-3.2.0-run-28982035810-855-1.log",
+      "report_artifact": "compliance-kapsch-etx-core-3.2.0-run-28982035810-855-1.json",
+      "failures": [
+        {
+          "id": "test/site/core/message_buffer_spec.rb:94",
+          "message": "expect [\"recent\"] to\n\tbe == [\"old\"]\n\t\t✗ assertion failed test/site/core/message_buffer_spec.rb:94",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/core/message_buffer_spec.rb",
+            "line": 94
+          },
+          "type": "Sus::Assertions"
+        }
+      ],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.2.1",
+      "status": "failed",
+      "test_count": 132,
+      "failed_count": 1,
+      "errored_count": 0,
+      "log_artifact": "validator-kapsch-etx-core-3.2.1-run-28982035810-855-1.log",
+      "report_artifact": "compliance-kapsch-etx-core-3.2.1-run-28982035810-855-1.json",
+      "failures": [
+        {
+          "id": "test/site/core/message_buffer_spec.rb:94",
+          "message": "expect [\"recent\"] to\n\tbe == [\"old\"]\n\t\t✗ assertion failed test/site/core/message_buffer_spec.rb:94",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/core/message_buffer_spec.rb",
+            "line": 94
+          },
+          "type": "Sus::Assertions"
+        }
+      ],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.2.2",
+      "status": "failed",
+      "test_count": 132,
+      "failed_count": 1,
+      "errored_count": 0,
+      "log_artifact": "validator-kapsch-etx-core-3.2.2-run-28982035810-855-1.log",
+      "report_artifact": "compliance-kapsch-etx-core-3.2.2-run-28982035810-855-1.json",
+      "failures": [
+        {
+          "id": "test/site/core/message_buffer_spec.rb:94",
+          "message": "expect [\"recent\"] to\n\tbe == [\"old\"]\n\t\t✗ assertion failed test/site/core/message_buffer_spec.rb:94",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/core/message_buffer_spec.rb",
+            "line": 94
+          },
+          "type": "Sus::Assertions"
+        }
+      ],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    }
+  ]
+}
