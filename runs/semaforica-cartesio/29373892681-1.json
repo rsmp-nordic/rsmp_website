@@ -1,0 +1,559 @@
+{
+  "target_id": "semaforica-cartesio",
+  "run_id": 29373892681,
+  "run_attempt": 1,
+  "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/29373892681",
+  "event": "schedule",
+  "completed_at": "2026-07-15T00:14:03Z",
+  "status": "failed",
+  "passed_cells": 2,
+  "total_cells": 7,
+  "cells": [
+    {
+      "core": "3.1.2",
+      "status": "passed",
+      "test_count": 147,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-lasemaforica-cartesio-core-3.1.2-run-29373892681-1154-1.log",
+      "report_artifact": "compliance-tecsen-lasemaforica-cartesio-core-3.1.2-run-29373892681-1154-1.json",
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.1.3",
+      "status": "passed",
+      "test_count": 145,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-lasemaforica-cartesio-core-3.1.3-run-29373892681-1154-1.log",
+      "report_artifact": "compliance-tecsen-lasemaforica-cartesio-core-3.1.3-run-29373892681-1154-1.json",
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.1.4",
+      "status": "failed",
+      "test_count": 143,
+      "failed_count": 0,
+      "errored_count": 8,
+      "log_artifact": "validator-tecsen-lasemaforica-cartesio-core-3.1.4-run-29373892681-1154-1.log",
+      "report_artifact": "compliance-tecsen-lasemaforica-cartesio-core-3.1.4-run-29373892681-1154-1.json",
+      "failures": [
+        {
+          "id": "test/site/tlc/input_spec.rb:96",
+          "message": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/message.rb:173:in 'RSMP::Message#validate': RSMP::SchemaError: Received invalid CommandResponse (RSMP::Validator::Helpers::Connection::UncaughtException)\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/receive.rb:72:in 'RSMP::Proxy::Modules::Receive#process_packet'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:39:in 'RSMP::Proxy::Modules::Tasks#read_line'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:19:in 'block in RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'Kernel#loop'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:11:in 'block in RSMP::Proxy::Modules::Tasks#start_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:224:in 'block in Async::Task#run'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:521:in 'block in Async::Task#schedule'",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/tlc/input_spec.rb",
+            "line": 96
+          },
+          "type": "Sus::Assertions::Error"
+        },
+        {
+          "id": "test/site/tlc/invalid_command_spec.rb:24",
+          "message": "expect :cancelled to\n\tbe == :ok\n\t\t✗ assertion failed test/site/tlc/invalid_command_spec.rb:24",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/tlc/invalid_command_spec.rb",
+            "line": 24
+          },
+          "type": "Sus::Assertions"
+        },
+        {
+          "id": "test/site/tlc/invalid_command_spec.rb:26",
+          "message": "expect nil to\n\tbe is_a? RSMP::CommandResponse\n\t\t✗ assertion failed test/site/tlc/invalid_command_spec.rb:26",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/tlc/invalid_command_spec.rb",
+            "line": 26
+          },
+          "type": "Sus::Assertions"
+        },
+        {
+          "id": "test/site/tlc/invalid_command_spec.rb:10",
+          "message": "test/site/tlc/invalid_command_spec.rb:27:in 'block (4 levels) in <top (required)>': NoMethodError: undefined method 'attributes' for nil (RSMP::Validator::Helpers::Connection::UncaughtException)\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/helpers/connection.rb:33:in 'block in RSMP::Validator::Helpers::Connection#with_site'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/tester.rb:25:in 'RSMP::Validator::Tester#connected'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/site_tester.rb:11:in 'RSMP::Validator::SiteTester.connected'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/helpers/connection.rb:32:in 'Kernel#public_send'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/helpers/connection.rb:32:in 'RSMP::Validator::Helpers::Connection#with_site'\n\tfrom test/site/tlc/invalid_command_spec.rb:10:in 'block (3 levels) in <top (required)>'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:67:in 'block in Sus::It#handle_skip'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:66:in 'Kernel#catch'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:66:in 'Sus::It#handle_skip'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:56:in 'block (2 levels) in Sus::It#call'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/async_context.rb:8:in 'block in RSMP::Validator::AsyncContext#around'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:224:in 'block in Async::Task#run'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:521:in 'block in Async::Task#schedule'",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/tlc/invalid_command_spec.rb",
+            "line": 10
+          },
+          "type": "Sus::Assertions::Error"
+        },
+        {
+          "id": "test/site/tlc/signal_groups_spec.rb:10",
+          "message": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/message.rb:173:in 'RSMP::Message#validate': RSMP::SchemaError: Received invalid CommandResponse (RSMP::Validator::Helpers::Connection::UncaughtException)\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/receive.rb:72:in 'RSMP::Proxy::Modules::Receive#process_packet'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:39:in 'RSMP::Proxy::Modules::Tasks#read_line'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:19:in 'block in RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'Kernel#loop'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:11:in 'block in RSMP::Proxy::Modules::Tasks#start_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:224:in 'block in Async::Task#run'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:521:in 'block in Async::Task#schedule'",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/tlc/signal_groups_spec.rb",
+            "line": 10
+          },
+          "type": "Sus::Assertions::Error"
+        },
+        {
+          "id": "test/site/tlc/signal_groups_spec.rb:21",
+          "message": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/message.rb:173:in 'RSMP::Message#validate': RSMP::SchemaError: Received invalid CommandResponse (RSMP::Validator::Helpers::Connection::UncaughtException)\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/receive.rb:72:in 'RSMP::Proxy::Modules::Receive#process_packet'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:39:in 'RSMP::Proxy::Modules::Tasks#read_line'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:19:in 'block in RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'Kernel#loop'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:11:in 'block in RSMP::Proxy::Modules::Tasks#start_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:224:in 'block in Async::Task#run'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:521:in 'block in Async::Task#schedule'",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/tlc/signal_groups_spec.rb",
+            "line": 21
+          },
+          "type": "Sus::Assertions::Error"
+        },
+        {
+          "id": "test/site/tlc/signal_plans_spec.rb:98",
+          "message": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/message.rb:173:in 'RSMP::Message#validate': RSMP::SchemaError: Received invalid CommandResponse (RSMP::Validator::Helpers::Connection::UncaughtException)\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/receive.rb:72:in 'RSMP::Proxy::Modules::Receive#process_packet'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:39:in 'RSMP::Proxy::Modules::Tasks#read_line'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:19:in 'block in RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'Kernel#loop'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:11:in 'block in RSMP::Proxy::Modules::Tasks#start_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:224:in 'block in Async::Task#run'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:521:in 'block in Async::Task#schedule'",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/tlc/signal_plans_spec.rb",
+            "line": 98
+          },
+          "type": "Sus::Assertions::Error"
+        },
+        {
+          "id": "test/site/tlc/signal_plans_spec.rb:123",
+          "message": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/message.rb:173:in 'RSMP::Message#validate': RSMP::SchemaError: Received invalid CommandResponse (RSMP::Validator::Helpers::Connection::UncaughtException)\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/receive.rb:72:in 'RSMP::Proxy::Modules::Receive#process_packet'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:39:in 'RSMP::Proxy::Modules::Tasks#read_line'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:19:in 'block in RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'Kernel#loop'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:11:in 'block in RSMP::Proxy::Modules::Tasks#start_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:224:in 'block in Async::Task#run'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:521:in 'block in Async::Task#schedule'",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/tlc/signal_plans_spec.rb",
+            "line": 123
+          },
+          "type": "Sus::Assertions::Error"
+        },
+        {
+          "id": "test/site/tlc/signal_plans_spec.rb:227",
+          "message": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/message.rb:173:in 'RSMP::Message#validate': RSMP::SchemaError: Received invalid CommandResponse (RSMP::Validator::Helpers::Connection::UncaughtException)\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/receive.rb:72:in 'RSMP::Proxy::Modules::Receive#process_packet'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:39:in 'RSMP::Proxy::Modules::Tasks#read_line'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:19:in 'block in RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'Kernel#loop'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:11:in 'block in RSMP::Proxy::Modules::Tasks#start_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:224:in 'block in Async::Task#run'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:521:in 'block in Async::Task#schedule'",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/tlc/signal_plans_spec.rb",
+            "line": 227
+          },
+          "type": "Sus::Assertions::Error"
+        },
+        {
+          "id": "test/site/tlc/system_spec.rb:56",
+          "message": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/message.rb:173:in 'RSMP::Message#validate': RSMP::SchemaError: Received invalid CommandResponse (RSMP::Validator::Helpers::Connection::UncaughtException)\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/receive.rb:72:in 'RSMP::Proxy::Modules::Receive#process_packet'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:39:in 'RSMP::Proxy::Modules::Tasks#read_line'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:19:in 'block in RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'Kernel#loop'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:11:in 'block in RSMP::Proxy::Modules::Tasks#start_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:224:in 'block in Async::Task#run'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:521:in 'block in Async::Task#schedule'",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/tlc/system_spec.rb",
+            "line": 56
+          },
+          "type": "Sus::Assertions::Error"
+        }
+      ],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.1.5",
+      "status": "failed",
+      "test_count": 141,
+      "failed_count": 0,
+      "errored_count": 8,
+      "log_artifact": "validator-tecsen-lasemaforica-cartesio-core-3.1.5-run-29373892681-1154-1.log",
+      "report_artifact": "compliance-tecsen-lasemaforica-cartesio-core-3.1.5-run-29373892681-1154-1.json",
+      "failures": [
+        {
+          "id": "test/site/tlc/input_spec.rb:96",
+          "message": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/message.rb:173:in 'RSMP::Message#validate': RSMP::SchemaError: Received invalid CommandResponse (RSMP::Validator::Helpers::Connection::UncaughtException)\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/receive.rb:72:in 'RSMP::Proxy::Modules::Receive#process_packet'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:39:in 'RSMP::Proxy::Modules::Tasks#read_line'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:19:in 'block in RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'Kernel#loop'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:11:in 'block in RSMP::Proxy::Modules::Tasks#start_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:224:in 'block in Async::Task#run'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:521:in 'block in Async::Task#schedule'",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/tlc/input_spec.rb",
+            "line": 96
+          },
+          "type": "Sus::Assertions::Error"
+        },
+        {
+          "id": "test/site/tlc/invalid_command_spec.rb:24",
+          "message": "expect :cancelled to\n\tbe == :ok\n\t\t✗ assertion failed test/site/tlc/invalid_command_spec.rb:24",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/tlc/invalid_command_spec.rb",
+            "line": 24
+          },
+          "type": "Sus::Assertions"
+        },
+        {
+          "id": "test/site/tlc/invalid_command_spec.rb:26",
+          "message": "expect nil to\n\tbe is_a? RSMP::CommandResponse\n\t\t✗ assertion failed test/site/tlc/invalid_command_spec.rb:26",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/tlc/invalid_command_spec.rb",
+            "line": 26
+          },
+          "type": "Sus::Assertions"
+        },
+        {
+          "id": "test/site/tlc/invalid_command_spec.rb:10",
+          "message": "test/site/tlc/invalid_command_spec.rb:27:in 'block (4 levels) in <top (required)>': NoMethodError: undefined method 'attributes' for nil (RSMP::Validator::Helpers::Connection::UncaughtException)\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/helpers/connection.rb:33:in 'block in RSMP::Validator::Helpers::Connection#with_site'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/tester.rb:25:in 'RSMP::Validator::Tester#connected'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/site_tester.rb:11:in 'RSMP::Validator::SiteTester.connected'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/helpers/connection.rb:32:in 'Kernel#public_send'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/helpers/connection.rb:32:in 'RSMP::Validator::Helpers::Connection#with_site'\n\tfrom test/site/tlc/invalid_command_spec.rb:10:in 'block (3 levels) in <top (required)>'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:67:in 'block in Sus::It#handle_skip'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:66:in 'Kernel#catch'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:66:in 'Sus::It#handle_skip'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:56:in 'block (2 levels) in Sus::It#call'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/async_context.rb:8:in 'block in RSMP::Validator::AsyncContext#around'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:224:in 'block in Async::Task#run'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:521:in 'block in Async::Task#schedule'",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/tlc/invalid_command_spec.rb",
+            "line": 10
+          },
+          "type": "Sus::Assertions::Error"
+        },
+        {
+          "id": "test/site/tlc/signal_groups_spec.rb:10",
+          "message": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/message.rb:173:in 'RSMP::Message#validate': RSMP::SchemaError: Received invalid CommandResponse (RSMP::Validator::Helpers::Connection::UncaughtException)\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/receive.rb:72:in 'RSMP::Proxy::Modules::Receive#process_packet'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:39:in 'RSMP::Proxy::Modules::Tasks#read_line'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:19:in 'block in RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'Kernel#loop'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:11:in 'block in RSMP::Proxy::Modules::Tasks#start_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:224:in 'block in Async::Task#run'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:521:in 'block in Async::Task#schedule'",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/tlc/signal_groups_spec.rb",
+            "line": 10
+          },
+          "type": "Sus::Assertions::Error"
+        },
+        {
+          "id": "test/site/tlc/signal_groups_spec.rb:21",
+          "message": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/message.rb:173:in 'RSMP::Message#validate': RSMP::SchemaError: Received invalid CommandResponse (RSMP::Validator::Helpers::Connection::UncaughtException)\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/receive.rb:72:in 'RSMP::Proxy::Modules::Receive#process_packet'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:39:in 'RSMP::Proxy::Modules::Tasks#read_line'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:19:in 'block in RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'Kernel#loop'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:11:in 'block in RSMP::Proxy::Modules::Tasks#start_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:224:in 'block in Async::Task#run'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:521:in 'block in Async::Task#schedule'",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/tlc/signal_groups_spec.rb",
+            "line": 21
+          },
+          "type": "Sus::Assertions::Error"
+        },
+        {
+          "id": "test/site/tlc/signal_plans_spec.rb:98",
+          "message": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/message.rb:173:in 'RSMP::Message#validate': RSMP::SchemaError: Received invalid CommandResponse (RSMP::Validator::Helpers::Connection::UncaughtException)\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/receive.rb:72:in 'RSMP::Proxy::Modules::Receive#process_packet'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:39:in 'RSMP::Proxy::Modules::Tasks#read_line'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:19:in 'block in RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'Kernel#loop'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:11:in 'block in RSMP::Proxy::Modules::Tasks#start_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:224:in 'block in Async::Task#run'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:521:in 'block in Async::Task#schedule'",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/tlc/signal_plans_spec.rb",
+            "line": 98
+          },
+          "type": "Sus::Assertions::Error"
+        },
+        {
+          "id": "test/site/tlc/signal_plans_spec.rb:123",
+          "message": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/message.rb:173:in 'RSMP::Message#validate': RSMP::SchemaError: Received invalid CommandResponse (RSMP::Validator::Helpers::Connection::UncaughtException)\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/receive.rb:72:in 'RSMP::Proxy::Modules::Receive#process_packet'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:39:in 'RSMP::Proxy::Modules::Tasks#read_line'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:19:in 'block in RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'Kernel#loop'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:11:in 'block in RSMP::Proxy::Modules::Tasks#start_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:224:in 'block in Async::Task#run'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:521:in 'block in Async::Task#schedule'",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/tlc/signal_plans_spec.rb",
+            "line": 123
+          },
+          "type": "Sus::Assertions::Error"
+        },
+        {
+          "id": "test/site/tlc/signal_plans_spec.rb:227",
+          "message": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/message.rb:173:in 'RSMP::Message#validate': RSMP::SchemaError: Received invalid CommandResponse (RSMP::Validator::Helpers::Connection::UncaughtException)\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/receive.rb:72:in 'RSMP::Proxy::Modules::Receive#process_packet'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:39:in 'RSMP::Proxy::Modules::Tasks#read_line'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:19:in 'block in RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'Kernel#loop'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:11:in 'block in RSMP::Proxy::Modules::Tasks#start_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:224:in 'block in Async::Task#run'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:521:in 'block in Async::Task#schedule'",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/tlc/signal_plans_spec.rb",
+            "line": 227
+          },
+          "type": "Sus::Assertions::Error"
+        },
+        {
+          "id": "test/site/tlc/system_spec.rb:56",
+          "message": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/message.rb:173:in 'RSMP::Message#validate': RSMP::SchemaError: Received invalid CommandResponse (RSMP::Validator::Helpers::Connection::UncaughtException)\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/receive.rb:72:in 'RSMP::Proxy::Modules::Receive#process_packet'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:39:in 'RSMP::Proxy::Modules::Tasks#read_line'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:19:in 'block in RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'Kernel#loop'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:11:in 'block in RSMP::Proxy::Modules::Tasks#start_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:224:in 'block in Async::Task#run'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:521:in 'block in Async::Task#schedule'",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/tlc/system_spec.rb",
+            "line": 56
+          },
+          "type": "Sus::Assertions::Error"
+        }
+      ],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.2.0",
+      "status": "failed",
+      "test_count": 132,
+      "failed_count": 0,
+      "errored_count": 8,
+      "log_artifact": "validator-tecsen-lasemaforica-cartesio-core-3.2.0-run-29373892681-1154-1.log",
+      "report_artifact": "compliance-tecsen-lasemaforica-cartesio-core-3.2.0-run-29373892681-1154-1.json",
+      "failures": [
+        {
+          "id": "test/site/tlc/input_spec.rb:96",
+          "message": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/message.rb:173:in 'RSMP::Message#validate': RSMP::SchemaError: Received invalid CommandResponse (RSMP::Validator::Helpers::Connection::UncaughtException)\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/receive.rb:72:in 'RSMP::Proxy::Modules::Receive#process_packet'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:39:in 'RSMP::Proxy::Modules::Tasks#read_line'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:19:in 'block in RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'Kernel#loop'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:11:in 'block in RSMP::Proxy::Modules::Tasks#start_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:224:in 'block in Async::Task#run'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:521:in 'block in Async::Task#schedule'",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/tlc/input_spec.rb",
+            "line": 96
+          },
+          "type": "Sus::Assertions::Error"
+        },
+        {
+          "id": "test/site/tlc/invalid_command_spec.rb:24",
+          "message": "expect :cancelled to\n\tbe == :ok\n\t\t✗ assertion failed test/site/tlc/invalid_command_spec.rb:24",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/tlc/invalid_command_spec.rb",
+            "line": 24
+          },
+          "type": "Sus::Assertions"
+        },
+        {
+          "id": "test/site/tlc/invalid_command_spec.rb:26",
+          "message": "expect nil to\n\tbe is_a? RSMP::CommandResponse\n\t\t✗ assertion failed test/site/tlc/invalid_command_spec.rb:26",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/tlc/invalid_command_spec.rb",
+            "line": 26
+          },
+          "type": "Sus::Assertions"
+        },
+        {
+          "id": "test/site/tlc/invalid_command_spec.rb:10",
+          "message": "test/site/tlc/invalid_command_spec.rb:27:in 'block (4 levels) in <top (required)>': NoMethodError: undefined method 'attributes' for nil (RSMP::Validator::Helpers::Connection::UncaughtException)\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/helpers/connection.rb:33:in 'block in RSMP::Validator::Helpers::Connection#with_site'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/tester.rb:25:in 'RSMP::Validator::Tester#connected'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/site_tester.rb:11:in 'RSMP::Validator::SiteTester.connected'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/helpers/connection.rb:32:in 'Kernel#public_send'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/helpers/connection.rb:32:in 'RSMP::Validator::Helpers::Connection#with_site'\n\tfrom test/site/tlc/invalid_command_spec.rb:10:in 'block (3 levels) in <top (required)>'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:67:in 'block in Sus::It#handle_skip'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:66:in 'Kernel#catch'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:66:in 'Sus::It#handle_skip'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:56:in 'block (2 levels) in Sus::It#call'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/async_context.rb:8:in 'block in RSMP::Validator::AsyncContext#around'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:224:in 'block in Async::Task#run'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:521:in 'block in Async::Task#schedule'",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/tlc/invalid_command_spec.rb",
+            "line": 10
+          },
+          "type": "Sus::Assertions::Error"
+        },
+        {
+          "id": "test/site/tlc/signal_groups_spec.rb:10",
+          "message": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/message.rb:173:in 'RSMP::Message#validate': RSMP::SchemaError: Received invalid CommandResponse (RSMP::Validator::Helpers::Connection::UncaughtException)\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/receive.rb:72:in 'RSMP::Proxy::Modules::Receive#process_packet'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:39:in 'RSMP::Proxy::Modules::Tasks#read_line'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:19:in 'block in RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'Kernel#loop'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:11:in 'block in RSMP::Proxy::Modules::Tasks#start_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:224:in 'block in Async::Task#run'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:521:in 'block in Async::Task#schedule'",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/tlc/signal_groups_spec.rb",
+            "line": 10
+          },
+          "type": "Sus::Assertions::Error"
+        },
+        {
+          "id": "test/site/tlc/signal_groups_spec.rb:21",
+          "message": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/message.rb:173:in 'RSMP::Message#validate': RSMP::SchemaError: Received invalid CommandResponse (RSMP::Validator::Helpers::Connection::UncaughtException)\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/receive.rb:72:in 'RSMP::Proxy::Modules::Receive#process_packet'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:39:in 'RSMP::Proxy::Modules::Tasks#read_line'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:19:in 'block in RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'Kernel#loop'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:11:in 'block in RSMP::Proxy::Modules::Tasks#start_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:224:in 'block in Async::Task#run'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:521:in 'block in Async::Task#schedule'",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/tlc/signal_groups_spec.rb",
+            "line": 21
+          },
+          "type": "Sus::Assertions::Error"
+        },
+        {
+          "id": "test/site/tlc/signal_plans_spec.rb:98",
+          "message": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/message.rb:173:in 'RSMP::Message#validate': RSMP::SchemaError: Received invalid CommandResponse (RSMP::Validator::Helpers::Connection::UncaughtException)\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/receive.rb:72:in 'RSMP::Proxy::Modules::Receive#process_packet'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:39:in 'RSMP::Proxy::Modules::Tasks#read_line'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:19:in 'block in RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'Kernel#loop'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:11:in 'block in RSMP::Proxy::Modules::Tasks#start_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:224:in 'block in Async::Task#run'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:521:in 'block in Async::Task#schedule'",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/tlc/signal_plans_spec.rb",
+            "line": 98
+          },
+          "type": "Sus::Assertions::Error"
+        },
+        {
+          "id": "test/site/tlc/signal_plans_spec.rb:123",
+          "message": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/message.rb:173:in 'RSMP::Message#validate': RSMP::SchemaError: Received invalid CommandResponse (RSMP::Validator::Helpers::Connection::UncaughtException)\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/receive.rb:72:in 'RSMP::Proxy::Modules::Receive#process_packet'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:39:in 'RSMP::Proxy::Modules::Tasks#read_line'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:19:in 'block in RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'Kernel#loop'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:11:in 'block in RSMP::Proxy::Modules::Tasks#start_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:224:in 'block in Async::Task#run'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:521:in 'block in Async::Task#schedule'",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/tlc/signal_plans_spec.rb",
+            "line": 123
+          },
+          "type": "Sus::Assertions::Error"
+        },
+        {
+          "id": "test/site/tlc/signal_plans_spec.rb:227",
+          "message": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/message.rb:173:in 'RSMP::Message#validate': RSMP::SchemaError: Received invalid CommandResponse (RSMP::Validator::Helpers::Connection::UncaughtException)\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/receive.rb:72:in 'RSMP::Proxy::Modules::Receive#process_packet'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:39:in 'RSMP::Proxy::Modules::Tasks#read_line'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:19:in 'block in RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'Kernel#loop'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:11:in 'block in RSMP::Proxy::Modules::Tasks#start_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:224:in 'block in Async::Task#run'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:521:in 'block in Async::Task#schedule'",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/tlc/signal_plans_spec.rb",
+            "line": 227
+          },
+          "type": "Sus::Assertions::Error"
+        },
+        {
+          "id": "test/site/tlc/system_spec.rb:56",
+          "message": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/message.rb:173:in 'RSMP::Message#validate': RSMP::SchemaError: Received invalid CommandResponse (RSMP::Validator::Helpers::Connection::UncaughtException)\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/receive.rb:72:in 'RSMP::Proxy::Modules::Receive#process_packet'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:39:in 'RSMP::Proxy::Modules::Tasks#read_line'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:19:in 'block in RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'Kernel#loop'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:11:in 'block in RSMP::Proxy::Modules::Tasks#start_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:224:in 'block in Async::Task#run'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:521:in 'block in Async::Task#schedule'",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/tlc/system_spec.rb",
+            "line": 56
+          },
+          "type": "Sus::Assertions::Error"
+        }
+      ],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.2.1",
+      "status": "failed",
+      "test_count": 132,
+      "failed_count": 0,
+      "errored_count": 8,
+      "log_artifact": "validator-tecsen-lasemaforica-cartesio-core-3.2.1-run-29373892681-1154-1.log",
+      "report_artifact": "compliance-tecsen-lasemaforica-cartesio-core-3.2.1-run-29373892681-1154-1.json",
+      "failures": [
+        {
+          "id": "test/site/tlc/input_spec.rb:96",
+          "message": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/message.rb:173:in 'RSMP::Message#validate': RSMP::SchemaError: Received invalid CommandResponse (RSMP::Validator::Helpers::Connection::UncaughtException)\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/receive.rb:72:in 'RSMP::Proxy::Modules::Receive#process_packet'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:39:in 'RSMP::Proxy::Modules::Tasks#read_line'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:19:in 'block in RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'Kernel#loop'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:11:in 'block in RSMP::Proxy::Modules::Tasks#start_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:224:in 'block in Async::Task#run'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:521:in 'block in Async::Task#schedule'",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/tlc/input_spec.rb",
+            "line": 96
+          },
+          "type": "Sus::Assertions::Error"
+        },
+        {
+          "id": "test/site/tlc/invalid_command_spec.rb:24",
+          "message": "expect :cancelled to\n\tbe == :ok\n\t\t✗ assertion failed test/site/tlc/invalid_command_spec.rb:24",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/tlc/invalid_command_spec.rb",
+            "line": 24
+          },
+          "type": "Sus::Assertions"
+        },
+        {
+          "id": "test/site/tlc/invalid_command_spec.rb:26",
+          "message": "expect nil to\n\tbe is_a? RSMP::CommandResponse\n\t\t✗ assertion failed test/site/tlc/invalid_command_spec.rb:26",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/tlc/invalid_command_spec.rb",
+            "line": 26
+          },
+          "type": "Sus::Assertions"
+        },
+        {
+          "id": "test/site/tlc/invalid_command_spec.rb:10",
+          "message": "test/site/tlc/invalid_command_spec.rb:27:in 'block (4 levels) in <top (required)>': NoMethodError: undefined method 'attributes' for nil (RSMP::Validator::Helpers::Connection::UncaughtException)\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/helpers/connection.rb:33:in 'block in RSMP::Validator::Helpers::Connection#with_site'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/tester.rb:25:in 'RSMP::Validator::Tester#connected'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/site_tester.rb:11:in 'RSMP::Validator::SiteTester.connected'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/helpers/connection.rb:32:in 'Kernel#public_send'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/helpers/connection.rb:32:in 'RSMP::Validator::Helpers::Connection#with_site'\n\tfrom test/site/tlc/invalid_command_spec.rb:10:in 'block (3 levels) in <top (required)>'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:67:in 'block in Sus::It#handle_skip'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:66:in 'Kernel#catch'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:66:in 'Sus::It#handle_skip'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:56:in 'block (2 levels) in Sus::It#call'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/async_context.rb:8:in 'block in RSMP::Validator::AsyncContext#around'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:224:in 'block in Async::Task#run'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:521:in 'block in Async::Task#schedule'",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/tlc/invalid_command_spec.rb",
+            "line": 10
+          },
+          "type": "Sus::Assertions::Error"
+        },
+        {
+          "id": "test/site/tlc/signal_groups_spec.rb:10",
+          "message": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/message.rb:173:in 'RSMP::Message#validate': RSMP::SchemaError: Received invalid CommandResponse (RSMP::Validator::Helpers::Connection::UncaughtException)\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/receive.rb:72:in 'RSMP::Proxy::Modules::Receive#process_packet'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:39:in 'RSMP::Proxy::Modules::Tasks#read_line'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:19:in 'block in RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'Kernel#loop'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:11:in 'block in RSMP::Proxy::Modules::Tasks#start_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:224:in 'block in Async::Task#run'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:521:in 'block in Async::Task#schedule'",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/tlc/signal_groups_spec.rb",
+            "line": 10
+          },
+          "type": "Sus::Assertions::Error"
+        },
+        {
+          "id": "test/site/tlc/signal_groups_spec.rb:21",
+          "message": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/message.rb:173:in 'RSMP::Message#validate': RSMP::SchemaError: Received invalid CommandResponse (RSMP::Validator::Helpers::Connection::UncaughtException)\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/receive.rb:72:in 'RSMP::Proxy::Modules::Receive#process_packet'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:39:in 'RSMP::Proxy::Modules::Tasks#read_line'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:19:in 'block in RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'Kernel#loop'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:11:in 'block in RSMP::Proxy::Modules::Tasks#start_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:224:in 'block in Async::Task#run'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:521:in 'block in Async::Task#schedule'",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/tlc/signal_groups_spec.rb",
+            "line": 21
+          },
+          "type": "Sus::Assertions::Error"
+        },
+        {
+          "id": "test/site/tlc/signal_plans_spec.rb:98",
+          "message": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/message.rb:173:in 'RSMP::Message#validate': RSMP::SchemaError: Received invalid CommandResponse (RSMP::Validator::Helpers::Connection::UncaughtException)\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/receive.rb:72:in 'RSMP::Proxy::Modules::Receive#process_packet'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:39:in 'RSMP::Proxy::Modules::Tasks#read_line'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:19:in 'block in RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'Kernel#loop'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:11:in 'block in RSMP::Proxy::Modules::Tasks#start_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:224:in 'block in Async::Task#run'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:521:in 'block in Async::Task#schedule'",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/tlc/signal_plans_spec.rb",
+            "line": 98
+          },
+          "type": "Sus::Assertions::Error"
+        },
+        {
+          "id": "test/site/tlc/signal_plans_spec.rb:123",
+          "message": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/message.rb:173:in 'RSMP::Message#validate': RSMP::SchemaError: Received invalid CommandResponse (RSMP::Validator::Helpers::Connection::UncaughtException)\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/receive.rb:72:in 'RSMP::Proxy::Modules::Receive#process_packet'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:39:in 'RSMP::Proxy::Modules::Tasks#read_line'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:19:in 'block in RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'Kernel#loop'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:11:in 'block in RSMP::Proxy::Modules::Tasks#start_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:224:in 'block in Async::Task#run'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:521:in 'block in Async::Task#schedule'",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/tlc/signal_plans_spec.rb",
+            "line": 123
+          },
+          "type": "Sus::Assertions::Error"
+        },
+        {
+          "id": "test/site/tlc/signal_plans_spec.rb:227",
+          "message": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/message.rb:173:in 'RSMP::Message#validate': RSMP::SchemaError: Received invalid CommandResponse (RSMP::Validator::Helpers::Connection::UncaughtException)\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/receive.rb:72:in 'RSMP::Proxy::Modules::Receive#process_packet'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:39:in 'RSMP::Proxy::Modules::Tasks#read_line'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:19:in 'block in RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'Kernel#loop'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:11:in 'block in RSMP::Proxy::Modules::Tasks#start_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:224:in 'block in Async::Task#run'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:521:in 'block in Async::Task#schedule'",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/tlc/signal_plans_spec.rb",
+            "line": 227
+          },
+          "type": "Sus::Assertions::Error"
+        },
+        {
+          "id": "test/site/tlc/system_spec.rb:56",
+          "message": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/message.rb:173:in 'RSMP::Message#validate': RSMP::SchemaError: Received invalid CommandResponse (RSMP::Validator::Helpers::Connection::UncaughtException)\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/receive.rb:72:in 'RSMP::Proxy::Modules::Receive#process_packet'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:39:in 'RSMP::Proxy::Modules::Tasks#read_line'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:19:in 'block in RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'Kernel#loop'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:11:in 'block in RSMP::Proxy::Modules::Tasks#start_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:224:in 'block in Async::Task#run'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:521:in 'block in Async::Task#schedule'",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/tlc/system_spec.rb",
+            "line": 56
+          },
+          "type": "Sus::Assertions::Error"
+        }
+      ],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.2.2",
+      "status": "failed",
+      "test_count": 132,
+      "failed_count": 0,
+      "errored_count": 8,
+      "log_artifact": "validator-tecsen-lasemaforica-cartesio-core-3.2.2-run-29373892681-1154-1.log",
+      "report_artifact": "compliance-tecsen-lasemaforica-cartesio-core-3.2.2-run-29373892681-1154-1.json",
+      "failures": [
+        {
+          "id": "test/site/tlc/input_spec.rb:96",
+          "message": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/message.rb:173:in 'RSMP::Message#validate': RSMP::SchemaError: Received invalid CommandResponse (RSMP::Validator::Helpers::Connection::UncaughtException)\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/receive.rb:72:in 'RSMP::Proxy::Modules::Receive#process_packet'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:39:in 'RSMP::Proxy::Modules::Tasks#read_line'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:19:in 'block in RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'Kernel#loop'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:11:in 'block in RSMP::Proxy::Modules::Tasks#start_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:224:in 'block in Async::Task#run'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:521:in 'block in Async::Task#schedule'",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/tlc/input_spec.rb",
+            "line": 96
+          },
+          "type": "Sus::Assertions::Error"
+        },
+        {
+          "id": "test/site/tlc/invalid_command_spec.rb:24",
+          "message": "expect :cancelled to\n\tbe == :ok\n\t\t✗ assertion failed test/site/tlc/invalid_command_spec.rb:24",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/tlc/invalid_command_spec.rb",
+            "line": 24
+          },
+          "type": "Sus::Assertions"
+        },
+        {
+          "id": "test/site/tlc/invalid_command_spec.rb:26",
+          "message": "expect nil to\n\tbe is_a? RSMP::CommandResponse\n\t\t✗ assertion failed test/site/tlc/invalid_command_spec.rb:26",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/tlc/invalid_command_spec.rb",
+            "line": 26
+          },
+          "type": "Sus::Assertions"
+        },
+        {
+          "id": "test/site/tlc/invalid_command_spec.rb:10",
+          "message": "test/site/tlc/invalid_command_spec.rb:27:in 'block (4 levels) in <top (required)>': NoMethodError: undefined method 'attributes' for nil (RSMP::Validator::Helpers::Connection::UncaughtException)\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/helpers/connection.rb:33:in 'block in RSMP::Validator::Helpers::Connection#with_site'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/tester.rb:25:in 'RSMP::Validator::Tester#connected'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/site_tester.rb:11:in 'RSMP::Validator::SiteTester.connected'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/helpers/connection.rb:32:in 'Kernel#public_send'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/helpers/connection.rb:32:in 'RSMP::Validator::Helpers::Connection#with_site'\n\tfrom test/site/tlc/invalid_command_spec.rb:10:in 'block (3 levels) in <top (required)>'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:67:in 'block in Sus::It#handle_skip'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:66:in 'Kernel#catch'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:66:in 'Sus::It#handle_skip'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:56:in 'block (2 levels) in Sus::It#call'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/async_context.rb:8:in 'block in RSMP::Validator::AsyncContext#around'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:224:in 'block in Async::Task#run'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:521:in 'block in Async::Task#schedule'",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/tlc/invalid_command_spec.rb",
+            "line": 10
+          },
+          "type": "Sus::Assertions::Error"
+        },
+        {
+          "id": "test/site/tlc/signal_groups_spec.rb:10",
+          "message": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/message.rb:173:in 'RSMP::Message#validate': RSMP::SchemaError: Received invalid CommandResponse (RSMP::Validator::Helpers::Connection::UncaughtException)\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/receive.rb:72:in 'RSMP::Proxy::Modules::Receive#process_packet'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:39:in 'RSMP::Proxy::Modules::Tasks#read_line'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:19:in 'block in RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'Kernel#loop'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:11:in 'block in RSMP::Proxy::Modules::Tasks#start_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:224:in 'block in Async::Task#run'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:521:in 'block in Async::Task#schedule'",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/tlc/signal_groups_spec.rb",
+            "line": 10
+          },
+          "type": "Sus::Assertions::Error"
+        },
+        {
+          "id": "test/site/tlc/signal_groups_spec.rb:21",
+          "message": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/message.rb:173:in 'RSMP::Message#validate': RSMP::SchemaError: Received invalid CommandResponse (RSMP::Validator::Helpers::Connection::UncaughtException)\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/receive.rb:72:in 'RSMP::Proxy::Modules::Receive#process_packet'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:39:in 'RSMP::Proxy::Modules::Tasks#read_line'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:19:in 'block in RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'Kernel#loop'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:11:in 'block in RSMP::Proxy::Modules::Tasks#start_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:224:in 'block in Async::Task#run'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:521:in 'block in Async::Task#schedule'",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/tlc/signal_groups_spec.rb",
+            "line": 21
+          },
+          "type": "Sus::Assertions::Error"
+        },
+        {
+          "id": "test/site/tlc/signal_plans_spec.rb:98",
+          "message": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/message.rb:173:in 'RSMP::Message#validate': RSMP::SchemaError: Received invalid CommandResponse (RSMP::Validator::Helpers::Connection::UncaughtException)\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/receive.rb:72:in 'RSMP::Proxy::Modules::Receive#process_packet'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:39:in 'RSMP::Proxy::Modules::Tasks#read_line'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:19:in 'block in RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'Kernel#loop'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:11:in 'block in RSMP::Proxy::Modules::Tasks#start_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:224:in 'block in Async::Task#run'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:521:in 'block in Async::Task#schedule'",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/tlc/signal_plans_spec.rb",
+            "line": 98
+          },
+          "type": "Sus::Assertions::Error"
+        },
+        {
+          "id": "test/site/tlc/signal_plans_spec.rb:123",
+          "message": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/message.rb:173:in 'RSMP::Message#validate': RSMP::SchemaError: Received invalid CommandResponse (RSMP::Validator::Helpers::Connection::UncaughtException)\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/receive.rb:72:in 'RSMP::Proxy::Modules::Receive#process_packet'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:39:in 'RSMP::Proxy::Modules::Tasks#read_line'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:19:in 'block in RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'Kernel#loop'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:11:in 'block in RSMP::Proxy::Modules::Tasks#start_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:224:in 'block in Async::Task#run'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:521:in 'block in Async::Task#schedule'",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/tlc/signal_plans_spec.rb",
+            "line": 123
+          },
+          "type": "Sus::Assertions::Error"
+        },
+        {
+          "id": "test/site/tlc/signal_plans_spec.rb:227",
+          "message": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/message.rb:173:in 'RSMP::Message#validate': RSMP::SchemaError: Received invalid CommandResponse (RSMP::Validator::Helpers::Connection::UncaughtException)\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/receive.rb:72:in 'RSMP::Proxy::Modules::Receive#process_packet'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:39:in 'RSMP::Proxy::Modules::Tasks#read_line'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:19:in 'block in RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'Kernel#loop'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:11:in 'block in RSMP::Proxy::Modules::Tasks#start_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:224:in 'block in Async::Task#run'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:521:in 'block in Async::Task#schedule'",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/tlc/signal_plans_spec.rb",
+            "line": 227
+          },
+          "type": "Sus::Assertions::Error"
+        },
+        {
+          "id": "test/site/tlc/system_spec.rb:56",
+          "message": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/message.rb:173:in 'RSMP::Message#validate': RSMP::SchemaError: Received invalid CommandResponse (RSMP::Validator::Helpers::Connection::UncaughtException)\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/receive.rb:72:in 'RSMP::Proxy::Modules::Receive#process_packet'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:39:in 'RSMP::Proxy::Modules::Tasks#read_line'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:19:in 'block in RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'Kernel#loop'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:18:in 'RSMP::Proxy::Modules::Tasks#run_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.48.4/lib/rsmp/proxy/modules/tasks.rb:11:in 'block in RSMP::Proxy::Modules::Tasks#start_reader'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:224:in 'block in Async::Task#run'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.41.0/lib/async/task.rb:521:in 'block in Async::Task#schedule'",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/tlc/system_spec.rb",
+            "line": 56
+          },
+          "type": "Sus::Assertions::Error"
+        }
+      ],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    }
+  ]
+}
