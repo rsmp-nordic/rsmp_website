@@ -1,0 +1,114 @@
+{
+  "target_id": "kapsch-etx",
+  "run_id": 30722327794,
+  "run_attempt": 1,
+  "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/30722327794",
+  "event": "schedule",
+  "completed_at": "2026-08-01T23:31:18Z",
+  "status": "failed",
+  "passed_cells": 6,
+  "total_cells": 7,
+  "cells": [
+    {
+      "core": "3.1.2",
+      "status": "passed",
+      "test_count": 147,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-kapsch-etx-core-3.1.2-run-30722327794-889-1.log",
+      "report_artifact": "compliance-kapsch-etx-core-3.1.2-run-30722327794-889-1.json",
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.1.3",
+      "status": "failed",
+      "test_count": 145,
+      "failed_count": 1,
+      "errored_count": 0,
+      "log_artifact": "validator-kapsch-etx-core-3.1.3-run-30722327794-889-1.log",
+      "report_artifact": "compliance-kapsch-etx-core-3.1.3-run-30722327794-889-1.json",
+      "failures": [
+        {
+          "id": "test/site/tlc/alarm_spec.rb:28",
+          "message": "describe Site::Tlc::Alarm it raises A0302 when input is activated test/site/tlc/alarm_spec.rb:27\n\t✗ .. Matched 0/4 with {\"M0019\" => {\"setInput\" => {\"status\" => true, \"securityCode\" => \"2222\", \"input\" => 4, \"inputValue\" => true}}} test/site/tlc/alarm_spec.rb:28",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/alarm_spec.rb",
+            "line": 28
+          },
+          "type": "Sus::Assertions::Assert"
+        }
+      ],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.1.4",
+      "status": "passed",
+      "test_count": 143,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-kapsch-etx-core-3.1.4-run-30722327794-889-1.log",
+      "report_artifact": "compliance-kapsch-etx-core-3.1.4-run-30722327794-889-1.json",
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.1.5",
+      "status": "passed",
+      "test_count": 141,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-kapsch-etx-core-3.1.5-run-30722327794-889-1.log",
+      "report_artifact": "compliance-kapsch-etx-core-3.1.5-run-30722327794-889-1.json",
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.2.0",
+      "status": "passed",
+      "test_count": 132,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-kapsch-etx-core-3.2.0-run-30722327794-889-1.log",
+      "report_artifact": "compliance-kapsch-etx-core-3.2.0-run-30722327794-889-1.json",
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.2.1",
+      "status": "passed",
+      "test_count": 132,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-kapsch-etx-core-3.2.1-run-30722327794-889-1.log",
+      "report_artifact": "compliance-kapsch-etx-core-3.2.1-run-30722327794-889-1.json",
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.2.2",
+      "status": "passed",
+      "test_count": 132,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-kapsch-etx-core-3.2.2-run-30722327794-889-1.log",
+      "report_artifact": "compliance-kapsch-etx-core-3.2.2-run-30722327794-889-1.json",
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    }
+  ]
+}
