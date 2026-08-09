@@ -1,0 +1,114 @@
+{
+  "target_id": "kapsch-etx",
+  "run_id": 31281878904,
+  "run_attempt": 1,
+  "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/31281878904",
+  "event": "schedule",
+  "completed_at": "2026-08-08T23:04:46Z",
+  "status": "failed",
+  "passed_cells": 6,
+  "total_cells": 7,
+  "cells": [
+    {
+      "core": "3.1.2",
+      "status": "passed",
+      "test_count": 147,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-kapsch-etx-core-3.1.2-run-31281878904-898-1.log",
+      "report_artifact": "compliance-kapsch-etx-core-3.1.2-run-31281878904-898-1.json",
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.1.3",
+      "status": "passed",
+      "test_count": 145,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-kapsch-etx-core-3.1.3-run-31281878904-898-1.log",
+      "report_artifact": "compliance-kapsch-etx-core-3.1.3-run-31281878904-898-1.json",
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.1.4",
+      "status": "passed",
+      "test_count": 143,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-kapsch-etx-core-3.1.4-run-31281878904-898-1.log",
+      "report_artifact": "compliance-kapsch-etx-core-3.1.4-run-31281878904-898-1.json",
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.1.5",
+      "status": "failed",
+      "test_count": 141,
+      "failed_count": 1,
+      "errored_count": 0,
+      "log_artifact": "validator-kapsch-etx-core-3.1.5-run-31281878904-898-1.log",
+      "report_artifact": "compliance-kapsch-etx-core-3.1.5-run-31281878904-898-1.json",
+      "failures": [
+        {
+          "id": "test/site/tlc/input_spec.rb:71",
+          "message": "describe Site::Tlc::Input it is activated with M0006 test/site/tlc/input_spec.rb:68\n\t✗ .. Matched 0/1 with {\"S0003\" => {\"inputstatus\" => {/^.{1}1/ => nil}}} test/site/tlc/input_spec.rb:71",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/input_spec.rb",
+            "line": 71
+          },
+          "type": "Sus::Assertions::Assert"
+        }
+      ],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.2.0",
+      "status": "passed",
+      "test_count": 132,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-kapsch-etx-core-3.2.0-run-31281878904-898-1.log",
+      "report_artifact": "compliance-kapsch-etx-core-3.2.0-run-31281878904-898-1.json",
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.2.1",
+      "status": "passed",
+      "test_count": 132,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-kapsch-etx-core-3.2.1-run-31281878904-898-1.log",
+      "report_artifact": "compliance-kapsch-etx-core-3.2.1-run-31281878904-898-1.json",
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.2.2",
+      "status": "passed",
+      "test_count": 132,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-kapsch-etx-core-3.2.2-run-31281878904-898-1.log",
+      "report_artifact": "compliance-kapsch-etx-core-3.2.2-run-31281878904-898-1.json",
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    }
+  ]
+}
