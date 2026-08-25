@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T04:46:16Z",
+  "generated_at": "2026-08-25T04:40:10Z",
   "targets": [
     {
       "id": "kapsch-etx",
@@ -11,23 +11,23 @@
       "details_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/kapsch_etx.yaml?query=branch%3Amain+event%3Aschedule",
       "latest_run": {
         "target_id": "kapsch-etx",
-        "run_id": 32670440777,
+        "run_id": 32784767659,
         "run_attempt": 1,
-        "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670440777",
+        "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784767659",
         "event": "schedule",
-        "completed_at": "2026-08-23T22:56:01Z",
-        "status": "passed",
-        "passed_cells": 7,
+        "completed_at": "2026-08-24T23:00:28Z",
+        "status": "failed",
+        "passed_cells": 6,
         "total_cells": 7,
         "version_summary": {
           "core": {
-            "passed_versions": 7,
+            "passed_versions": 6,
             "total_versions": 7
           },
           "sxls": [
             {
               "name": "tlc",
-              "passed_versions": 1,
+              "passed_versions": 0,
               "total_versions": 1
             }
           ]
@@ -82,9 +82,9 @@
         }
       },
       "last_30_days": {
-        "passed_cells": 198,
+        "passed_cells": 197,
         "total_cells": 209,
-        "pass_percentage": 94.7
+        "pass_percentage": 94.3
       },
       "passed_versions": [
         {
@@ -136,19 +136,19 @@
           "sxls": {
             "tlc": "1.2.1"
           },
-          "last_status": "passed",
+          "last_status": "failed",
           "latest_run": {
-            "run_id": 32670440777,
+            "run_id": 32784767659,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670440777",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784767659",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:56:01Z",
-            "status": "passed",
+            "completed_at": "2026-08-24T23:00:28Z",
+            "status": "failed",
             "test_count": 132,
-            "failed_count": 0,
+            "failed_count": 1,
             "errored_count": 0,
-            "log_artifact": "validator-kapsch-etx-core-3.2.2-run-32670440777-915-1.log",
-            "report_artifact": "compliance-kapsch-etx-core-3.2.2-run-32670440777-915-1.json"
+            "log_artifact": "validator-kapsch-etx-core-3.2.2-run-32784767659-916-1.log",
+            "report_artifact": "compliance-kapsch-etx-core-3.2.2-run-32784767659-916-1.json"
           },
           "latest_passing_run": {
             "run_id": 32670440777,
@@ -164,9 +164,9 @@
             "report_artifact": "compliance-kapsch-etx-core-3.2.2-run-32670440777-915-1.json"
           },
           "last_30_days": {
-            "passed_runs": 27,
+            "passed_runs": 26,
             "total_runs": 30,
-            "pass_percentage": 90.0
+            "pass_percentage": 86.7
           }
         },
         {
@@ -176,30 +176,30 @@
           },
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32670440777,
+            "run_id": 32784767659,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670440777",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784767659",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:56:01Z",
+            "completed_at": "2026-08-24T23:00:28Z",
             "status": "passed",
             "test_count": 132,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-kapsch-etx-core-3.2.1-run-32670440777-915-1.log",
-            "report_artifact": "compliance-kapsch-etx-core-3.2.1-run-32670440777-915-1.json"
+            "log_artifact": "validator-kapsch-etx-core-3.2.1-run-32784767659-916-1.log",
+            "report_artifact": "compliance-kapsch-etx-core-3.2.1-run-32784767659-916-1.json"
           },
           "latest_passing_run": {
-            "run_id": 32670440777,
+            "run_id": 32784767659,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670440777",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784767659",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:56:01Z",
+            "completed_at": "2026-08-24T23:00:28Z",
             "status": "passed",
             "test_count": 132,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-kapsch-etx-core-3.2.1-run-32670440777-915-1.log",
-            "report_artifact": "compliance-kapsch-etx-core-3.2.1-run-32670440777-915-1.json"
+            "log_artifact": "validator-kapsch-etx-core-3.2.1-run-32784767659-916-1.log",
+            "report_artifact": "compliance-kapsch-etx-core-3.2.1-run-32784767659-916-1.json"
           },
           "last_30_days": {
             "passed_runs": 28,
@@ -214,30 +214,30 @@
           },
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32670440777,
+            "run_id": 32784767659,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670440777",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784767659",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:56:01Z",
+            "completed_at": "2026-08-24T23:00:28Z",
             "status": "passed",
             "test_count": 132,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-kapsch-etx-core-3.2.0-run-32670440777-915-1.log",
-            "report_artifact": "compliance-kapsch-etx-core-3.2.0-run-32670440777-915-1.json"
+            "log_artifact": "validator-kapsch-etx-core-3.2.0-run-32784767659-916-1.log",
+            "report_artifact": "compliance-kapsch-etx-core-3.2.0-run-32784767659-916-1.json"
           },
           "latest_passing_run": {
-            "run_id": 32670440777,
+            "run_id": 32784767659,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670440777",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784767659",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:56:01Z",
+            "completed_at": "2026-08-24T23:00:28Z",
             "status": "passed",
             "test_count": 132,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-kapsch-etx-core-3.2.0-run-32670440777-915-1.log",
-            "report_artifact": "compliance-kapsch-etx-core-3.2.0-run-32670440777-915-1.json"
+            "log_artifact": "validator-kapsch-etx-core-3.2.0-run-32784767659-916-1.log",
+            "report_artifact": "compliance-kapsch-etx-core-3.2.0-run-32784767659-916-1.json"
           },
           "last_30_days": {
             "passed_runs": 29,
@@ -252,30 +252,30 @@
           },
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32670440777,
+            "run_id": 32784767659,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670440777",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784767659",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:56:01Z",
+            "completed_at": "2026-08-24T23:00:28Z",
             "status": "passed",
             "test_count": 141,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-kapsch-etx-core-3.1.5-run-32670440777-915-1.log",
-            "report_artifact": "compliance-kapsch-etx-core-3.1.5-run-32670440777-915-1.json"
+            "log_artifact": "validator-kapsch-etx-core-3.1.5-run-32784767659-916-1.log",
+            "report_artifact": "compliance-kapsch-etx-core-3.1.5-run-32784767659-916-1.json"
           },
           "latest_passing_run": {
-            "run_id": 32670440777,
+            "run_id": 32784767659,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670440777",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784767659",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:56:01Z",
+            "completed_at": "2026-08-24T23:00:28Z",
             "status": "passed",
             "test_count": 141,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-kapsch-etx-core-3.1.5-run-32670440777-915-1.log",
-            "report_artifact": "compliance-kapsch-etx-core-3.1.5-run-32670440777-915-1.json"
+            "log_artifact": "validator-kapsch-etx-core-3.1.5-run-32784767659-916-1.log",
+            "report_artifact": "compliance-kapsch-etx-core-3.1.5-run-32784767659-916-1.json"
           },
           "last_30_days": {
             "passed_runs": 29,
@@ -290,30 +290,30 @@
           },
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32670440777,
+            "run_id": 32784767659,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670440777",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784767659",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:56:01Z",
+            "completed_at": "2026-08-24T23:00:28Z",
             "status": "passed",
             "test_count": 143,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-kapsch-etx-core-3.1.4-run-32670440777-915-1.log",
-            "report_artifact": "compliance-kapsch-etx-core-3.1.4-run-32670440777-915-1.json"
+            "log_artifact": "validator-kapsch-etx-core-3.1.4-run-32784767659-916-1.log",
+            "report_artifact": "compliance-kapsch-etx-core-3.1.4-run-32784767659-916-1.json"
           },
           "latest_passing_run": {
-            "run_id": 32670440777,
+            "run_id": 32784767659,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670440777",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784767659",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:56:01Z",
+            "completed_at": "2026-08-24T23:00:28Z",
             "status": "passed",
             "test_count": 143,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-kapsch-etx-core-3.1.4-run-32670440777-915-1.log",
-            "report_artifact": "compliance-kapsch-etx-core-3.1.4-run-32670440777-915-1.json"
+            "log_artifact": "validator-kapsch-etx-core-3.1.4-run-32784767659-916-1.log",
+            "report_artifact": "compliance-kapsch-etx-core-3.1.4-run-32784767659-916-1.json"
           },
           "last_30_days": {
             "passed_runs": 29,
@@ -328,30 +328,30 @@
           },
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32670440777,
+            "run_id": 32784767659,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670440777",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784767659",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:56:01Z",
+            "completed_at": "2026-08-24T23:00:28Z",
             "status": "passed",
             "test_count": 145,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-kapsch-etx-core-3.1.3-run-32670440777-915-1.log",
-            "report_artifact": "compliance-kapsch-etx-core-3.1.3-run-32670440777-915-1.json"
+            "log_artifact": "validator-kapsch-etx-core-3.1.3-run-32784767659-916-1.log",
+            "report_artifact": "compliance-kapsch-etx-core-3.1.3-run-32784767659-916-1.json"
           },
           "latest_passing_run": {
-            "run_id": 32670440777,
+            "run_id": 32784767659,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670440777",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784767659",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:56:01Z",
+            "completed_at": "2026-08-24T23:00:28Z",
             "status": "passed",
             "test_count": 145,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-kapsch-etx-core-3.1.3-run-32670440777-915-1.log",
-            "report_artifact": "compliance-kapsch-etx-core-3.1.3-run-32670440777-915-1.json"
+            "log_artifact": "validator-kapsch-etx-core-3.1.3-run-32784767659-916-1.log",
+            "report_artifact": "compliance-kapsch-etx-core-3.1.3-run-32784767659-916-1.json"
           },
           "last_30_days": {
             "passed_runs": 28,
@@ -366,30 +366,30 @@
           },
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32670440777,
+            "run_id": 32784767659,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670440777",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784767659",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:56:01Z",
+            "completed_at": "2026-08-24T23:00:28Z",
             "status": "passed",
             "test_count": 147,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-kapsch-etx-core-3.1.2-run-32670440777-915-1.log",
-            "report_artifact": "compliance-kapsch-etx-core-3.1.2-run-32670440777-915-1.json"
+            "log_artifact": "validator-kapsch-etx-core-3.1.2-run-32784767659-916-1.log",
+            "report_artifact": "compliance-kapsch-etx-core-3.1.2-run-32784767659-916-1.json"
           },
           "latest_passing_run": {
-            "run_id": 32670440777,
+            "run_id": 32784767659,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670440777",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784767659",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:56:01Z",
+            "completed_at": "2026-08-24T23:00:28Z",
             "status": "passed",
             "test_count": 147,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-kapsch-etx-core-3.1.2-run-32670440777-915-1.log",
-            "report_artifact": "compliance-kapsch-etx-core-3.1.2-run-32670440777-915-1.json"
+            "log_artifact": "validator-kapsch-etx-core-3.1.2-run-32784767659-916-1.log",
+            "report_artifact": "compliance-kapsch-etx-core-3.1.2-run-32784767659-916-1.json"
           },
           "last_30_days": {
             "passed_runs": 28,
@@ -399,6 +399,30 @@
         }
       ],
       "recent_runs": [
+        {
+          "target_id": "kapsch-etx",
+          "run_id": 32784767659,
+          "run_attempt": 1,
+          "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784767659",
+          "event": "schedule",
+          "completed_at": "2026-08-24T23:00:28Z",
+          "status": "failed",
+          "passed_cells": 6,
+          "total_cells": 7,
+          "version_summary": {
+            "core": {
+              "passed_versions": 6,
+              "total_versions": 7
+            },
+            "sxls": [
+              {
+                "name": "tlc",
+                "passed_versions": 0,
+                "total_versions": 1
+              }
+            ]
+          }
+        },
         {
           "target_id": "kapsch-etx",
           "run_id": 32670440777,
@@ -1094,45 +1118,21 @@
               }
             ]
           }
-        },
-        {
-          "target_id": "kapsch-etx",
-          "run_id": 30178516682,
-          "run_attempt": 1,
-          "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/30178516682",
-          "event": "schedule",
-          "completed_at": "2026-07-25T23:31:05Z",
-          "status": "passed",
-          "passed_cells": 7,
-          "total_cells": 7,
-          "version_summary": {
-            "core": {
-              "passed_versions": 7,
-              "total_versions": 7
-            },
-            "sxls": [
-              {
-                "name": "tlc",
-                "passed_versions": 1,
-                "total_versions": 1
-              }
-            ]
-          }
         }
       ],
       "core_versions": [
         {
           "core": "3.2.2",
-          "last_status": "passed",
+          "last_status": "failed",
           "latest_run": {
-            "run_id": 32670440777,
+            "run_id": 32784767659,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670440777",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784767659",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:56:01Z",
-            "status": "passed",
+            "completed_at": "2026-08-24T23:00:28Z",
+            "status": "failed",
             "test_count": 132,
-            "failed_count": 0,
+            "failed_count": 1,
             "errored_count": 0
           },
           "latest_passing_run": {
@@ -1147,31 +1147,31 @@
             "errored_count": 0
           },
           "last_30_days": {
-            "passed_runs": 27,
+            "passed_runs": 26,
             "total_runs": 30,
-            "pass_percentage": 90.0
+            "pass_percentage": 86.7
           }
         },
         {
           "core": "3.2.1",
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32670440777,
+            "run_id": 32784767659,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670440777",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784767659",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:56:01Z",
+            "completed_at": "2026-08-24T23:00:28Z",
             "status": "passed",
             "test_count": 132,
             "failed_count": 0,
             "errored_count": 0
           },
           "latest_passing_run": {
-            "run_id": 32670440777,
+            "run_id": 32784767659,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670440777",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784767659",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:56:01Z",
+            "completed_at": "2026-08-24T23:00:28Z",
             "status": "passed",
             "test_count": 132,
             "failed_count": 0,
@@ -1187,22 +1187,22 @@
           "core": "3.2.0",
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32670440777,
+            "run_id": 32784767659,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670440777",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784767659",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:56:01Z",
+            "completed_at": "2026-08-24T23:00:28Z",
             "status": "passed",
             "test_count": 132,
             "failed_count": 0,
             "errored_count": 0
           },
           "latest_passing_run": {
-            "run_id": 32670440777,
+            "run_id": 32784767659,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670440777",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784767659",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:56:01Z",
+            "completed_at": "2026-08-24T23:00:28Z",
             "status": "passed",
             "test_count": 132,
             "failed_count": 0,
@@ -1218,22 +1218,22 @@
           "core": "3.1.5",
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32670440777,
+            "run_id": 32784767659,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670440777",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784767659",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:56:01Z",
+            "completed_at": "2026-08-24T23:00:28Z",
             "status": "passed",
             "test_count": 141,
             "failed_count": 0,
             "errored_count": 0
           },
           "latest_passing_run": {
-            "run_id": 32670440777,
+            "run_id": 32784767659,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670440777",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784767659",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:56:01Z",
+            "completed_at": "2026-08-24T23:00:28Z",
             "status": "passed",
             "test_count": 141,
             "failed_count": 0,
@@ -1249,22 +1249,22 @@
           "core": "3.1.4",
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32670440777,
+            "run_id": 32784767659,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670440777",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784767659",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:56:01Z",
+            "completed_at": "2026-08-24T23:00:28Z",
             "status": "passed",
             "test_count": 143,
             "failed_count": 0,
             "errored_count": 0
           },
           "latest_passing_run": {
-            "run_id": 32670440777,
+            "run_id": 32784767659,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670440777",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784767659",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:56:01Z",
+            "completed_at": "2026-08-24T23:00:28Z",
             "status": "passed",
             "test_count": 143,
             "failed_count": 0,
@@ -1280,22 +1280,22 @@
           "core": "3.1.3",
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32670440777,
+            "run_id": 32784767659,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670440777",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784767659",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:56:01Z",
+            "completed_at": "2026-08-24T23:00:28Z",
             "status": "passed",
             "test_count": 145,
             "failed_count": 0,
             "errored_count": 0
           },
           "latest_passing_run": {
-            "run_id": 32670440777,
+            "run_id": 32784767659,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670440777",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784767659",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:56:01Z",
+            "completed_at": "2026-08-24T23:00:28Z",
             "status": "passed",
             "test_count": 145,
             "failed_count": 0,
@@ -1311,22 +1311,22 @@
           "core": "3.1.2",
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32670440777,
+            "run_id": 32784767659,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670440777",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784767659",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:56:01Z",
+            "completed_at": "2026-08-24T23:00:28Z",
             "status": "passed",
             "test_count": 147,
             "failed_count": 0,
             "errored_count": 0
           },
           "latest_passing_run": {
-            "run_id": 32670440777,
+            "run_id": 32784767659,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670440777",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784767659",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:56:01Z",
+            "completed_at": "2026-08-24T23:00:28Z",
             "status": "passed",
             "test_count": 147,
             "failed_count": 0,
@@ -1343,33 +1343,33 @@
         {
           "name": "tlc",
           "version": "1.2.1",
-          "last_status": "passed",
+          "last_status": "failed",
           "latest_run": {
-            "run_id": 32670440777,
+            "run_id": 32784767659,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670440777",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784767659",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:56:01Z",
-            "status": "passed",
+            "completed_at": "2026-08-24T23:00:28Z",
+            "status": "failed",
             "test_count": 132,
-            "failed_count": 0,
+            "failed_count": 1,
             "errored_count": 0
           },
           "latest_passing_run": {
-            "run_id": 32670440777,
+            "run_id": 32784767659,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670440777",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784767659",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:56:01Z",
+            "completed_at": "2026-08-24T23:00:28Z",
             "status": "passed",
             "test_count": 132,
             "failed_count": 0,
             "errored_count": 0
           },
           "last_30_days": {
-            "passed_runs": 198,
+            "passed_runs": 197,
             "total_runs": 209,
-            "pass_percentage": 94.7
+            "pass_percentage": 94.3
           }
         }
       ]
@@ -1384,11 +1384,11 @@
       "details_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/semaforica_cartesio.yaml?query=branch%3Amain+event%3Aschedule",
       "latest_run": {
         "target_id": "semaforica-cartesio",
-        "run_id": 32669663773,
+        "run_id": 32783493951,
         "run_attempt": 1,
-        "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669663773",
+        "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783493951",
         "event": "schedule",
-        "completed_at": "2026-08-23T23:38:03Z",
+        "completed_at": "2026-08-24T23:42:04Z",
         "status": "passed",
         "passed_cells": 7,
         "total_cells": 7,
@@ -1408,11 +1408,11 @@
       },
       "latest_passing_run": {
         "target_id": "semaforica-cartesio",
-        "run_id": 32669663773,
+        "run_id": 32783493951,
         "run_attempt": 1,
-        "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669663773",
+        "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783493951",
         "event": "schedule",
-        "completed_at": "2026-08-23T23:38:03Z",
+        "completed_at": "2026-08-24T23:42:04Z",
         "status": "passed",
         "passed_cells": 7,
         "total_cells": 7,
@@ -1432,11 +1432,11 @@
       },
       "best_run": {
         "target_id": "semaforica-cartesio",
-        "run_id": 32669663773,
+        "run_id": 32783493951,
         "run_attempt": 1,
-        "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669663773",
+        "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783493951",
         "event": "schedule",
-        "completed_at": "2026-08-23T23:38:03Z",
+        "completed_at": "2026-08-24T23:42:04Z",
         "status": "passed",
         "passed_cells": 7,
         "total_cells": 7,
@@ -1455,8 +1455,8 @@
         }
       },
       "last_30_days": {
-        "passed_cells": 140,
-        "total_cells": 140,
+        "passed_cells": 147,
+        "total_cells": 147,
         "pass_percentage": 100.0
       },
       "passed_versions": [
@@ -1511,34 +1511,34 @@
           },
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32669663773,
+            "run_id": 32783493951,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669663773",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783493951",
             "event": "schedule",
-            "completed_at": "2026-08-23T23:38:03Z",
+            "completed_at": "2026-08-24T23:42:04Z",
             "status": "passed",
             "test_count": 132,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-tecsen-lasemaforica-cartesio-core-3.2.2-run-32669663773-1203-1.log",
-            "report_artifact": "compliance-tecsen-lasemaforica-cartesio-core-3.2.2-run-32669663773-1203-1.json"
+            "log_artifact": "validator-tecsen-lasemaforica-cartesio-core-3.2.2-run-32783493951-1204-1.log",
+            "report_artifact": "compliance-tecsen-lasemaforica-cartesio-core-3.2.2-run-32783493951-1204-1.json"
           },
           "latest_passing_run": {
-            "run_id": 32669663773,
+            "run_id": 32783493951,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669663773",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783493951",
             "event": "schedule",
-            "completed_at": "2026-08-23T23:38:03Z",
+            "completed_at": "2026-08-24T23:42:04Z",
             "status": "passed",
             "test_count": 132,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-tecsen-lasemaforica-cartesio-core-3.2.2-run-32669663773-1203-1.log",
-            "report_artifact": "compliance-tecsen-lasemaforica-cartesio-core-3.2.2-run-32669663773-1203-1.json"
+            "log_artifact": "validator-tecsen-lasemaforica-cartesio-core-3.2.2-run-32783493951-1204-1.log",
+            "report_artifact": "compliance-tecsen-lasemaforica-cartesio-core-3.2.2-run-32783493951-1204-1.json"
           },
           "last_30_days": {
-            "passed_runs": 20,
-            "total_runs": 20,
+            "passed_runs": 21,
+            "total_runs": 21,
             "pass_percentage": 100.0
           }
         },
@@ -1549,34 +1549,34 @@
           },
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32669663773,
+            "run_id": 32783493951,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669663773",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783493951",
             "event": "schedule",
-            "completed_at": "2026-08-23T23:38:03Z",
+            "completed_at": "2026-08-24T23:42:04Z",
             "status": "passed",
             "test_count": 132,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-tecsen-lasemaforica-cartesio-core-3.2.1-run-32669663773-1203-1.log",
-            "report_artifact": "compliance-tecsen-lasemaforica-cartesio-core-3.2.1-run-32669663773-1203-1.json"
+            "log_artifact": "validator-tecsen-lasemaforica-cartesio-core-3.2.1-run-32783493951-1204-1.log",
+            "report_artifact": "compliance-tecsen-lasemaforica-cartesio-core-3.2.1-run-32783493951-1204-1.json"
           },
           "latest_passing_run": {
-            "run_id": 32669663773,
+            "run_id": 32783493951,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669663773",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783493951",
             "event": "schedule",
-            "completed_at": "2026-08-23T23:38:03Z",
+            "completed_at": "2026-08-24T23:42:04Z",
             "status": "passed",
             "test_count": 132,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-tecsen-lasemaforica-cartesio-core-3.2.1-run-32669663773-1203-1.log",
-            "report_artifact": "compliance-tecsen-lasemaforica-cartesio-core-3.2.1-run-32669663773-1203-1.json"
+            "log_artifact": "validator-tecsen-lasemaforica-cartesio-core-3.2.1-run-32783493951-1204-1.log",
+            "report_artifact": "compliance-tecsen-lasemaforica-cartesio-core-3.2.1-run-32783493951-1204-1.json"
           },
           "last_30_days": {
-            "passed_runs": 20,
-            "total_runs": 20,
+            "passed_runs": 21,
+            "total_runs": 21,
             "pass_percentage": 100.0
           }
         },
@@ -1587,34 +1587,34 @@
           },
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32669663773,
+            "run_id": 32783493951,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669663773",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783493951",
             "event": "schedule",
-            "completed_at": "2026-08-23T23:38:03Z",
+            "completed_at": "2026-08-24T23:42:04Z",
             "status": "passed",
             "test_count": 132,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-tecsen-lasemaforica-cartesio-core-3.2.0-run-32669663773-1203-1.log",
-            "report_artifact": "compliance-tecsen-lasemaforica-cartesio-core-3.2.0-run-32669663773-1203-1.json"
+            "log_artifact": "validator-tecsen-lasemaforica-cartesio-core-3.2.0-run-32783493951-1204-1.log",
+            "report_artifact": "compliance-tecsen-lasemaforica-cartesio-core-3.2.0-run-32783493951-1204-1.json"
           },
           "latest_passing_run": {
-            "run_id": 32669663773,
+            "run_id": 32783493951,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669663773",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783493951",
             "event": "schedule",
-            "completed_at": "2026-08-23T23:38:03Z",
+            "completed_at": "2026-08-24T23:42:04Z",
             "status": "passed",
             "test_count": 132,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-tecsen-lasemaforica-cartesio-core-3.2.0-run-32669663773-1203-1.log",
-            "report_artifact": "compliance-tecsen-lasemaforica-cartesio-core-3.2.0-run-32669663773-1203-1.json"
+            "log_artifact": "validator-tecsen-lasemaforica-cartesio-core-3.2.0-run-32783493951-1204-1.log",
+            "report_artifact": "compliance-tecsen-lasemaforica-cartesio-core-3.2.0-run-32783493951-1204-1.json"
           },
           "last_30_days": {
-            "passed_runs": 20,
-            "total_runs": 20,
+            "passed_runs": 21,
+            "total_runs": 21,
             "pass_percentage": 100.0
           }
         },
@@ -1625,34 +1625,34 @@
           },
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32669663773,
+            "run_id": 32783493951,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669663773",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783493951",
             "event": "schedule",
-            "completed_at": "2026-08-23T23:38:03Z",
+            "completed_at": "2026-08-24T23:42:04Z",
             "status": "passed",
             "test_count": 141,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-tecsen-lasemaforica-cartesio-core-3.1.5-run-32669663773-1203-1.log",
-            "report_artifact": "compliance-tecsen-lasemaforica-cartesio-core-3.1.5-run-32669663773-1203-1.json"
+            "log_artifact": "validator-tecsen-lasemaforica-cartesio-core-3.1.5-run-32783493951-1204-1.log",
+            "report_artifact": "compliance-tecsen-lasemaforica-cartesio-core-3.1.5-run-32783493951-1204-1.json"
           },
           "latest_passing_run": {
-            "run_id": 32669663773,
+            "run_id": 32783493951,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669663773",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783493951",
             "event": "schedule",
-            "completed_at": "2026-08-23T23:38:03Z",
+            "completed_at": "2026-08-24T23:42:04Z",
             "status": "passed",
             "test_count": 141,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-tecsen-lasemaforica-cartesio-core-3.1.5-run-32669663773-1203-1.log",
-            "report_artifact": "compliance-tecsen-lasemaforica-cartesio-core-3.1.5-run-32669663773-1203-1.json"
+            "log_artifact": "validator-tecsen-lasemaforica-cartesio-core-3.1.5-run-32783493951-1204-1.log",
+            "report_artifact": "compliance-tecsen-lasemaforica-cartesio-core-3.1.5-run-32783493951-1204-1.json"
           },
           "last_30_days": {
-            "passed_runs": 20,
-            "total_runs": 20,
+            "passed_runs": 21,
+            "total_runs": 21,
             "pass_percentage": 100.0
           }
         },
@@ -1663,34 +1663,34 @@
           },
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32669663773,
+            "run_id": 32783493951,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669663773",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783493951",
             "event": "schedule",
-            "completed_at": "2026-08-23T23:38:03Z",
+            "completed_at": "2026-08-24T23:42:04Z",
             "status": "passed",
             "test_count": 143,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-tecsen-lasemaforica-cartesio-core-3.1.4-run-32669663773-1203-1.log",
-            "report_artifact": "compliance-tecsen-lasemaforica-cartesio-core-3.1.4-run-32669663773-1203-1.json"
+            "log_artifact": "validator-tecsen-lasemaforica-cartesio-core-3.1.4-run-32783493951-1204-1.log",
+            "report_artifact": "compliance-tecsen-lasemaforica-cartesio-core-3.1.4-run-32783493951-1204-1.json"
           },
           "latest_passing_run": {
-            "run_id": 32669663773,
+            "run_id": 32783493951,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669663773",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783493951",
             "event": "schedule",
-            "completed_at": "2026-08-23T23:38:03Z",
+            "completed_at": "2026-08-24T23:42:04Z",
             "status": "passed",
             "test_count": 143,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-tecsen-lasemaforica-cartesio-core-3.1.4-run-32669663773-1203-1.log",
-            "report_artifact": "compliance-tecsen-lasemaforica-cartesio-core-3.1.4-run-32669663773-1203-1.json"
+            "log_artifact": "validator-tecsen-lasemaforica-cartesio-core-3.1.4-run-32783493951-1204-1.log",
+            "report_artifact": "compliance-tecsen-lasemaforica-cartesio-core-3.1.4-run-32783493951-1204-1.json"
           },
           "last_30_days": {
-            "passed_runs": 20,
-            "total_runs": 20,
+            "passed_runs": 21,
+            "total_runs": 21,
             "pass_percentage": 100.0
           }
         },
@@ -1701,34 +1701,34 @@
           },
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32669663773,
+            "run_id": 32783493951,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669663773",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783493951",
             "event": "schedule",
-            "completed_at": "2026-08-23T23:38:03Z",
+            "completed_at": "2026-08-24T23:42:04Z",
             "status": "passed",
             "test_count": 145,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-tecsen-lasemaforica-cartesio-core-3.1.3-run-32669663773-1203-1.log",
-            "report_artifact": "compliance-tecsen-lasemaforica-cartesio-core-3.1.3-run-32669663773-1203-1.json"
+            "log_artifact": "validator-tecsen-lasemaforica-cartesio-core-3.1.3-run-32783493951-1204-1.log",
+            "report_artifact": "compliance-tecsen-lasemaforica-cartesio-core-3.1.3-run-32783493951-1204-1.json"
           },
           "latest_passing_run": {
-            "run_id": 32669663773,
+            "run_id": 32783493951,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669663773",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783493951",
             "event": "schedule",
-            "completed_at": "2026-08-23T23:38:03Z",
+            "completed_at": "2026-08-24T23:42:04Z",
             "status": "passed",
             "test_count": 145,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-tecsen-lasemaforica-cartesio-core-3.1.3-run-32669663773-1203-1.log",
-            "report_artifact": "compliance-tecsen-lasemaforica-cartesio-core-3.1.3-run-32669663773-1203-1.json"
+            "log_artifact": "validator-tecsen-lasemaforica-cartesio-core-3.1.3-run-32783493951-1204-1.log",
+            "report_artifact": "compliance-tecsen-lasemaforica-cartesio-core-3.1.3-run-32783493951-1204-1.json"
           },
           "last_30_days": {
-            "passed_runs": 20,
-            "total_runs": 20,
+            "passed_runs": 21,
+            "total_runs": 21,
             "pass_percentage": 100.0
           }
         },
@@ -1739,39 +1739,63 @@
           },
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32669663773,
+            "run_id": 32783493951,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669663773",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783493951",
             "event": "schedule",
-            "completed_at": "2026-08-23T23:38:03Z",
+            "completed_at": "2026-08-24T23:42:04Z",
             "status": "passed",
             "test_count": 147,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-tecsen-lasemaforica-cartesio-core-3.1.2-run-32669663773-1203-1.log",
-            "report_artifact": "compliance-tecsen-lasemaforica-cartesio-core-3.1.2-run-32669663773-1203-1.json"
+            "log_artifact": "validator-tecsen-lasemaforica-cartesio-core-3.1.2-run-32783493951-1204-1.log",
+            "report_artifact": "compliance-tecsen-lasemaforica-cartesio-core-3.1.2-run-32783493951-1204-1.json"
           },
           "latest_passing_run": {
-            "run_id": 32669663773,
+            "run_id": 32783493951,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669663773",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783493951",
             "event": "schedule",
-            "completed_at": "2026-08-23T23:38:03Z",
+            "completed_at": "2026-08-24T23:42:04Z",
             "status": "passed",
             "test_count": 147,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-tecsen-lasemaforica-cartesio-core-3.1.2-run-32669663773-1203-1.log",
-            "report_artifact": "compliance-tecsen-lasemaforica-cartesio-core-3.1.2-run-32669663773-1203-1.json"
+            "log_artifact": "validator-tecsen-lasemaforica-cartesio-core-3.1.2-run-32783493951-1204-1.log",
+            "report_artifact": "compliance-tecsen-lasemaforica-cartesio-core-3.1.2-run-32783493951-1204-1.json"
           },
           "last_30_days": {
-            "passed_runs": 20,
-            "total_runs": 20,
+            "passed_runs": 21,
+            "total_runs": 21,
             "pass_percentage": 100.0
           }
         }
       ],
       "recent_runs": [
+        {
+          "target_id": "semaforica-cartesio",
+          "run_id": 32783493951,
+          "run_attempt": 1,
+          "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783493951",
+          "event": "schedule",
+          "completed_at": "2026-08-24T23:42:04Z",
+          "status": "passed",
+          "passed_cells": 7,
+          "total_cells": 7,
+          "version_summary": {
+            "core": {
+              "passed_versions": 7,
+              "total_versions": 7
+            },
+            "sxls": [
+              {
+                "name": "tlc",
+                "passed_versions": 1,
+                "total_versions": 1
+              }
+            ]
+          }
+        },
         {
           "target_id": "semaforica-cartesio",
           "run_id": 32669663773,
@@ -2258,30 +2282,30 @@
           "core": "3.2.2",
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32669663773,
+            "run_id": 32783493951,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669663773",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783493951",
             "event": "schedule",
-            "completed_at": "2026-08-23T23:38:03Z",
+            "completed_at": "2026-08-24T23:42:04Z",
             "status": "passed",
             "test_count": 132,
             "failed_count": 0,
             "errored_count": 0
           },
           "latest_passing_run": {
-            "run_id": 32669663773,
+            "run_id": 32783493951,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669663773",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783493951",
             "event": "schedule",
-            "completed_at": "2026-08-23T23:38:03Z",
+            "completed_at": "2026-08-24T23:42:04Z",
             "status": "passed",
             "test_count": 132,
             "failed_count": 0,
             "errored_count": 0
           },
           "last_30_days": {
-            "passed_runs": 20,
-            "total_runs": 20,
+            "passed_runs": 21,
+            "total_runs": 21,
             "pass_percentage": 100.0
           }
         },
@@ -2289,30 +2313,30 @@
           "core": "3.2.1",
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32669663773,
+            "run_id": 32783493951,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669663773",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783493951",
             "event": "schedule",
-            "completed_at": "2026-08-23T23:38:03Z",
+            "completed_at": "2026-08-24T23:42:04Z",
             "status": "passed",
             "test_count": 132,
             "failed_count": 0,
             "errored_count": 0
           },
           "latest_passing_run": {
-            "run_id": 32669663773,
+            "run_id": 32783493951,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669663773",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783493951",
             "event": "schedule",
-            "completed_at": "2026-08-23T23:38:03Z",
+            "completed_at": "2026-08-24T23:42:04Z",
             "status": "passed",
             "test_count": 132,
             "failed_count": 0,
             "errored_count": 0
           },
           "last_30_days": {
-            "passed_runs": 20,
-            "total_runs": 20,
+            "passed_runs": 21,
+            "total_runs": 21,
             "pass_percentage": 100.0
           }
         },
@@ -2320,30 +2344,30 @@
           "core": "3.2.0",
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32669663773,
+            "run_id": 32783493951,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669663773",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783493951",
             "event": "schedule",
-            "completed_at": "2026-08-23T23:38:03Z",
+            "completed_at": "2026-08-24T23:42:04Z",
             "status": "passed",
             "test_count": 132,
             "failed_count": 0,
             "errored_count": 0
           },
           "latest_passing_run": {
-            "run_id": 32669663773,
+            "run_id": 32783493951,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669663773",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783493951",
             "event": "schedule",
-            "completed_at": "2026-08-23T23:38:03Z",
+            "completed_at": "2026-08-24T23:42:04Z",
             "status": "passed",
             "test_count": 132,
             "failed_count": 0,
             "errored_count": 0
           },
           "last_30_days": {
-            "passed_runs": 20,
-            "total_runs": 20,
+            "passed_runs": 21,
+            "total_runs": 21,
             "pass_percentage": 100.0
           }
         },
@@ -2351,30 +2375,30 @@
           "core": "3.1.5",
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32669663773,
+            "run_id": 32783493951,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669663773",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783493951",
             "event": "schedule",
-            "completed_at": "2026-08-23T23:38:03Z",
+            "completed_at": "2026-08-24T23:42:04Z",
             "status": "passed",
             "test_count": 141,
             "failed_count": 0,
             "errored_count": 0
           },
           "latest_passing_run": {
-            "run_id": 32669663773,
+            "run_id": 32783493951,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669663773",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783493951",
             "event": "schedule",
-            "completed_at": "2026-08-23T23:38:03Z",
+            "completed_at": "2026-08-24T23:42:04Z",
             "status": "passed",
             "test_count": 141,
             "failed_count": 0,
             "errored_count": 0
           },
           "last_30_days": {
-            "passed_runs": 20,
-            "total_runs": 20,
+            "passed_runs": 21,
+            "total_runs": 21,
             "pass_percentage": 100.0
           }
         },
@@ -2382,30 +2406,30 @@
           "core": "3.1.4",
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32669663773,
+            "run_id": 32783493951,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669663773",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783493951",
             "event": "schedule",
-            "completed_at": "2026-08-23T23:38:03Z",
+            "completed_at": "2026-08-24T23:42:04Z",
             "status": "passed",
             "test_count": 143,
             "failed_count": 0,
             "errored_count": 0
           },
           "latest_passing_run": {
-            "run_id": 32669663773,
+            "run_id": 32783493951,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669663773",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783493951",
             "event": "schedule",
-            "completed_at": "2026-08-23T23:38:03Z",
+            "completed_at": "2026-08-24T23:42:04Z",
             "status": "passed",
             "test_count": 143,
             "failed_count": 0,
             "errored_count": 0
           },
           "last_30_days": {
-            "passed_runs": 20,
-            "total_runs": 20,
+            "passed_runs": 21,
+            "total_runs": 21,
             "pass_percentage": 100.0
           }
         },
@@ -2413,30 +2437,30 @@
           "core": "3.1.3",
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32669663773,
+            "run_id": 32783493951,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669663773",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783493951",
             "event": "schedule",
-            "completed_at": "2026-08-23T23:38:03Z",
+            "completed_at": "2026-08-24T23:42:04Z",
             "status": "passed",
             "test_count": 145,
             "failed_count": 0,
             "errored_count": 0
           },
           "latest_passing_run": {
-            "run_id": 32669663773,
+            "run_id": 32783493951,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669663773",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783493951",
             "event": "schedule",
-            "completed_at": "2026-08-23T23:38:03Z",
+            "completed_at": "2026-08-24T23:42:04Z",
             "status": "passed",
             "test_count": 145,
             "failed_count": 0,
             "errored_count": 0
           },
           "last_30_days": {
-            "passed_runs": 20,
-            "total_runs": 20,
+            "passed_runs": 21,
+            "total_runs": 21,
             "pass_percentage": 100.0
           }
         },
@@ -2444,30 +2468,30 @@
           "core": "3.1.2",
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32669663773,
+            "run_id": 32783493951,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669663773",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783493951",
             "event": "schedule",
-            "completed_at": "2026-08-23T23:38:03Z",
+            "completed_at": "2026-08-24T23:42:04Z",
             "status": "passed",
             "test_count": 147,
             "failed_count": 0,
             "errored_count": 0
           },
           "latest_passing_run": {
-            "run_id": 32669663773,
+            "run_id": 32783493951,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669663773",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783493951",
             "event": "schedule",
-            "completed_at": "2026-08-23T23:38:03Z",
+            "completed_at": "2026-08-24T23:42:04Z",
             "status": "passed",
             "test_count": 147,
             "failed_count": 0,
             "errored_count": 0
           },
           "last_30_days": {
-            "passed_runs": 20,
-            "total_runs": 20,
+            "passed_runs": 21,
+            "total_runs": 21,
             "pass_percentage": 100.0
           }
         }
@@ -2478,30 +2502,30 @@
           "version": "1.2.1",
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32669663773,
+            "run_id": 32783493951,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669663773",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783493951",
             "event": "schedule",
-            "completed_at": "2026-08-23T23:38:03Z",
+            "completed_at": "2026-08-24T23:42:04Z",
             "status": "passed",
             "test_count": 132,
             "failed_count": 0,
             "errored_count": 0
           },
           "latest_passing_run": {
-            "run_id": 32669663773,
+            "run_id": 32783493951,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669663773",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783493951",
             "event": "schedule",
-            "completed_at": "2026-08-23T23:38:03Z",
+            "completed_at": "2026-08-24T23:42:04Z",
             "status": "passed",
             "test_count": 132,
             "failed_count": 0,
             "errored_count": 0
           },
           "last_30_days": {
-            "passed_runs": 140,
-            "total_runs": 140,
+            "passed_runs": 147,
+            "total_runs": 147,
             "pass_percentage": 100.0
           }
         }
@@ -2517,11 +2541,11 @@
       "details_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/gem_tlc.yaml?query=branch%3Amain+event%3Aschedule",
       "latest_run": {
         "target_id": "gem-tlc",
-        "run_id": 32669908136,
+        "run_id": 32783895803,
         "run_attempt": 1,
-        "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669908136",
+        "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783895803",
         "event": "schedule",
-        "completed_at": "2026-08-23T22:13:46Z",
+        "completed_at": "2026-08-24T22:17:43Z",
         "status": "passed",
         "passed_cells": 8,
         "total_cells": 8,
@@ -2541,11 +2565,11 @@
       },
       "latest_passing_run": {
         "target_id": "gem-tlc",
-        "run_id": 32669908136,
+        "run_id": 32783895803,
         "run_attempt": 1,
-        "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669908136",
+        "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783895803",
         "event": "schedule",
-        "completed_at": "2026-08-23T22:13:46Z",
+        "completed_at": "2026-08-24T22:17:43Z",
         "status": "passed",
         "passed_cells": 8,
         "total_cells": 8,
@@ -2565,11 +2589,11 @@
       },
       "best_run": {
         "target_id": "gem-tlc",
-        "run_id": 32669908136,
+        "run_id": 32783895803,
         "run_attempt": 1,
-        "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669908136",
+        "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783895803",
         "event": "schedule",
-        "completed_at": "2026-08-23T22:13:46Z",
+        "completed_at": "2026-08-24T22:17:43Z",
         "status": "passed",
         "passed_cells": 8,
         "total_cells": 8,
@@ -2698,30 +2722,30 @@
           },
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32669774017,
+            "run_id": 32783707277,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669774017",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783707277",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:11:07Z",
+            "completed_at": "2026-08-24T22:15:26Z",
             "status": "passed",
             "test_count": 132,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-gem-tlc-ubuntu-latest-sxl-1.2.1-run-32669774017-152-1.log",
-            "report_artifact": "compliance-gem-tlc-ubuntu-latest-sxl-1.2.1-run-32669774017-152-1.json"
+            "log_artifact": "validator-gem-tlc-ubuntu-latest-sxl-1.2.1-run-32783707277-153-1.log",
+            "report_artifact": "compliance-gem-tlc-ubuntu-latest-sxl-1.2.1-run-32783707277-153-1.json"
           },
           "latest_passing_run": {
-            "run_id": 32669774017,
+            "run_id": 32783707277,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669774017",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783707277",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:11:07Z",
+            "completed_at": "2026-08-24T22:15:26Z",
             "status": "passed",
             "test_count": 132,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-gem-tlc-ubuntu-latest-sxl-1.2.1-run-32669774017-152-1.log",
-            "report_artifact": "compliance-gem-tlc-ubuntu-latest-sxl-1.2.1-run-32669774017-152-1.json"
+            "log_artifact": "validator-gem-tlc-ubuntu-latest-sxl-1.2.1-run-32783707277-153-1.log",
+            "report_artifact": "compliance-gem-tlc-ubuntu-latest-sxl-1.2.1-run-32783707277-153-1.json"
           },
           "last_30_days": {
             "passed_runs": 60,
@@ -2736,30 +2760,30 @@
           },
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32669774017,
+            "run_id": 32783707277,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669774017",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783707277",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:11:07Z",
+            "completed_at": "2026-08-24T22:15:26Z",
             "status": "passed",
             "test_count": 132,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-gem-tlc-ubuntu-latest-sxl-1.2.0-run-32669774017-152-1.log",
-            "report_artifact": "compliance-gem-tlc-ubuntu-latest-sxl-1.2.0-run-32669774017-152-1.json"
+            "log_artifact": "validator-gem-tlc-ubuntu-latest-sxl-1.2.0-run-32783707277-153-1.log",
+            "report_artifact": "compliance-gem-tlc-ubuntu-latest-sxl-1.2.0-run-32783707277-153-1.json"
           },
           "latest_passing_run": {
-            "run_id": 32669774017,
+            "run_id": 32783707277,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669774017",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783707277",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:11:07Z",
+            "completed_at": "2026-08-24T22:15:26Z",
             "status": "passed",
             "test_count": 132,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-gem-tlc-ubuntu-latest-sxl-1.2.0-run-32669774017-152-1.log",
-            "report_artifact": "compliance-gem-tlc-ubuntu-latest-sxl-1.2.0-run-32669774017-152-1.json"
+            "log_artifact": "validator-gem-tlc-ubuntu-latest-sxl-1.2.0-run-32783707277-153-1.log",
+            "report_artifact": "compliance-gem-tlc-ubuntu-latest-sxl-1.2.0-run-32783707277-153-1.json"
           },
           "last_30_days": {
             "passed_runs": 30,
@@ -2774,30 +2798,30 @@
           },
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32669774017,
+            "run_id": 32783707277,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669774017",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783707277",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:11:07Z",
+            "completed_at": "2026-08-24T22:15:26Z",
             "status": "passed",
             "test_count": 132,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-gem-tlc-ubuntu-latest-sxl-1.1.0-run-32669774017-152-1.log",
-            "report_artifact": "compliance-gem-tlc-ubuntu-latest-sxl-1.1.0-run-32669774017-152-1.json"
+            "log_artifact": "validator-gem-tlc-ubuntu-latest-sxl-1.1.0-run-32783707277-153-1.log",
+            "report_artifact": "compliance-gem-tlc-ubuntu-latest-sxl-1.1.0-run-32783707277-153-1.json"
           },
           "latest_passing_run": {
-            "run_id": 32669774017,
+            "run_id": 32783707277,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669774017",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783707277",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:11:07Z",
+            "completed_at": "2026-08-24T22:15:26Z",
             "status": "passed",
             "test_count": 132,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-gem-tlc-ubuntu-latest-sxl-1.1.0-run-32669774017-152-1.log",
-            "report_artifact": "compliance-gem-tlc-ubuntu-latest-sxl-1.1.0-run-32669774017-152-1.json"
+            "log_artifact": "validator-gem-tlc-ubuntu-latest-sxl-1.1.0-run-32783707277-153-1.log",
+            "report_artifact": "compliance-gem-tlc-ubuntu-latest-sxl-1.1.0-run-32783707277-153-1.json"
           },
           "last_30_days": {
             "passed_runs": 30,
@@ -2812,30 +2836,30 @@
           },
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32669774017,
+            "run_id": 32783707277,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669774017",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783707277",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:11:07Z",
+            "completed_at": "2026-08-24T22:15:26Z",
             "status": "passed",
             "test_count": 167,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-gem-tlc-ubuntu-latest-sxl-1.0.9-run-32669774017-152-1.log",
-            "report_artifact": "compliance-gem-tlc-ubuntu-latest-sxl-1.0.9-run-32669774017-152-1.json"
+            "log_artifact": "validator-gem-tlc-ubuntu-latest-sxl-1.0.9-run-32783707277-153-1.log",
+            "report_artifact": "compliance-gem-tlc-ubuntu-latest-sxl-1.0.9-run-32783707277-153-1.json"
           },
           "latest_passing_run": {
-            "run_id": 32669774017,
+            "run_id": 32783707277,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669774017",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783707277",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:11:07Z",
+            "completed_at": "2026-08-24T22:15:26Z",
             "status": "passed",
             "test_count": 167,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-gem-tlc-ubuntu-latest-sxl-1.0.9-run-32669774017-152-1.log",
-            "report_artifact": "compliance-gem-tlc-ubuntu-latest-sxl-1.0.9-run-32669774017-152-1.json"
+            "log_artifact": "validator-gem-tlc-ubuntu-latest-sxl-1.0.9-run-32783707277-153-1.log",
+            "report_artifact": "compliance-gem-tlc-ubuntu-latest-sxl-1.0.9-run-32783707277-153-1.json"
           },
           "last_30_days": {
             "passed_runs": 30,
@@ -2850,30 +2874,30 @@
           },
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32669774017,
+            "run_id": 32783707277,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669774017",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783707277",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:11:07Z",
+            "completed_at": "2026-08-24T22:15:26Z",
             "status": "passed",
             "test_count": 167,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-gem-tlc-ubuntu-latest-sxl-1.0.8-run-32669774017-152-1.log",
-            "report_artifact": "compliance-gem-tlc-ubuntu-latest-sxl-1.0.8-run-32669774017-152-1.json"
+            "log_artifact": "validator-gem-tlc-ubuntu-latest-sxl-1.0.8-run-32783707277-153-1.log",
+            "report_artifact": "compliance-gem-tlc-ubuntu-latest-sxl-1.0.8-run-32783707277-153-1.json"
           },
           "latest_passing_run": {
-            "run_id": 32669774017,
+            "run_id": 32783707277,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669774017",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783707277",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:11:07Z",
+            "completed_at": "2026-08-24T22:15:26Z",
             "status": "passed",
             "test_count": 167,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-gem-tlc-ubuntu-latest-sxl-1.0.8-run-32669774017-152-1.log",
-            "report_artifact": "compliance-gem-tlc-ubuntu-latest-sxl-1.0.8-run-32669774017-152-1.json"
+            "log_artifact": "validator-gem-tlc-ubuntu-latest-sxl-1.0.8-run-32783707277-153-1.log",
+            "report_artifact": "compliance-gem-tlc-ubuntu-latest-sxl-1.0.8-run-32783707277-153-1.json"
           },
           "last_30_days": {
             "passed_runs": 30,
@@ -2888,30 +2912,30 @@
           },
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32669774017,
+            "run_id": 32783707277,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669774017",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783707277",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:11:07Z",
+            "completed_at": "2026-08-24T22:15:26Z",
             "status": "passed",
             "test_count": 170,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-gem-tlc-ubuntu-latest-sxl-1.0.7-run-32669774017-152-1.log",
-            "report_artifact": "compliance-gem-tlc-ubuntu-latest-sxl-1.0.7-run-32669774017-152-1.json"
+            "log_artifact": "validator-gem-tlc-ubuntu-latest-sxl-1.0.7-run-32783707277-153-1.log",
+            "report_artifact": "compliance-gem-tlc-ubuntu-latest-sxl-1.0.7-run-32783707277-153-1.json"
           },
           "latest_passing_run": {
-            "run_id": 32669774017,
+            "run_id": 32783707277,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669774017",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783707277",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:11:07Z",
+            "completed_at": "2026-08-24T22:15:26Z",
             "status": "passed",
             "test_count": 170,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-gem-tlc-ubuntu-latest-sxl-1.0.7-run-32669774017-152-1.log",
-            "report_artifact": "compliance-gem-tlc-ubuntu-latest-sxl-1.0.7-run-32669774017-152-1.json"
+            "log_artifact": "validator-gem-tlc-ubuntu-latest-sxl-1.0.7-run-32783707277-153-1.log",
+            "report_artifact": "compliance-gem-tlc-ubuntu-latest-sxl-1.0.7-run-32783707277-153-1.json"
           },
           "last_30_days": {
             "passed_runs": 30,
@@ -2926,30 +2950,30 @@
           },
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32669774017,
+            "run_id": 32783707277,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669774017",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783707277",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:11:07Z",
+            "completed_at": "2026-08-24T22:15:26Z",
             "status": "passed",
             "test_count": 142,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-gem-tlc-ubuntu-latest-sxl-1.0.15-run-32669774017-152-1.log",
-            "report_artifact": "compliance-gem-tlc-ubuntu-latest-sxl-1.0.15-run-32669774017-152-1.json"
+            "log_artifact": "validator-gem-tlc-ubuntu-latest-sxl-1.0.15-run-32783707277-153-1.log",
+            "report_artifact": "compliance-gem-tlc-ubuntu-latest-sxl-1.0.15-run-32783707277-153-1.json"
           },
           "latest_passing_run": {
-            "run_id": 32669774017,
+            "run_id": 32783707277,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669774017",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783707277",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:11:07Z",
+            "completed_at": "2026-08-24T22:15:26Z",
             "status": "passed",
             "test_count": 142,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-gem-tlc-ubuntu-latest-sxl-1.0.15-run-32669774017-152-1.log",
-            "report_artifact": "compliance-gem-tlc-ubuntu-latest-sxl-1.0.15-run-32669774017-152-1.json"
+            "log_artifact": "validator-gem-tlc-ubuntu-latest-sxl-1.0.15-run-32783707277-153-1.log",
+            "report_artifact": "compliance-gem-tlc-ubuntu-latest-sxl-1.0.15-run-32783707277-153-1.json"
           },
           "last_30_days": {
             "passed_runs": 30,
@@ -2964,30 +2988,30 @@
           },
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32669774017,
+            "run_id": 32783707277,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669774017",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783707277",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:11:07Z",
+            "completed_at": "2026-08-24T22:15:26Z",
             "status": "passed",
             "test_count": 152,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-gem-tlc-ubuntu-latest-sxl-1.0.13-run-32669774017-152-1.log",
-            "report_artifact": "compliance-gem-tlc-ubuntu-latest-sxl-1.0.13-run-32669774017-152-1.json"
+            "log_artifact": "validator-gem-tlc-ubuntu-latest-sxl-1.0.13-run-32783707277-153-1.log",
+            "report_artifact": "compliance-gem-tlc-ubuntu-latest-sxl-1.0.13-run-32783707277-153-1.json"
           },
           "latest_passing_run": {
-            "run_id": 32669774017,
+            "run_id": 32783707277,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669774017",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783707277",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:11:07Z",
+            "completed_at": "2026-08-24T22:15:26Z",
             "status": "passed",
             "test_count": 152,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-gem-tlc-ubuntu-latest-sxl-1.0.13-run-32669774017-152-1.log",
-            "report_artifact": "compliance-gem-tlc-ubuntu-latest-sxl-1.0.13-run-32669774017-152-1.json"
+            "log_artifact": "validator-gem-tlc-ubuntu-latest-sxl-1.0.13-run-32783707277-153-1.log",
+            "report_artifact": "compliance-gem-tlc-ubuntu-latest-sxl-1.0.13-run-32783707277-153-1.json"
           },
           "last_30_days": {
             "passed_runs": 30,
@@ -3002,30 +3026,30 @@
           },
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32669774017,
+            "run_id": 32783707277,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669774017",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783707277",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:11:07Z",
+            "completed_at": "2026-08-24T22:15:26Z",
             "status": "passed",
             "test_count": 167,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-gem-tlc-ubuntu-latest-sxl-1.0.10-run-32669774017-152-1.log",
-            "report_artifact": "compliance-gem-tlc-ubuntu-latest-sxl-1.0.10-run-32669774017-152-1.json"
+            "log_artifact": "validator-gem-tlc-ubuntu-latest-sxl-1.0.10-run-32783707277-153-1.log",
+            "report_artifact": "compliance-gem-tlc-ubuntu-latest-sxl-1.0.10-run-32783707277-153-1.json"
           },
           "latest_passing_run": {
-            "run_id": 32669774017,
+            "run_id": 32783707277,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669774017",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783707277",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:11:07Z",
+            "completed_at": "2026-08-24T22:15:26Z",
             "status": "passed",
             "test_count": 167,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-gem-tlc-ubuntu-latest-sxl-1.0.10-run-32669774017-152-1.log",
-            "report_artifact": "compliance-gem-tlc-ubuntu-latest-sxl-1.0.10-run-32669774017-152-1.json"
+            "log_artifact": "validator-gem-tlc-ubuntu-latest-sxl-1.0.10-run-32783707277-153-1.log",
+            "report_artifact": "compliance-gem-tlc-ubuntu-latest-sxl-1.0.10-run-32783707277-153-1.json"
           },
           "last_30_days": {
             "passed_runs": 30,
@@ -3040,30 +3064,30 @@
           },
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32669908136,
+            "run_id": 32783895803,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669908136",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783895803",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:13:46Z",
+            "completed_at": "2026-08-24T22:17:43Z",
             "status": "passed",
             "test_count": 132,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-gem-tlc-ubuntu-latest-core-3.2.2-run-32669908136-535-1.log",
-            "report_artifact": "compliance-gem-tlc-ubuntu-latest-core-3.2.2-run-32669908136-535-1.json"
+            "log_artifact": "validator-gem-tlc-ubuntu-latest-core-3.2.2-run-32783895803-536-1.log",
+            "report_artifact": "compliance-gem-tlc-ubuntu-latest-core-3.2.2-run-32783895803-536-1.json"
           },
           "latest_passing_run": {
-            "run_id": 32669908136,
+            "run_id": 32783895803,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669908136",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783895803",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:13:46Z",
+            "completed_at": "2026-08-24T22:17:43Z",
             "status": "passed",
             "test_count": 132,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-gem-tlc-ubuntu-latest-core-3.2.2-run-32669908136-535-1.log",
-            "report_artifact": "compliance-gem-tlc-ubuntu-latest-core-3.2.2-run-32669908136-535-1.json"
+            "log_artifact": "validator-gem-tlc-ubuntu-latest-core-3.2.2-run-32783895803-536-1.log",
+            "report_artifact": "compliance-gem-tlc-ubuntu-latest-core-3.2.2-run-32783895803-536-1.json"
           },
           "last_30_days": {
             "passed_runs": 30,
@@ -3078,30 +3102,30 @@
           },
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32669908136,
+            "run_id": 32783895803,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669908136",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783895803",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:13:46Z",
+            "completed_at": "2026-08-24T22:17:43Z",
             "status": "passed",
             "test_count": 132,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-gem-tlc-ubuntu-latest-core-3.2.1-run-32669908136-535-1.log",
-            "report_artifact": "compliance-gem-tlc-ubuntu-latest-core-3.2.1-run-32669908136-535-1.json"
+            "log_artifact": "validator-gem-tlc-ubuntu-latest-core-3.2.1-run-32783895803-536-1.log",
+            "report_artifact": "compliance-gem-tlc-ubuntu-latest-core-3.2.1-run-32783895803-536-1.json"
           },
           "latest_passing_run": {
-            "run_id": 32669908136,
+            "run_id": 32783895803,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669908136",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783895803",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:13:46Z",
+            "completed_at": "2026-08-24T22:17:43Z",
             "status": "passed",
             "test_count": 132,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-gem-tlc-ubuntu-latest-core-3.2.1-run-32669908136-535-1.log",
-            "report_artifact": "compliance-gem-tlc-ubuntu-latest-core-3.2.1-run-32669908136-535-1.json"
+            "log_artifact": "validator-gem-tlc-ubuntu-latest-core-3.2.1-run-32783895803-536-1.log",
+            "report_artifact": "compliance-gem-tlc-ubuntu-latest-core-3.2.1-run-32783895803-536-1.json"
           },
           "last_30_days": {
             "passed_runs": 30,
@@ -3116,30 +3140,30 @@
           },
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32669908136,
+            "run_id": 32783895803,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669908136",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783895803",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:13:46Z",
+            "completed_at": "2026-08-24T22:17:43Z",
             "status": "passed",
             "test_count": 132,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-gem-tlc-ubuntu-latest-core-3.2.0-run-32669908136-535-1.log",
-            "report_artifact": "compliance-gem-tlc-ubuntu-latest-core-3.2.0-run-32669908136-535-1.json"
+            "log_artifact": "validator-gem-tlc-ubuntu-latest-core-3.2.0-run-32783895803-536-1.log",
+            "report_artifact": "compliance-gem-tlc-ubuntu-latest-core-3.2.0-run-32783895803-536-1.json"
           },
           "latest_passing_run": {
-            "run_id": 32669908136,
+            "run_id": 32783895803,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669908136",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783895803",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:13:46Z",
+            "completed_at": "2026-08-24T22:17:43Z",
             "status": "passed",
             "test_count": 132,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-gem-tlc-ubuntu-latest-core-3.2.0-run-32669908136-535-1.log",
-            "report_artifact": "compliance-gem-tlc-ubuntu-latest-core-3.2.0-run-32669908136-535-1.json"
+            "log_artifact": "validator-gem-tlc-ubuntu-latest-core-3.2.0-run-32783895803-536-1.log",
+            "report_artifact": "compliance-gem-tlc-ubuntu-latest-core-3.2.0-run-32783895803-536-1.json"
           },
           "last_30_days": {
             "passed_runs": 30,
@@ -3154,30 +3178,30 @@
           },
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32669908136,
+            "run_id": 32783895803,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669908136",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783895803",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:13:46Z",
+            "completed_at": "2026-08-24T22:17:43Z",
             "status": "passed",
             "test_count": 141,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-gem-tlc-ubuntu-latest-core-3.1.5-run-32669908136-535-1.log",
-            "report_artifact": "compliance-gem-tlc-ubuntu-latest-core-3.1.5-run-32669908136-535-1.json"
+            "log_artifact": "validator-gem-tlc-ubuntu-latest-core-3.1.5-run-32783895803-536-1.log",
+            "report_artifact": "compliance-gem-tlc-ubuntu-latest-core-3.1.5-run-32783895803-536-1.json"
           },
           "latest_passing_run": {
-            "run_id": 32669908136,
+            "run_id": 32783895803,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669908136",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783895803",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:13:46Z",
+            "completed_at": "2026-08-24T22:17:43Z",
             "status": "passed",
             "test_count": 141,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-gem-tlc-ubuntu-latest-core-3.1.5-run-32669908136-535-1.log",
-            "report_artifact": "compliance-gem-tlc-ubuntu-latest-core-3.1.5-run-32669908136-535-1.json"
+            "log_artifact": "validator-gem-tlc-ubuntu-latest-core-3.1.5-run-32783895803-536-1.log",
+            "report_artifact": "compliance-gem-tlc-ubuntu-latest-core-3.1.5-run-32783895803-536-1.json"
           },
           "last_30_days": {
             "passed_runs": 30,
@@ -3192,30 +3216,30 @@
           },
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32669908136,
+            "run_id": 32783895803,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669908136",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783895803",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:13:46Z",
+            "completed_at": "2026-08-24T22:17:43Z",
             "status": "passed",
             "test_count": 143,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-gem-tlc-ubuntu-latest-core-3.1.4-run-32669908136-535-1.log",
-            "report_artifact": "compliance-gem-tlc-ubuntu-latest-core-3.1.4-run-32669908136-535-1.json"
+            "log_artifact": "validator-gem-tlc-ubuntu-latest-core-3.1.4-run-32783895803-536-1.log",
+            "report_artifact": "compliance-gem-tlc-ubuntu-latest-core-3.1.4-run-32783895803-536-1.json"
           },
           "latest_passing_run": {
-            "run_id": 32669908136,
+            "run_id": 32783895803,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669908136",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783895803",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:13:46Z",
+            "completed_at": "2026-08-24T22:17:43Z",
             "status": "passed",
             "test_count": 143,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-gem-tlc-ubuntu-latest-core-3.1.4-run-32669908136-535-1.log",
-            "report_artifact": "compliance-gem-tlc-ubuntu-latest-core-3.1.4-run-32669908136-535-1.json"
+            "log_artifact": "validator-gem-tlc-ubuntu-latest-core-3.1.4-run-32783895803-536-1.log",
+            "report_artifact": "compliance-gem-tlc-ubuntu-latest-core-3.1.4-run-32783895803-536-1.json"
           },
           "last_30_days": {
             "passed_runs": 30,
@@ -3230,30 +3254,30 @@
           },
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32669908136,
+            "run_id": 32783895803,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669908136",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783895803",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:13:46Z",
+            "completed_at": "2026-08-24T22:17:43Z",
             "status": "passed",
             "test_count": 145,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-gem-tlc-ubuntu-latest-core-3.1.3-run-32669908136-535-1.log",
-            "report_artifact": "compliance-gem-tlc-ubuntu-latest-core-3.1.3-run-32669908136-535-1.json"
+            "log_artifact": "validator-gem-tlc-ubuntu-latest-core-3.1.3-run-32783895803-536-1.log",
+            "report_artifact": "compliance-gem-tlc-ubuntu-latest-core-3.1.3-run-32783895803-536-1.json"
           },
           "latest_passing_run": {
-            "run_id": 32669908136,
+            "run_id": 32783895803,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669908136",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783895803",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:13:46Z",
+            "completed_at": "2026-08-24T22:17:43Z",
             "status": "passed",
             "test_count": 145,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-gem-tlc-ubuntu-latest-core-3.1.3-run-32669908136-535-1.log",
-            "report_artifact": "compliance-gem-tlc-ubuntu-latest-core-3.1.3-run-32669908136-535-1.json"
+            "log_artifact": "validator-gem-tlc-ubuntu-latest-core-3.1.3-run-32783895803-536-1.log",
+            "report_artifact": "compliance-gem-tlc-ubuntu-latest-core-3.1.3-run-32783895803-536-1.json"
           },
           "last_30_days": {
             "passed_runs": 30,
@@ -3268,30 +3292,30 @@
           },
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32669908136,
+            "run_id": 32783895803,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669908136",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783895803",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:13:46Z",
+            "completed_at": "2026-08-24T22:17:43Z",
             "status": "passed",
             "test_count": 147,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-gem-tlc-ubuntu-latest-core-3.1.2-run-32669908136-535-1.log",
-            "report_artifact": "compliance-gem-tlc-ubuntu-latest-core-3.1.2-run-32669908136-535-1.json"
+            "log_artifact": "validator-gem-tlc-ubuntu-latest-core-3.1.2-run-32783895803-536-1.log",
+            "report_artifact": "compliance-gem-tlc-ubuntu-latest-core-3.1.2-run-32783895803-536-1.json"
           },
           "latest_passing_run": {
-            "run_id": 32669908136,
+            "run_id": 32783895803,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669908136",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783895803",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:13:46Z",
+            "completed_at": "2026-08-24T22:17:43Z",
             "status": "passed",
             "test_count": 147,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-gem-tlc-ubuntu-latest-core-3.1.2-run-32669908136-535-1.log",
-            "report_artifact": "compliance-gem-tlc-ubuntu-latest-core-3.1.2-run-32669908136-535-1.json"
+            "log_artifact": "validator-gem-tlc-ubuntu-latest-core-3.1.2-run-32783895803-536-1.log",
+            "report_artifact": "compliance-gem-tlc-ubuntu-latest-core-3.1.2-run-32783895803-536-1.json"
           },
           "last_30_days": {
             "passed_runs": 30,
@@ -3301,6 +3325,54 @@
         }
       ],
       "recent_runs": [
+        {
+          "target_id": "gem-tlc",
+          "run_id": 32783895803,
+          "run_attempt": 1,
+          "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783895803",
+          "event": "schedule",
+          "completed_at": "2026-08-24T22:17:43Z",
+          "status": "passed",
+          "passed_cells": 8,
+          "total_cells": 8,
+          "version_summary": {
+            "core": {
+              "passed_versions": 8,
+              "total_versions": 8
+            },
+            "sxls": [
+              {
+                "name": "tlc",
+                "passed_versions": 1,
+                "total_versions": 1
+              }
+            ]
+          }
+        },
+        {
+          "target_id": "gem-tlc",
+          "run_id": 32783707277,
+          "run_attempt": 1,
+          "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783707277",
+          "event": "schedule",
+          "completed_at": "2026-08-24T22:15:26Z",
+          "status": "passed",
+          "passed_cells": 9,
+          "total_cells": 9,
+          "version_summary": {
+            "core": {
+              "passed_versions": 1,
+              "total_versions": 1
+            },
+            "sxls": [
+              {
+                "name": "tlc",
+                "passed_versions": 9,
+                "total_versions": 9
+              }
+            ]
+          }
+        },
         {
           "target_id": "gem-tlc",
           "run_id": 32669908136,
@@ -4692,54 +4764,6 @@
               }
             ]
           }
-        },
-        {
-          "target_id": "gem-tlc",
-          "run_id": 30178140247,
-          "run_attempt": 1,
-          "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/30178140247",
-          "event": "schedule",
-          "completed_at": "2026-07-25T22:45:11Z",
-          "status": "passed",
-          "passed_cells": 8,
-          "total_cells": 8,
-          "version_summary": {
-            "core": {
-              "passed_versions": 8,
-              "total_versions": 8
-            },
-            "sxls": [
-              {
-                "name": "tlc",
-                "passed_versions": 1,
-                "total_versions": 1
-              }
-            ]
-          }
-        },
-        {
-          "target_id": "gem-tlc",
-          "run_id": 30178092046,
-          "run_attempt": 1,
-          "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/30178092046",
-          "event": "schedule",
-          "completed_at": "2026-07-25T22:43:39Z",
-          "status": "passed",
-          "passed_cells": 9,
-          "total_cells": 9,
-          "version_summary": {
-            "core": {
-              "passed_versions": 1,
-              "total_versions": 1
-            },
-            "sxls": [
-              {
-                "name": "tlc",
-                "passed_versions": 9,
-                "total_versions": 9
-              }
-            ]
-          }
         }
       ],
       "core_versions": [
@@ -4747,22 +4771,22 @@
           "core": "3.3.0",
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32669908136,
+            "run_id": 32783895803,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669908136",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783895803",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:13:46Z",
+            "completed_at": "2026-08-24T22:17:43Z",
             "status": "passed",
             "test_count": 132,
             "failed_count": 0,
             "errored_count": 0
           },
           "latest_passing_run": {
-            "run_id": 32669908136,
+            "run_id": 32783895803,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669908136",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783895803",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:13:46Z",
+            "completed_at": "2026-08-24T22:17:43Z",
             "status": "passed",
             "test_count": 132,
             "failed_count": 0,
@@ -4778,22 +4802,22 @@
           "core": "3.2.2",
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32669908136,
+            "run_id": 32783895803,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669908136",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783895803",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:13:46Z",
+            "completed_at": "2026-08-24T22:17:43Z",
             "status": "passed",
             "test_count": 132,
             "failed_count": 0,
             "errored_count": 0
           },
           "latest_passing_run": {
-            "run_id": 32669908136,
+            "run_id": 32783895803,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669908136",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783895803",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:13:46Z",
+            "completed_at": "2026-08-24T22:17:43Z",
             "status": "passed",
             "test_count": 132,
             "failed_count": 0,
@@ -4809,22 +4833,22 @@
           "core": "3.2.1",
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32669908136,
+            "run_id": 32783895803,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669908136",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783895803",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:13:46Z",
+            "completed_at": "2026-08-24T22:17:43Z",
             "status": "passed",
             "test_count": 132,
             "failed_count": 0,
             "errored_count": 0
           },
           "latest_passing_run": {
-            "run_id": 32669908136,
+            "run_id": 32783895803,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669908136",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783895803",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:13:46Z",
+            "completed_at": "2026-08-24T22:17:43Z",
             "status": "passed",
             "test_count": 132,
             "failed_count": 0,
@@ -4840,22 +4864,22 @@
           "core": "3.2.0",
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32669908136,
+            "run_id": 32783895803,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669908136",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783895803",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:13:46Z",
+            "completed_at": "2026-08-24T22:17:43Z",
             "status": "passed",
             "test_count": 132,
             "failed_count": 0,
             "errored_count": 0
           },
           "latest_passing_run": {
-            "run_id": 32669908136,
+            "run_id": 32783895803,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669908136",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783895803",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:13:46Z",
+            "completed_at": "2026-08-24T22:17:43Z",
             "status": "passed",
             "test_count": 132,
             "failed_count": 0,
@@ -4871,22 +4895,22 @@
           "core": "3.1.5",
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32669908136,
+            "run_id": 32783895803,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669908136",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783895803",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:13:46Z",
+            "completed_at": "2026-08-24T22:17:43Z",
             "status": "passed",
             "test_count": 141,
             "failed_count": 0,
             "errored_count": 0
           },
           "latest_passing_run": {
-            "run_id": 32669908136,
+            "run_id": 32783895803,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669908136",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783895803",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:13:46Z",
+            "completed_at": "2026-08-24T22:17:43Z",
             "status": "passed",
             "test_count": 141,
             "failed_count": 0,
@@ -4902,22 +4926,22 @@
           "core": "3.1.4",
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32669908136,
+            "run_id": 32783895803,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669908136",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783895803",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:13:46Z",
+            "completed_at": "2026-08-24T22:17:43Z",
             "status": "passed",
             "test_count": 143,
             "failed_count": 0,
             "errored_count": 0
           },
           "latest_passing_run": {
-            "run_id": 32669908136,
+            "run_id": 32783895803,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669908136",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783895803",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:13:46Z",
+            "completed_at": "2026-08-24T22:17:43Z",
             "status": "passed",
             "test_count": 143,
             "failed_count": 0,
@@ -4933,22 +4957,22 @@
           "core": "3.1.3",
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32669908136,
+            "run_id": 32783895803,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669908136",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783895803",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:13:46Z",
+            "completed_at": "2026-08-24T22:17:43Z",
             "status": "passed",
             "test_count": 145,
             "failed_count": 0,
             "errored_count": 0
           },
           "latest_passing_run": {
-            "run_id": 32669908136,
+            "run_id": 32783895803,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669908136",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783895803",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:13:46Z",
+            "completed_at": "2026-08-24T22:17:43Z",
             "status": "passed",
             "test_count": 145,
             "failed_count": 0,
@@ -4964,22 +4988,22 @@
           "core": "3.1.2",
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32669908136,
+            "run_id": 32783895803,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669908136",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783895803",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:13:46Z",
+            "completed_at": "2026-08-24T22:17:43Z",
             "status": "passed",
             "test_count": 147,
             "failed_count": 0,
             "errored_count": 0
           },
           "latest_passing_run": {
-            "run_id": 32669908136,
+            "run_id": 32783895803,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669908136",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783895803",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:13:46Z",
+            "completed_at": "2026-08-24T22:17:43Z",
             "status": "passed",
             "test_count": 147,
             "failed_count": 0,
@@ -4998,22 +5022,22 @@
           "version": "1.2.1",
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32669908136,
+            "run_id": 32783895803,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669908136",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783895803",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:13:46Z",
+            "completed_at": "2026-08-24T22:17:43Z",
             "status": "passed",
             "test_count": 132,
             "failed_count": 0,
             "errored_count": 0
           },
           "latest_passing_run": {
-            "run_id": 32669908136,
+            "run_id": 32783895803,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669908136",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783895803",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:13:46Z",
+            "completed_at": "2026-08-24T22:17:43Z",
             "status": "passed",
             "test_count": 132,
             "failed_count": 0,
@@ -5030,22 +5054,22 @@
           "version": "1.2.0",
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32669774017,
+            "run_id": 32783707277,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669774017",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783707277",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:11:07Z",
+            "completed_at": "2026-08-24T22:15:26Z",
             "status": "passed",
             "test_count": 132,
             "failed_count": 0,
             "errored_count": 0
           },
           "latest_passing_run": {
-            "run_id": 32669774017,
+            "run_id": 32783707277,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669774017",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783707277",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:11:07Z",
+            "completed_at": "2026-08-24T22:15:26Z",
             "status": "passed",
             "test_count": 132,
             "failed_count": 0,
@@ -5062,22 +5086,22 @@
           "version": "1.1.0",
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32669774017,
+            "run_id": 32783707277,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669774017",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783707277",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:11:07Z",
+            "completed_at": "2026-08-24T22:15:26Z",
             "status": "passed",
             "test_count": 132,
             "failed_count": 0,
             "errored_count": 0
           },
           "latest_passing_run": {
-            "run_id": 32669774017,
+            "run_id": 32783707277,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669774017",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783707277",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:11:07Z",
+            "completed_at": "2026-08-24T22:15:26Z",
             "status": "passed",
             "test_count": 132,
             "failed_count": 0,
@@ -5094,22 +5118,22 @@
           "version": "1.0.15",
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32669774017,
+            "run_id": 32783707277,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669774017",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783707277",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:11:07Z",
+            "completed_at": "2026-08-24T22:15:26Z",
             "status": "passed",
             "test_count": 142,
             "failed_count": 0,
             "errored_count": 0
           },
           "latest_passing_run": {
-            "run_id": 32669774017,
+            "run_id": 32783707277,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669774017",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783707277",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:11:07Z",
+            "completed_at": "2026-08-24T22:15:26Z",
             "status": "passed",
             "test_count": 142,
             "failed_count": 0,
@@ -5126,22 +5150,22 @@
           "version": "1.0.13",
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32669774017,
+            "run_id": 32783707277,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669774017",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783707277",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:11:07Z",
+            "completed_at": "2026-08-24T22:15:26Z",
             "status": "passed",
             "test_count": 152,
             "failed_count": 0,
             "errored_count": 0
           },
           "latest_passing_run": {
-            "run_id": 32669774017,
+            "run_id": 32783707277,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669774017",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783707277",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:11:07Z",
+            "completed_at": "2026-08-24T22:15:26Z",
             "status": "passed",
             "test_count": 152,
             "failed_count": 0,
@@ -5158,22 +5182,22 @@
           "version": "1.0.10",
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32669774017,
+            "run_id": 32783707277,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669774017",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783707277",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:11:07Z",
+            "completed_at": "2026-08-24T22:15:26Z",
             "status": "passed",
             "test_count": 167,
             "failed_count": 0,
             "errored_count": 0
           },
           "latest_passing_run": {
-            "run_id": 32669774017,
+            "run_id": 32783707277,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669774017",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783707277",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:11:07Z",
+            "completed_at": "2026-08-24T22:15:26Z",
             "status": "passed",
             "test_count": 167,
             "failed_count": 0,
@@ -5190,22 +5214,22 @@
           "version": "1.0.9",
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32669774017,
+            "run_id": 32783707277,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669774017",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783707277",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:11:07Z",
+            "completed_at": "2026-08-24T22:15:26Z",
             "status": "passed",
             "test_count": 167,
             "failed_count": 0,
             "errored_count": 0
           },
           "latest_passing_run": {
-            "run_id": 32669774017,
+            "run_id": 32783707277,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669774017",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783707277",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:11:07Z",
+            "completed_at": "2026-08-24T22:15:26Z",
             "status": "passed",
             "test_count": 167,
             "failed_count": 0,
@@ -5222,22 +5246,22 @@
           "version": "1.0.8",
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32669774017,
+            "run_id": 32783707277,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669774017",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783707277",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:11:07Z",
+            "completed_at": "2026-08-24T22:15:26Z",
             "status": "passed",
             "test_count": 167,
             "failed_count": 0,
             "errored_count": 0
           },
           "latest_passing_run": {
-            "run_id": 32669774017,
+            "run_id": 32783707277,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669774017",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783707277",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:11:07Z",
+            "completed_at": "2026-08-24T22:15:26Z",
             "status": "passed",
             "test_count": 167,
             "failed_count": 0,
@@ -5254,22 +5278,22 @@
           "version": "1.0.7",
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32669774017,
+            "run_id": 32783707277,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669774017",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783707277",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:11:07Z",
+            "completed_at": "2026-08-24T22:15:26Z",
             "status": "passed",
             "test_count": 170,
             "failed_count": 0,
             "errored_count": 0
           },
           "latest_passing_run": {
-            "run_id": 32669774017,
+            "run_id": 32783707277,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32669774017",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32783707277",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:11:07Z",
+            "completed_at": "2026-08-24T22:15:26Z",
             "status": "passed",
             "test_count": 170,
             "failed_count": 0,
@@ -5364,8 +5388,8 @@
         }
       },
       "last_30_days": {
-        "passed_cells": 60,
-        "total_cells": 210,
+        "passed_cells": 58,
+        "total_cells": 203,
         "pass_percentage": 28.6
       },
       "passed_versions": [
@@ -5420,17 +5444,17 @@
           },
           "last_status": "failed",
           "latest_run": {
-            "run_id": 32602544519,
+            "run_id": 32670696698,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32602544519",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670696698",
             "event": "schedule",
-            "completed_at": "2026-08-22T23:05:00Z",
+            "completed_at": "2026-08-23T23:05:01Z",
             "status": "failed",
             "test_count": 142,
             "failed_count": 0,
             "errored_count": 1,
-            "log_artifact": "validator-swarco-itc3-core-3.2.2-run-32602544519-1182-1.log",
-            "report_artifact": "compliance-swarco-itc3-core-3.2.2-run-32602544519-1182-1.json"
+            "log_artifact": "validator-swarco-itc3-core-3.2.2-run-32670696698-1183-1.log",
+            "report_artifact": "compliance-swarco-itc3-core-3.2.2-run-32670696698-1183-1.json"
           },
           "latest_passing_run": {
             "run_id": 28482184191,
@@ -5447,7 +5471,7 @@
           },
           "last_30_days": {
             "passed_runs": 0,
-            "total_runs": 30,
+            "total_runs": 29,
             "pass_percentage": 0.0
           }
         },
@@ -5458,17 +5482,17 @@
           },
           "last_status": "failed",
           "latest_run": {
-            "run_id": 32602544519,
+            "run_id": 32670696698,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32602544519",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670696698",
             "event": "schedule",
-            "completed_at": "2026-08-22T23:05:00Z",
+            "completed_at": "2026-08-23T23:05:01Z",
             "status": "failed",
             "test_count": 142,
             "failed_count": 0,
             "errored_count": 1,
-            "log_artifact": "validator-swarco-itc3-core-3.2.1-run-32602544519-1182-1.log",
-            "report_artifact": "compliance-swarco-itc3-core-3.2.1-run-32602544519-1182-1.json"
+            "log_artifact": "validator-swarco-itc3-core-3.2.1-run-32670696698-1183-1.log",
+            "report_artifact": "compliance-swarco-itc3-core-3.2.1-run-32670696698-1183-1.json"
           },
           "latest_passing_run": {
             "run_id": 28482184191,
@@ -5485,7 +5509,7 @@
           },
           "last_30_days": {
             "passed_runs": 0,
-            "total_runs": 30,
+            "total_runs": 29,
             "pass_percentage": 0.0
           }
         },
@@ -5496,17 +5520,17 @@
           },
           "last_status": "failed",
           "latest_run": {
-            "run_id": 32602544519,
+            "run_id": 32670696698,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32602544519",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670696698",
             "event": "schedule",
-            "completed_at": "2026-08-22T23:05:00Z",
+            "completed_at": "2026-08-23T23:05:01Z",
             "status": "failed",
             "test_count": 142,
-            "failed_count": 1,
+            "failed_count": 0,
             "errored_count": 1,
-            "log_artifact": "validator-swarco-itc3-core-3.2.0-run-32602544519-1182-1.log",
-            "report_artifact": "compliance-swarco-itc3-core-3.2.0-run-32602544519-1182-1.json"
+            "log_artifact": "validator-swarco-itc3-core-3.2.0-run-32670696698-1183-1.log",
+            "report_artifact": "compliance-swarco-itc3-core-3.2.0-run-32670696698-1183-1.json"
           },
           "latest_passing_run": {
             "run_id": 28482184191,
@@ -5523,7 +5547,7 @@
           },
           "last_30_days": {
             "passed_runs": 0,
-            "total_runs": 30,
+            "total_runs": 29,
             "pass_percentage": 0.0
           }
         },
@@ -5534,17 +5558,17 @@
           },
           "last_status": "failed",
           "latest_run": {
-            "run_id": 32602544519,
+            "run_id": 32670696698,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32602544519",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670696698",
             "event": "schedule",
-            "completed_at": "2026-08-22T23:05:00Z",
+            "completed_at": "2026-08-23T23:05:01Z",
             "status": "failed",
             "test_count": 143,
-            "failed_count": 1,
+            "failed_count": 0,
             "errored_count": 1,
-            "log_artifact": "validator-swarco-itc3-core-3.1.5-run-32602544519-1182-1.log",
-            "report_artifact": "compliance-swarco-itc3-core-3.1.5-run-32602544519-1182-1.json"
+            "log_artifact": "validator-swarco-itc3-core-3.1.5-run-32670696698-1183-1.log",
+            "report_artifact": "compliance-swarco-itc3-core-3.1.5-run-32670696698-1183-1.json"
           },
           "latest_passing_run": {
             "run_id": 28482184191,
@@ -5561,7 +5585,7 @@
           },
           "last_30_days": {
             "passed_runs": 0,
-            "total_runs": 30,
+            "total_runs": 29,
             "pass_percentage": 0.0
           }
         },
@@ -5572,17 +5596,17 @@
           },
           "last_status": "failed",
           "latest_run": {
-            "run_id": 32602544519,
+            "run_id": 32670696698,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32602544519",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670696698",
             "event": "schedule",
-            "completed_at": "2026-08-22T23:05:00Z",
+            "completed_at": "2026-08-23T23:05:01Z",
             "status": "failed",
             "test_count": 145,
             "failed_count": 0,
             "errored_count": 1,
-            "log_artifact": "validator-swarco-itc3-core-3.1.4-run-32602544519-1182-1.log",
-            "report_artifact": "compliance-swarco-itc3-core-3.1.4-run-32602544519-1182-1.json"
+            "log_artifact": "validator-swarco-itc3-core-3.1.4-run-32670696698-1183-1.log",
+            "report_artifact": "compliance-swarco-itc3-core-3.1.4-run-32670696698-1183-1.json"
           },
           "latest_passing_run": {
             "run_id": 28408522662,
@@ -5599,7 +5623,7 @@
           },
           "last_30_days": {
             "passed_runs": 0,
-            "total_runs": 30,
+            "total_runs": 29,
             "pass_percentage": 0.0
           }
         },
@@ -5610,34 +5634,34 @@
           },
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32602544519,
+            "run_id": 32670696698,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32602544519",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670696698",
             "event": "schedule",
-            "completed_at": "2026-08-22T23:05:00Z",
+            "completed_at": "2026-08-23T23:05:01Z",
             "status": "passed",
             "test_count": 147,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-swarco-itc3-core-3.1.3-run-32602544519-1182-1.log",
-            "report_artifact": "compliance-swarco-itc3-core-3.1.3-run-32602544519-1182-1.json"
+            "log_artifact": "validator-swarco-itc3-core-3.1.3-run-32670696698-1183-1.log",
+            "report_artifact": "compliance-swarco-itc3-core-3.1.3-run-32670696698-1183-1.json"
           },
           "latest_passing_run": {
-            "run_id": 32602544519,
+            "run_id": 32670696698,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32602544519",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670696698",
             "event": "schedule",
-            "completed_at": "2026-08-22T23:05:00Z",
+            "completed_at": "2026-08-23T23:05:01Z",
             "status": "passed",
             "test_count": 147,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-swarco-itc3-core-3.1.3-run-32602544519-1182-1.log",
-            "report_artifact": "compliance-swarco-itc3-core-3.1.3-run-32602544519-1182-1.json"
+            "log_artifact": "validator-swarco-itc3-core-3.1.3-run-32670696698-1183-1.log",
+            "report_artifact": "compliance-swarco-itc3-core-3.1.3-run-32670696698-1183-1.json"
           },
           "last_30_days": {
-            "passed_runs": 30,
-            "total_runs": 30,
+            "passed_runs": 29,
+            "total_runs": 29,
             "pass_percentage": 100.0
           }
         },
@@ -5648,34 +5672,34 @@
           },
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32602544519,
+            "run_id": 32670696698,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32602544519",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670696698",
             "event": "schedule",
-            "completed_at": "2026-08-22T23:05:00Z",
+            "completed_at": "2026-08-23T23:05:01Z",
             "status": "passed",
             "test_count": 149,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-swarco-itc3-core-3.1.2-run-32602544519-1182-1.log",
-            "report_artifact": "compliance-swarco-itc3-core-3.1.2-run-32602544519-1182-1.json"
+            "log_artifact": "validator-swarco-itc3-core-3.1.2-run-32670696698-1183-1.log",
+            "report_artifact": "compliance-swarco-itc3-core-3.1.2-run-32670696698-1183-1.json"
           },
           "latest_passing_run": {
-            "run_id": 32602544519,
+            "run_id": 32670696698,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32602544519",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670696698",
             "event": "schedule",
-            "completed_at": "2026-08-22T23:05:00Z",
+            "completed_at": "2026-08-23T23:05:01Z",
             "status": "passed",
             "test_count": 149,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-swarco-itc3-core-3.1.2-run-32602544519-1182-1.log",
-            "report_artifact": "compliance-swarco-itc3-core-3.1.2-run-32602544519-1182-1.json"
+            "log_artifact": "validator-swarco-itc3-core-3.1.2-run-32670696698-1183-1.log",
+            "report_artifact": "compliance-swarco-itc3-core-3.1.2-run-32670696698-1183-1.json"
           },
           "last_30_days": {
-            "passed_runs": 30,
-            "total_runs": 30,
+            "passed_runs": 29,
+            "total_runs": 29,
             "pass_percentage": 100.0
           }
         }
@@ -6376,30 +6400,6 @@
               }
             ]
           }
-        },
-        {
-          "target_id": "swarco-itc3",
-          "run_id": 30178619101,
-          "run_attempt": 1,
-          "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/30178619101",
-          "event": "schedule",
-          "completed_at": "2026-07-25T23:39:01Z",
-          "status": "failed",
-          "passed_cells": 2,
-          "total_cells": 7,
-          "version_summary": {
-            "core": {
-              "passed_versions": 2,
-              "total_versions": 7
-            },
-            "sxls": [
-              {
-                "name": "tlc",
-                "passed_versions": 0,
-                "total_versions": 1
-              }
-            ]
-          }
         }
       ],
       "core_versions": [
@@ -6430,7 +6430,7 @@
           },
           "last_30_days": {
             "passed_runs": 0,
-            "total_runs": 30,
+            "total_runs": 29,
             "pass_percentage": 0.0
           }
         },
@@ -6461,7 +6461,7 @@
           },
           "last_30_days": {
             "passed_runs": 0,
-            "total_runs": 30,
+            "total_runs": 29,
             "pass_percentage": 0.0
           }
         },
@@ -6492,7 +6492,7 @@
           },
           "last_30_days": {
             "passed_runs": 0,
-            "total_runs": 30,
+            "total_runs": 29,
             "pass_percentage": 0.0
           }
         },
@@ -6523,7 +6523,7 @@
           },
           "last_30_days": {
             "passed_runs": 0,
-            "total_runs": 30,
+            "total_runs": 29,
             "pass_percentage": 0.0
           }
         },
@@ -6554,7 +6554,7 @@
           },
           "last_30_days": {
             "passed_runs": 0,
-            "total_runs": 30,
+            "total_runs": 29,
             "pass_percentage": 0.0
           }
         },
@@ -6584,8 +6584,8 @@
             "errored_count": 0
           },
           "last_30_days": {
-            "passed_runs": 30,
-            "total_runs": 30,
+            "passed_runs": 29,
+            "total_runs": 29,
             "pass_percentage": 100.0
           }
         },
@@ -6615,8 +6615,8 @@
             "errored_count": 0
           },
           "last_30_days": {
-            "passed_runs": 30,
-            "total_runs": 30,
+            "passed_runs": 29,
+            "total_runs": 29,
             "pass_percentage": 100.0
           }
         }
@@ -6649,8 +6649,8 @@
             "errored_count": 0
           },
           "last_30_days": {
-            "passed_runs": 60,
-            "total_runs": 210,
+            "passed_runs": 58,
+            "total_runs": 203,
             "pass_percentage": 28.6
           }
         }
@@ -6666,11 +6666,11 @@
       "details_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/workflows/gem_supervisor.yaml?query=branch%3Amain+event%3Aschedule",
       "latest_run": {
         "target_id": "gem-supervisor",
-        "run_id": 32670201785,
+        "run_id": 32784378193,
         "run_attempt": 1,
-        "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670201785",
+        "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784378193",
         "event": "schedule",
-        "completed_at": "2026-08-23T22:19:13Z",
+        "completed_at": "2026-08-24T22:23:19Z",
         "status": "passed",
         "passed_cells": 8,
         "total_cells": 8,
@@ -6690,11 +6690,11 @@
       },
       "latest_passing_run": {
         "target_id": "gem-supervisor",
-        "run_id": 32670201785,
+        "run_id": 32784378193,
         "run_attempt": 1,
-        "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670201785",
+        "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784378193",
         "event": "schedule",
-        "completed_at": "2026-08-23T22:19:13Z",
+        "completed_at": "2026-08-24T22:23:19Z",
         "status": "passed",
         "passed_cells": 8,
         "total_cells": 8,
@@ -6714,11 +6714,11 @@
       },
       "best_run": {
         "target_id": "gem-supervisor",
-        "run_id": 32670201785,
+        "run_id": 32784378193,
         "run_attempt": 1,
-        "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670201785",
+        "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784378193",
         "event": "schedule",
-        "completed_at": "2026-08-23T22:19:13Z",
+        "completed_at": "2026-08-24T22:23:19Z",
         "status": "passed",
         "passed_cells": 8,
         "total_cells": 8,
@@ -6799,30 +6799,30 @@
           },
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32670201785,
+            "run_id": 32784378193,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670201785",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784378193",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:19:13Z",
+            "completed_at": "2026-08-24T22:23:19Z",
             "status": "passed",
             "test_count": 18,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.3.0-run-32670201785-535-1.log",
-            "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.3.0-run-32670201785-535-1.json"
+            "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.3.0-run-32784378193-536-1.log",
+            "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.3.0-run-32784378193-536-1.json"
           },
           "latest_passing_run": {
-            "run_id": 32670201785,
+            "run_id": 32784378193,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670201785",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784378193",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:19:13Z",
+            "completed_at": "2026-08-24T22:23:19Z",
             "status": "passed",
             "test_count": 18,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.3.0-run-32670201785-535-1.log",
-            "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.3.0-run-32670201785-535-1.json"
+            "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.3.0-run-32784378193-536-1.log",
+            "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.3.0-run-32784378193-536-1.json"
           },
           "last_30_days": {
             "passed_runs": 30,
@@ -6837,30 +6837,30 @@
           },
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32670201785,
+            "run_id": 32784378193,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670201785",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784378193",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:19:13Z",
+            "completed_at": "2026-08-24T22:23:19Z",
             "status": "passed",
             "test_count": 18,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.2-run-32670201785-535-1.log",
-            "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.2-run-32670201785-535-1.json"
+            "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.2-run-32784378193-536-1.log",
+            "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.2-run-32784378193-536-1.json"
           },
           "latest_passing_run": {
-            "run_id": 32670201785,
+            "run_id": 32784378193,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670201785",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784378193",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:19:13Z",
+            "completed_at": "2026-08-24T22:23:19Z",
             "status": "passed",
             "test_count": 18,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.2-run-32670201785-535-1.log",
-            "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.2-run-32670201785-535-1.json"
+            "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.2-run-32784378193-536-1.log",
+            "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.2-run-32784378193-536-1.json"
           },
           "last_30_days": {
             "passed_runs": 30,
@@ -6875,30 +6875,30 @@
           },
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32670201785,
+            "run_id": 32784378193,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670201785",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784378193",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:19:13Z",
+            "completed_at": "2026-08-24T22:23:19Z",
             "status": "passed",
             "test_count": 18,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.1-run-32670201785-535-1.log",
-            "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.1-run-32670201785-535-1.json"
+            "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.1-run-32784378193-536-1.log",
+            "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.1-run-32784378193-536-1.json"
           },
           "latest_passing_run": {
-            "run_id": 32670201785,
+            "run_id": 32784378193,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670201785",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784378193",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:19:13Z",
+            "completed_at": "2026-08-24T22:23:19Z",
             "status": "passed",
             "test_count": 18,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.1-run-32670201785-535-1.log",
-            "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.1-run-32670201785-535-1.json"
+            "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.1-run-32784378193-536-1.log",
+            "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.1-run-32784378193-536-1.json"
           },
           "last_30_days": {
             "passed_runs": 30,
@@ -6913,30 +6913,30 @@
           },
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32670201785,
+            "run_id": 32784378193,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670201785",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784378193",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:19:13Z",
+            "completed_at": "2026-08-24T22:23:19Z",
             "status": "passed",
             "test_count": 18,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.0-run-32670201785-535-1.log",
-            "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.0-run-32670201785-535-1.json"
+            "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.0-run-32784378193-536-1.log",
+            "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.0-run-32784378193-536-1.json"
           },
           "latest_passing_run": {
-            "run_id": 32670201785,
+            "run_id": 32784378193,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670201785",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784378193",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:19:13Z",
+            "completed_at": "2026-08-24T22:23:19Z",
             "status": "passed",
             "test_count": 18,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.0-run-32670201785-535-1.log",
-            "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.0-run-32670201785-535-1.json"
+            "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.0-run-32784378193-536-1.log",
+            "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.0-run-32784378193-536-1.json"
           },
           "last_30_days": {
             "passed_runs": 30,
@@ -6951,30 +6951,30 @@
           },
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32670201785,
+            "run_id": 32784378193,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670201785",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784378193",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:19:13Z",
+            "completed_at": "2026-08-24T22:23:19Z",
             "status": "passed",
             "test_count": 18,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.5-run-32670201785-535-1.log",
-            "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.5-run-32670201785-535-1.json"
+            "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.5-run-32784378193-536-1.log",
+            "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.5-run-32784378193-536-1.json"
           },
           "latest_passing_run": {
-            "run_id": 32670201785,
+            "run_id": 32784378193,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670201785",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784378193",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:19:13Z",
+            "completed_at": "2026-08-24T22:23:19Z",
             "status": "passed",
             "test_count": 18,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.5-run-32670201785-535-1.log",
-            "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.5-run-32670201785-535-1.json"
+            "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.5-run-32784378193-536-1.log",
+            "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.5-run-32784378193-536-1.json"
           },
           "last_30_days": {
             "passed_runs": 30,
@@ -6989,30 +6989,30 @@
           },
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32670201785,
+            "run_id": 32784378193,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670201785",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784378193",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:19:13Z",
+            "completed_at": "2026-08-24T22:23:19Z",
             "status": "passed",
             "test_count": 18,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.4-run-32670201785-535-1.log",
-            "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.4-run-32670201785-535-1.json"
+            "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.4-run-32784378193-536-1.log",
+            "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.4-run-32784378193-536-1.json"
           },
           "latest_passing_run": {
-            "run_id": 32670201785,
+            "run_id": 32784378193,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670201785",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784378193",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:19:13Z",
+            "completed_at": "2026-08-24T22:23:19Z",
             "status": "passed",
             "test_count": 18,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.4-run-32670201785-535-1.log",
-            "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.4-run-32670201785-535-1.json"
+            "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.4-run-32784378193-536-1.log",
+            "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.4-run-32784378193-536-1.json"
           },
           "last_30_days": {
             "passed_runs": 30,
@@ -7027,30 +7027,30 @@
           },
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32670201785,
+            "run_id": 32784378193,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670201785",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784378193",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:19:13Z",
+            "completed_at": "2026-08-24T22:23:19Z",
             "status": "passed",
             "test_count": 18,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.3-run-32670201785-535-1.log",
-            "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.3-run-32670201785-535-1.json"
+            "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.3-run-32784378193-536-1.log",
+            "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.3-run-32784378193-536-1.json"
           },
           "latest_passing_run": {
-            "run_id": 32670201785,
+            "run_id": 32784378193,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670201785",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784378193",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:19:13Z",
+            "completed_at": "2026-08-24T22:23:19Z",
             "status": "passed",
             "test_count": 18,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.3-run-32670201785-535-1.log",
-            "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.3-run-32670201785-535-1.json"
+            "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.3-run-32784378193-536-1.log",
+            "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.3-run-32784378193-536-1.json"
           },
           "last_30_days": {
             "passed_runs": 30,
@@ -7065,30 +7065,30 @@
           },
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32670201785,
+            "run_id": 32784378193,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670201785",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784378193",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:19:13Z",
+            "completed_at": "2026-08-24T22:23:19Z",
             "status": "passed",
             "test_count": 18,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.2-run-32670201785-535-1.log",
-            "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.2-run-32670201785-535-1.json"
+            "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.2-run-32784378193-536-1.log",
+            "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.2-run-32784378193-536-1.json"
           },
           "latest_passing_run": {
-            "run_id": 32670201785,
+            "run_id": 32784378193,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670201785",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784378193",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:19:13Z",
+            "completed_at": "2026-08-24T22:23:19Z",
             "status": "passed",
             "test_count": 18,
             "failed_count": 0,
             "errored_count": 0,
-            "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.2-run-32670201785-535-1.log",
-            "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.2-run-32670201785-535-1.json"
+            "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.2-run-32784378193-536-1.log",
+            "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.2-run-32784378193-536-1.json"
           },
           "last_30_days": {
             "passed_runs": 30,
@@ -7098,6 +7098,30 @@
         }
       ],
       "recent_runs": [
+        {
+          "target_id": "gem-supervisor",
+          "run_id": 32784378193,
+          "run_attempt": 1,
+          "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784378193",
+          "event": "schedule",
+          "completed_at": "2026-08-24T22:23:19Z",
+          "status": "passed",
+          "passed_cells": 8,
+          "total_cells": 8,
+          "version_summary": {
+            "core": {
+              "passed_versions": 8,
+              "total_versions": 8
+            },
+            "sxls": [
+              {
+                "name": "tlc",
+                "passed_versions": 1,
+                "total_versions": 1
+              }
+            ]
+          }
+        },
         {
           "target_id": "gem-supervisor",
           "run_id": 32670201785,
@@ -7793,30 +7817,6 @@
               }
             ]
           }
-        },
-        {
-          "target_id": "gem-supervisor",
-          "run_id": 30178442418,
-          "run_attempt": 1,
-          "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/30178442418",
-          "event": "schedule",
-          "completed_at": "2026-07-25T22:54:31Z",
-          "status": "passed",
-          "passed_cells": 8,
-          "total_cells": 8,
-          "version_summary": {
-            "core": {
-              "passed_versions": 8,
-              "total_versions": 8
-            },
-            "sxls": [
-              {
-                "name": "tlc",
-                "passed_versions": 1,
-                "total_versions": 1
-              }
-            ]
-          }
         }
       ],
       "core_versions": [
@@ -7824,22 +7824,22 @@
           "core": "3.3.0",
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32670201785,
+            "run_id": 32784378193,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670201785",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784378193",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:19:13Z",
+            "completed_at": "2026-08-24T22:23:19Z",
             "status": "passed",
             "test_count": 18,
             "failed_count": 0,
             "errored_count": 0
           },
           "latest_passing_run": {
-            "run_id": 32670201785,
+            "run_id": 32784378193,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670201785",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784378193",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:19:13Z",
+            "completed_at": "2026-08-24T22:23:19Z",
             "status": "passed",
             "test_count": 18,
             "failed_count": 0,
@@ -7855,22 +7855,22 @@
           "core": "3.2.2",
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32670201785,
+            "run_id": 32784378193,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670201785",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784378193",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:19:13Z",
+            "completed_at": "2026-08-24T22:23:19Z",
             "status": "passed",
             "test_count": 18,
             "failed_count": 0,
             "errored_count": 0
           },
           "latest_passing_run": {
-            "run_id": 32670201785,
+            "run_id": 32784378193,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670201785",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784378193",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:19:13Z",
+            "completed_at": "2026-08-24T22:23:19Z",
             "status": "passed",
             "test_count": 18,
             "failed_count": 0,
@@ -7886,22 +7886,22 @@
           "core": "3.2.1",
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32670201785,
+            "run_id": 32784378193,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670201785",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784378193",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:19:13Z",
+            "completed_at": "2026-08-24T22:23:19Z",
             "status": "passed",
             "test_count": 18,
             "failed_count": 0,
             "errored_count": 0
           },
           "latest_passing_run": {
-            "run_id": 32670201785,
+            "run_id": 32784378193,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670201785",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784378193",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:19:13Z",
+            "completed_at": "2026-08-24T22:23:19Z",
             "status": "passed",
             "test_count": 18,
             "failed_count": 0,
@@ -7917,22 +7917,22 @@
           "core": "3.2.0",
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32670201785,
+            "run_id": 32784378193,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670201785",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784378193",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:19:13Z",
+            "completed_at": "2026-08-24T22:23:19Z",
             "status": "passed",
             "test_count": 18,
             "failed_count": 0,
             "errored_count": 0
           },
           "latest_passing_run": {
-            "run_id": 32670201785,
+            "run_id": 32784378193,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670201785",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784378193",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:19:13Z",
+            "completed_at": "2026-08-24T22:23:19Z",
             "status": "passed",
             "test_count": 18,
             "failed_count": 0,
@@ -7948,22 +7948,22 @@
           "core": "3.1.5",
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32670201785,
+            "run_id": 32784378193,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670201785",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784378193",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:19:13Z",
+            "completed_at": "2026-08-24T22:23:19Z",
             "status": "passed",
             "test_count": 18,
             "failed_count": 0,
             "errored_count": 0
           },
           "latest_passing_run": {
-            "run_id": 32670201785,
+            "run_id": 32784378193,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670201785",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784378193",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:19:13Z",
+            "completed_at": "2026-08-24T22:23:19Z",
             "status": "passed",
             "test_count": 18,
             "failed_count": 0,
@@ -7979,22 +7979,22 @@
           "core": "3.1.4",
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32670201785,
+            "run_id": 32784378193,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670201785",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784378193",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:19:13Z",
+            "completed_at": "2026-08-24T22:23:19Z",
             "status": "passed",
             "test_count": 18,
             "failed_count": 0,
             "errored_count": 0
           },
           "latest_passing_run": {
-            "run_id": 32670201785,
+            "run_id": 32784378193,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670201785",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784378193",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:19:13Z",
+            "completed_at": "2026-08-24T22:23:19Z",
             "status": "passed",
             "test_count": 18,
             "failed_count": 0,
@@ -8010,22 +8010,22 @@
           "core": "3.1.3",
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32670201785,
+            "run_id": 32784378193,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670201785",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784378193",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:19:13Z",
+            "completed_at": "2026-08-24T22:23:19Z",
             "status": "passed",
             "test_count": 18,
             "failed_count": 0,
             "errored_count": 0
           },
           "latest_passing_run": {
-            "run_id": 32670201785,
+            "run_id": 32784378193,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670201785",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784378193",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:19:13Z",
+            "completed_at": "2026-08-24T22:23:19Z",
             "status": "passed",
             "test_count": 18,
             "failed_count": 0,
@@ -8041,22 +8041,22 @@
           "core": "3.1.2",
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32670201785,
+            "run_id": 32784378193,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670201785",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784378193",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:19:13Z",
+            "completed_at": "2026-08-24T22:23:19Z",
             "status": "passed",
             "test_count": 18,
             "failed_count": 0,
             "errored_count": 0
           },
           "latest_passing_run": {
-            "run_id": 32670201785,
+            "run_id": 32784378193,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670201785",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784378193",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:19:13Z",
+            "completed_at": "2026-08-24T22:23:19Z",
             "status": "passed",
             "test_count": 18,
             "failed_count": 0,
@@ -8075,22 +8075,22 @@
           "version": "1.2.1",
           "last_status": "passed",
           "latest_run": {
-            "run_id": 32670201785,
+            "run_id": 32784378193,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670201785",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784378193",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:19:13Z",
+            "completed_at": "2026-08-24T22:23:19Z",
             "status": "passed",
             "test_count": 18,
             "failed_count": 0,
             "errored_count": 0
           },
           "latest_passing_run": {
-            "run_id": 32670201785,
+            "run_id": 32784378193,
             "run_attempt": 1,
-            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32670201785",
+            "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/32784378193",
             "event": "schedule",
-            "completed_at": "2026-08-23T22:19:13Z",
+            "completed_at": "2026-08-24T22:23:19Z",
             "status": "passed",
             "test_count": 18,
             "failed_count": 0,
@@ -8185,8 +8185,8 @@
         }
       },
       "last_30_days": {
-        "passed_cells": 3,
-        "total_cells": 3,
+        "passed_cells": 2,
+        "total_cells": 2,
         "pass_percentage": 100.0
       },
       "passed_versions": [
@@ -8231,8 +8231,8 @@
             "report_artifact": "compliance-tecsen-tmacs-core-3.2.2-run-30313281191-1084-1.json"
           },
           "last_30_days": {
-            "passed_runs": 3,
-            "total_runs": 3,
+            "passed_runs": 2,
+            "total_runs": 2,
             "pass_percentage": 100.0
           }
         }
@@ -8285,30 +8285,6 @@
               }
             ]
           }
-        },
-        {
-          "target_id": "tecsen-tmacs",
-          "run_id": 30178602261,
-          "run_attempt": 1,
-          "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/30178602261",
-          "event": "schedule",
-          "completed_at": "2026-07-25T22:59:49Z",
-          "status": "passed",
-          "passed_cells": 1,
-          "total_cells": 1,
-          "version_summary": {
-            "core": {
-              "passed_versions": 1,
-              "total_versions": 1
-            },
-            "sxls": [
-              {
-                "name": "tlc",
-                "passed_versions": 1,
-                "total_versions": 1
-              }
-            ]
-          }
         }
       ],
       "core_versions": [
@@ -8338,8 +8314,8 @@
             "errored_count": 0
           },
           "last_30_days": {
-            "passed_runs": 3,
-            "total_runs": 3,
+            "passed_runs": 2,
+            "total_runs": 2,
             "pass_percentage": 100.0
           }
         }
@@ -8372,8 +8348,8 @@
             "errored_count": 0
           },
           "last_30_days": {
-            "passed_runs": 3,
-            "total_runs": 3,
+            "passed_runs": 2,
+            "total_runs": 2,
             "pass_percentage": 100.0
           }
         }
