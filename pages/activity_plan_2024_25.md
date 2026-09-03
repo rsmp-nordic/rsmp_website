@@ -2,6 +2,7 @@
 layout: page
 title: Activity Plan
 permalink: /plan-2024-25/
+nav_exclude: true
 ---
 
 # RSMP Nordic Activity Plan 2024-2025
