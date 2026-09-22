@@ -1,0 +1,45 @@
+{
+  "target_id": "semaforica-cartesio",
+  "run_id": 35545235660,
+  "run_attempt": 1,
+  "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/35545235660",
+  "event": "schedule",
+  "completed_at": "2026-09-20T23:54:04Z",
+  "status": "failed",
+  "passed_cells": 0,
+  "total_cells": 1,
+  "cells": [
+    {
+      "core": "3.2.1",
+      "status": "failed",
+      "test_count": 132,
+      "failed_count": 2,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-lasemaforica-cartesio-core-3.2.1-run-35545235660-1247-1.log",
+      "report_artifact": "compliance-tecsen-lasemaforica-cartesio-core-3.2.1-run-35545235660-1247-1.json",
+      "failures": [
+        {
+          "id": "test/site/core/message_buffer_spec.rb:109",
+          "message": "describe Message Buffer it preserves buffered status timestamps from before reconnect test/site/core/message_buffer_spec.rb:103\n\t✗ expected buffered status timestamp 2026-09-20 23:45:41 UTC to be before reconnect 2026-09-20 23:45:24 UTC test/site/core/message_buffer_spec.rb:109",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/core/message_buffer_spec.rb",
+            "line": 109
+          },
+          "type": "Sus::Assertions::Assert"
+        },
+        {
+          "id": "test/site/tlc/system_spec.rb:10",
+          "message": "describe Site::Tlc::System it operator logged in/out of OP-panel is read with S0091 test/site/tlc/system_spec.rb:9\n\t✗ Received invalid StatusUpdate: no change for S0001 'cyclecounter' test/site/tlc/system_spec.rb:10",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/tlc/system_spec.rb",
+            "line": 10
+          },
+          "type": "Sus::Assertions::Assert"
+        }
+      ],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    }
+  ]
+}
