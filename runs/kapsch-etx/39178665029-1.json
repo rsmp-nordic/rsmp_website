@@ -1,0 +1,123 @@
+{
+  "target_id": "kapsch-etx",
+  "run_id": 39178665029,
+  "run_attempt": 1,
+  "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/39178665029",
+  "event": "schedule",
+  "completed_at": "2026-10-19T11:15:18Z",
+  "status": "failed",
+  "passed_cells": 6,
+  "total_cells": 7,
+  "cells": [
+    {
+      "core": "3.1.2",
+      "status": "passed",
+      "test_count": 147,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-kapsch-etx-core-3.1.2-run-39178665029-998-1.log",
+      "report_artifact": "compliance-kapsch-etx-core-3.1.2-run-39178665029-998-1.json",
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.1.3",
+      "status": "passed",
+      "test_count": 145,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-kapsch-etx-core-3.1.3-run-39178665029-998-1.log",
+      "report_artifact": "compliance-kapsch-etx-core-3.1.3-run-39178665029-998-1.json",
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.1.4",
+      "status": "failed",
+      "test_count": 143,
+      "failed_count": 0,
+      "errored_count": 1,
+      "log_artifact": "validator-kapsch-etx-core-3.1.4-run-39178665029-998-1.log",
+      "report_artifact": "compliance-kapsch-etx-core-3.1.4-run-39178665029-998-1.json",
+      "failures": [
+        {
+          "id": "test/site/core/aggregated_status_spec.rb:35",
+          "message": "expect #<RSMP::MessageNotAck:2688 m_id: > to\n\tbe is_a? RSMP::AggregatedStatus\n\t\t✗ assertion failed test/site/core/aggregated_status_spec.rb:35",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/core/aggregated_status_spec.rb",
+            "line": 35
+          },
+          "type": "Sus::Assertions"
+        },
+        {
+          "id": "test/site/core/aggregated_status_spec.rb:25",
+          "message": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.51.4/lib/rsmp/message.rb:111:in 'RSMP::Message#attribute': RSMP::MissingAttribute: missing attribute 'fP' (RSMP::Validator::Helpers::Connection::UncaughtException)\n\tfrom test/site/core/aggregated_status_spec.rb:36:in 'block (5 levels) in <top (required)>'\n\tfrom /mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/helpers/connection.rb:33:in 'block in RSMP::Validator::Helpers::Connection#with_site'\n\tfrom /mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/tester.rb:42:in 'RSMP::Validator::Tester#isolated'\n\tfrom /mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/site_tester.rb:23:in 'RSMP::Validator::SiteTester.isolated'\n\tfrom /mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/helpers/connection.rb:32:in 'Kernel#public_send'\n\tfrom /mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/helpers/connection.rb:32:in 'RSMP::Validator::Helpers::Connection#with_site'\n\tfrom test/site/core/aggregated_status_spec.rb:25:in 'block (4 levels) in <top (required)>'\n\tfrom /mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:67:in 'block in Sus::It#handle_skip'\n\tfrom /mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:66:in 'Kernel#catch'\n\tfrom /mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:66:in 'Sus::It#handle_skip'\n\tfrom /mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:56:in 'block (2 levels) in Sus::It#call'\n\tfrom /mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/async_context.rb:8:in 'Kernel#catch'\n\tfrom /mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/async_context.rb:8:in 'block in RSMP::Validator::AsyncContext#around'\n\tfrom /mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.46.0/lib/async/task.rb:225:in 'block in Async::Task#run'\n\tfrom /mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.46.0/lib/async/task.rb:528:in 'block in Async::Task#schedule'",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/core/aggregated_status_spec.rb",
+            "line": 25
+          },
+          "type": "Sus::Assertions::Error"
+        }
+      ],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.1.5",
+      "status": "passed",
+      "test_count": 141,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-kapsch-etx-core-3.1.5-run-39178665029-998-1.log",
+      "report_artifact": "compliance-kapsch-etx-core-3.1.5-run-39178665029-998-1.json",
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.2.0",
+      "status": "passed",
+      "test_count": 132,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-kapsch-etx-core-3.2.0-run-39178665029-998-1.log",
+      "report_artifact": "compliance-kapsch-etx-core-3.2.0-run-39178665029-998-1.json",
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.2.1",
+      "status": "passed",
+      "test_count": 132,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-kapsch-etx-core-3.2.1-run-39178665029-998-1.log",
+      "report_artifact": "compliance-kapsch-etx-core-3.2.1-run-39178665029-998-1.json",
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.2.2",
+      "status": "passed",
+      "test_count": 132,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-kapsch-etx-core-3.2.2-run-39178665029-998-1.log",
+      "report_artifact": "compliance-kapsch-etx-core-3.2.2-run-39178665029-998-1.json",
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    }
+  ]
+}
