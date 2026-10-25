@@ -1,0 +1,168 @@
+{
+  "target_id": "semaforica-cartesio",
+  "run_id": 40144272422,
+  "run_attempt": 1,
+  "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/40144272422",
+  "event": "schedule",
+  "completed_at": "2026-10-25T01:25:03Z",
+  "status": "failed",
+  "passed_cells": 6,
+  "total_cells": 7,
+  "cells": [
+    {
+      "core": "3.1.2",
+      "status": "passed",
+      "test_count": 147,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-lasemaforica-cartesio-core-3.1.2-run-40144272422-1292-1.log",
+      "report_artifact": "compliance-tecsen-lasemaforica-cartesio-core-3.1.2-run-40144272422-1292-1.json",
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.1.3",
+      "status": "passed",
+      "test_count": 145,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-lasemaforica-cartesio-core-3.1.3-run-40144272422-1292-1.log",
+      "report_artifact": "compliance-tecsen-lasemaforica-cartesio-core-3.1.3-run-40144272422-1292-1.json",
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.1.4",
+      "status": "passed",
+      "test_count": 143,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-lasemaforica-cartesio-core-3.1.4-run-40144272422-1292-1.log",
+      "report_artifact": "compliance-tecsen-lasemaforica-cartesio-core-3.1.4-run-40144272422-1292-1.json",
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.1.5",
+      "status": "passed",
+      "test_count": 141,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-lasemaforica-cartesio-core-3.1.5-run-40144272422-1292-1.log",
+      "report_artifact": "compliance-tecsen-lasemaforica-cartesio-core-3.1.5-run-40144272422-1292-1.json",
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.2.0",
+      "status": "passed",
+      "test_count": 132,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-lasemaforica-cartesio-core-3.2.0-run-40144272422-1292-1.log",
+      "report_artifact": "compliance-tecsen-lasemaforica-cartesio-core-3.2.0-run-40144272422-1292-1.json",
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.2.1",
+      "status": "failed",
+      "test_count": 132,
+      "failed_count": 1,
+      "errored_count": 6,
+      "log_artifact": "validator-tecsen-lasemaforica-cartesio-core-3.2.1-run-40144272422-1292-1.log",
+      "report_artifact": "compliance-tecsen-lasemaforica-cartesio-core-3.2.1-run-40144272422-1292-1.json",
+      "failures": [
+        {
+          "id": "test/site/tlc/alarm_spec.rb:28",
+          "message": "describe Site::Tlc::Alarm it raises A0302 when input is activated test/site/tlc/alarm_spec.rb:27\n\t✗ No acknowledgements for StatusUnsubscribe ec53 within 60 seconds test/site/tlc/alarm_spec.rb:28",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/tlc/alarm_spec.rb",
+            "line": 28
+          },
+          "type": "Sus::Assertions::Assert"
+        },
+        {
+          "id": "test/site/tlc/alarm_spec.rb:57",
+          "message": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/site_tester.rb:98:in 'RSMP::Validator::SiteTester#wait_for_handshake': Did not reach state ready within 60s (RSMP::ConnectionError)\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/tester.rb:91:in 'RSMP::Validator::Tester#wait_for_proxy'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/tester.rb:20:in 'RSMP::Validator::Tester#connected'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/site_tester.rb:11:in 'RSMP::Validator::SiteTester.connected'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/helpers/connection.rb:32:in 'Kernel#public_send'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/helpers/connection.rb:32:in 'RSMP::Validator::Helpers::Connection#with_site'\n\tfrom test/site/tlc/alarm_spec.rb:57:in 'block (3 levels) in <top (required)>'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:67:in 'block in Sus::It#handle_skip'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:66:in 'Kernel#catch'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:66:in 'Sus::It#handle_skip'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:56:in 'block (2 levels) in Sus::It#call'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/async_context.rb:8:in 'Kernel#catch'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/async_context.rb:8:in 'block in RSMP::Validator::AsyncContext#around'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.46.0/lib/async/task.rb:225:in 'block in Async::Task#run'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.46.0/lib/async/task.rb:528:in 'block in Async::Task#schedule'",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/tlc/alarm_spec.rb",
+            "line": 57
+          },
+          "type": "Sus::Assertions::Error"
+        },
+        {
+          "id": "test/site/tlc/alarm_spec.rb:111",
+          "message": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/site_tester.rb:98:in 'RSMP::Validator::SiteTester#wait_for_handshake': Did not reach state ready within 60s (RSMP::ConnectionError)\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/tester.rb:91:in 'RSMP::Validator::Tester#wait_for_proxy'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/tester.rb:20:in 'RSMP::Validator::Tester#connected'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/site_tester.rb:11:in 'RSMP::Validator::SiteTester.connected'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/helpers/connection.rb:32:in 'Kernel#public_send'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/helpers/connection.rb:32:in 'RSMP::Validator::Helpers::Connection#with_site'\n\tfrom test/site/tlc/alarm_spec.rb:111:in 'block (3 levels) in <top (required)>'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:67:in 'block in Sus::It#handle_skip'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:66:in 'Kernel#catch'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:66:in 'Sus::It#handle_skip'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:56:in 'block (2 levels) in Sus::It#call'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/async_context.rb:8:in 'Kernel#catch'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/async_context.rb:8:in 'block in RSMP::Validator::AsyncContext#around'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.46.0/lib/async/task.rb:225:in 'block in Async::Task#run'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.46.0/lib/async/task.rb:528:in 'block in Async::Task#schedule'",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/tlc/alarm_spec.rb",
+            "line": 111
+          },
+          "type": "Sus::Assertions::Error"
+        },
+        {
+          "id": "test/site/tlc/clock_spec.rb:20",
+          "message": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/site_tester.rb:98:in 'RSMP::Validator::SiteTester#wait_for_handshake': Did not reach state ready within 60s (RSMP::ConnectionError)\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/tester.rb:91:in 'RSMP::Validator::Tester#wait_for_proxy'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/tester.rb:20:in 'RSMP::Validator::Tester#connected'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/site_tester.rb:11:in 'RSMP::Validator::SiteTester.connected'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/helpers/connection.rb:32:in 'Kernel#public_send'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/helpers/connection.rb:32:in 'RSMP::Validator::Helpers::Connection#with_site'\n\tfrom test/site/tlc/clock_spec.rb:20:in 'block (3 levels) in <top (required)>'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:67:in 'block in Sus::It#handle_skip'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:66:in 'Kernel#catch'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:66:in 'Sus::It#handle_skip'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:56:in 'block (2 levels) in Sus::It#call'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/async_context.rb:8:in 'Kernel#catch'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/async_context.rb:8:in 'block in RSMP::Validator::AsyncContext#around'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.46.0/lib/async/task.rb:225:in 'block in Async::Task#run'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.46.0/lib/async/task.rb:528:in 'block in Async::Task#schedule'",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/tlc/clock_spec.rb",
+            "line": 20
+          },
+          "type": "Sus::Assertions::Error"
+        },
+        {
+          "id": "test/site/tlc/clock_spec.rb:32",
+          "message": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/site_tester.rb:98:in 'RSMP::Validator::SiteTester#wait_for_handshake': Did not reach state ready within 60s (RSMP::ConnectionError)\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/tester.rb:91:in 'RSMP::Validator::Tester#wait_for_proxy'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/tester.rb:20:in 'RSMP::Validator::Tester#connected'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/site_tester.rb:11:in 'RSMP::Validator::SiteTester.connected'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/helpers/connection.rb:32:in 'Kernel#public_send'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/helpers/connection.rb:32:in 'RSMP::Validator::Helpers::Connection#with_site'\n\tfrom test/site/tlc/clock_spec.rb:32:in 'block (3 levels) in <top (required)>'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:67:in 'block in Sus::It#handle_skip'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:66:in 'Kernel#catch'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:66:in 'Sus::It#handle_skip'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:56:in 'block (2 levels) in Sus::It#call'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/async_context.rb:8:in 'Kernel#catch'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/async_context.rb:8:in 'block in RSMP::Validator::AsyncContext#around'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.46.0/lib/async/task.rb:225:in 'block in Async::Task#run'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.46.0/lib/async/task.rb:528:in 'block in Async::Task#schedule'",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/tlc/clock_spec.rb",
+            "line": 32
+          },
+          "type": "Sus::Assertions::Error"
+        },
+        {
+          "id": "test/site/tlc/clock_spec.rb:46",
+          "message": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/site_tester.rb:98:in 'RSMP::Validator::SiteTester#wait_for_handshake': Did not reach state ready within 60s (RSMP::ConnectionError)\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/tester.rb:91:in 'RSMP::Validator::Tester#wait_for_proxy'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/tester.rb:20:in 'RSMP::Validator::Tester#connected'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/site_tester.rb:11:in 'RSMP::Validator::SiteTester.connected'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/helpers/connection.rb:32:in 'Kernel#public_send'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/helpers/connection.rb:32:in 'RSMP::Validator::Helpers::Connection#with_site'\n\tfrom test/site/tlc/clock_spec.rb:46:in 'block (3 levels) in <top (required)>'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:67:in 'block in Sus::It#handle_skip'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:66:in 'Kernel#catch'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:66:in 'Sus::It#handle_skip'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:56:in 'block (2 levels) in Sus::It#call'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/async_context.rb:8:in 'Kernel#catch'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/async_context.rb:8:in 'block in RSMP::Validator::AsyncContext#around'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.46.0/lib/async/task.rb:225:in 'block in Async::Task#run'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.46.0/lib/async/task.rb:528:in 'block in Async::Task#schedule'",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/tlc/clock_spec.rb",
+            "line": 46
+          },
+          "type": "Sus::Assertions::Error"
+        },
+        {
+          "id": "test/site/tlc/clock_spec.rb:95",
+          "message": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/site_tester.rb:98:in 'RSMP::Validator::SiteTester#wait_for_handshake': Did not reach state ready within 60s (RSMP::ConnectionError)\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/tester.rb:91:in 'RSMP::Validator::Tester#wait_for_proxy'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/tester.rb:20:in 'RSMP::Validator::Tester#connected'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/site_tester.rb:11:in 'RSMP::Validator::SiteTester.connected'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/helpers/connection.rb:32:in 'Kernel#public_send'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/helpers/connection.rb:32:in 'RSMP::Validator::Helpers::Connection#with_site'\n\tfrom test/site/tlc/clock_spec.rb:95:in 'block (3 levels) in <top (required)>'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:67:in 'block in Sus::It#handle_skip'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:66:in 'Kernel#catch'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:66:in 'Sus::It#handle_skip'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:56:in 'block (2 levels) in Sus::It#call'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/async_context.rb:8:in 'Kernel#catch'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/async_context.rb:8:in 'block in RSMP::Validator::AsyncContext#around'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.46.0/lib/async/task.rb:225:in 'block in Async::Task#run'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.46.0/lib/async/task.rb:528:in 'block in Async::Task#schedule'",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/tlc/clock_spec.rb",
+            "line": 95
+          },
+          "type": "Sus::Assertions::Error"
+        }
+      ],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.2.2",
+      "status": "passed",
+      "test_count": 132,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-lasemaforica-cartesio-core-3.2.2-run-40144272422-1292-1.log",
+      "report_artifact": "compliance-tecsen-lasemaforica-cartesio-core-3.2.2-run-40144272422-1292-1.json",
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    }
+  ]
+}
