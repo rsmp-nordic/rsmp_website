@@ -1,0 +1,264 @@
+{
+  "target_id": "kapsch-etx",
+  "run_id": 40987178071,
+  "run_attempt": 1,
+  "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/40987178071",
+  "event": "schedule",
+  "completed_at": "2026-10-30T02:14:20Z",
+  "status": "failed",
+  "passed_cells": 0,
+  "total_cells": 7,
+  "cells": [
+    {
+      "core": "3.1.2",
+      "status": "failed",
+      "test_count": 147,
+      "failed_count": 48,
+      "errored_count": 0,
+      "log_artifact": "validator-kapsch-etx-core-3.1.2-run-40987178071-1018-1.log",
+      "report_artifact": "compliance-kapsch-etx-core-3.1.2-run-40987178071-1018-1.json",
+      "failures": [
+        {
+          "id": "test/site/tlc/alarm_spec.rb:28",
+          "message": "describe Site::Tlc::Alarm it raises A0302 when input is activated test/site/tlc/alarm_spec.rb:27\n\t✗ Received invalid StatusUpdate: no change for S0029 'status' test/site/tlc/alarm_spec.rb:28",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/alarm_spec.rb",
+            "line": 28
+          },
+          "type": "Sus::Assertions::Assert"
+        },
+        {
+          "id": "test/site/tlc/clock_spec.rb:95",
+          "message": "describe Site::Tlc::Clock it is used for S0096 response timestamp test/site/tlc/clock_spec.rb:94\n\t✗ Could not send CommandRequest: Broken pipe test/site/tlc/clock_spec.rb:95",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/clock_spec.rb",
+            "line": 95
+          },
+          "type": "Sus::Assertions::Assert"
+        },
+        {
+          "id": "test/site/tlc/clock_spec.rb:155",
+          "message": "describe Site::Tlc::Clock it is used for M0001 response timestamp test/site/tlc/clock_spec.rb:154\n\t✗ Could not send CommandRequest: Broken pipe test/site/tlc/clock_spec.rb:155",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/clock_spec.rb",
+            "line": 155
+          },
+          "type": "Sus::Assertions::Assert"
+        },
+        {
+          "id": "test/site/tlc/clock_spec.rb:178",
+          "message": "describe Site::Tlc::Clock it is used for M0104 response timestamp test/site/tlc/clock_spec.rb:177\n\t✗ Could not send CommandRequest: Broken pipe test/site/tlc/clock_spec.rb:178",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/clock_spec.rb",
+            "line": 178
+          },
+          "type": "Sus::Assertions::Assert"
+        },
+        {
+          "id": "test/site/tlc/clock_spec.rb:205",
+          "message": "describe Site::Tlc::Clock it is used for alarm timestamp test/site/tlc/clock_spec.rb:204\n\t✗ Could not send CommandRequest: Broken pipe test/site/tlc/clock_spec.rb:205",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/clock_spec.rb",
+            "line": 205
+          },
+          "type": "Sus::Assertions::Assert"
+        },
+        {
+          "id": "test/site/tlc/clock_spec.rb:230",
+          "message": "describe Site::Tlc::Clock it is used for watchdog timestamp test/site/tlc/clock_spec.rb:229\n\t✗ Could not send CommandRequest: Broken pipe test/site/tlc/clock_spec.rb:230",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/clock_spec.rb",
+            "line": 230
+          },
+          "type": "Sus::Assertions::Assert"
+        },
+        {
+          "id": "test/site/tlc/detector_logics_spec.rb:11",
+          "message": "describe Site::Tlc::DetectorLogics it list size is read with S0016 test/site/tlc/detector_logics_spec.rb:10\n\t✗ Could not send StatusRequest: Broken pipe test/site/tlc/detector_logics_spec.rb:11",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/detector_logics_spec.rb",
+            "line": 11
+          },
+          "type": "Sus::Assertions::Assert"
+        },
+        {
+          "id": "test/site/tlc/detector_logics_spec.rb:23",
+          "message": "describe Site::Tlc::DetectorLogics it status is read with S0002 test/site/tlc/detector_logics_spec.rb:22\n\t✗ Could not send StatusRequest: Broken pipe test/site/tlc/detector_logics_spec.rb:23",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/detector_logics_spec.rb",
+            "line": 23
+          },
+          "type": "Sus::Assertions::Assert"
+        },
+        {
+          "id": "test/site/tlc/detector_logics_spec.rb:35",
+          "message": "describe Site::Tlc::DetectorLogics it forcing is read with S0021 test/site/tlc/detector_logics_spec.rb:34\n\t✗ Could not send StatusRequest: Broken pipe test/site/tlc/detector_logics_spec.rb:35",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/detector_logics_spec.rb",
+            "line": 35
+          },
+          "type": "Sus::Assertions::Assert"
+        },
+        {
+          "id": "test/site/tlc/detector_logics_spec.rb:47",
+          "message": "describe Site::Tlc::DetectorLogics it forcing is set with M0008 test/site/tlc/detector_logics_spec.rb:46\n\t✗ Could not send CommandRequest: Broken pipe test/site/tlc/detector_logics_spec.rb:47",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/detector_logics_spec.rb",
+            "line": 47
+          },
+          "type": "Sus::Assertions::Assert"
+        }
+      ],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.1.3",
+      "status": "failed",
+      "test_count": 145,
+      "failed_count": 1,
+      "errored_count": 0,
+      "log_artifact": "validator-kapsch-etx-core-3.1.3-run-40987178071-1018-1.log",
+      "report_artifact": "compliance-kapsch-etx-core-3.1.3-run-40987178071-1018-1.json",
+      "failures": [
+        {
+          "id": "test/site/tlc/traffic_situations_spec.rb:30",
+          "message": "describe Site::Tlc::TrafficSituations it is set with M0003 test/site/tlc/traffic_situations_spec.rb:25\n\t✓ assertion passed test/site/tlc/traffic_situations_spec.rb:32\n\t✓ assertion passed test/site/tlc/traffic_situations_spec.rb:32\n\t✗ .. Matched 0/1 with {\"S0015\" => {\"status\" => {1 => nil}}} test/site/tlc/traffic_situations_spec.rb:30",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/traffic_situations_spec.rb",
+            "line": 30
+          },
+          "type": "Sus::Assertions::Assert"
+        }
+      ],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.1.4",
+      "status": "failed",
+      "test_count": 144,
+      "failed_count": 1,
+      "errored_count": 0,
+      "log_artifact": "validator-kapsch-etx-core-3.1.4-run-40987178071-1018-1.log",
+      "report_artifact": "compliance-kapsch-etx-core-3.1.4-run-40987178071-1018-1.json",
+      "failures": [
+        {
+          "id": "test/site/tlc/traffic_situations_spec.rb:30",
+          "message": "describe Site::Tlc::TrafficSituations it is set with M0003 test/site/tlc/traffic_situations_spec.rb:25\n\t✓ assertion passed test/site/tlc/traffic_situations_spec.rb:32\n\t✓ assertion passed test/site/tlc/traffic_situations_spec.rb:32\n\t✗ .. Matched 0/1 with {\"S0015\" => {\"status\" => {1 => nil}}} test/site/tlc/traffic_situations_spec.rb:30",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/traffic_situations_spec.rb",
+            "line": 30
+          },
+          "type": "Sus::Assertions::Assert"
+        }
+      ],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.1.5",
+      "status": "failed",
+      "test_count": 142,
+      "failed_count": 1,
+      "errored_count": 0,
+      "log_artifact": "validator-kapsch-etx-core-3.1.5-run-40987178071-1018-1.log",
+      "report_artifact": "compliance-kapsch-etx-core-3.1.5-run-40987178071-1018-1.json",
+      "failures": [
+        {
+          "id": "test/site/tlc/traffic_situations_spec.rb:30",
+          "message": "describe Site::Tlc::TrafficSituations it is set with M0003 test/site/tlc/traffic_situations_spec.rb:25\n\t✓ assertion passed test/site/tlc/traffic_situations_spec.rb:32\n\t✓ assertion passed test/site/tlc/traffic_situations_spec.rb:32\n\t✗ .. Matched 0/1 with {\"S0015\" => {\"status\" => {1 => nil}}} test/site/tlc/traffic_situations_spec.rb:30",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/traffic_situations_spec.rb",
+            "line": 30
+          },
+          "type": "Sus::Assertions::Assert"
+        }
+      ],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.2.0",
+      "status": "failed",
+      "test_count": 133,
+      "failed_count": 2,
+      "errored_count": 0,
+      "log_artifact": "validator-kapsch-etx-core-3.2.0-run-40987178071-1018-1.log",
+      "report_artifact": "compliance-kapsch-etx-core-3.2.0-run-40987178071-1018-1.json",
+      "failures": [
+        {
+          "id": "test/site/tlc/signal_priority_spec.rb:64",
+          "message": "describe Site::Tlc::SignalPriority it becomes completed when cancelled test/site/tlc/signal_priority_spec.rb:63\n\t✗ No message was received within 10s test/site/tlc/signal_priority_spec.rb:64",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/signal_priority_spec.rb",
+            "line": 64
+          },
+          "type": "Sus::Assertions::Assert"
+        },
+        {
+          "id": "test/site/tlc/traffic_situations_spec.rb:30",
+          "message": "describe Site::Tlc::TrafficSituations it is set with M0003 test/site/tlc/traffic_situations_spec.rb:25\n\t✓ assertion passed test/site/tlc/traffic_situations_spec.rb:32\n\t✓ assertion passed test/site/tlc/traffic_situations_spec.rb:32\n\t✗ .. Matched 0/1 with {\"S0015\" => {\"status\" => {1 => nil}}} test/site/tlc/traffic_situations_spec.rb:30",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/traffic_situations_spec.rb",
+            "line": 30
+          },
+          "type": "Sus::Assertions::Assert"
+        }
+      ],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.2.1",
+      "status": "failed",
+      "test_count": 133,
+      "failed_count": 1,
+      "errored_count": 0,
+      "log_artifact": "validator-kapsch-etx-core-3.2.1-run-40987178071-1018-1.log",
+      "report_artifact": "compliance-kapsch-etx-core-3.2.1-run-40987178071-1018-1.json",
+      "failures": [
+        {
+          "id": "test/site/tlc/traffic_situations_spec.rb:30",
+          "message": "describe Site::Tlc::TrafficSituations it is set with M0003 test/site/tlc/traffic_situations_spec.rb:25\n\t✓ assertion passed test/site/tlc/traffic_situations_spec.rb:32\n\t✓ assertion passed test/site/tlc/traffic_situations_spec.rb:32\n\t✗ .. Matched 0/1 with {\"S0015\" => {\"status\" => {1 => nil}}} test/site/tlc/traffic_situations_spec.rb:30",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/traffic_situations_spec.rb",
+            "line": 30
+          },
+          "type": "Sus::Assertions::Assert"
+        }
+      ],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.2.2",
+      "status": "failed",
+      "test_count": 133,
+      "failed_count": 1,
+      "errored_count": 0,
+      "log_artifact": "validator-kapsch-etx-core-3.2.2-run-40987178071-1018-1.log",
+      "report_artifact": "compliance-kapsch-etx-core-3.2.2-run-40987178071-1018-1.json",
+      "failures": [
+        {
+          "id": "test/site/tlc/traffic_situations_spec.rb:30",
+          "message": "describe Site::Tlc::TrafficSituations it is set with M0003 test/site/tlc/traffic_situations_spec.rb:25\n\t✓ assertion passed test/site/tlc/traffic_situations_spec.rb:32\n\t✓ assertion passed test/site/tlc/traffic_situations_spec.rb:32\n\t✗ .. Matched 0/1 with {\"S0015\" => {\"status\" => {1 => nil}}} test/site/tlc/traffic_situations_spec.rb:30",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/traffic_situations_spec.rb",
+            "line": 30
+          },
+          "type": "Sus::Assertions::Assert"
+        }
+      ],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    }
+  ]
+}

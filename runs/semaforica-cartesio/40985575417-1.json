@@ -1,0 +1,181 @@
+{
+  "target_id": "semaforica-cartesio",
+  "run_id": 40985575417,
+  "run_attempt": 1,
+  "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/40985575417",
+  "event": "schedule",
+  "completed_at": "2026-10-30T03:06:03Z",
+  "status": "failed",
+  "passed_cells": 2,
+  "total_cells": 7,
+  "cells": [
+    {
+      "core": "3.1.2",
+      "status": "passed",
+      "test_count": 147,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-lasemaforica-cartesio-core-3.1.2-run-40985575417-1306-1.log",
+      "report_artifact": "compliance-tecsen-lasemaforica-cartesio-core-3.1.2-run-40985575417-1306-1.json",
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.1.3",
+      "status": "passed",
+      "test_count": 145,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-lasemaforica-cartesio-core-3.1.3-run-40985575417-1306-1.log",
+      "report_artifact": "compliance-tecsen-lasemaforica-cartesio-core-3.1.3-run-40985575417-1306-1.json",
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.1.4",
+      "status": "failed",
+      "test_count": 144,
+      "failed_count": 1,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-lasemaforica-cartesio-core-3.1.4-run-40985575417-1306-1.log",
+      "report_artifact": "compliance-tecsen-lasemaforica-cartesio-core-3.1.4-run-40985575417-1306-1.json",
+      "failures": [
+        {
+          "id": "test/site/core/message_buffer_spec.rb:100",
+          "message": "describe Message Buffer it sends status updates timestamped during the communication outage test/site/core/message_buffer_spec.rb:93\n\t✗ Received StatusUpdate timestamped within window 2026-10-30 02:06:44.730..02:06:45.730 UTC test/site/core/message_buffer_spec.rb:100",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/core/message_buffer_spec.rb",
+            "line": 100
+          },
+          "type": "Sus::Assertions::Assert"
+        }
+      ],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.1.5",
+      "status": "failed",
+      "test_count": 142,
+      "failed_count": 1,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-lasemaforica-cartesio-core-3.1.5-run-40985575417-1306-1.log",
+      "report_artifact": "compliance-tecsen-lasemaforica-cartesio-core-3.1.5-run-40985575417-1306-1.json",
+      "failures": [
+        {
+          "id": "test/site/core/message_buffer_spec.rb:100",
+          "message": "describe Message Buffer it sends status updates timestamped during the communication outage test/site/core/message_buffer_spec.rb:93\n\t✗ Received StatusUpdate timestamped within window 2026-10-30 01:27:35.323..01:27:36.323 UTC test/site/core/message_buffer_spec.rb:100",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/core/message_buffer_spec.rb",
+            "line": 100
+          },
+          "type": "Sus::Assertions::Assert"
+        }
+      ],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.2.0",
+      "status": "failed",
+      "test_count": 133,
+      "failed_count": 2,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-lasemaforica-cartesio-core-3.2.0-run-40985575417-1306-1.log",
+      "report_artifact": "compliance-tecsen-lasemaforica-cartesio-core-3.2.0-run-40985575417-1306-1.json",
+      "failures": [
+        {
+          "id": "test/site/core/message_buffer_spec.rb:100",
+          "message": "describe Message Buffer it sends status updates timestamped during the communication outage test/site/core/message_buffer_spec.rb:93\n\t✗ Received StatusUpdate timestamped within window 2026-10-30 02:54:10.804..02:54:11.804 UTC test/site/core/message_buffer_spec.rb:100",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/core/message_buffer_spec.rb",
+            "line": 100
+          },
+          "type": "Sus::Assertions::Assert"
+        },
+        {
+          "id": "test/site/core/message_buffer_spec.rb:121",
+          "message": "describe Message Buffer it marks buffered status values as old for rsmp 3.2.0 and later test/site/core/message_buffer_spec.rb:114\n\t✗ Received StatusUpdate timestamped within window 2026-10-30 02:56:56.305..02:56:57.305 UTC test/site/core/message_buffer_spec.rb:121",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/core/message_buffer_spec.rb",
+            "line": 121
+          },
+          "type": "Sus::Assertions::Assert"
+        }
+      ],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.2.1",
+      "status": "failed",
+      "test_count": 133,
+      "failed_count": 2,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-lasemaforica-cartesio-core-3.2.1-run-40985575417-1306-1.log",
+      "report_artifact": "compliance-tecsen-lasemaforica-cartesio-core-3.2.1-run-40985575417-1306-1.json",
+      "failures": [
+        {
+          "id": "test/site/core/message_buffer_spec.rb:100",
+          "message": "describe Message Buffer it sends status updates timestamped during the communication outage test/site/core/message_buffer_spec.rb:93\n\t✗ Received StatusUpdate timestamped within window 2026-10-30 02:20:56.229..02:20:57.229 UTC test/site/core/message_buffer_spec.rb:100",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/core/message_buffer_spec.rb",
+            "line": 100
+          },
+          "type": "Sus::Assertions::Assert"
+        },
+        {
+          "id": "test/site/core/message_buffer_spec.rb:121",
+          "message": "describe Message Buffer it marks buffered status values as old for rsmp 3.2.0 and later test/site/core/message_buffer_spec.rb:114\n\t✗ Received StatusUpdate timestamped within window 2026-10-30 02:23:41.761..02:23:42.761 UTC test/site/core/message_buffer_spec.rb:121",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/core/message_buffer_spec.rb",
+            "line": 121
+          },
+          "type": "Sus::Assertions::Assert"
+        }
+      ],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.2.2",
+      "status": "failed",
+      "test_count": 133,
+      "failed_count": 2,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-lasemaforica-cartesio-core-3.2.2-run-40985575417-1306-1.log",
+      "report_artifact": "compliance-tecsen-lasemaforica-cartesio-core-3.2.2-run-40985575417-1306-1.json",
+      "failures": [
+        {
+          "id": "test/site/core/message_buffer_spec.rb:100",
+          "message": "describe Message Buffer it sends status updates timestamped during the communication outage test/site/core/message_buffer_spec.rb:93\n\t✗ Received StatusUpdate timestamped within window 2026-10-30 02:37:03.937..02:37:04.937 UTC test/site/core/message_buffer_spec.rb:100",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/core/message_buffer_spec.rb",
+            "line": 100
+          },
+          "type": "Sus::Assertions::Assert"
+        },
+        {
+          "id": "test/site/core/message_buffer_spec.rb:121",
+          "message": "describe Message Buffer it marks buffered status values as old for rsmp 3.2.0 and later test/site/core/message_buffer_spec.rb:114\n\t✗ Received StatusUpdate timestamped within window 2026-10-30 02:39:49.565..02:39:50.565 UTC test/site/core/message_buffer_spec.rb:121",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/core/message_buffer_spec.rb",
+            "line": 121
+          },
+          "type": "Sus::Assertions::Assert"
+        }
+      ],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    }
+  ]
+}
