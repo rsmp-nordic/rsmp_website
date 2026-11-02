@@ -1,0 +1,161 @@
+{
+  "target_id": "swarco-itc3",
+  "run_id": 41372375477,
+  "run_attempt": 1,
+  "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/41372375477",
+  "event": "schedule",
+  "completed_at": "2026-11-02T02:06:01Z",
+  "status": "failed",
+  "passed_cells": 4,
+  "total_cells": 7,
+  "cells": [
+    {
+      "core": "3.1.2",
+      "status": "passed",
+      "test_count": 147,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-swarco-itc3-core-3.1.2-run-41372375477-1294-1.log",
+      "report_artifact": "compliance-swarco-itc3-core-3.1.2-run-41372375477-1294-1.json",
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.1.3",
+      "status": "passed",
+      "test_count": 145,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-swarco-itc3-core-3.1.3-run-41372375477-1294-1.log",
+      "report_artifact": "compliance-swarco-itc3-core-3.1.3-run-41372375477-1294-1.json",
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.1.4",
+      "status": "passed",
+      "test_count": 144,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-swarco-itc3-core-3.1.4-run-41372375477-1294-1.log",
+      "report_artifact": "compliance-swarco-itc3-core-3.1.4-run-41372375477-1294-1.json",
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.1.5",
+      "status": "passed",
+      "test_count": 142,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-swarco-itc3-core-3.1.5-run-41372375477-1294-1.log",
+      "report_artifact": "compliance-swarco-itc3-core-3.1.5-run-41372375477-1294-1.json",
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.2.0",
+      "status": "failed",
+      "test_count": 133,
+      "failed_count": 0,
+      "errored_count": 2,
+      "log_artifact": "validator-swarco-itc3-core-3.2.0-run-41372375477-1294-1.log",
+      "report_artifact": "compliance-swarco-itc3-core-3.2.0-run-41372375477-1294-1.json",
+      "failures": [
+        {
+          "id": "test/site/tlc/signal_priority_spec.rb:64",
+          "message": "/actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/configuration.rb:99:in 'RSMP::Validator::Configuration#get_config': RuntimeError: Config [\"timeouts\", \"priority_completion\"] is missing (RSMP::Validator::Helpers::Connection::UncaughtException)\n\tfrom test/site/tlc/signal_priority_spec.rb:65:in 'block (4 levels) in <top (required)>'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/helpers/connection.rb:33:in 'block in RSMP::Validator::Helpers::Connection#with_site'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/tester.rb:21:in 'RSMP::Validator::Tester#connected'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/site_tester.rb:11:in 'RSMP::Validator::SiteTester.connected'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/helpers/connection.rb:32:in 'Kernel#public_send'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/helpers/connection.rb:32:in 'RSMP::Validator::Helpers::Connection#with_site'\n\tfrom test/site/tlc/signal_priority_spec.rb:64:in 'block (3 levels) in <top (required)>'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:67:in 'block in Sus::It#handle_skip'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:66:in 'Kernel#catch'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:66:in 'Sus::It#handle_skip'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:56:in 'block (2 levels) in Sus::It#call'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/async_context.rb:8:in 'Kernel#catch'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/async_context.rb:8:in 'block in RSMP::Validator::AsyncContext#around'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.46.0/lib/async/task.rb:225:in 'block in Async::Task#run'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.46.0/lib/async/task.rb:528:in 'block in Async::Task#schedule'",
+          "location": {
+            "path": "/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/signal_priority_spec.rb",
+            "line": 64
+          },
+          "type": "Sus::Assertions::Error"
+        },
+        {
+          "id": "test/site/tlc/signal_priority_spec.rb:109",
+          "message": "/actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/configuration.rb:99:in 'RSMP::Validator::Configuration#get_config': RuntimeError: Config [\"timeouts\", \"priority_completion\"] is missing (RSMP::Validator::Helpers::Connection::UncaughtException)\n\tfrom test/site/tlc/signal_priority_spec.rb:110:in 'block (4 levels) in <top (required)>'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/helpers/connection.rb:33:in 'block in RSMP::Validator::Helpers::Connection#with_site'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/tester.rb:21:in 'RSMP::Validator::Tester#connected'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/site_tester.rb:11:in 'RSMP::Validator::SiteTester.connected'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/helpers/connection.rb:32:in 'Kernel#public_send'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/helpers/connection.rb:32:in 'RSMP::Validator::Helpers::Connection#with_site'\n\tfrom test/site/tlc/signal_priority_spec.rb:109:in 'block (3 levels) in <top (required)>'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:67:in 'block in Sus::It#handle_skip'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:66:in 'Kernel#catch'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:66:in 'Sus::It#handle_skip'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:56:in 'block (2 levels) in Sus::It#call'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/async_context.rb:8:in 'Kernel#catch'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/async_context.rb:8:in 'block in RSMP::Validator::AsyncContext#around'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.46.0/lib/async/task.rb:225:in 'block in Async::Task#run'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.46.0/lib/async/task.rb:528:in 'block in Async::Task#schedule'",
+          "location": {
+            "path": "/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/signal_priority_spec.rb",
+            "line": 109
+          },
+          "type": "Sus::Assertions::Error"
+        }
+      ],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.2.1",
+      "status": "failed",
+      "test_count": 133,
+      "failed_count": 0,
+      "errored_count": 2,
+      "log_artifact": "validator-swarco-itc3-core-3.2.1-run-41372375477-1294-1.log",
+      "report_artifact": "compliance-swarco-itc3-core-3.2.1-run-41372375477-1294-1.json",
+      "failures": [
+        {
+          "id": "test/site/tlc/signal_priority_spec.rb:64",
+          "message": "/actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/configuration.rb:99:in 'RSMP::Validator::Configuration#get_config': RuntimeError: Config [\"timeouts\", \"priority_completion\"] is missing (RSMP::Validator::Helpers::Connection::UncaughtException)\n\tfrom test/site/tlc/signal_priority_spec.rb:65:in 'block (4 levels) in <top (required)>'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/helpers/connection.rb:33:in 'block in RSMP::Validator::Helpers::Connection#with_site'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/tester.rb:21:in 'RSMP::Validator::Tester#connected'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/site_tester.rb:11:in 'RSMP::Validator::SiteTester.connected'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/helpers/connection.rb:32:in 'Kernel#public_send'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/helpers/connection.rb:32:in 'RSMP::Validator::Helpers::Connection#with_site'\n\tfrom test/site/tlc/signal_priority_spec.rb:64:in 'block (3 levels) in <top (required)>'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:67:in 'block in Sus::It#handle_skip'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:66:in 'Kernel#catch'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:66:in 'Sus::It#handle_skip'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:56:in 'block (2 levels) in Sus::It#call'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/async_context.rb:8:in 'Kernel#catch'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/async_context.rb:8:in 'block in RSMP::Validator::AsyncContext#around'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.46.0/lib/async/task.rb:225:in 'block in Async::Task#run'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.46.0/lib/async/task.rb:528:in 'block in Async::Task#schedule'",
+          "location": {
+            "path": "/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/signal_priority_spec.rb",
+            "line": 64
+          },
+          "type": "Sus::Assertions::Error"
+        },
+        {
+          "id": "test/site/tlc/signal_priority_spec.rb:109",
+          "message": "/actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/configuration.rb:99:in 'RSMP::Validator::Configuration#get_config': RuntimeError: Config [\"timeouts\", \"priority_completion\"] is missing (RSMP::Validator::Helpers::Connection::UncaughtException)\n\tfrom test/site/tlc/signal_priority_spec.rb:110:in 'block (4 levels) in <top (required)>'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/helpers/connection.rb:33:in 'block in RSMP::Validator::Helpers::Connection#with_site'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/tester.rb:21:in 'RSMP::Validator::Tester#connected'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/site_tester.rb:11:in 'RSMP::Validator::SiteTester.connected'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/helpers/connection.rb:32:in 'Kernel#public_send'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/helpers/connection.rb:32:in 'RSMP::Validator::Helpers::Connection#with_site'\n\tfrom test/site/tlc/signal_priority_spec.rb:109:in 'block (3 levels) in <top (required)>'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:67:in 'block in Sus::It#handle_skip'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:66:in 'Kernel#catch'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:66:in 'Sus::It#handle_skip'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:56:in 'block (2 levels) in Sus::It#call'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/async_context.rb:8:in 'Kernel#catch'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/async_context.rb:8:in 'block in RSMP::Validator::AsyncContext#around'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.46.0/lib/async/task.rb:225:in 'block in Async::Task#run'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.46.0/lib/async/task.rb:528:in 'block in Async::Task#schedule'",
+          "location": {
+            "path": "/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/signal_priority_spec.rb",
+            "line": 109
+          },
+          "type": "Sus::Assertions::Error"
+        }
+      ],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.2.2",
+      "status": "failed",
+      "test_count": 133,
+      "failed_count": 0,
+      "errored_count": 2,
+      "log_artifact": "validator-swarco-itc3-core-3.2.2-run-41372375477-1294-1.log",
+      "report_artifact": "compliance-swarco-itc3-core-3.2.2-run-41372375477-1294-1.json",
+      "failures": [
+        {
+          "id": "test/site/tlc/signal_priority_spec.rb:64",
+          "message": "/actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/configuration.rb:99:in 'RSMP::Validator::Configuration#get_config': RuntimeError: Config [\"timeouts\", \"priority_completion\"] is missing (RSMP::Validator::Helpers::Connection::UncaughtException)\n\tfrom test/site/tlc/signal_priority_spec.rb:65:in 'block (4 levels) in <top (required)>'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/helpers/connection.rb:33:in 'block in RSMP::Validator::Helpers::Connection#with_site'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/tester.rb:21:in 'RSMP::Validator::Tester#connected'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/site_tester.rb:11:in 'RSMP::Validator::SiteTester.connected'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/helpers/connection.rb:32:in 'Kernel#public_send'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/helpers/connection.rb:32:in 'RSMP::Validator::Helpers::Connection#with_site'\n\tfrom test/site/tlc/signal_priority_spec.rb:64:in 'block (3 levels) in <top (required)>'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:67:in 'block in Sus::It#handle_skip'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:66:in 'Kernel#catch'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:66:in 'Sus::It#handle_skip'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:56:in 'block (2 levels) in Sus::It#call'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/async_context.rb:8:in 'Kernel#catch'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/async_context.rb:8:in 'block in RSMP::Validator::AsyncContext#around'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.46.0/lib/async/task.rb:225:in 'block in Async::Task#run'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.46.0/lib/async/task.rb:528:in 'block in Async::Task#schedule'",
+          "location": {
+            "path": "/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/signal_priority_spec.rb",
+            "line": 64
+          },
+          "type": "Sus::Assertions::Error"
+        },
+        {
+          "id": "test/site/tlc/signal_priority_spec.rb:109",
+          "message": "/actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/configuration.rb:99:in 'RSMP::Validator::Configuration#get_config': RuntimeError: Config [\"timeouts\", \"priority_completion\"] is missing (RSMP::Validator::Helpers::Connection::UncaughtException)\n\tfrom test/site/tlc/signal_priority_spec.rb:110:in 'block (4 levels) in <top (required)>'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/helpers/connection.rb:33:in 'block in RSMP::Validator::Helpers::Connection#with_site'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/tester.rb:21:in 'RSMP::Validator::Tester#connected'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/site_tester.rb:11:in 'RSMP::Validator::SiteTester.connected'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/helpers/connection.rb:32:in 'Kernel#public_send'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/helpers/connection.rb:32:in 'RSMP::Validator::Helpers::Connection#with_site'\n\tfrom test/site/tlc/signal_priority_spec.rb:109:in 'block (3 levels) in <top (required)>'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:67:in 'block in Sus::It#handle_skip'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:66:in 'Kernel#catch'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:66:in 'Sus::It#handle_skip'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:56:in 'block (2 levels) in Sus::It#call'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/async_context.rb:8:in 'Kernel#catch'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/async_context.rb:8:in 'block in RSMP::Validator::AsyncContext#around'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.46.0/lib/async/task.rb:225:in 'block in Async::Task#run'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.46.0/lib/async/task.rb:528:in 'block in Async::Task#schedule'",
+          "location": {
+            "path": "/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/signal_priority_spec.rb",
+            "line": 109
+          },
+          "type": "Sus::Assertions::Error"
+        }
+      ],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    }
+  ]
+}
