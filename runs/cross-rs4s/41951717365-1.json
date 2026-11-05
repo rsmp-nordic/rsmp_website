@@ -1,0 +1,162 @@
+{
+  "target_id": "cross-rs4s",
+  "run_id": 41951717365,
+  "run_attempt": 1,
+  "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/41951717365",
+  "event": "schedule",
+  "completed_at": "2026-11-05T02:40:08Z",
+  "status": "failed",
+  "passed_cells": 3,
+  "total_cells": 7,
+  "cells": [
+    {
+      "core": "3.1.2",
+      "status": "failed",
+      "test_count": 147,
+      "failed_count": 1,
+      "errored_count": 0,
+      "log_artifact": "validator-cross-rs4s-core-3.1.2-run-41951717365-1110-1.log",
+      "report_artifact": "compliance-cross-rs4s-core-3.1.2-run-41951717365-1110-1.json",
+      "failures": [
+        {
+          "id": "test/site/tlc/signal_plans_spec.rb:157",
+          "message": "describe Site::Tlc::SignalPlans it config is read with S0098 test/site/tlc/signal_plans_spec.rb:147\n\t✗ expected timestamp to not be empty test/site/tlc/signal_plans_spec.rb:157\n\t✗ expected config to not be empty test/site/tlc/signal_plans_spec.rb:158\n\t✗ expected version to not be empty test/site/tlc/signal_plans_spec.rb:159",
+          "location": {
+            "path": "/data/rsmp-testing/main-action-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/signal_plans_spec.rb",
+            "line": 157
+          },
+          "type": "Sus::Assertions::Assert"
+        },
+        {
+          "id": "test/site/tlc/signal_plans_spec.rb:158",
+          "message": "describe Site::Tlc::SignalPlans it config is read with S0098 test/site/tlc/signal_plans_spec.rb:147\n\t✗ expected timestamp to not be empty test/site/tlc/signal_plans_spec.rb:157\n\t✗ expected config to not be empty test/site/tlc/signal_plans_spec.rb:158\n\t✗ expected version to not be empty test/site/tlc/signal_plans_spec.rb:159",
+          "location": {
+            "path": "/data/rsmp-testing/main-action-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/signal_plans_spec.rb",
+            "line": 158
+          },
+          "type": "Sus::Assertions::Assert"
+        },
+        {
+          "id": "test/site/tlc/signal_plans_spec.rb:159",
+          "message": "describe Site::Tlc::SignalPlans it config is read with S0098 test/site/tlc/signal_plans_spec.rb:147\n\t✗ expected timestamp to not be empty test/site/tlc/signal_plans_spec.rb:157\n\t✗ expected config to not be empty test/site/tlc/signal_plans_spec.rb:158\n\t✗ expected version to not be empty test/site/tlc/signal_plans_spec.rb:159",
+          "location": {
+            "path": "/data/rsmp-testing/main-action-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/signal_plans_spec.rb",
+            "line": 159
+          },
+          "type": "Sus::Assertions::Assert"
+        }
+      ],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.1.3",
+      "status": "passed",
+      "test_count": 145,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-cross-rs4s-core-3.1.3-run-41951717365-1110-1.log",
+      "report_artifact": "compliance-cross-rs4s-core-3.1.3-run-41951717365-1110-1.json",
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.1.4",
+      "status": "failed",
+      "test_count": 144,
+      "failed_count": 1,
+      "errored_count": 0,
+      "log_artifact": "validator-cross-rs4s-core-3.1.4-run-41951717365-1110-1.log",
+      "report_artifact": "compliance-cross-rs4s-core-3.1.4-run-41951717365-1110-1.json",
+      "failures": [
+        {
+          "id": "test/site/tlc/alarm_spec.rb:57",
+          "message": "describe Site::Tlc::Alarm it can acknowledge A0302 test/site/tlc/alarm_spec.rb:56\n\t✗ .. Matched 0/4 with {\"M0019\" => {\"setInput\" => {\"status\" => true, \"securityCode\" => \"r;PwL7%U?SN2E.5\", \"input\" => 7, \"inputValue\" => true}}} test/site/tlc/alarm_spec.rb:57",
+          "location": {
+            "path": "/data/rsmp-testing/main-action-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/alarm_spec.rb",
+            "line": 57
+          },
+          "type": "Sus::Assertions::Assert"
+        }
+      ],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.1.5",
+      "status": "passed",
+      "test_count": 142,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-cross-rs4s-core-3.1.5-run-41951717365-1110-1.log",
+      "report_artifact": "compliance-cross-rs4s-core-3.1.5-run-41951717365-1110-1.json",
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.2.0",
+      "status": "failed",
+      "test_count": 133,
+      "failed_count": 1,
+      "errored_count": 0,
+      "log_artifact": "validator-cross-rs4s-core-3.2.0-run-41951717365-1110-1.log",
+      "report_artifact": "compliance-cross-rs4s-core-3.2.0-run-41951717365-1110-1.json",
+      "failures": [
+        {
+          "id": "test/site/tlc/alarm_spec.rb:57",
+          "message": "describe Site::Tlc::Alarm it can acknowledge A0302 test/site/tlc/alarm_spec.rb:56\n\t✗ .. Matched 0/4 with {\"M0019\" => {\"setInput\" => {\"status\" => true, \"securityCode\" => \"r;PwL7%U?SN2E.5\", \"input\" => 7, \"inputValue\" => true}}} test/site/tlc/alarm_spec.rb:57",
+          "location": {
+            "path": "/data/rsmp-testing/main-action-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/alarm_spec.rb",
+            "line": 57
+          },
+          "type": "Sus::Assertions::Assert"
+        }
+      ],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.2.1",
+      "status": "failed",
+      "test_count": 133,
+      "failed_count": 1,
+      "errored_count": 0,
+      "log_artifact": "validator-cross-rs4s-core-3.2.1-run-41951717365-1110-1.log",
+      "report_artifact": "compliance-cross-rs4s-core-3.2.1-run-41951717365-1110-1.json",
+      "failures": [
+        {
+          "id": "test/site/tlc/clock_spec.rb:205",
+          "message": "describe Site::Tlc::Clock it is used for alarm timestamp test/site/tlc/clock_spec.rb:204\n\t✗ .. Matched 0/4 with {\"M0019\" => {\"setInput\" => {\"status\" => true, \"securityCode\" => \"r;PwL7%U?SN2E.5\", \"input\" => 7, \"inputValue\" => true}}} test/site/tlc/clock_spec.rb:205",
+          "location": {
+            "path": "/data/rsmp-testing/main-action-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/clock_spec.rb",
+            "line": 205
+          },
+          "type": "Sus::Assertions::Assert"
+        }
+      ],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.2.2",
+      "status": "passed",
+      "test_count": 133,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-cross-rs4s-core-3.2.2-run-41951717365-1110-1.log",
+      "report_artifact": "compliance-cross-rs4s-core-3.2.2-run-41951717365-1110-1.json",
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    }
+  ]
+}
