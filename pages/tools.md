@@ -2,7 +2,7 @@
 layout: page
 title: Tools
 permalink: /tools/
-nav_order: 3
+nav_order: 4
 parent: Documentation
 ---
 
@@ -41,5 +41,4 @@ It includes JSON Schemas for supported Core and SXL versions, as well as command
 JSON Schemas for RSMP Core and SXL specifications are now maintained together with the specification repositories and distributed with the `rsmp` gem.
 
 The older [`rsmp_schema`](https://github.com/rsmp-nordic/rsmp_schema) repository and gem are deprecated and will no longer be updated.
-
 

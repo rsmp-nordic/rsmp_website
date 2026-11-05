@@ -18,6 +18,11 @@ For example, for traffic ligth controllers, it checks that you can can send a co
 
 We expect to expand the test suite over time to cover more behavioural aspects.
 
+A passing result is not a certification of transport security or of the
+security of a complete product or deployment. See
+[Security testing and limitations]({% link pages/security.md %}#security-testing-and-limitations)
+for the scope of security-related claims.
+
 Test are run on a matrix of core versions.
 
 Only one version of the SXL is tested.
