@@ -1,6 +1,36 @@
 require_relative 'support/compliance_fixtures'
 
 describe RSMP::Website::Compliance::Collector do
+  it 'backfills counts from recollected reports while preserving older history' do
+    old_report = ComplianceFixtures.report(id: 41, at: '2026-05-01T00:00:00Z')
+    report = ComplianceFixtures.report(id: 42, status: 'failed')
+    report['summary'].merge!('test_count' => 144, 'failed_count' => 28)
+    source = ComplianceFixtures::Reports.new([old_report, report])
+    Dir.mktmpdir do |dir|
+      options = {
+        github: source, website_dir: File.join(dir, 'website'), data_dir: File.join(dir, 'data'),
+        source_repo: 'example/devices', now: Time.utc(2026, 6, 18)
+      }
+      subject.new(**options).collect
+      report['summary'].merge!('passed_count' => 91, 'skipped_count' => 25)
+      source.reports = [report]
+      summary = subject.new(**options).collect
+      target = summary.fetch('targets').first
+      [target['versions'].first, target['core_versions'].first, target['sxl_versions'].first].each do |version|
+        expect(version['latest_run'].slice('passed_count', 'skipped_count'))
+          .to be == { 'passed_count' => 91, 'skipped_count' => 25 }
+        expect(version.dig('latest_passing_run', 'run_id')).to be == 41
+        expect(version.dig('last_30_days', 'total_runs')).to be == 1
+      end
+      stored = JSON.parse(File.read(File.join(dir, 'data/runs/demo/42-1.json')))
+      expect(stored['cells'].first.slice('passed_count', 'skipped_count'))
+        .to be == { 'passed_count' => 91, 'skipped_count' => 25 }
+      source.reports = []
+      expect(subject.new(**options).collect).to be == summary
+      expect(Dir[File.join(dir, 'data/runs/demo/*.json')].size).to be == 2
+    end
+  end
+
   it 'does not double-count overlapping reports or lose history when no new reports arrive' do
     reports = [
       ComplianceFixtures.report(id: 42, status: 'failed', at: '2026-06-17T00:00:00Z'),
