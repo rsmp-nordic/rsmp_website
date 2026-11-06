@@ -416,6 +416,45 @@ describe RSMP::Website::Compliance::Collector do
 end
 
 describe RSMP::Website::Compliance::GitHubClient do
+  it 'collects compliance reports beyond the first 100 artifacts and filters expired artifacts' do
+    client = RSMP::Website::Compliance::GitHubClient.new(repo: 'rsmp-nordic/rsmp_validator', token: 'token')
+    artifacts = (1..70).flat_map do |id|
+      [
+        { 'id' => id * 2, 'name' => "validator-#{id}.log", 'expired' => false },
+        { 'id' => id * 2 + 1, 'name' => "compliance-#{id}.json", 'expired' => [1, 70].include?(id) }
+      ]
+    end
+    requests = []
+    pages = artifacts.each_slice(100).to_a
+    client.define_singleton_method(:get_json) do |path, params|
+      requests << [path, params]
+      { 'total_count' => artifacts.size, 'artifacts' => pages.fetch(params.fetch('page', '1').to_i - 1) }
+    end
+
+    reports = client.send(:report_artifacts, 123)
+
+    expect(reports.map { |artifact| artifact['name'] }).to be == (2..69).map { |id| "compliance-#{id}.json" }
+    expect(requests).to be == [
+      ['/repos/rsmp-nordic/rsmp_validator/actions/runs/123/artifacts', { 'per_page' => '100', 'page' => '1' }],
+      ['/repos/rsmp-nordic/rsmp_validator/actions/runs/123/artifacts', { 'per_page' => '100', 'page' => '2' }]
+    ]
+  end
+
+  it 'stops at an empty page after exactly 100 artifacts' do
+    client = RSMP::Website::Compliance::GitHubClient.new(repo: 'rsmp-nordic/rsmp_validator', token: 'token')
+    artifacts = (1..100).map { |id| { 'id' => id, 'name' => "compliance-result-#{id}", 'expired' => false } }
+    requested_pages = []
+    pages = [artifacts, []]
+    client.define_singleton_method(:get_json) do |_path, params|
+      page = params.fetch('page', '1').to_i
+      requested_pages << page
+      { 'total_count' => artifacts.size, 'artifacts' => pages.fetch(page - 1) }
+    end
+
+    expect(client.send(:report_artifacts, 123)).to be == artifacts
+    expect(requested_pages).to be == [1, 2]
+  end
+
   it 'does not filter pull request workflow runs by main branch' do
     client = RSMP::Website::Compliance::GitHubClient.new(repo: 'rsmp-nordic/rsmp_validator', token: 'token')
 

@@ -73,8 +73,18 @@ module RSMP
         end
 
         def run_artifacts(run_id)
-          response = get_json("/repos/#{@repo}/actions/runs/#{run_id}/artifacts", 'per_page' => '100')
-          Array(response['artifacts']).reject { |artifact| artifact['expired'] }
+          artifacts = []
+          page = 1
+          loop do
+            response = get_json("/repos/#{@repo}/actions/runs/#{run_id}/artifacts",
+                                'per_page' => '100', 'page' => page.to_s)
+            page_artifacts = Array(response['artifacts'])
+            artifacts.concat(page_artifacts)
+            break if page_artifacts.size < 100
+
+            page += 1
+          end
+          artifacts.reject { |artifact| artifact['expired'] }
         end
 
         def download_report_artifact(artifact)
