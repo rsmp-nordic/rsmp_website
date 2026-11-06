@@ -5,14 +5,16 @@
 {% assign tlc_versions = '' %}
 
 {% for target in targets %}
-  {% for version in target.versions %}
+  {% for version in target.core_versions %}
     {% assign core_token = '|' | append: version.core | append: '|' %}
     {% unless core_versions contains core_token %}
       {% assign core_versions = core_versions | append: core_token %}
     {% endunless %}
+  {% endfor %}
 
-    {% assign tlc_version = version.sxls.tlc %}
-    {% if tlc_version %}
+  {% for version in target.sxl_versions %}
+    {% if version.name == 'tlc' %}
+      {% assign tlc_version = version.version %}
       {% assign tlc_token = '|' | append: tlc_version | append: '|' %}
       {% unless tlc_versions contains tlc_token %}
         {% assign tlc_versions = tlc_versions | append: tlc_token %}
@@ -43,7 +45,7 @@
         {% for core_version in core_version_list %}
           {% if core_version != '' %}
             {% assign matched_version = nil %}
-            {% for version in target.versions %}
+            {% for version in target.core_versions %}
               {% if version.core == core_version %}
                 {% assign matched_version = version %}
                 {% break %}
@@ -87,8 +89,8 @@
         {% for tlc_version in tlc_version_list %}
           {% if tlc_version != '' %}
             {% assign matched_version = nil %}
-            {% for version in target.versions %}
-              {% if version.sxls.tlc == tlc_version %}
+            {% for version in target.sxl_versions %}
+              {% if version.name == 'tlc' and version.version == tlc_version %}
                 {% assign matched_version = version %}
                 {% break %}
               {% endif %}

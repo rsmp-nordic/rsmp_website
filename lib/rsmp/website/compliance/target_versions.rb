@@ -19,6 +19,13 @@ module RSMP
         def merged_versions
           merged = Array(@previous).to_h do |version|
             normalized = normalize_version(version)
+            # Rebuild records represented by stored runs, including timestamps
+            # previously inherited from the whole workflow.
+            %w[latest_run latest_passing_run].each do |field|
+              record = normalized[field]
+              key = [record&.values_at('run_id', 'run_attempt'), version_key(normalized)]
+              normalized[field] = nil if observed_records.key?(key)
+            end
             [version_key(normalized), normalized]
           end
           @runs.each { |run| merge_run_versions(merged, run) }
@@ -29,6 +36,14 @@ module RSMP
           run.fetch('cells', []).each do |cell|
             key = version_key(cell)
             merged[key] = merge_version(merged[key], run, cell)
+          end
+        end
+
+        def observed_records
+          @observed_records ||= @runs.each_with_object({}) do |run, records|
+            Array(run['cells']).each do |cell|
+              records[[run.values_at('run_id', 'run_attempt'), version_key(cell)]] = true
+            end
           end
         end
 
@@ -64,7 +79,7 @@ module RSMP
 
         def cell_run_summary(run, cell)
           run.slice('run_id', 'run_attempt', 'run_url', 'event', 'completed_at').merge(
-            cell.slice('status', 'test_count', 'failed_count', 'errored_count', 'log_artifact', 'report_artifact')
+            cell.slice('completed_at', 'status', 'test_count', 'failed_count', 'errored_count', 'log_artifact', 'report_artifact').compact
           )
         end
 

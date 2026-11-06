@@ -66,6 +66,7 @@ module RSMP
         def cell_summary(report)
           summary = {
             'core' => report.dig('matrix', 'core'),
+            'completed_at' => parse_time(report['generated_at'])&.iso8601,
             'status' => report.dig('summary', 'status') || 'failed',
             'test_count' => report.dig('summary', 'test_count'),
             'failed_count' => report.dig('summary', 'failed_count'),
