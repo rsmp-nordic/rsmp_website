@@ -33,16 +33,26 @@ module RSMP
         end
 
         def merge_version(previous, run, cell)
-          latest = cell_run_summary(run, cell)
+          candidate = cell_run_summary(run, cell)
+          latest = latest_record([previous&.fetch('latest_run', nil), candidate])
           version_fields(cell).merge(
             'last_status' => latest['status'],
             'latest_run' => latest,
-            'latest_passing_run' => latest_passing_run(previous, latest)
+            'latest_passing_run' => latest_passing_run(previous, candidate)
           )
         end
 
-        def latest_passing_run(previous, latest)
-          latest['status'] == 'passed' ? latest : previous&.fetch('latest_passing_run', nil)
+        def latest_passing_run(previous, candidate)
+          latest_record([
+            previous&.fetch('latest_passing_run', nil),
+            candidate['status'] == 'passed' ? candidate : nil
+          ])
+        end
+
+        def latest_record(records)
+          records.compact.each_with_index.max_by do |record, index|
+            [record['completed_at'] || '', record['run_attempt'].to_i, index]
+          end&.first
         end
 
         def version_fields(cell)
