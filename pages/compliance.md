@@ -28,6 +28,8 @@ Statistics and checkmarks use only received test results. A run with no report i
 
 The 30-day pass rate is **passing runs / total runs × 100%**. Each run has equal weight. For example, testing SXL 1.2.1 with Core 3.2.0 and Core 3.2.2 counts as two runs for SXL 1.2.1. If one passes and one fails, its pass rate is 50%. A single GitHub workflow can contain many such test runs.
 
+“Latest Run” shows how many of the tests that ran passed. Skipped tests are excluded from the total; tests that errored count as unsuccessful. Older results without enough count information show only the run outcome.
+
 The Core and SXL tables summarize results across the tested combinations, ordered by each pairing's completion time:
 
 - **√** means the latest received result involving that version passed within the last 30 days.

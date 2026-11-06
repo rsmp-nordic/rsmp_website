@@ -50,14 +50,19 @@ module ComplianceRenderingSpec
 end
 
 describe 'Compliance table rendering' do
-  it 'shows passing test counts for both axes, excluding skips and errors' do
+  it 'shows passing tests out of tests that ran, excluding skips but including errors' do
     [
-      [{ 'test_count' => 133, 'failed_count' => 1, 'errored_count' => 0 }, '132/133 passed'],
+      [{ 'test_count' => 133, 'skipped_count' => 0, 'failed_count' => 1, 'errored_count' => 0 }, '132/133 passed'],
       [{ 'test_count' => 133, 'passed_count' => 118, 'skipped_count' => 14,
-         'failed_count' => 1, 'errored_count' => 0 }, '118/133 passed, 14 skipped'],
+         'failed_count' => 1, 'errored_count' => 0 }, '118/119 passed'],
       [{ 'test_count' => 133, 'passed_count' => 0, 'skipped_count' => 132,
-         'failed_count' => 0, 'errored_count' => 1 }, '0/133 passed, 132 skipped, 1 error'],
-      [{ 'test_count' => 133, 'failed_count' => 0, 'errored_count' => 0 }, 'All 133 tests passed']
+         'failed_count' => 0, 'errored_count' => 1 }, '0/1 passed'],
+      [{ 'test_count' => 133, 'passed_count' => 133, 'failed_count' => 0, 'errored_count' => 0 }, 'All 133 tests passed'],
+      [{ 'test_count' => 130, 'passed_count' => 120, 'skipped_count' => 10 }, 'All 120 tests passed'],
+      [{ 'test_count' => 130, 'skipped_count' => 10 }, 'All 120 tests passed'],
+      [{ 'test_count' => 130, 'passed_count' => 0, 'skipped_count' => 130 }, 'No tests ran'],
+      [{ 'test_count' => 144, 'failed_count' => 28, 'status' => 'failed' }, 'Not all tests passed'],
+      [{ 'test_count' => 144, 'failed_count' => 0, 'status' => 'passed' }, 'Passed']
     ].each do |counts, expected|
       report = ComplianceRenderingSpec.report
       report['summary'].merge!(counts)
@@ -65,8 +70,8 @@ describe 'Compliance table rendering' do
       rows = document.css('h4#compliance-demo + table tr').select { |row| row.at_css('td') }
       expect(rows.size).to be == 2
       rows.each do |row|
-        latest_run = row.css('td')[3].text.strip.gsub(/\s+/, ' ')
-        expect(latest_run.start_with?(expected)).to be == true
+        latest_run = row.css('td')[3].children.take_while { |node| node.name != 'br' }.map(&:text).join.strip.gsub(/\s+/, ' ')
+        expect(latest_run).to be == expected
       end
     end
   end

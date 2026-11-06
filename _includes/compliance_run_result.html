@@ -2,16 +2,27 @@
 {% assign missing_text = include.missing_text | default: "Not run" %}
 
 {% if run %}
-  {% assign test_count = run.test_count | default: 0 %}
-  {% assign failed_count = run.failed_count | default: 0 %}
-  {% assign errored_count = run.errored_count | default: 0 %}
-  {% assign skipped_count = run.skipped_count | default: 0 %}
-  {% assign calculated_passed = test_count | minus: failed_count | minus: errored_count | minus: skipped_count %}
-  {% assign passed_count = run.passed_count | default: calculated_passed %}
-  {% if passed_count == test_count %}
-    All {{ test_count }} tests passed
+  {% if run.passed_count != nil or run.skipped_count != nil %}
+    {% assign test_count = run.test_count | default: 0 %}
+    {% assign failed_count = run.failed_count | default: 0 %}
+    {% assign errored_count = run.errored_count | default: 0 %}
+    {% assign skipped_count = run.skipped_count | default: 0 %}
+    {% assign calculated_passed = test_count | minus: failed_count | minus: errored_count | minus: skipped_count %}
+    {% assign passed_count = run.passed_count | default: calculated_passed %}
+    {% assign ran_count = passed_count | plus: failed_count | plus: errored_count %}
+    {% if ran_count == 0 %}
+      No tests ran
+    {% elsif passed_count == ran_count %}
+      All {{ ran_count }} tests passed
+    {% else %}
+      {{ passed_count }}/{{ ran_count }} passed
+    {% endif %}
+  {% elsif run.status == 'passed' %}
+    Passed
+  {% elsif run.status == 'failed' %}
+    Not all tests passed
   {% else %}
-    {{ passed_count }}/{{ test_count }} passed{% if skipped_count > 0 %}, {{ skipped_count }} skipped{% endif %}{% if errored_count > 0 %}, {{ errored_count }} {% if errored_count == 1 %}error{% else %}errors{% endif %}{% endif %}
+    Test counts unavailable
   {% endif %}
   <br>
   {% include compliance_run_date.html time=run.completed_at url=run.run_url %}
