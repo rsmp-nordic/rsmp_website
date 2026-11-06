@@ -218,7 +218,8 @@ module RSMP
 
         def cell_run_summary(run, cell)
           run.slice('run_id', 'run_attempt', 'run_url', 'event', 'completed_at').merge(
-            cell.slice('completed_at', 'status', 'test_count', 'failed_count', 'errored_count').compact
+            cell.slice('completed_at', 'status', 'test_count', 'passed_count', 'skipped_count',
+                       'failed_count', 'errored_count').compact
           )
         end
 

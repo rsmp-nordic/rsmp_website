@@ -4,7 +4,11 @@
 {% if total_runs > 0 %}
   {{ stats.pass_percentage }}%
   <br>
-  {{ stats.passed_runs }}/{{ total_runs }} runs passed
+  {% if stats.passed_runs == total_runs %}
+    All {{ total_runs }} runs passed
+  {% else %}
+    {{ stats.passed_runs }}/{{ total_runs }} runs passed
+  {% endif %}
 {% else %}
   No recent runs
 {% endif %}

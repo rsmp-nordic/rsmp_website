@@ -50,6 +50,27 @@ module ComplianceRenderingSpec
 end
 
 describe 'Compliance table rendering' do
+  it 'shows passing test counts for both axes, excluding skips and errors' do
+    [
+      [{ 'test_count' => 133, 'failed_count' => 1, 'errored_count' => 0 }, '132/133 passed'],
+      [{ 'test_count' => 133, 'passed_count' => 118, 'skipped_count' => 14,
+         'failed_count' => 1, 'errored_count' => 0 }, '118/133 passed, 14 skipped'],
+      [{ 'test_count' => 133, 'passed_count' => 0, 'skipped_count' => 132,
+         'failed_count' => 0, 'errored_count' => 1 }, '0/133 passed, 132 skipped, 1 error'],
+      [{ 'test_count' => 133, 'failed_count' => 0, 'errored_count' => 0 }, 'All 133 tests passed']
+    ].each do |counts, expected|
+      report = ComplianceRenderingSpec.report
+      report['summary'].merge!(counts)
+      document = ComplianceRenderingSpec.render(ComplianceRenderingSpec.target([report]))
+      rows = document.css('h4#compliance-demo + table tr').select { |row| row.at_css('td') }
+      expect(rows.size).to be == 2
+      rows.each do |row|
+        latest_run = row.css('td')[3].text.strip.gsub(/\s+/, ' ')
+        expect(latest_run.start_with?(expected)).to be == true
+      end
+    end
+  end
+
   [
     ['Core', '3.2.2', 'core 3.2.2', { sxl: '1.0.15' }],
     ['Traffic Light Controller SXL', '1.2.1', 'tlc 1.2.1', { core: '3.3.0' }]
