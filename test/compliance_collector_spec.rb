@@ -310,6 +310,48 @@ describe RSMP::Website::Compliance::Summary do
   end
 end
 
+describe RSMP::Website::Compliance::TargetVersions do
+  it 'keeps the newest result and newest passing result regardless of run order' do
+    runs = [
+      ComplianceCollectorSpec.stored_run(1, 'passed', '2026-06-15T00:00:00Z'),
+      ComplianceCollectorSpec.stored_run(2, 'passed', '2026-06-16T00:00:00Z'),
+      ComplianceCollectorSpec.stored_run(3, 'failed', '2026-06-17T00:00:00Z')
+    ]
+
+    runs.permutation.each do |ordered_runs|
+      version = subject.new(previous: [], runs: ordered_runs).to_a.first
+
+      expect(version['last_status']).to be == 'failed'
+      expect(version.dig('latest_run', 'run_id')).to be == 3
+      expect(version.dig('latest_passing_run', 'run_id')).to be == 2
+    end
+  end
+
+  it 'does not replace newer saved results when older runs are reprocessed' do
+    previous = subject.new(previous: [], runs: [
+      ComplianceCollectorSpec.stored_run(2, 'passed', '2026-06-16T00:00:00Z'),
+      ComplianceCollectorSpec.stored_run(3, 'failed', '2026-06-17T00:00:00Z')
+    ]).to_a
+    older = ComplianceCollectorSpec.stored_run(1, 'passed', '2026-06-15T00:00:00Z')
+
+    expect(subject.new(previous: previous, runs: [older]).to_a).to be == previous
+  end
+
+  it 'prefers the higher run attempt when completion timestamps match' do
+    first_attempt = ComplianceCollectorSpec.stored_run(1, 'passed', '2026-06-17T00:00:00Z')
+    second_attempt = ComplianceCollectorSpec.stored_run(1, 'failed', '2026-06-17T00:00:00Z')
+    second_attempt['run_attempt'] = 2
+
+    [first_attempt, second_attempt].permutation.each do |runs|
+      version = subject.new(previous: [], runs: runs).to_a.first
+
+      expect(version['last_status']).to be == 'failed'
+      expect(version.dig('latest_run', 'run_attempt')).to be == 2
+      expect(version.dig('latest_passing_run', 'run_attempt')).to be == 1
+    end
+  end
+end
+
 describe RSMP::Website::Compliance::Collector do
   it 'uses the data branch summary as state and writes new run summaries' do
     Dir.mktmpdir do |website_dir|
