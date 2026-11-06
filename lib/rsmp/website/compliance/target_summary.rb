@@ -85,7 +85,8 @@ module RSMP
 
         def core_versions
           @core_versions ||= begin
-            merged = Array(@previous['core_versions']).to_h { |core| [core['core'].to_s, core] }
+            # Axis summaries are derived from the accumulated pair history.
+            merged = {}
             versions.each { |version| merge_core_version(merged, version) }
             @runs.each { |run| merge_run_core_versions(merged, run) }
             merged.values.map { |core| core.merge('last_30_days' => core_last_month_stats(core)) }
@@ -96,7 +97,7 @@ module RSMP
 
         def sxl_versions
           @sxl_versions ||= begin
-            merged = Array(@previous['sxl_versions']).to_h { |sxl| [sxl_key(sxl), sxl] }
+            merged = {}
             versions.each { |version| merge_sxl_versions(merged, version) }
             @runs.each { |run| merge_run_sxl_versions(merged, run) }
             merged.values.map { |sxl| sxl.merge('last_30_days' => sxl_last_month_stats(sxl)) }
@@ -112,28 +113,32 @@ module RSMP
         end
 
         def version_last_month_stats(version)
-          cells = recent_full_runs.flat_map { |run| Array(run['cells']) }.select { |cell| version_cell?(version, cell) }
+          cells = recent_cells.select { |cell| version_cell?(version, cell) }
           total = cells.size
           passed = cells.count { |cell| cell['status'] == 'passed' }
           { 'passed_runs' => passed, 'total_runs' => total, 'pass_percentage' => pass_percentage(passed, total) }
         end
 
         def core_last_month_stats(core)
-          cells = recent_full_runs.flat_map { |run| Array(run['cells']) }.select { |cell| core_cell?(core, cell) }
+          cells = recent_cells.select { |cell| core_cell?(core, cell) }
           total = cells.size
           passed = cells.count { |cell| cell['status'] == 'passed' }
           { 'passed_runs' => passed, 'total_runs' => total, 'pass_percentage' => pass_percentage(passed, total) }
         end
 
         def sxl_last_month_stats(sxl)
-          cells = recent_full_runs.flat_map { |run| Array(run['cells']) }.select { |cell| sxl_cell?(sxl, cell) }
+          cells = recent_cells.select { |cell| sxl_cell?(sxl, cell) }
           total = cells.size
           passed = cells.count { |cell| cell['status'] == 'passed' }
           { 'passed_runs' => passed, 'total_runs' => total, 'pass_percentage' => pass_percentage(passed, total) }
         end
 
-        def recent_full_runs
-          @recent_full_runs ||= @runs.select { |run| within_last_month?(run['completed_at']) }
+        def recent_cells
+          @recent_cells ||= @runs.flat_map do |run|
+            Array(run['cells']).select do |cell|
+              within_last_month?(cell['completed_at'] || run['completed_at'])
+            end
+          end
         end
 
         def version_cell?(version, cell)
@@ -213,12 +218,8 @@ module RSMP
 
         def cell_run_summary(run, cell)
           run.slice('run_id', 'run_attempt', 'run_url', 'event', 'completed_at').merge(
-            cell.slice('status', 'test_count', 'failed_count', 'errored_count')
+            cell.slice('completed_at', 'status', 'test_count', 'failed_count', 'errored_count').compact
           )
-        end
-
-        def sxl_key(sxl)
-          [sxl['name'].to_s, sxl['version'].to_s]
         end
 
         def version_sort_key(version)
