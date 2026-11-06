@@ -24,13 +24,15 @@ Tests run on configured combinations of Core and SXL versions. The combinations 
 
 For each device, one test run checks one Core/SXL combination. A Core version's statistics count every collected run using that Core version, regardless of SXL version. An SXL version's statistics likewise count every run using that SXL version, regardless of Core version.
 
+Statistics and checkmarks use only received test results. A run with no report is excluded from the counts and does not change the latest result for a version. Passing results therefore do not confirm that every planned pairing was tested.
+
 The 30-day pass rate is **passing runs / total runs × 100%**. Each run has equal weight. For example, testing SXL 1.2.1 with Core 3.2.0 and Core 3.2.2 counts as two runs for SXL 1.2.1. If one passes and one fails, its pass rate is 50%. A single GitHub workflow can contain many such test runs.
 
 The Core and SXL tables summarize results across the tested combinations, ordered by each pairing's completion time:
 
-- **√** means the most recently tested pairing involving that version passed within the last 30 days.
-- **(√)** means the most recently tested pairing did not pass, but another pairing involving that version passed within the last 30 days.
-- A blank means no pairing involving that version passed within the last 30 days.
+- **√** means the latest received result involving that version passed within the last 30 days.
+- **(√)** means the latest received result did not pass, but an earlier result involving that version passed within the last 30 days.
+- A blank means no passing result involving that version was reported for a run completed within the last 30 days.
 
 Both checkmarks link to the latest passing result. A passing result for a version does not imply that every combination has passed.
 
