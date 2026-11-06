@@ -1,0 +1,9 @@
+{
+  "generated_at": "2026-06-17T00:00:00Z",
+  "target": {"id": "demo", "kind": "site", "name": "Demo TLC"},
+  "workflow": {"event": "schedule"},
+  "run": {"id": 42, "attempt": 1, "url": "https://github.com/example/devices/actions/runs/42"},
+  "matrix": {"core": "3.2.2", "sxls": {"tlc": "1.2.1"}},
+  "summary": {"status": "passed", "test_count": 10, "failed_count": 0, "errored_count": 0},
+  "failures": []
+}
