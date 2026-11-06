@@ -26,8 +26,6 @@ RSMP messages use the [JSON](https://www.json.org/json-en.html) format. For exam
      "xNId": "",
      "cId": "O+14439=481WA001",
      "aSTS": "2015-06-08T08:05:06.584Z",
-     "fP": null,
-     "fS": null,
      "se": [ true,false,false,false,false,false,false,false ]
 }
 ```
