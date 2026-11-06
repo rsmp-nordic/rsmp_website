@@ -132,8 +132,6 @@
         <td>
           {% if version.latest_passing_run %}
             {% include compliance_run_date.html time=version.latest_passing_run.completed_at url=version.latest_passing_run.run_url %}
-          {% else %}
-            No passing run
           {% endif %}
         </td>
         <td>
@@ -151,8 +149,6 @@
         <td>
           {% if sxl_version.latest_passing_run %}
             {% include compliance_run_date.html time=sxl_version.latest_passing_run.completed_at url=sxl_version.latest_passing_run.run_url %}
-          {% else %}
-            No passing run
           {% endif %}
         </td>
         <td>
