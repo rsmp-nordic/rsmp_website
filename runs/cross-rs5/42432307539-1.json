@@ -1,0 +1,29 @@
+{
+  "target_id": "cross-rs5",
+  "run_id": 42432307539,
+  "run_attempt": 1,
+  "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/42432307539",
+  "event": "schedule",
+  "completed_at": "2026-11-08T01:07:08Z",
+  "status": "passed",
+  "passed_cells": 1,
+  "total_cells": 1,
+  "cells": [
+    {
+      "core": "3.2.0",
+      "completed_at": "2026-11-08T01:07:08Z",
+      "status": "passed",
+      "test_count": 133,
+      "passed_count": 119,
+      "skipped_count": 14,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-cross-rs5-core-3.2.0-run-42432307539-64-1.log",
+      "report_artifact": "compliance-cross-rs5-core-3.2.0-run-42432307539-64-1.json",
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    }
+  ]
+}
