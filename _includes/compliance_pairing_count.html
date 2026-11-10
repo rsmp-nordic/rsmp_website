@@ -1,0 +1,8 @@
+{% assign pairing_run = include.run %}
+{% if pairing_run.total_cells != nil %}
+  {% if pairing_run.passed_cells == pairing_run.total_cells %}
+    All {{ pairing_run.total_cells }} {{ include.partner }} pairing{% unless pairing_run.total_cells == 1 %}s{% endunless %} passed
+  {% else %}
+    {{ pairing_run.passed_cells }}/{{ pairing_run.total_cells }} {{ include.partner }} pairings passed
+  {% endif %}
+{% endif %}

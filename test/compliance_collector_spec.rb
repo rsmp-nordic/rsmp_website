@@ -163,50 +163,26 @@ describe RSMP::Website::Compliance::Summary do
       'total_runs' => 1,
       'pass_percentage' => 100.0
     }
-    expect(summary['core_versions']).to be == [
-      {
-        'core' => '3.3.0',
-        'last_status' => 'passed',
-        'latest_run' => summary['latest_run'].slice('run_id', 'run_attempt', 'run_url', 'event', 'completed_at',
-                                                    'status'),
-        'latest_passing_run' => summary['latest_passing_run'].slice('run_id', 'run_attempt', 'run_url', 'event',
-                                                                    'completed_at', 'status'),
-        'last_30_days' => {
-          'passed_runs' => 1,
-          'total_runs' => 1,
-          'pass_percentage' => 100.0
-        }
-      },
-      {
-        'core' => '3.2.2',
-        'last_status' => 'passed',
-        'latest_run' => summary['latest_run'].slice('run_id', 'run_attempt', 'run_url', 'event', 'completed_at',
-                                                    'status'),
-        'latest_passing_run' => summary['latest_passing_run'].slice('run_id', 'run_attempt', 'run_url', 'event',
-                                                                    'completed_at', 'status'),
-        'last_30_days' => {
-          'passed_runs' => 1,
-          'total_runs' => 1,
-          'pass_percentage' => 100.0
-        }
+    expect(summary['core_versions'].map { |version| version['core'] }).to be == ['3.3.0', '3.2.2']
+    summary['core_versions'].each do |version|
+      expect(version['last_status']).to be == 'passed'
+      expect(version['latest_run']).to be == summary['latest_run'].slice(
+        'run_id', 'run_attempt', 'run_url', 'event', 'completed_at', 'status'
+      ).merge('passed_cells' => 1, 'total_cells' => 1)
+      expect(version['latest_passing_run']).to be == version['latest_run']
+      expect(version['last_30_days']).to be == {
+        'passed_runs' => 1, 'total_runs' => 1, 'pass_percentage' => 100.0
       }
-    ]
-    expect(summary['sxl_versions']).to be == [
-      {
-        'name' => 'tlc',
-        'version' => '1.2.1',
-        'last_status' => 'passed',
-        'latest_run' => summary['latest_run'].slice('run_id', 'run_attempt', 'run_url', 'event', 'completed_at',
-                                                    'status'),
-        'latest_passing_run' => summary['latest_passing_run'].slice('run_id', 'run_attempt', 'run_url', 'event',
-                                                                    'completed_at', 'status'),
-        'last_30_days' => {
-          'passed_runs' => 2,
-          'total_runs' => 2,
-          'pass_percentage' => 100.0
-        }
-      }
-    ]
+    end
+    sxl = summary['sxl_versions'].first
+    expect(sxl.slice('name', 'version')).to be == { 'name' => 'tlc', 'version' => '1.2.1' }
+    expect(sxl['latest_run']).to be == summary['latest_run'].slice(
+      'run_id', 'run_attempt', 'run_url', 'event', 'completed_at', 'status', 'passed_cells', 'total_cells'
+    )
+    expect(sxl['latest_passing_run']).to be == sxl['latest_run']
+    expect(sxl['last_30_days']).to be == {
+      'passed_runs' => 1, 'total_runs' => 1, 'pass_percentage' => 100.0
+    }
     expect((summary['last_30_days']['pass_percentage'] - 75.0).abs < 0.01).to be == true
   end
 
@@ -253,39 +229,18 @@ describe RSMP::Website::Compliance::Summary do
     ).to_h['targets'].first
 
     expect(summary['versions'].count { |version| version['core'] == '3.3.0' }).to be == 2
-    expect(summary['core_versions']).to be == [
-      {
-        'core' => '3.3.0',
-        'last_status' => 'failed',
-        'latest_run' => {
-          'run_id' => 2,
-          'run_attempt' => 1,
-          'run_url' => 'https://example.test/2',
-          'event' => 'schedule',
-          'completed_at' => '2026-06-17T00:00:01Z',
-          'status' => 'failed',
-          'test_count' => 10,
-          'failed_count' => 1,
-          'errored_count' => 0
-        },
-        'latest_passing_run' => {
-          'run_id' => 2,
-          'run_attempt' => 1,
-          'run_url' => 'https://example.test/2',
-          'event' => 'schedule',
-          'completed_at' => '2026-06-17T00:00:01Z',
-          'status' => 'passed',
-          'test_count' => 10,
-          'failed_count' => 0,
-          'errored_count' => 0
-        },
-        'last_30_days' => {
-          'passed_runs' => 1,
-          'total_runs' => 2,
-          'pass_percentage' => 50.0
-        }
-      }
-    ]
+    core = summary['core_versions'].first
+    expect(core['last_status']).to be == 'failed'
+    expect(core['latest_run']).to be == {
+      'run_id' => 2, 'run_attempt' => 1, 'run_url' => 'https://example.test/2', 'event' => 'schedule',
+      'completed_at' => '2026-06-17T00:00:01Z', 'status' => 'failed',
+      'passed_cells' => 1, 'total_cells' => 2
+    }
+    expect(core['latest_passing_run']).to be == nil
+    expect(core['last_30_days']).to be == {
+      'passed_runs' => 0, 'total_runs' => 1, 'pass_percentage' => 0.0
+    }
+
   end
 
   it 'keeps an older latest pass when the new run fails' do
