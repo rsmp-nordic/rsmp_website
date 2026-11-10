@@ -1,0 +1,5 @@
+<dl class="compliance-detail-stats">
+  <div><dt>30 Days</dt><dd>{% include compliance_last_30_days.html stats=include.record.last_30_days %}</dd></div>
+  <div><dt>Latest Run</dt><dd>{% include compliance_run_result.html run=include.record.latest_run partner=include.partner %}</dd></div>
+  <div><dt>Latest Pass</dt><dd>{% include compliance_latest_pass.html run=include.record.latest_passing_run partner=include.partner %}</dd></div>
+</dl>
