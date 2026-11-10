@@ -180,7 +180,7 @@ module RSMP
         def recent_cells
           @recent_cells ||= @runs.flat_map do |run|
             Array(run['cells']).select do |cell|
-              within_last_month?(cell['completed_at'] || run['completed_at'])
+              cell['status'] != 'missing' && within_last_month?(cell['completed_at'] || run['completed_at'])
             end
           end
         end

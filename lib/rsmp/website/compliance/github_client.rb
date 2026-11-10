@@ -36,7 +36,7 @@ module RSMP
         end
 
         def reports_for_workflow(workflow, since:, known_ids:)
-          @events.flat_map { |event| workflow_runs(workflow.fetch('id'), event: event, since: since) }
+          workflow_runs(workflow.fetch('id'), since: since)
                  .flat_map { |run| reports_for_run(run.fetch('id'), workflow, known_ids: known_ids) }
         end
 
@@ -65,19 +65,31 @@ module RSMP
           artifact['name'].start_with?('compliance-result-', 'compliance-')
         end
 
-        def workflow_runs(workflow, event:, since:)
-          response = get_json(workflow_runs_path(workflow), workflow_run_params(event))
-          Array(response['workflow_runs']).select { |run| parse_time(run.fetch('created_at')) >= since }
+        def workflow_runs(workflow, since:)
+          runs = []
+          page = 1
+          loop do
+            # Unfiltered listing avoids GitHub's 1,000-result search limit.
+            # Reruns retain their creation date, so even older pages can contain
+            # recently updated runs. Inspect every page before applying the cutoff.
+            response = get_json(workflow_runs_path(workflow), 'per_page' => '100', 'page' => page.to_s)
+            page_runs = Array(response['workflow_runs'])
+            runs.concat(page_runs.select { |run| collect_run?(run, since) })
+            break if page_runs.size < 100
+
+            page += 1
+          end
+          runs.uniq { |run| run.fetch('id') }
         end
 
         def workflow_runs_path(workflow)
           "/repos/#{@repo}/actions/workflows/#{workflow}/runs"
         end
 
-        def workflow_run_params(event)
-          params = { 'event' => event, 'status' => 'completed', 'per_page' => '100' }
-          params['branch'] = 'main' unless event == 'pull_request'
-          params
+        def collect_run?(run, since)
+          run['status'] == 'completed' && @events.include?(run['event']) &&
+            (run['event'] == 'pull_request' || run['head_branch'] == 'main') &&
+            parse_time(run['updated_at'] || run.fetch('created_at')) >= since
         end
 
         def run_artifacts(run_id)
