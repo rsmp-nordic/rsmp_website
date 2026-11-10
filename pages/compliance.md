@@ -22,7 +22,7 @@ Tests run on configured combinations of Core and SXL versions. The combinations 
 
 ## Reading the results
 
-The overview tables combine recent results for each Core or SXL version. Each device also has a **Core × SXL matrix** showing the individual combinations.
+The overview tables combine recent results for each Core or SXL version. Each device also has a matrix with **Core versions in columns and SXL versions in rows**, showing the individual combinations. Each row includes the SXL name and version.
 
 Select any matrix cell, including a blank one, to open its details below the matrix. Select an **Overall Core** or **Overall SXL** cell to see which pairs contribute to that combined status. The selected cell is highlighted. Close the panel or press Escape to return to the matrix.
 
