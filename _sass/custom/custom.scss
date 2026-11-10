@@ -128,7 +128,12 @@ tr.compliance-section-row td:first-child {
     padding: 0;
 
     &:has(> .compliance-cell):hover,
-    &:has(> .compliance-cell:focus-visible),
+    &:has(> .compliance-cell:focus-visible) {
+      background: mix(#fff, $link-color, 80%);
+
+      > .compliance-cell { color: $link-color; }
+    }
+
     &:has(> .compliance-cell.is-selected) {
       background: $link-color;
 
