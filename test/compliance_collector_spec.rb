@@ -452,22 +452,6 @@ describe RSMP::Website::Compliance::GitHubClient do
     expect(requested_pages).to be == [1, 2]
   end
 
-  it 'does not filter pull request workflow runs by main branch' do
-    client = RSMP::Website::Compliance::GitHubClient.new(repo: 'rsmp-nordic/rsmp_validator', token: 'token')
-
-    expect(client.send(:workflow_run_params, 'schedule')).to be == {
-      'branch' => 'main',
-      'event' => 'schedule',
-      'status' => 'completed',
-      'per_page' => '100'
-    }
-    expect(client.send(:workflow_run_params, 'pull_request')).to be == {
-      'event' => 'pull_request',
-      'status' => 'completed',
-      'per_page' => '100'
-    }
-  end
-
   it 'does not send GitHub auth headers to artifact storage redirects' do
     client = RSMP::Website::Compliance::GitHubClient.new(repo: 'rsmp-nordic/rsmp_validator', token: 'token')
 

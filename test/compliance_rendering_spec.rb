@@ -29,7 +29,8 @@ module ComplianceRenderingSpec
       template = site.liquid_renderer.file(__FILE__).parse(
         '{% include compliance_table.html targets=targets name_heading="Device" %}'
       )
-      Nokogiri::HTML.fragment(template.render!({ 'targets' => [target] }, registers: { site: site }))
+      targets = target.is_a?(Array) ? target : [target]
+      Nokogiri::HTML.fragment(template.render!({ 'targets' => targets }, registers: { site: site }))
     end
   end
 
@@ -50,6 +51,65 @@ module ComplianceRenderingSpec
 end
 
 describe 'Compliance table rendering' do
+  it 'orders overview versions numerically across devices and keeps columns aligned with their results' do
+    first = ComplianceRenderingSpec.target([
+      ComplianceRenderingSpec.report(core: '3.10.0', sxl: '1.0.10', status: 'failed'),
+      ComplianceRenderingSpec.report(core: '3.9.0', sxl: '1.0.9')
+    ])
+    second = ComplianceRenderingSpec.target([
+      ComplianceRenderingSpec.report(core: '3.2.2', sxl: '1.0.7'),
+      ComplianceRenderingSpec.report(core: '3.9.0', sxl: '1.0.9')
+    ])
+    document = ComplianceRenderingSpec.render([first, second])
+    tables = document.css('table.compliance-matrix')
+    expect(tables[0].css('thead th').map { |node| node.text.strip })
+      .to be == ['Device', '3.2.2', '3.9.0', '3.10.0']
+    expect(tables[1].css('thead th').map { |node| node.text.strip })
+      .to be == ['Device', '1.0.7', '1.0.9', '1.0.10']
+    tables.each do |table|
+      expect(table.at_css('tbody tr').css('td').drop(1).map { |node| node.text.strip }).to be == ['', '√', '']
+    end
+  end
+
+  it 'ignores missing placeholders in both histories and checkmarks, including cached summaries' do
+    report = ComplianceRenderingSpec.report
+    metadata = report.fetch('target')
+    runs = RSMP::Website::Compliance::RunBuilder.new(metadata, [report]).runs
+    summary = RSMP::Website::Compliance::Summary.new(
+      targets: [metadata], runs_by_target: { 'demo' => runs }, now: Time.utc(2026, 6, 18)
+    ).to_h
+    missing_run = {
+      'run_id' => 43, 'run_attempt' => 1, 'completed_at' => '2026-06-17T01:00:00Z', 'status' => 'missing'
+    }
+    previous_pair = summary['targets'].first['versions'].first
+    previous_pair['latest_run'] = missing_run
+    previous_pair['last_status'] = 'missing'
+    summary['targets'].first['versions'] << {
+      'core' => '3.2.2', 'sxls' => { 'tlc' => '1.0.15' },
+      'latest_run' => missing_run, 'last_status' => 'missing'
+    }
+    runs << missing_run.merge('cells' => [
+      { 'core' => '3.2.2', 'sxls' => { 'tlc' => '1.2.1' }, 'status' => 'missing' },
+      { 'core' => '3.2.2', 'sxls' => { 'tlc' => '1.0.15' }, 'status' => 'missing' }
+    ])
+    2.times do
+      summary = RSMP::Website::Compliance::Summary.new(
+        previous_summary: summary, runs_by_target: { 'demo' => runs }, now: Time.utc(2026, 6, 18)
+      ).to_h
+      target = summary['targets'].first
+      expect(target['versions'].size).to be == 1
+      pair = target['versions'].first
+      expect(pair['last_status']).to be == 'passed'
+      expect(pair.dig('latest_run', 'run_id')).to be == 42
+      expect(pair['last_30_days']).to be == { 'passed_runs' => 1, 'total_runs' => 1, 'pass_percentage' => 100.0 }
+      document = ComplianceRenderingSpec.render(target)
+      expect(ComplianceRenderingSpec.overview_cell(document, 'Core', '3.2.2').text.strip).to be == '√'
+      expect(ComplianceRenderingSpec.overview_cell(document, 'Traffic Light Controller SXL', '1.2.1').text.strip).to be == '√'
+      expect(ComplianceRenderingSpec.detail_cell(document, 'core 3.2.2').text.strip).to be == '√'
+      expect(ComplianceRenderingSpec.detail_cell(document, 'tlc 1.2.1').text.strip).to be == '√'
+    end
+  end
+
   it 'shows passing tests out of tests that ran, excluding skips but including errors' do
     [
       [{ 'test_count' => 133, 'skipped_count' => 0, 'failed_count' => 1, 'errored_count' => 0 }, '132/133 tests passed'],

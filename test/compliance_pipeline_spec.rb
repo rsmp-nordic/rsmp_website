@@ -10,7 +10,7 @@ describe RSMP::Website::Compliance::GitHubClient do
     storage = 'https://artifacts.example.test/report.zip'
     client = ComplianceFixtures::GitHub.new(
       "#{base}/actions/workflows?per_page=100" => ComplianceFixtures.json_response(ComplianceFixtures.read('workflows')),
-      "#{base}/actions/workflows/7/runs?event=schedule&status=completed&per_page=100&branch=main" =>
+      "#{base}/actions/workflows/7/runs?per_page=100&page=1" =>
         ComplianceFixtures.json_response(ComplianceFixtures.read('workflow_runs')),
       "#{base}/actions/runs/42/artifacts?per_page=100&page=1" => ComplianceFixtures.json_response(ComplianceFixtures.read('artifacts')),
       "#{base}/actions/artifacts/101/zip" => ComplianceFixtures.response('', code: 302, location: storage),

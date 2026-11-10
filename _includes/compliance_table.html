@@ -28,7 +28,8 @@
   <thead>
     <tr>
       <th>{{ include.name_heading }}</th>
-      {% assign core_version_list = core_versions | split: '|' | sort_natural %}
+      {% capture sorted_core_versions %}{% include compliance_sorted_versions.html versions=core_versions %}{% endcapture %}
+      {% assign core_version_list = sorted_core_versions | split: '|' %}
       {% for core_version in core_version_list %}
         {% if core_version != '' %}
           <th>{{ core_version }}</th>
@@ -59,7 +60,8 @@
   </tbody>
 </table>
 
-{% assign tlc_version_list = tlc_versions | split: '|' | sort_natural %}
+{% capture sorted_tlc_versions %}{% include compliance_sorted_versions.html versions=tlc_versions %}{% endcapture %}
+{% assign tlc_version_list = sorted_tlc_versions | split: '|' %}
 {% assign has_tlc_versions = false %}
 {% for tlc_version in tlc_version_list %}
   {% if tlc_version != '' %}

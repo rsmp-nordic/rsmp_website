@@ -1,0 +1,20 @@
+{%- comment -%}
+Sort dotted numeric versions using padded components. Standard Liquid's
+sort_natural is alphabetical, and GitHub Pages disables custom filters.
+{%- endcomment -%}
+{%- assign version_values = include.versions | split: '|' -%}
+{%- capture sortable_versions -%}
+  {%- for version_value in version_values -%}
+    {%- if version_value != '' -%}
+      {%- assign version_parts = version_value | split: '.' -%}
+      {%- for version_part in version_parts -%}
+        {{- version_part | prepend: '0000000000' | slice: -10, 10 -}}.
+      {%- endfor -%}
+      :{{- version_value -}}|
+    {%- endif -%}
+  {%- endfor -%}
+{%- endcapture -%}
+{%- assign sorted_versions = sortable_versions | split: '|' | sort -%}
+{%- for sorted_version in sorted_versions -%}
+  {{- sorted_version | split: ':' | last -}}|
+{%- endfor -%}

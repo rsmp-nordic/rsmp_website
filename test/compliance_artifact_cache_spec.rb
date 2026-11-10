@@ -7,7 +7,7 @@ module ComplianceArtifactCacheFixtures
     base = "#{ComplianceFixtures::API}/repos/example/devices"
     responses = {
       "#{base}/actions/workflows?per_page=100" => ComplianceFixtures.json_response(ComplianceFixtures.read('workflows')),
-      "#{base}/actions/workflows/7/runs?event=schedule&status=completed&per_page=100&branch=main" =>
+      "#{base}/actions/workflows/7/runs?per_page=100&page=1" =>
         ComplianceFixtures.json_response(ComplianceFixtures.read('workflow_runs')),
       "#{base}/actions/runs/42/artifacts?per_page=100&page=1" => ComplianceFixtures.json_response(
         'artifacts' => ids.map { |id| { 'id' => id, 'name' => "compliance-result-#{id}", 'expired' => false } }

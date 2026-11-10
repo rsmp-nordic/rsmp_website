@@ -24,16 +24,23 @@ module RSMP
             %w[latest_run latest_passing_run].each do |field|
               record = normalized[field]
               key = [record&.values_at('run_id', 'run_attempt'), version_key(normalized)]
-              normalized[field] = nil if observed_records.key?(key)
+              normalized[field] = nil if record&.fetch('status', nil) == 'missing' || observed_records.key?(key)
             end
             [version_key(normalized), normalized]
           end
           @runs.each { |run| merge_run_versions(merged, run) }
+          merged.each_value do |version|
+            version['latest_run'] ||= version['latest_passing_run']
+            version['last_status'] = version.dig('latest_run', 'status')
+          end
+          merged.reject! { |_key, version| version['latest_run'].nil? }
           merged
         end
 
         def merge_run_versions(merged, run)
           run.fetch('cells', []).each do |cell|
+            next if cell['status'] == 'missing'
+
             key = version_key(cell)
             merged[key] = merge_version(merged[key], run, cell)
           end
