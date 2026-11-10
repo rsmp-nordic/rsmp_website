@@ -87,8 +87,8 @@ module ComplianceFixtures
       @reports = reports
     end
 
-    def reports_since(since:)
-      @reports
+    def reports_since(since:, known_artifact_ids: [])
+      @reports.reject { |report| known_artifact_ids.include?(report['report_artifact_id']) }
     end
   end
 end

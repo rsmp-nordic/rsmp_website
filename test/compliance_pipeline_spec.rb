@@ -20,7 +20,11 @@ describe RSMP::Website::Compliance::GitHubClient do
 
     # Check the cutoff inclusively and preserve metadata already in reports.
     reports = client.reports_since(since: Time.utc(2026, 6, 17))
-    expect(reports).to be == [first.merge('workflow' => first['workflow'].merge('name' => 'Device tests', 'file' => 'device.yaml')), second]
+    expect(reports).to be == [
+      first.merge('workflow' => first['workflow'].merge('name' => 'Device tests', 'file' => 'device.yaml'),
+                  'report_artifact_id' => 101),
+      second.merge('report_artifact_id' => 103)
+    ]
     expect(client.requests.size).to be == 6
     storage_request = client.requests.find { |request| request.uri.host == 'artifacts.example.test' }
     expect(storage_request['Authorization']).to be == nil
