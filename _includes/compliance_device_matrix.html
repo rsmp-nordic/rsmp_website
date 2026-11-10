@@ -2,13 +2,13 @@
 {% assign device_sxls = include.target.sxl_versions | reverse %}
 {% if device_cores.size > 0 and device_sxls.size > 0 %}
 <div class="compliance-device" data-compliance-device>
-  <p class="compliance-matrix-help">Select a cell, including a blank one, to see its results below. The All row and column combine the recently tested pairs.</p>
+  <p class="compliance-matrix-help">Select a cell, including a blank one, to see its results below.{% if device_cores.size > 1 or device_sxls.size > 1 %} The <strong>All</strong> marks combine the recently tested pairs.{% endif %}</p>
   <div class="compliance-scroll" role="region" aria-label="Core and SXL combinations for {{ include.target.name | escape }}" tabindex="0">
     <table class="compliance-device-matrix">
       <caption class="compliance-visually-hidden">Core and SXL results for {{ include.target.name | escape }}</caption>
       <thead><tr><th scope="col">SXL /<br>Core</th>
         {% for device_core in device_cores %}<th scope="col">{{ device_core.core }}</th>{% endfor %}
-        <th scope="col" class="compliance-overall" title="Combined result across Core versions">All</th>
+        {% if device_cores.size > 1 %}<th scope="col" class="compliance-overall" title="Combined result across Core versions">All</th>{% endif %}
       </tr></thead>
       <tbody>
         {% for device_sxl in device_sxls %}
@@ -16,14 +16,16 @@
             {% for device_core in device_cores %}
               <td>{% include compliance_pair_cell.html target=include.target anchor=include.anchor core=device_core.core sxl=device_sxl %}</td>
             {% endfor %}
-            <td class="compliance-overall">{% include compliance_axis_cell.html target=include.target anchor=include.anchor version=device_sxl %}</td>
+            {% if device_cores.size > 1 %}<td class="compliance-overall">{% include compliance_axis_cell.html target=include.target anchor=include.anchor version=device_sxl %}</td>{% endif %}
           </tr>
         {% endfor %}
       </tbody>
+      {% if device_sxls.size > 1 %}
       <tfoot><tr><th scope="row" title="Combined result across SXL versions">All</th>
         {% for device_core in device_cores %}<td class="compliance-overall">{% include compliance_axis_cell.html target=include.target anchor=include.anchor version=device_core %}</td>{% endfor %}
-        <td></td>
+        {% if device_cores.size > 1 %}<td></td>{% endif %}
       </tr></tfoot>
+      {% endif %}
     </table>
   </div>
   <div class="compliance-details" data-compliance-panel>
@@ -33,9 +35,9 @@
       {% for device_sxl in device_sxls %}
         {% include compliance_pair_cell.html target=include.target anchor=include.anchor core=device_core.core sxl=device_sxl details=true %}
       {% endfor %}
-      {% include compliance_axis_details.html target=include.target anchor=include.anchor version=device_core %}
+      {% if device_sxls.size > 1 %}{% include compliance_axis_details.html target=include.target anchor=include.anchor version=device_core %}{% endif %}
     {% endfor %}
-    {% for device_sxl in device_sxls %}{% include compliance_axis_details.html target=include.target anchor=include.anchor version=device_sxl %}{% endfor %}
+    {% if device_cores.size > 1 %}{% for device_sxl in device_sxls %}{% include compliance_axis_details.html target=include.target anchor=include.anchor version=device_sxl %}{% endfor %}{% endif %}
   </div>
 </div>
 {% else %}
