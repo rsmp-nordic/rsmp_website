@@ -44,9 +44,12 @@ module ComplianceRenderingSpec
   end
 
   def detail_cell(document, version)
-    rows = document.css('.compliance-axis-details tr[data-version]')
-    row = rows.find { |node| node.at_css('td')&.text&.strip == version }
-    row.css('td').last
+    document.css('.compliance-axis-cell').find { |node| node['data-version'] == version }
+  end
+
+  def axis_panel(document, version)
+    id = detail_cell(document, version)['aria-controls']
+    document.at_css("section[id='#{id}']")
   end
 end
 
@@ -65,8 +68,8 @@ describe 'Compliance table rendering' do
       latest_pass = pair_detail.at_css('.compliance-detail-stats > div:last-child dd')
       expect(latest_pass.at_css('.compliance-passed-tests')&.text).to be == expected
       expect(latest_pass.at_css('time')['datetime']).to be == report['generated_at']
-      document.css('.compliance-axis-details tr[data-version]').each do |row|
-        expect(row.css('td')[2].at_css('.compliance-passed-tests')&.text).to be == expected
+      document.css('.compliance-axis-details').each do |row|
+        expect(row.css('dd')[2].at_css('.compliance-passed-tests')&.text).to be == expected
       end
       expect(document.css('[data-compliance-panel]').text.include?('%')).to be == false
       expect(document.css('.compliance-detail > p').size).to be == 0
@@ -117,7 +120,7 @@ describe 'Compliance table rendering' do
     end
   end
 
-  it 'keeps device details separate and explains the pairs behind combined marks' do
+  it 'keeps device details separate and uses the same three statistics for pairs and combined panels' do
     reports = [
       ComplianceRenderingSpec.report(id: 41, sxl: '1.0.15', at: '2026-06-16T00:00:00Z'),
       ComplianceRenderingSpec.report(sxl: '1.0.15', status: 'failed'),
@@ -134,9 +137,11 @@ describe 'Compliance table rendering' do
     expect(devices.first.at_css('.compliance-axis-cell[data-version="core 3.2.2"]').text.strip).to be == '(√)'
     expect(devices.last.at_css('.compliance-axis-cell[data-version="core 3.2.2"]').text.strip).to be == '√'
     detail = document.at_css('#compliance-demo-overall-core-3-2-2')
-    items = detail.css('.compliance-contributing-pairs li').map { |item| item.text.gsub(/\s+/, ' ').strip }
-    expect(items.any? { |item| item.include?('TLC 1.0.15') && item.include?('Latest run failed') }).to be == true
-    expect(items.any? { |item| item.include?('TLC 1.2.1') && item.include?('Latest run passed') }).to be == true
+    expect(detail.at_css('h5').text).to be == 'Overall Core 3.2.2'
+    document.css('.compliance-detail').each do |panel|
+      expect(panel.css('dt').map(&:text)).to be == ['30 Days', 'Latest Run', 'Latest Pass']
+      expect(panel.css('table, ul, [data-compliance-select]').size).to be == 0
+    end
   end
 
   it 'orders overview versions numerically across devices and keeps columns aligned with their results' do
@@ -219,10 +224,10 @@ describe 'Compliance table rendering' do
       document = ComplianceRenderingSpec.render(ComplianceRenderingSpec.target([report]))
       pair_result = document.at_css('.compliance-pair-detail .compliance-detail-stats > div:nth-child(2) dd')
       expect(pair_result.text.gsub(/\s+/, ' ').strip.end_with?(expected)).to be == true
-      rows = document.css('.compliance-axis-details tr[data-version]').select { |row| row.at_css('td') }
+      rows = document.css('.compliance-axis-details')
       expect(rows.size).to be == 2
       rows.each do |row|
-        latest_run = row.css('td')[3].children.reverse.take_while { |node| node.name != 'br' }.reverse.map(&:text).join.strip.gsub(/\s+/, ' ')
+        latest_run = row.css('dd')[1].children.reverse.take_while { |node| node.name != 'br' }.reverse.map(&:text).join.strip.gsub(/\s+/, ' ')
         expect(latest_run).to be == expected
       end
     end
@@ -243,11 +248,11 @@ describe 'Compliance table rendering' do
         ComplianceRenderingSpec.report(id: 43, status: 'failed', at: '2026-06-17T01:00:00Z')
       ])
       document = ComplianceRenderingSpec.render(target)
-      row = ComplianceRenderingSpec.detail_cell(document, detail_label).parent
-      expect(row.css('td')[1].text.strip.gsub(/\s+/, ' ')).to be == '1/4 runs passed 2/5 pairs passed'
+      row = ComplianceRenderingSpec.axis_panel(document, detail_label)
+      expect(row.css('dd')[0].text.strip.gsub(/\s+/, ' ')).to be == '1/4 runs passed 2/5 pairs passed'
       tested = heading == 'Core' ? 'SXL: tlc 1.2.1' : 'Core: 3.2.2'
       untested = heading == 'Core' ? 'SXL: tlc 1.0.15' : 'Core: 3.3.0'
-      latest_pass, latest_run = row.css('td')[2..3]
+      latest_pass, latest_run = row.css('dd').to_a.values_at(2, 1)
       expect(latest_pass.at_css('.compliance-pair-count').text.strip).to be == '1 pair passed'
       expect(latest_pass.at_css('.compliance-pair-count')['title']).to be == "#{tested} — passed"
       expect(latest_run.at_css('.compliance-pair-count').text.strip).to be == '0/1 pair passed'
@@ -269,8 +274,8 @@ describe 'Compliance table rendering' do
       document = ComplianceRenderingSpec.render(target)
       detail = ComplianceRenderingSpec.detail_cell(document, detail_label)
       overview = ComplianceRenderingSpec.overview_cell(document, heading, version)
-      expect(detail.parent.css('td')[2].text.strip).to be == ''
-      expect(detail.parent.css('td')[1].text.strip.gsub(/\s+/, ' ')).to be == '0/2 runs passed 2/4 pairs passed'
+      expect(ComplianceRenderingSpec.axis_panel(document, detail_label).css('dd')[2].text.strip).to be == ''
+      expect(ComplianceRenderingSpec.axis_panel(document, detail_label).css('dd')[0].text.strip.gsub(/\s+/, ' ')).to be == '0/2 runs passed 2/4 pairs passed'
       expect(detail.text.strip).to be == '(√)'
       expect(overview.text.strip).to be == '(√)'
       expect(overview.at_css('a')['href']).to be == 'https://github.com/example/devices/actions/runs/41'
@@ -305,17 +310,17 @@ describe 'Compliance table rendering' do
         expect(axis['last_30_days'].slice('passed_pairs', 'total_pairs')).to be == { 'passed_pairs' => 3, 'total_pairs' => 4 }
 
         document = ComplianceRenderingSpec.render(target)
-        row = ComplianceRenderingSpec.detail_cell(document, detail_label).parent
-        expect(row.css('td')[3].text.strip.gsub(/\s+/, ' '))
+        row = ComplianceRenderingSpec.axis_panel(document, detail_label)
+        expect(row.css('dd')[1].text.strip.gsub(/\s+/, ' '))
           .to be == "2026-06-17 02:00 UTC 1/2 pairs passed 190/200 tests passed"
-        expect(row.css('td')[3].at_css('a')['href']).to be == 'https://github.com/example/devices/actions/runs/41'
+        expect(row.css('dd')[1].at_css('a')['href']).to be == 'https://github.com/example/devices/actions/runs/41'
         expected_results = heading == 'Core' ? 'SXL: tlc 1.0.15 — failed; tlc 1.2.1 — passed' : 'Core: 3.2.2 — passed; 3.3.0 — failed'
-        expect(row.css('td')[3].at_css('.compliance-pair-count')['title']).to be == expected_results
-        expect(row.css('td')[3].at_css('.compliance-untested-pairs')).to be == nil
-        expect(row.css('td')[2].text.strip.gsub(/\s+/, ' '))
+        expect(row.css('dd')[1].at_css('.compliance-pair-count')['title']).to be == expected_results
+        expect(row.css('dd')[1].at_css('.compliance-untested-pairs')).to be == nil
+        expect(row.css('dd')[2].text.strip.gsub(/\s+/, ' '))
           .to be == "2026-06-16 02:00 UTC All 2 pairs passed 200 tests passed"
-        expect(row.css('td')[2].at_css('a')['href']).to be == 'https://github.com/example/devices/actions/runs/40'
-        expect(row.css('td').last.text.strip).to be == '(√)'
+        expect(row.css('dd')[2].at_css('a')['href']).to be == 'https://github.com/example/devices/actions/runs/40'
+        expect(ComplianceRenderingSpec.detail_cell(document, detail_label).text.strip).to be == '(√)'
         expect(ComplianceRenderingSpec.overview_cell(document, heading, version).at_css('a')['title'])
           .to be == 'All recently tested pairings passed within 30 days; some latest results failed. Latest passing pair: 2026-06-17 02:00 UTC'
       end
