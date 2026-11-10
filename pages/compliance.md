@@ -30,9 +30,11 @@ For an individual pair:
 
 - **√** means its latest result passed within the last 30 days.
 - **(√)** means its latest result failed, but it passed at least once within the last 30 days.
-- A blank means no passing result within 30 days, no recent results, or no collected results for the pair. Select the cell to distinguish these cases. An untested combination is not necessarily unsupported.
+- **×** means it was tested within the last 30 days, but no run passed in that period.
+- **—** means it has collected results, but none within the last 30 days. Select the cell to see its history.
+- A blank means the pair has never been tested in the collected results. An untested combination is not necessarily unsupported.
 
-For the combined Core and SXL marks, **√** requires every recently tested pair's latest result to pass. **(√)** requires every recently tested pair to have passed within 30 days, with at least one latest result failing. Otherwise the mark is blank. Pairs with no results in the last 30 days do not contribute. The overview tables and the matrix totals use the same rules.
+For the combined Core and SXL marks, **√** requires every recently tested pair's latest result to pass. **(√)** requires every recently tested pair to have passed within 30 days, with at least one latest result failing. Pairs with no results in the last 30 days do not contribute. The overview tables and the matrix totals use the same checkmark rules. In the matrix, **All** shows **×** if any recently tested pair has no pass within 30 days, or **—** if only older results exist. The overview tables leave these cases blank.
 
 The parenthesized mark gives time to investigate problems with a device, the validator, or the test infrastructure. Its grace period runs from each pair's last passing result, not from its first failure.
 

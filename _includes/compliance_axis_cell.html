@@ -9,4 +9,12 @@
 {% assign axis_key = axis_key | slugify %}
 {% assign axis_id = include.anchor | append: '-overall-' | append: axis_key %}
 {% capture axis_symbol %}{% include compliance_overview_cell.html version=axis target=include.target plain=true %}{% endcapture %}
+{% assign axis_symbol = axis_symbol | strip %}
+{% if axis_symbol == '' %}
+  {% if has_recent_pair %}
+    {% assign axis_symbol = '×' %}
+  {% elsif axis.latest_run %}
+    {% assign axis_symbol = '—' %}
+  {% endif %}
+{% endif %}
 <a class="compliance-cell compliance-axis-cell" href="#{{ axis_id }}" data-compliance-select="{{ axis_id }}" data-version="{% if axis.core %}core {{ axis.core }}{% else %}{{ axis.name }} {{ axis.version }}{% endif %}" aria-controls="{{ axis_id }}" aria-label="Overall {{ axis_label | escape }}. {{ status_explanation | escape }} Show combined statistics." title="{{ status_explanation | escape }}">{{ axis_symbol | strip }}</a>

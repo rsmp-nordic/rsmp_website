@@ -122,8 +122,8 @@ describe 'Compliance table rendering' do
     rows = matrix.css('tbody tr')
     expect(rows.map { |row| row.at_css('th').text.strip }).to be == ['TLC 1.0.7', 'TLC 1.0.15', 'TLC 1.2.0', 'TLC 1.2.1']
     expect(rows.map { |row| row.css('td a').map { |cell| cell.text.strip } })
-      .to be == [['', '', ''], ['', '', ''], ['(√)', '', '(√)'], ['√', '√', '√']]
-    expect(matrix.css('tfoot td a').map { |cell| cell.text.strip }).to be == ['', '√']
+      .to be == [['—', '', '—'], ['×', '', '×'], ['(√)', '', '(√)'], ['√', '√', '√']]
+    expect(matrix.css('tfoot td a').map { |cell| cell.text.strip }).to be == ['×', '√']
 
     {
       'core-3-2-2-tlc-1-0-7' => 'No results within the last 30 days.',
@@ -379,7 +379,7 @@ describe 'Compliance table rendering' do
         overview = ComplianceRenderingSpec.overview_cell(document, heading, version)
 
         expect(overview.text.strip).to be == ''
-        expect(ComplianceRenderingSpec.detail_cell(document, detail_label).text.strip).to be == ''
+        expect(ComplianceRenderingSpec.detail_cell(document, detail_label).text.strip).to be == '×'
         expect(overview.at_css('a')).to be == nil
       end
     end
@@ -421,7 +421,7 @@ describe 'Compliance table rendering' do
         expected = index.zero? ? '' : '(√)'
 
         expect(ComplianceRenderingSpec.overview_cell(document, heading, version).text.strip).to be == expected
-        expect(ComplianceRenderingSpec.detail_cell(document, detail_label).text.strip).to be == expected
+        expect(ComplianceRenderingSpec.detail_cell(document, detail_label).text.strip).to be == (expected.empty? ? '×' : expected)
         axis = heading == 'Core' ? target['core_versions'].first : target['sxl_versions'].first
         expect(axis['last_30_days'].except('passed_pairs', 'total_pairs')).to be == {
           'passed_runs' => 1, 'total_runs' => 2, 'pass_percentage' => 50.0
@@ -480,7 +480,7 @@ describe 'Compliance table rendering' do
     detail = ComplianceRenderingSpec.detail_cell(document, 'core 3.2.2')
 
     expect(overview.text.strip).to be == ''
-    expect(overview.text.strip).to be == detail.text.strip
+    expect(detail.text.strip).to be == '×'
     expect(overview.at_css('a')).to be == nil
 
     target['versions'].reverse!
@@ -498,7 +498,7 @@ describe 'Compliance table rendering' do
     detail = ComplianceRenderingSpec.detail_cell(document, 'tlc 1.2.1')
 
     expect(overview.text.strip).to be == ''
-    expect(overview.text.strip).to be == detail.text.strip
+    expect(detail.text.strip).to be == '×'
     expect(overview.at_css('a')).to be == nil
   end
 
@@ -522,8 +522,8 @@ describe 'Compliance table rendering' do
 
     expect(ComplianceRenderingSpec.overview_cell(document, 'Core', '3.2.2').text.strip).to be == ''
     expect(ComplianceRenderingSpec.overview_cell(document, 'Traffic Light Controller SXL', '1.2.1').text.strip).to be == ''
-    expect(ComplianceRenderingSpec.detail_cell(document, 'core 3.2.2').text.strip).to be == ''
-    expect(ComplianceRenderingSpec.detail_cell(document, 'tlc 1.2.1').text.strip).to be == ''
+    expect(ComplianceRenderingSpec.detail_cell(document, 'core 3.2.2').text.strip).to be == '—'
+    expect(ComplianceRenderingSpec.detail_cell(document, 'tlc 1.2.1').text.strip).to be == '—'
   end
 
   it 'keeps other SXL types out of the TLC overview' do
