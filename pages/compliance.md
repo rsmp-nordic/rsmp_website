@@ -30,13 +30,17 @@ The 30-day pass rate is **passing runs / total runs × 100%**. Each run has equa
 
 “Latest Run” shows how many of the tests that ran passed. Skipped tests are excluded from the total; tests that errored count as unsuccessful. Older results without enough count information show only the run outcome.
 
-The Core and SXL tables summarize results across the tested combinations, ordered by each pairing's completion time:
+For each Core or SXL version, checkmarks consider every pairing involving that version with a received result in the last 30 days. Each pairing's latest result is determined by its own completion time:
 
-- **√** means the latest received result involving that version passed within the last 30 days.
-- **(√)** means the latest received result did not pass, but an earlier result involving that version passed within the last 30 days.
-- A blank means no passing result involving that version was reported for a run completed within the last 30 days.
+- **√** means every recently tested pairing's latest result passed.
+- **(√)** means every recently tested pairing has passed at least once within 30 days, but at least one pairing's latest result did not pass.
+- A blank means at least one recently tested pairing has no passing result within 30 days, or there are no results within that window.
 
-Both checkmarks link to the latest passing result. A passing result for a version does not imply that every combination has passed.
+The parenthesized checkmark provides a grace period to investigate and fix problems with a device, the validator, or the test infrastructure. The period runs from each pairing's last successful test, not from its first failure. A pairing that has never passed cannot qualify through another pairing's success.
+
+For example, if Core 3.2.2 passes with SXL 1.2.1 but fails with SXL 1.0.15, it receives **(√)** only if the 1.0.15 pairing also passed within the last 30 days. Otherwise its status is blank.
+
+Both checkmarks link to the most recent individual passing result; that run alone does not demonstrate success for all pairings. “Latest Run” and “Latest Pass” still show individual results across pairings, and percentages still count every run. Pairings with no results in the last 30 days no longer participate in the checkmark assessment. Untested combinations are not covered by either checkmark.
 
 {% assign compliance_targets = site.data.compliance.summary.targets | default: empty %}
 {% assign site_targets = compliance_targets | where: "kind", "site" %}

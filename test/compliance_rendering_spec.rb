@@ -80,7 +80,7 @@ describe 'Compliance table rendering' do
     ['Core', '3.2.2', 'core 3.2.2', { sxl: '1.0.15' }],
     ['Traffic Light Controller SXL', '1.2.1', 'tlc 1.2.1', { core: '3.3.0' }]
   ].each do |heading, version, detail_label, other_pair|
-    it "shows a plain checkmark for #{heading} when the later pairing passes" do
+    it "withholds the #{heading} checkmark when another pairing has never passed" do
       reports = [
         ComplianceRenderingSpec.report(**other_pair, status: 'failed'),
         ComplianceRenderingSpec.report(at: '2026-06-17T01:00:00Z')
@@ -89,17 +89,44 @@ describe 'Compliance table rendering' do
         document = ComplianceRenderingSpec.render(ComplianceRenderingSpec.target(ordered))
         overview = ComplianceRenderingSpec.overview_cell(document, heading, version)
 
-        expect(overview.text.strip).to be == '√'
-        expect(ComplianceRenderingSpec.detail_cell(document, detail_label).text.strip).to be == '√'
-        expect(overview.at_css('a')['href']).to be == 'https://github.com/example/devices/actions/runs/42'
+        expect(overview.text.strip).to be == ''
+        expect(ComplianceRenderingSpec.detail_cell(document, detail_label).text.strip).to be == ''
+        expect(overview.at_css('a')).to be == nil
       end
+    end
+
+    it "keeps the #{heading} grace mark until every pairing's latest result passes" do
+      reports = [
+        ComplianceRenderingSpec.report(id: 40, **other_pair, at: '2026-06-16T00:00:00Z'),
+        ComplianceRenderingSpec.report(id: 41, **other_pair, status: 'failed'),
+        ComplianceRenderingSpec.report(id: 42, at: '2026-06-17T01:00:00Z')
+      ]
+      [reports, reports.reverse].each do |ordered|
+        target = ComplianceRenderingSpec.target(ordered)
+        document = ComplianceRenderingSpec.render(target)
+        overview = ComplianceRenderingSpec.overview_cell(document, heading, version)
+        expect(overview.text.strip).to be == '(√)'
+        expect(ComplianceRenderingSpec.detail_cell(document, detail_label).text.strip).to be == '(√)'
+        expect(overview.at_css('a')['href']).to be == 'https://github.com/example/devices/actions/runs/42'
+        axis = heading == 'Core' ? target['core_versions'].first : target['sxl_versions'].first
+        expect(axis['last_status']).to be == 'passed'
+        expect(axis['last_30_days']).to be == {
+          'passed_runs' => 2, 'total_runs' => 3, 'pass_percentage' => 66.7
+        }
+      end
+
+      reports << ComplianceRenderingSpec.report(id: 43, **other_pair, at: '2026-06-17T02:00:00Z')
+      document = ComplianceRenderingSpec.render(ComplianceRenderingSpec.target(reports))
+      expect(ComplianceRenderingSpec.overview_cell(document, heading, version).text.strip).to be == '√'
+      expect(ComplianceRenderingSpec.detail_cell(document, detail_label).text.strip).to be == '√'
     end
 
     it "uses the individual pairing time for the #{heading} 30-day cutoff" do
       ['2026-05-18T23:59:59Z', '2026-05-19T00:00:00Z'].each_with_index do |at, index|
         target = ComplianceRenderingSpec.target([
-          ComplianceRenderingSpec.report(at: at),
-          ComplianceRenderingSpec.report(**other_pair, status: 'failed', at: '2026-05-19T01:00:00Z')
+          ComplianceRenderingSpec.report(id: 42, at: at),
+          ComplianceRenderingSpec.report(id: 41, status: 'failed', at: '2026-05-19T00:30:00Z'),
+          ComplianceRenderingSpec.report(id: 42, **other_pair, at: '2026-05-19T01:00:00Z')
         ])
         document = ComplianceRenderingSpec.render(target)
         expected = index.zero? ? '' : '(√)'
@@ -108,7 +135,7 @@ describe 'Compliance table rendering' do
         expect(ComplianceRenderingSpec.detail_cell(document, detail_label).text.strip).to be == expected
         axis = heading == 'Core' ? target['core_versions'].first : target['sxl_versions'].first
         expect(axis['last_30_days']).to be == {
-          'passed_runs' => index, 'total_runs' => index + 1, 'pass_percentage' => index.zero? ? 0.0 : 50.0
+          'passed_runs' => index + 1, 'total_runs' => index + 2, 'pass_percentage' => index.zero? ? 50.0 : 66.7
         }
       end
     end
@@ -149,7 +176,7 @@ describe 'Compliance table rendering' do
     end
   end
 
-  it 'shows the mixed Core result in both the overview and device details' do
+  it 'withholds both Core marks when the most recent pairing has never passed' do
     target = ComplianceRenderingSpec.target([
       ComplianceRenderingSpec.report(sxl: '1.2.1'),
       ComplianceRenderingSpec.report(sxl: '1.0.15', status: 'failed', at: '2026-06-17T01:00:00Z')
@@ -158,16 +185,16 @@ describe 'Compliance table rendering' do
     overview = ComplianceRenderingSpec.overview_cell(document, 'Core', '3.2.2')
     detail = ComplianceRenderingSpec.detail_cell(document, 'core 3.2.2')
 
-    expect(overview.text.strip).to be == '(√)'
+    expect(overview.text.strip).to be == ''
     expect(overview.text.strip).to be == detail.text.strip
-    expect(overview.at_css('a')['href']).to be == detail.at_css('a')['href']
+    expect(overview.at_css('a')).to be == nil
 
     target['versions'].reverse!
     reordered = ComplianceRenderingSpec.render(target)
-    expect(ComplianceRenderingSpec.overview_cell(reordered, 'Core', '3.2.2').text.strip).to be == '(√)'
+    expect(ComplianceRenderingSpec.overview_cell(reordered, 'Core', '3.2.2').text.strip).to be == ''
   end
 
-  it 'shows the mixed SXL result across Core versions in both tables' do
+  it 'withholds both SXL marks when the most recent pairing has never passed' do
     target = ComplianceRenderingSpec.target([
       ComplianceRenderingSpec.report(core: '3.3.0'),
       ComplianceRenderingSpec.report(core: '3.2.2', status: 'failed', at: '2026-06-17T01:00:00Z')
@@ -176,9 +203,9 @@ describe 'Compliance table rendering' do
     overview = ComplianceRenderingSpec.overview_cell(document, 'Traffic Light Controller SXL', '1.2.1')
     detail = ComplianceRenderingSpec.detail_cell(document, 'tlc 1.2.1')
 
-    expect(overview.text.strip).to be == '(√)'
+    expect(overview.text.strip).to be == ''
     expect(overview.text.strip).to be == detail.text.strip
-    expect(overview.at_css('a')['href']).to be == detail.at_css('a')['href']
+    expect(overview.at_css('a')).to be == nil
   end
 
   it 'does not let an old pair hide a recent pass with a different SXL' do
@@ -192,6 +219,17 @@ describe 'Compliance table rendering' do
     expect(core.text.strip).to be == '√'
     expect(core.at_css('a')&.[]('href')).to be == 'https://github.com/example/devices/actions/runs/42'
     expect(ComplianceRenderingSpec.overview_cell(document, 'Traffic Light Controller SXL', '1.2.1').text.strip).to be == ''
+  end
+
+  it 'shows no checkmarks when all results have aged out, even if they passed' do
+    document = ComplianceRenderingSpec.render(ComplianceRenderingSpec.target([
+      ComplianceRenderingSpec.report(at: '2026-05-18T23:59:59Z')
+    ]))
+
+    expect(ComplianceRenderingSpec.overview_cell(document, 'Core', '3.2.2').text.strip).to be == ''
+    expect(ComplianceRenderingSpec.overview_cell(document, 'Traffic Light Controller SXL', '1.2.1').text.strip).to be == ''
+    expect(ComplianceRenderingSpec.detail_cell(document, 'core 3.2.2').text.strip).to be == ''
+    expect(ComplianceRenderingSpec.detail_cell(document, 'tlc 1.2.1').text.strip).to be == ''
   end
 
   it 'keeps other SXL types out of the TLC overview' do

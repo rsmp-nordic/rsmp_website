@@ -51,7 +51,7 @@
                 {% break %}
               {% endif %}
             {% endfor %}
-            <td>{% include compliance_overview_cell.html version=matched_version %}</td>
+            <td>{% include compliance_overview_cell.html version=matched_version target=target %}</td>
           {% endif %}
         {% endfor %}
       </tr>
@@ -95,7 +95,7 @@
                 {% break %}
               {% endif %}
             {% endfor %}
-            <td>{% include compliance_overview_cell.html version=matched_version %}</td>
+            <td>{% include compliance_overview_cell.html version=matched_version target=target %}</td>
           {% endif %}
         {% endfor %}
       </tr>
@@ -137,7 +137,7 @@
         <td>
           {% include compliance_run_result.html run=version.latest_run %}
         </td>
-        <td>{% include compliance_overview_cell.html version=version %}</td>
+        <td>{% include compliance_overview_cell.html version=version target=target %}</td>
       </tr>
     {% endfor %}
     {% for sxl_version in target.sxl_versions %}
@@ -154,7 +154,7 @@
         <td>
           {% include compliance_run_result.html run=sxl_version.latest_run %}
         </td>
-        <td>{% include compliance_overview_cell.html version=sxl_version %}</td>
+        <td>{% include compliance_overview_cell.html version=sxl_version target=target %}</td>
       </tr>
     {% endfor %}
   </tbody>
