@@ -84,8 +84,13 @@ describe 'Compliance table rendering' do
     ]
     document = ComplianceRenderingSpec.render(ComplianceRenderingSpec.target(reports))
     device = document.at_css('[data-compliance-device]')
-    cells = device.css('.compliance-device-matrix tbody tr').first.css('td a')
-    expect(cells.map { |cell| cell.text.strip }).to be == ['', '', '(√)', '√', '']
+    matrix = device.at_css('.compliance-device-matrix')
+    expect(matrix.css('thead th')[1..2].map { |cell| cell.text.strip }).to be == ['3.2.2', '3.3.0']
+    rows = matrix.css('tbody tr')
+    expect(rows.map { |row| row.at_css('th').text.strip }).to be == ['TLC 1.0.7', 'TLC 1.0.15', 'TLC 1.2.0', 'TLC 1.2.1']
+    expect(rows.map { |row| row.css('td a').map { |cell| cell.text.strip } })
+      .to be == [['', '', ''], ['', '', ''], ['(√)', '', '(√)'], ['√', '√', '√']]
+    expect(matrix.css('tfoot td a').map { |cell| cell.text.strip }).to be == ['', '√']
 
     {
       'core-3-2-2-tlc-1-0-7' => 'No results within the last 30 days.',
@@ -498,5 +503,7 @@ describe 'Compliance table rendering' do
 
     expect(tlc.text.strip).to be == '√'
     expect(tlc.ancestors('table').first.css('thead th').map { |node| node.text.strip }).to be == ['Device', '1.2.1']
+    expect(document.css('.compliance-device-matrix tbody th').map { |node| node.text.strip })
+      .to be == ['TLC 1.2.1', 'VMS 1.2.1', 'VMS 9.0.0']
   end
 end
