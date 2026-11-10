@@ -2,6 +2,7 @@
 {% assign has_recent_pair = false %}
 {% assign all_pairs_passed = true %}
 {% assign all_latest_passed = true %}
+{% assign latest_pass = nil %}
 
 {% if version %}
   {% for pair in include.target.versions %}
@@ -15,6 +16,11 @@
     {% endif %}
     {% if matches_version and pair.last_30_days.total_runs > 0 %}
       {% assign has_recent_pair = true %}
+      {% if pair.latest_passing_run %}
+        {% if latest_pass == nil or pair.latest_passing_run.completed_at > latest_pass.completed_at %}
+          {% assign latest_pass = pair.latest_passing_run %}
+        {% endif %}
+      {% endif %}
       {% unless pair.last_30_days.passed_runs > 0 %}
         {% assign all_pairs_passed = false %}
       {% endunless %}
@@ -26,12 +32,11 @@
 {% endif %}
 
 {% if has_recent_pair and all_pairs_passed %}
-  {% assign latest_pass = version.latest_passing_run %}
   {% assign symbol = '√' %}
-  {% assign pass_label = 'Latest run passed at' %}
+  {% assign pass_label = 'Latest results passed for all recently tested pairings. Latest passing pair:' %}
   {% unless all_latest_passed %}
     {% assign symbol = '(√)' %}
-    {% assign pass_label = 'Earlier run passed at' %}
+    {% assign pass_label = 'All recently tested pairings passed within 30 days; some latest results failed. Latest passing pair:' %}
   {% endunless %}
   {% if latest_pass.run_url %}
     <a href="{{ latest_pass.run_url }}" title="{{ pass_label }} {{ latest_pass.completed_at | date: "%Y-%m-%d %H:%M UTC" }}">{{ symbol }}</a>

@@ -84,26 +84,68 @@ module RSMP
         end
 
         def core_versions
-          @core_versions ||= begin
-            # Axis summaries are derived from the accumulated pair history.
-            merged = {}
-            versions.each { |version| merge_core_version(merged, version) }
-            @runs.each { |run| merge_run_core_versions(merged, run) }
-            merged.values.map { |core| core.merge('last_30_days' => core_last_month_stats(core)) }
-                  .sort_by { |core| version_sort_key(core['core']) }
-                  .reverse
-          end
+          @core_versions ||= versions.map { |version| version['core'].to_s }.reject(&:empty?).uniq.map do |core|
+            fields = { 'core' => core }
+            axis_summary(fields) { |cell| core_cell?(fields, cell) }
+          end.sort_by { |core| version_sort_key(core['core']) }.reverse
         end
 
         def sxl_versions
-          @sxl_versions ||= begin
-            merged = {}
-            versions.each { |version| merge_sxl_versions(merged, version) }
-            @runs.each { |run| merge_run_sxl_versions(merged, run) }
-            merged.values.map { |sxl| sxl.merge('last_30_days' => sxl_last_month_stats(sxl)) }
-                  .sort_by { |sxl| [sxl['name'].to_s, version_sort_key(sxl['version'])] }
-                  .reverse
+          @sxl_versions ||= versions.flat_map { |version| normalize_sxls(version['sxls']).to_a }.uniq.map do |name, value|
+            fields = { 'name' => name, 'version' => value }
+            axis_summary(fields) { |cell| sxl_cell?(fields, cell) }
+          end.sort_by { |sxl| [sxl['name'], version_sort_key(sxl['version'])] }.reverse
+        end
+
+        # Rebuild axis results from complete stored runs. Old axis summaries
+        # describe individual pairs and cannot establish a whole-run pass.
+        def axis_summary(fields, &matches)
+          runs = @runs.filter_map do |run|
+            cells = Array(run['cells']).reject { |cell| cell['status'] == 'missing' }.select(&matches)
+            axis_run_summary(run, cells) unless cells.empty?
           end
+          latest = latest_record(runs)
+          recent = runs.select { |run| within_last_month?(run['completed_at']) }
+          passed = recent.count { |run| run['status'] == 'passed' }
+          fields.merge(
+            'last_status' => latest&.fetch('status', nil),
+            'latest_run' => latest,
+            'latest_passing_run' => latest_record(runs.select { |run| run['status'] == 'passed' }),
+            'last_30_days' => {
+              'passed_runs' => passed, 'total_runs' => recent.size,
+              'pass_percentage' => pass_percentage(passed, recent.size)
+            }
+          )
+        end
+
+        def axis_run_summary(run, cells)
+          passed = cells.count { |cell| cell['status'] == 'passed' }
+          run.slice('run_id', 'run_attempt', 'run_url', 'event', 'completed_at').merge(
+            'status' => passed == cells.size ? 'passed' : 'failed',
+            'passed_cells' => passed,
+            'total_cells' => cells.size
+          ).merge(combined_test_counts(cells))
+        end
+
+        def combined_test_counts(cells)
+          counts = cells.map { |cell| test_counts(cell) }
+          return {} if counts.any?(&:nil?)
+
+          counts.first.keys.to_h { |key| [key, counts.sum { |count| count.fetch(key) }] }
+        end
+
+        def test_counts(cell)
+          # Older reports don't distinguish skipped tests from passing tests.
+          # Avoid presenting an incomplete subtotal as the complete test count.
+          return unless cell['test_count'] && (cell['passed_count'] || cell['skipped_count'])
+
+          total = cell['test_count']
+          failed = cell['failed_count'] || 0
+          errored = cell['errored_count'] || 0
+          skipped = cell['skipped_count'] || total - cell['passed_count'] - failed - errored
+          passed = cell['passed_count'] || total - skipped - failed - errored
+          { 'test_count' => total, 'passed_count' => passed, 'skipped_count' => skipped,
+            'failed_count' => failed, 'errored_count' => errored }
         end
 
         def last_month_stats
@@ -114,20 +156,6 @@ module RSMP
 
         def version_last_month_stats(version)
           cells = recent_cells.select { |cell| version_cell?(version, cell) }
-          total = cells.size
-          passed = cells.count { |cell| cell['status'] == 'passed' }
-          { 'passed_runs' => passed, 'total_runs' => total, 'pass_percentage' => pass_percentage(passed, total) }
-        end
-
-        def core_last_month_stats(core)
-          cells = recent_cells.select { |cell| core_cell?(core, cell) }
-          total = cells.size
-          passed = cells.count { |cell| cell['status'] == 'passed' }
-          { 'passed_runs' => passed, 'total_runs' => total, 'pass_percentage' => pass_percentage(passed, total) }
-        end
-
-        def sxl_last_month_stats(sxl)
-          cells = recent_cells.select { |cell| sxl_cell?(sxl, cell) }
           total = cells.size
           passed = cells.count { |cell| cell['status'] == 'passed' }
           { 'passed_runs' => passed, 'total_runs' => total, 'pass_percentage' => pass_percentage(passed, total) }
@@ -151,76 +179,6 @@ module RSMP
 
         def sxl_cell?(sxl, cell)
           normalize_sxls(cell['sxls'])[sxl['name'].to_s] == sxl['version'].to_s
-        end
-
-        def merge_core_version(merged, version)
-          core = version['core'].to_s
-          return if core.empty?
-
-          merged[core] = merge_axis_version(merged[core], { 'core' => core }, version)
-        end
-
-        def merge_run_core_versions(merged, run)
-          Array(run['cells']).group_by { |cell| cell['core'].to_s }.each do |core, cells|
-            next if core.empty?
-
-            merged[core] = merge_axis_run(merged[core], { 'core' => core }, run, cells)
-          end
-        end
-
-        def merge_sxl_versions(merged, version)
-          normalize_sxls(version['sxls']).each do |name, value|
-            key = [name, value]
-            merged[key] = merge_axis_version(merged[key], { 'name' => name, 'version' => value }, version)
-          end
-        end
-
-        def merge_run_sxl_versions(merged, run)
-          sxl_cells(run).each do |key, cells|
-            name, version = key
-            merged[key] = merge_axis_run(merged[key], { 'name' => name, 'version' => version }, run, cells)
-          end
-        end
-
-        def sxl_cells(run)
-          Array(run['cells']).each_with_object({}) do |cell, grouped|
-            normalize_sxls(cell['sxls']).each do |name, version|
-              key = [name, version]
-              grouped[key] ||= []
-              grouped[key] << cell
-            end
-          end
-        end
-
-        def merge_axis_version(previous, fields, version)
-          latest = latest_record([previous&.fetch('latest_run', nil), version['latest_run']])
-          latest_pass = latest_record([previous&.fetch('latest_passing_run', nil), version['latest_passing_run']])
-          axis_version(fields, latest, latest_pass)
-        end
-
-        def merge_axis_run(previous, fields, run, cells)
-          cell_runs = cells.map { |cell| cell_run_summary(run, cell) }
-          latest = latest_cell_record(cell_runs)
-          latest_pass = latest_record([previous&.fetch('latest_passing_run', nil), *cell_runs.select do |cell_run|
-            cell_run['status'] == 'passed'
-          end])
-          latest = latest_record([previous&.fetch('latest_run', nil), latest])
-          axis_version(fields, latest, latest_pass)
-        end
-
-        def axis_version(fields, latest, latest_pass)
-          fields.merge(
-            'last_status' => latest&.fetch('status', nil),
-            'latest_run' => latest,
-            'latest_passing_run' => latest_pass
-          )
-        end
-
-        def cell_run_summary(run, cell)
-          run.slice('run_id', 'run_attempt', 'run_url', 'event', 'completed_at').merge(
-            cell.slice('completed_at', 'status', 'test_count', 'passed_count', 'skipped_count',
-                       'failed_count', 'errored_count').compact
-          )
         end
 
         def version_sort_key(version)
@@ -283,16 +241,6 @@ module RSMP
           records.compact.each_with_index.max_by do |record, index|
             [record['completed_at'] || '', record['run_attempt'].to_i, index]
           end&.first
-        end
-
-        def latest_cell_record(records)
-          records.compact.each_with_index.max_by do |record, index|
-            [record['completed_at'] || '', record['run_attempt'].to_i, failed_status?(record), index]
-          end&.first
-        end
-
-        def failed_status?(record)
-          record['status'] == 'passed' ? 0 : 1
         end
 
         def best_partial_run(runs)

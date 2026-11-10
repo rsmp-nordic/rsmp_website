@@ -22,13 +22,15 @@ Tests run on configured combinations of Core and SXL versions. The combinations 
 
 ## How statistics are calculated
 
-For each device, one test run checks one Core/SXL combination. A Core version's statistics count every collected run using that Core version, regardless of SXL version. An SXL version's statistics likewise count every run using that SXL version, regardless of Core version.
+For each device, a **run** is one GitHub workflow execution attempt, which may test several Core/SXL pairings. A Core row includes only pairings using that Core version; an SXL row includes only pairings using that SXL version. A run passes for that row only if **all its reported pairings involving the version pass**, even if other versions in the same workflow fail. Rerun attempts count separately.
 
-Statistics and checkmarks use only received test results. A run with no report is excluded from the counts and does not change the latest result for a version. Passing results therefore do not confirm that every planned pairing was tested.
+Statistics and checkmarks use only received test results. Missing reports are excluded, and a workflow with no reported pairing involving a version does not count as a run for that row. Passing results therefore do not confirm that every planned pairing was tested.
 
-The 30-day pass rate is **passing runs / total runs × 100%**. Each run has equal weight. For example, testing SXL 1.2.1 with Core 3.2.0 and Core 3.2.2 counts as two runs for SXL 1.2.1. If one passes and one fails, its pass rate is 50%. A single GitHub workflow can contain many such test runs.
+The **30 Days** percentage is **passing workflow runs / total workflow runs × 100%**. Each workflow attempt has equal weight, whether curated or full. For example, a workflow testing Core 3.2.2 with five SXL versions counts as one run for Core 3.2.2. If any of those five pairings fails, that run does not pass for the Core row.
 
-“Latest Run” shows how many of the tests that ran passed. Skipped tests are excluded from the total; tests that errored count as unsuccessful. Older results without enough count information show only the run outcome.
+**Latest Run** shows the latest workflow run involving the version: its date, the number of passing pairings, and the summed test results across those pairings. Skipped tests are excluded from the test total; tests that errored count as unsuccessful. If any report lacks enough count information, the outcome is shown without a test subtotal. Workflow runs are dated by the last reported pairing's completion time, including for the 30-day cutoff.
+
+**Latest Pass** shows the latest workflow run where all reported pairings involving the version passed, together with the pairing count. It can be older than 30 days. A curated run may qualify with fewer pairings than a full run.
 
 For each Core or SXL version, checkmarks consider every pairing involving that version with a received result in the last 30 days. Each pairing's latest result is determined by its own completion time:
 
@@ -40,7 +42,7 @@ The parenthesized checkmark provides a grace period to investigate and fix probl
 
 For example, if Core 3.2.2 passes with SXL 1.2.1 but fails with SXL 1.0.15, it receives **(√)** only if the 1.0.15 pairing also passed within the last 30 days. Otherwise its status is blank.
 
-Both checkmarks link to the most recent individual passing result; that run alone does not demonstrate success for all pairings. “Latest Run” and “Latest Pass” still show individual results across pairings, and percentages still count every run. Pairings with no results in the last 30 days no longer participate in the checkmark assessment. Untested combinations are not covered by either checkmark.
+Both checkmarks link to the most recent individual passing pair result; that run alone does not demonstrate success for all pairings. Unlike the workflow-based detail columns, checkmarks track each pairing across workflows. A passing curated “Latest Run” can therefore coexist with **(√)** if a pairing last tested in an earlier full run failed. Pairings with no results in the last 30 days no longer participate in the checkmark assessment. Untested combinations are not covered by either checkmark.
 
 {% assign compliance_targets = site.data.compliance.summary.targets | default: empty %}
 {% assign site_targets = compliance_targets | where: "kind", "site" %}
