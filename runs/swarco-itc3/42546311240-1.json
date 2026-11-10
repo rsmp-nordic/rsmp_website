@@ -1,0 +1,97 @@
+{
+  "target_id": "swarco-itc3",
+  "run_id": 42546311240,
+  "run_attempt": 1,
+  "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/42546311240",
+  "event": "schedule",
+  "completed_at": "2026-11-09T02:08:00Z",
+  "status": "failed",
+  "passed_cells": 2,
+  "total_cells": 4,
+  "cells": [
+    {
+      "core": "3.1.2",
+      "completed_at": "2026-11-09T02:03:00Z",
+      "status": "failed",
+      "test_count": 147,
+      "passed_count": 118,
+      "skipped_count": 28,
+      "failed_count": 1,
+      "errored_count": 0,
+      "log_artifact": "validator-swarco-itc3-core-3.1.2-run-42546311240-1340-1.log",
+      "report_artifact": "compliance-swarco-itc3-core-3.1.2-run-42546311240-1340-1.json",
+      "failures": [
+        {
+          "id": "test/site/core/disconnect_spec.rb:39",
+          "message": "describe Connection it is not closed if watchdogs are not received test/site/core/disconnect_spec.rb:32\n\t✗ Site disconnected unexpectedly: #<data RSMP::Result::Success value=:disconnected> test/site/core/disconnect_spec.rb:39",
+          "location": {
+            "path": "/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/core/disconnect_spec.rb",
+            "line": 39
+          },
+          "type": "Sus::Assertions::Assert"
+        }
+      ],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.1.4",
+      "completed_at": "2026-11-09T02:08:00Z",
+      "status": "passed",
+      "test_count": 144,
+      "passed_count": 119,
+      "skipped_count": 25,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-swarco-itc3-core-3.1.4-run-42546311240-1340-1.log",
+      "report_artifact": "compliance-swarco-itc3-core-3.1.4-run-42546311240-1340-1.json",
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.1.5",
+      "completed_at": "2026-11-09T01:50:01Z",
+      "status": "passed",
+      "test_count": 142,
+      "passed_count": 119,
+      "skipped_count": 23,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-swarco-itc3-core-3.1.5-run-42546311240-1340-1.log",
+      "report_artifact": "compliance-swarco-itc3-core-3.1.5-run-42546311240-1340-1.json",
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.2.0",
+      "completed_at": "2026-11-09T01:57:00Z",
+      "status": "failed",
+      "test_count": 133,
+      "passed_count": 118,
+      "skipped_count": 14,
+      "failed_count": 0,
+      "errored_count": 1,
+      "log_artifact": "validator-swarco-itc3-core-3.2.0-run-42546311240-1340-1.log",
+      "report_artifact": "compliance-swarco-itc3-core-3.2.0-run-42546311240-1340-1.json",
+      "failures": [
+        {
+          "id": "test/site/tlc/modes_spec.rb:262",
+          "message": "/actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.53.2/lib/rsmp/proxy/proxy.rb:184:in 'block in RSMP::Proxy#sxl_interface': RSMP::Schema::UnknownSchemaTypeError: SXL tlc is not accepted on this connection (RSMP::Validator::Helpers::Connection::UncaughtException)\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.53.2/lib/rsmp/proxy/proxy.rb:183:in 'Hash#fetch'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.53.2/lib/rsmp/proxy/proxy.rb:183:in 'RSMP::Proxy#sxl_interface'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.53.2/lib/rsmp/proxy/proxy.rb:189:in 'RSMP::Proxy#tlc'\n\tfrom test/site/tlc/modes_spec.rb:272:in 'block (4 levels) in <top (required)>'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/helpers/connection.rb:35:in 'block (2 levels) in RSMP::Validator::Helpers::Connection#with_site'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/helpers/connection.rb:55:in 'RSMP::Validator::Helpers::Connection#run_test'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/helpers/connection.rb:35:in 'block in RSMP::Validator::Helpers::Connection#with_site'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/tester.rb:21:in 'RSMP::Validator::Tester#connected'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/site_tester.rb:11:in 'RSMP::Validator::SiteTester.connected'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/helpers/connection.rb:34:in 'Kernel#public_send'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/helpers/connection.rb:34:in 'RSMP::Validator::Helpers::Connection#with_site'\n\tfrom test/site/tlc/modes_spec.rb:262:in 'block (3 levels) in <top (required)>'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:67:in 'block in Sus::It#handle_skip'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:66:in 'Kernel#catch'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:66:in 'Sus::It#handle_skip'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:56:in 'block (2 levels) in Sus::It#call'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/async_context.rb:8:in 'Kernel#catch'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/async_context.rb:8:in 'block in RSMP::Validator::AsyncContext#around'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.46.0/lib/async/task.rb:225:in 'block in Async::Task#run'\n\tfrom /actions-runner/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.46.0/lib/async/task.rb:528:in 'block in Async::Task#schedule'",
+          "location": {
+            "path": "/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/modes_spec.rb",
+            "line": 262
+          },
+          "type": "Sus::Assertions::Error"
+        }
+      ],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    }
+  ]
+}
