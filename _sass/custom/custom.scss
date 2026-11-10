@@ -120,8 +120,20 @@ tr.compliance-section-row td:first-child {
   }
 
   th {
-    font-size: 0.85rem;
+    font-weight: normal;
     padding: 0.6rem;
+  }
+
+  td {
+    padding: 0;
+
+    &:has(> .compliance-cell):hover,
+    &:has(> .compliance-cell:focus-visible),
+    &:has(> .compliance-cell.is-selected) {
+      background: $link-color;
+
+      > .compliance-cell { color: #fff; }
+    }
   }
 
   th:first-child {
@@ -131,7 +143,7 @@ tr.compliance-section-row td:first-child {
     z-index: 1;
     background: $body-background-color;
   }
-  .compliance-overall, tfoot th { background: $grey-lt-000; }
+  .compliance-overall, tfoot th { font-weight: bold; }
 }
 
 .compliance-device .compliance-cell {
@@ -139,23 +151,13 @@ tr.compliance-section-row td:first-child {
   align-items: center;
   justify-content: center;
   min-width: 2.75rem;
-  min-height: 2.75rem;
-  border: 1px solid transparent;
-  border-radius: 4px;
+  min-height: 3.35rem;
+  padding: 0.3rem;
   text-decoration: none;
-  font-size: 1.25rem;
+  font-size: inherit;
 
-  &:hover, &:focus-visible {
-    border-color: $link-color;
-    background: $grey-lt-100;
-  }
-
-  &:focus-visible { outline: 2px solid $link-color; }
-  &.is-selected {
-    background: $link-color;
-    color: #fff;
-    border-color: $link-color;
-  }
+  // Keyboard focus is indicated by the containing cell's background.
+  &:focus-visible { outline: none; }
 }
 
 .compliance-matrix-help, [data-compliance-prompt] {

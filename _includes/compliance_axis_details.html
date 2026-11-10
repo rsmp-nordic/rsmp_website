@@ -4,45 +4,13 @@
   {% assign partner = 'SXL' %}
   {% capture axis_key %}core-{{ axis.core }}{% endcapture %}
   {% capture axis_label %}Core {{ axis.core }}{% endcapture %}
-  {% capture axis_row_label %}core {{ axis.core }}{% endcapture %}
 {% else %}
   {% capture axis_key %}{{ axis.name }}-{{ axis.version }}{% endcapture %}
   {% capture axis_label %}{{ axis.name | upcase }} {{ axis.version }}{% endcapture %}
-  {% capture axis_row_label %}{{ axis.name }} {{ axis.version }}{% endcapture %}
 {% endif %}
 {% assign axis_key = axis_key | slugify %}
 {% assign axis_id = include.anchor | append: '-overall-' | append: axis_key %}
-{% capture axis_symbol %}{% include compliance_overview_cell.html version=axis target=include.target plain=true %}{% endcapture %}
 <section id="{{ axis_id }}" class="compliance-detail compliance-axis-details" tabindex="-1" aria-labelledby="{{ axis_id }}-title">
   <h5 id="{{ axis_id }}-title">Overall {{ axis_label | escape }}</h5>
-  <ul class="compliance-contributing-pairs">
-    {% for contributing_pair in include.target.versions %}
-      {% assign matches_axis = false %}
-      {% if axis.core and contributing_pair.core == axis.core %}{% assign matches_axis = true %}{% endif %}
-      {% unless axis.core %}{% if contributing_pair.sxls[axis.name] == axis.version %}{% assign matches_axis = true %}{% endif %}{% endunless %}
-      {% if matches_axis %}
-        {% for pair_sxl in contributing_pair.sxls %}
-          {% if axis.core or pair_sxl[0] == axis.name %}
-            {% capture pair_key %}core-{{ contributing_pair.core }}-{{ pair_sxl[0] }}-{{ pair_sxl[1] }}{% endcapture %}
-            {% assign pair_key = pair_key | slugify %}
-            {% assign pair_id = include.anchor | append: '-' | append: pair_key %}
-            {% include compliance_pair_status.html pair=contributing_pair %}
-            <li><a href="#{{ pair_id }}" data-compliance-select="{{ pair_id }}" aria-controls="{{ pair_id }}">Core {{ contributing_pair.core }} + {{ pair_sxl[0] | upcase }} {{ pair_sxl[1] }}</a> {{ pair_symbol }} — {{ pair_explanation }}</li>
-          {% endif %}
-        {% endfor %}
-      {% endif %}
-    {% endfor %}
-  </ul>
-  <div class="compliance-scroll">
-    <table>
-      <thead><tr><th scope="col">Version</th><th scope="col">30 Days</th><th scope="col">Latest Pass</th><th scope="col">Latest Run</th><th scope="col">Status</th></tr></thead>
-      <tbody><tr data-version="{{ axis_row_label }}">
-        <td>{{ axis_row_label }}</td>
-        <td>{% include compliance_last_30_days.html stats=axis.last_30_days %}</td>
-        <td>{% include compliance_latest_pass.html run=axis.latest_passing_run partner=partner %}</td>
-        <td>{% include compliance_run_result.html run=axis.latest_run partner=partner %}</td>
-        <td>{{ axis_symbol | strip }}</td>
-      </tr></tbody>
-    </table>
-  </div>
+  {% include compliance_detail_stats.html record=axis partner=partner %}
 </section>
