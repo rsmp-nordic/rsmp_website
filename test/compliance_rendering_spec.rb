@@ -44,7 +44,10 @@ module ComplianceRenderingSpec
   end
 
   def detail_cell(document, version)
-    document.css('.compliance-axis-cell').find { |node| node['data-version'] == version }
+    document.css('.compliance-axis-cell').find { |node| node['data-version'] == version } ||
+      document.css('.compliance-cell:not(.compliance-axis-cell)').find do |node|
+        node['aria-label'].split('. ').first.upcase.split(' + ').include?(version.upcase)
+      end
   end
 
   def axis_panel(document, version)
@@ -54,6 +57,33 @@ module ComplianceRenderingSpec
 end
 
 describe 'Compliance table rendering' do
+  it 'only shows All controls and panels when they combine multiple historically tested versions' do
+    [1, 2].product([1, 2]).each do |core_count, sxl_count|
+      reports = [ComplianceRenderingSpec.report]
+      reports << ComplianceRenderingSpec.report(core: '3.3.0') if core_count == 2
+      # Even a version whose results have aged out still counts as tested history.
+      reports << ComplianceRenderingSpec.report(sxl: '1.0.15', at: '2026-05-01T00:00:00Z') if sxl_count == 2
+      document = ComplianceRenderingSpec.render(ComplianceRenderingSpec.target(reports))
+      device = document.at_css('[data-compliance-device]')
+      matrix = device.at_css('.compliance-device-matrix')
+      columns = 1 + core_count + (core_count > 1 ? 1 : 0)
+      expect(matrix.css('thead th').size).to be == columns
+      expect(matrix.css('thead th.compliance-overall').size).to be == (core_count > 1 ? 1 : 0)
+      expect(matrix.css('tfoot').size).to be == (sxl_count > 1 ? 1 : 0)
+      expect(matrix.css('tbody tr').size).to be == sxl_count
+      matrix.css('tr').each do |row|
+        expect(row.element_children.size).to be == columns
+      end
+      totals = (core_count > 1 ? sxl_count : 0) + (sxl_count > 1 ? core_count : 0)
+      expect(device.css('.compliance-axis-cell').size).to be == totals
+      expect(device.css('.compliance-axis-details').size).to be == totals
+      device.css('[data-compliance-select]').each do |link|
+        expect(device.css("section[id='#{link['aria-controls']}']").size).to be == 1
+      end
+      expect(device.at_css('.compliance-matrix-help').text.include?('All')).to be == (totals > 0)
+    end
+  end
+
   it 'shows Latest Pass counts without skips and omits percentages and panel explanations' do
     [
       [{ 'test_count' => 50, 'passed_count' => 45, 'skipped_count' => 5 }, '45 tests passed'],
@@ -135,7 +165,7 @@ describe 'Compliance table rendering' do
     devices = document.css('[data-compliance-device]')
     expect(devices.size).to be == 2
     expect(devices.first.at_css('.compliance-axis-cell[data-version="core 3.2.2"]').text.strip).to be == '(√)'
-    expect(devices.last.at_css('.compliance-axis-cell[data-version="core 3.2.2"]').text.strip).to be == '√'
+    expect(ComplianceRenderingSpec.detail_cell(devices.last, 'core 3.2.2').text.strip).to be == '√'
     detail = document.at_css('#compliance-demo-overall-core-3-2-2')
     expect(detail.at_css('h5').text).to be == 'Overall Core 3.2.2'
     document.css('.compliance-detail').each do |panel|
@@ -224,8 +254,8 @@ describe 'Compliance table rendering' do
       document = ComplianceRenderingSpec.render(ComplianceRenderingSpec.target([report]))
       pair_result = document.at_css('.compliance-pair-detail .compliance-detail-stats > div:nth-child(2) dd')
       expect(pair_result.text.gsub(/\s+/, ' ').strip.end_with?(expected)).to be == true
-      rows = document.css('.compliance-axis-details')
-      expect(rows.size).to be == 2
+      rows = document.css('.compliance-pair-detail')
+      expect(rows.size).to be == 1
       rows.each do |row|
         latest_run = row.css('dd')[1].children.reverse.take_while { |node| node.name != 'br' }.reverse.map(&:text).join.strip.gsub(/\s+/, ' ')
         expect(latest_run).to be == expected
