@@ -19,7 +19,7 @@ describe RSMP::Website::Compliance::Summary do
       ).to_h
       core = previous['targets'].first['core_versions'].first
       expect(core['latest_passing_run']).to be == nil
-      expect(core['last_30_days']).to be == { 'passed_runs' => 0, 'total_runs' => 1, 'pass_percentage' => 0.0 }
+      expect(core['last_30_days'].except('passed_pairs', 'total_pairs')).to be == { 'passed_runs' => 0, 'total_runs' => 1, 'pass_percentage' => 0.0 }
       expect(core['latest_run'].slice('passed_cells', 'total_cells')).to be == { 'passed_cells' => 1, 'total_cells' => 2 }
     end
   end
@@ -40,14 +40,20 @@ describe RSMP::Website::Compliance::Summary do
     [Time.utc(2026, 6, 18), Time.utc(2026, 6, 18, 0, 0, 1)].each_with_index do |now, index|
       summary = subject.new(targets: [target], runs_by_target: { 'demo' => runs }, now: now).to_h
       core = summary['targets'].first['core_versions'].first
-      expect(core['last_30_days']).to be == {
+      expect(core['last_30_days'].except('passed_pairs', 'total_pairs')).to be == {
         'passed_runs' => 1 - index, 'total_runs' => 2 - index, 'pass_percentage' => index.zero? ? 50.0 : 0.0
       }
       expect(core.dig('latest_run', 'run_id')).to be == 42
       expect(core.dig('latest_run', 'run_attempt')).to be == 2
       expect(core.dig('latest_run', 'total_cells')).to be == 1
+      expect(core.dig('latest_run', 'untested_pairs').map { |pair| pair.dig('sxls', 'tlc') })
+        .to be == (index.zero? ? ['1.0.15'] : [])
+      expect(core['last_30_days'].slice('passed_pairs', 'total_pairs')).to be == {
+        'passed_pairs' => index.zero? ? 2 : 0, 'total_pairs' => index.zero? ? 3 : 1
+      }
       expect(core.dig('latest_passing_run', 'run_attempt')).to be == 1
       expect(core.dig('latest_passing_run', 'total_cells')).to be == 2
+      expect(core.dig('latest_passing_run', 'untested_pairs')).to be == []
     end
   end
 

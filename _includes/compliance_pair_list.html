@@ -1,0 +1,13 @@
+{{- include.partner -}}:
+{%- for pair in include.pairs %}
+  {{- ' ' -}}
+  {%- if include.partner == 'Core' -%}
+    {{- pair.core -}}
+  {%- else -%}
+    {%- for sxl in pair.sxls -%}
+      {{- sxl[0] }} {{ sxl[1] -}}{%- unless forloop.last %}, {% endunless -%}
+    {%- endfor -%}
+  {%- endif -%}
+  {%- if include.results %} — {{ pair.status }}{% endif -%}
+  {%- unless forloop.last %};{% endunless -%}
+{%- endfor -%}

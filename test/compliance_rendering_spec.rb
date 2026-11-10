@@ -80,6 +80,33 @@ describe 'Compliance table rendering' do
     ['Core', '3.2.2', 'core 3.2.2', { sxl: '1.0.15' }],
     ['Traffic Light Controller SXL', '1.2.1', 'tlc 1.2.1', { core: '3.3.0' }]
   ].each do |heading, version, detail_label, other_pair|
+    it "lists #{heading} pairs tested and not tested in Latest Run and Latest Pass" do
+      old_pair = heading == 'Core' ? { sxl: '1.0.7' } : { core: '3.1.2' }
+      target = ComplianceRenderingSpec.target([
+        ComplianceRenderingSpec.report(id: 39, **old_pair, at: '2026-05-01T00:00:00Z'),
+        ComplianceRenderingSpec.report(id: 40, at: '2026-06-16T00:00:00Z'),
+        ComplianceRenderingSpec.report(id: 40, **other_pair, status: 'failed', at: '2026-06-16T01:00:00Z'),
+        ComplianceRenderingSpec.report(id: 41, **other_pair, status: 'failed', at: '2026-06-16T02:00:00Z'),
+        ComplianceRenderingSpec.report(id: 42, at: '2026-06-17T00:00:00Z'),
+        ComplianceRenderingSpec.report(id: 43, status: 'failed', at: '2026-06-17T01:00:00Z')
+      ])
+      document = ComplianceRenderingSpec.render(target)
+      row = ComplianceRenderingSpec.detail_cell(document, detail_label).parent
+      expect(row.css('td')[1].text.strip.gsub(/\s+/, ' ')).to be == '25.0% 1/4 runs passed 2/5 pairs passed'
+      tested = heading == 'Core' ? 'SXL: tlc 1.2.1' : 'Core: 3.2.2'
+      untested = heading == 'Core' ? 'SXL: tlc 1.0.15' : 'Core: 3.3.0'
+      latest_pass, latest_run = row.css('td')[2..3]
+      expect(latest_pass.at_css('.compliance-pair-count').text.strip).to be == '1 pair passed'
+      expect(latest_pass.at_css('.compliance-pair-count')['title']).to be == "#{tested} — passed"
+      expect(latest_run.at_css('.compliance-pair-count').text.strip).to be == '0/1 pair passed'
+      expect(latest_run.at_css('.compliance-pair-count')['title']).to be == "#{tested} — failed"
+      [latest_pass, latest_run].each do |cell|
+        expect(cell.at_css('.compliance-untested-pairs').text.strip).to be == '1 pair not tested'
+        expect(cell.at_css('.compliance-untested-pairs')['title'])
+          .to be == "#{untested}. Tested within 30 days, but not in this run."
+      end
+    end
+
     it "retains the #{heading} grace mark even when no whole workflow passed" do
       target = ComplianceRenderingSpec.target([
         ComplianceRenderingSpec.report(id: 40, at: '2026-06-16T00:00:00Z'),
@@ -91,7 +118,7 @@ describe 'Compliance table rendering' do
       detail = ComplianceRenderingSpec.detail_cell(document, detail_label)
       overview = ComplianceRenderingSpec.overview_cell(document, heading, version)
       expect(detail.parent.css('td')[2].text.strip).to be == ''
-      expect(detail.parent.css('td')[1].text.strip.gsub(/\s+/, ' ')).to be == '0.0% 0/2 runs passed'
+      expect(detail.parent.css('td')[1].text.strip.gsub(/\s+/, ' ')).to be == '0.0% 0/2 runs passed 2/4 pairs passed'
       expect(detail.text.strip).to be == '(√)'
       expect(overview.text.strip).to be == '(√)'
       expect(overview.at_css('a')['href']).to be == 'https://github.com/example/devices/actions/runs/41'
@@ -122,15 +149,19 @@ describe 'Compliance table rendering' do
                       'passed_count' => 190, 'test_count' => 220, 'skipped_count' => 20, 'failed_count' => 9, 'errored_count' => 1 }
         expect(axis.dig('latest_passing_run', 'run_id')).to be == 40
         expect(axis.dig('latest_passing_run', 'total_cells')).to be == 2
-        expect(axis['last_30_days']).to be == { 'passed_runs' => 1, 'total_runs' => 2, 'pass_percentage' => 50.0 }
+        expect(axis['last_30_days'].except('passed_pairs', 'total_pairs')).to be == { 'passed_runs' => 1, 'total_runs' => 2, 'pass_percentage' => 50.0 }
+        expect(axis['last_30_days'].slice('passed_pairs', 'total_pairs')).to be == { 'passed_pairs' => 3, 'total_pairs' => 4 }
 
         document = ComplianceRenderingSpec.render(target)
         row = ComplianceRenderingSpec.detail_cell(document, detail_label).parent
         expect(row.css('td')[3].text.strip.gsub(/\s+/, ' '))
-          .to be == "2026-06-17 02:00 UTC 1/2 #{partner} pairings passed 190/200 tests passed"
+          .to be == "2026-06-17 02:00 UTC 1/2 pairs passed 190/200 tests passed"
         expect(row.css('td')[3].at_css('a')['href']).to be == 'https://github.com/example/devices/actions/runs/41'
+        expected_results = heading == 'Core' ? 'SXL: tlc 1.0.15 — failed; tlc 1.2.1 — passed' : 'Core: 3.2.2 — passed; 3.3.0 — failed'
+        expect(row.css('td')[3].at_css('.compliance-pair-count')['title']).to be == expected_results
+        expect(row.css('td')[3].at_css('.compliance-untested-pairs')).to be == nil
         expect(row.css('td')[2].text.strip.gsub(/\s+/, ' '))
-          .to be == "2026-06-16 02:00 UTC All 2 #{partner} pairings passed"
+          .to be == "2026-06-16 02:00 UTC All 2 pairs passed"
         expect(row.css('td')[2].at_css('a')['href']).to be == 'https://github.com/example/devices/actions/runs/40'
         expect(row.css('td').last.text.strip).to be == '(√)'
         expect(ComplianceRenderingSpec.overview_cell(document, heading, version).at_css('a')['title'])
@@ -144,7 +175,8 @@ describe 'Compliance table rendering' do
       axis = heading == 'Core' ? target['core_versions'].find { |v| v['core'] == version } : target['sxl_versions'].find { |v| v['version'] == version }
       expect(axis.dig('latest_passing_run', 'run_id')).to be == 42
       expect(axis.dig('latest_passing_run', 'total_cells')).to be == 1
-      expect(axis['last_30_days']).to be == { 'passed_runs' => 2, 'total_runs' => 3, 'pass_percentage' => 66.7 }
+      expect(axis['last_30_days'].except('passed_pairs', 'total_pairs')).to be == { 'passed_runs' => 2, 'total_runs' => 3, 'pass_percentage' => 66.7 }
+      expect(axis['last_30_days'].slice('passed_pairs', 'total_pairs')).to be == { 'passed_pairs' => 4, 'total_pairs' => 5 }
       document = ComplianceRenderingSpec.render(target)
       expect(ComplianceRenderingSpec.overview_cell(document, heading, version).text.strip).to be == '(√)'
       expect(ComplianceRenderingSpec.detail_cell(document, detail_label).text.strip).to be == '(√)'
@@ -180,7 +212,7 @@ describe 'Compliance table rendering' do
         expect(overview.at_css('a')['href']).to be == 'https://github.com/example/devices/actions/runs/42'
         axis = heading == 'Core' ? target['core_versions'].first : target['sxl_versions'].first
         expect(axis['last_status']).to be == 'passed'
-        expect(axis['last_30_days']).to be == {
+        expect(axis['last_30_days'].except('passed_pairs', 'total_pairs')).to be == {
           'passed_runs' => 2, 'total_runs' => 3, 'pass_percentage' => 66.7
         }
       end
@@ -204,7 +236,7 @@ describe 'Compliance table rendering' do
         expect(ComplianceRenderingSpec.overview_cell(document, heading, version).text.strip).to be == expected
         expect(ComplianceRenderingSpec.detail_cell(document, detail_label).text.strip).to be == expected
         axis = heading == 'Core' ? target['core_versions'].first : target['sxl_versions'].first
-        expect(axis['last_30_days']).to be == {
+        expect(axis['last_30_days'].except('passed_pairs', 'total_pairs')).to be == {
           'passed_runs' => 1, 'total_runs' => 2, 'pass_percentage' => 50.0
         }
       end
