@@ -107,13 +107,17 @@ module RSMP
           latest = latest_record(runs)
           recent = runs.select { |run| within_last_month?(run['completed_at']) }
           passed = recent.count { |run| run['status'] == 'passed' }
+          recent_pairs = recent_cells.reject { |cell| cell['status'] == 'missing' }.select(&matches)
+                                     .map { |cell| pair_fields(cell) }.uniq
           fields.merge(
             'last_status' => latest&.fetch('status', nil),
-            'latest_run' => latest,
-            'latest_passing_run' => latest_record(runs.select { |run| run['status'] == 'passed' }),
+            'latest_run' => with_pair_coverage(latest, recent_pairs),
+            'latest_passing_run' => with_pair_coverage(latest_record(runs.select { |run| run['status'] == 'passed' }), recent_pairs),
             'last_30_days' => {
               'passed_runs' => passed, 'total_runs' => recent.size,
-              'pass_percentage' => pass_percentage(passed, recent.size)
+              'pass_percentage' => pass_percentage(passed, recent.size),
+              'passed_pairs' => recent.sum { |run| run['passed_cells'] },
+              'total_pairs' => recent.sum { |run| run['total_cells'] }
             }
           )
         end
@@ -123,8 +127,20 @@ module RSMP
           run.slice('run_id', 'run_attempt', 'run_url', 'event', 'completed_at').merge(
             'status' => passed == cells.size ? 'passed' : 'failed',
             'passed_cells' => passed,
-            'total_cells' => cells.size
+            'total_cells' => cells.size,
+            'pairs' => cells.map { |cell| pair_fields(cell).merge('status' => cell['status']) }
           ).merge(combined_test_counts(cells))
+        end
+
+        def pair_fields(cell)
+          { 'core' => cell['core'], 'sxls' => normalize_sxls(cell['sxls']) }
+        end
+
+        def with_pair_coverage(run, recent_pairs)
+          return nil unless run
+
+          tested = run.fetch('pairs').map { |pair| pair_fields(pair) }
+          run.merge('untested_pairs' => recent_pairs - tested)
         end
 
         def combined_test_counts(cells)

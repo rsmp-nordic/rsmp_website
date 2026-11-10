@@ -9,6 +9,16 @@
   {% else %}
     {{ stats.passed_runs }}/{{ total_runs }} runs passed
   {% endif %}
+  {% if stats.total_pairs != nil %}
+    <br>
+    <span title="Passing pair tests across all runs in the last 30 days; repeated pairs count separately. The percentage above is based on workflow runs.">
+      {% if stats.passed_pairs == stats.total_pairs %}
+        {% unless stats.total_pairs == 1 %}All {% endunless %}{{ stats.total_pairs }} pair{% unless stats.total_pairs == 1 %}s{% endunless %} passed
+      {% else %}
+        {{ stats.passed_pairs }}/{{ stats.total_pairs }} pair{% unless stats.total_pairs == 1 %}s{% endunless %} passed
+      {% endif %}
+    </span>
+  {% endif %}
 {% else %}
   No recent runs
 {% endif %}

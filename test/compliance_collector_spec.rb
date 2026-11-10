@@ -166,21 +166,21 @@ describe RSMP::Website::Compliance::Summary do
     expect(summary['core_versions'].map { |version| version['core'] }).to be == ['3.3.0', '3.2.2']
     summary['core_versions'].each do |version|
       expect(version['last_status']).to be == 'passed'
-      expect(version['latest_run']).to be == summary['latest_run'].slice(
+      expect(version['latest_run'].except('pairs', 'untested_pairs')).to be == summary['latest_run'].slice(
         'run_id', 'run_attempt', 'run_url', 'event', 'completed_at', 'status'
       ).merge('passed_cells' => 1, 'total_cells' => 1)
       expect(version['latest_passing_run']).to be == version['latest_run']
-      expect(version['last_30_days']).to be == {
+      expect(version['last_30_days'].except('passed_pairs', 'total_pairs')).to be == {
         'passed_runs' => 1, 'total_runs' => 1, 'pass_percentage' => 100.0
       }
     end
     sxl = summary['sxl_versions'].first
     expect(sxl.slice('name', 'version')).to be == { 'name' => 'tlc', 'version' => '1.2.1' }
-    expect(sxl['latest_run']).to be == summary['latest_run'].slice(
+    expect(sxl['latest_run'].except('pairs', 'untested_pairs')).to be == summary['latest_run'].slice(
       'run_id', 'run_attempt', 'run_url', 'event', 'completed_at', 'status', 'passed_cells', 'total_cells'
     )
     expect(sxl['latest_passing_run']).to be == sxl['latest_run']
-    expect(sxl['last_30_days']).to be == {
+    expect(sxl['last_30_days'].except('passed_pairs', 'total_pairs')).to be == {
       'passed_runs' => 1, 'total_runs' => 1, 'pass_percentage' => 100.0
     }
     expect((summary['last_30_days']['pass_percentage'] - 75.0).abs < 0.01).to be == true
@@ -231,13 +231,13 @@ describe RSMP::Website::Compliance::Summary do
     expect(summary['versions'].count { |version| version['core'] == '3.3.0' }).to be == 2
     core = summary['core_versions'].first
     expect(core['last_status']).to be == 'failed'
-    expect(core['latest_run']).to be == {
+    expect(core['latest_run'].except('pairs', 'untested_pairs')).to be == {
       'run_id' => 2, 'run_attempt' => 1, 'run_url' => 'https://example.test/2', 'event' => 'schedule',
       'completed_at' => '2026-06-17T00:00:01Z', 'status' => 'failed',
       'passed_cells' => 1, 'total_cells' => 2
     }
     expect(core['latest_passing_run']).to be == nil
-    expect(core['last_30_days']).to be == {
+    expect(core['last_30_days'].except('passed_pairs', 'total_pairs')).to be == {
       'passed_runs' => 0, 'total_runs' => 1, 'pass_percentage' => 0.0
     }
 
@@ -360,12 +360,12 @@ describe RSMP::Website::Compliance::Collector do
         ).collect
 
         version = data['targets'].first['versions'].find { |item| item['core'] == '3.2.2' }
-        expect(version['last_30_days']).to be == {
+        expect(version['last_30_days'].except('passed_pairs', 'total_pairs')).to be == {
           'passed_runs' => 1,
           'total_runs' => 2,
           'pass_percentage' => 50.0
         }
-        expect(data['targets'].first['sxl_versions'].first['last_30_days']).to be == {
+        expect(data['targets'].first['sxl_versions'].first['last_30_days'].except('passed_pairs', 'total_pairs')).to be == {
           'passed_runs' => 1,
           'total_runs' => 2,
           'pass_percentage' => 50.0

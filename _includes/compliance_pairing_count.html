@@ -1,8 +1,16 @@
 {% assign pairing_run = include.run %}
 {% if pairing_run.total_cells != nil %}
-  {% if pairing_run.passed_cells == pairing_run.total_cells %}
-    All {{ pairing_run.total_cells }} {{ include.partner }} pairing{% unless pairing_run.total_cells == 1 %}s{% endunless %} passed
-  {% else %}
-    {{ pairing_run.passed_cells }}/{{ pairing_run.total_cells }} {{ include.partner }} pairings passed
+  {% capture tested_pairs_title %}{% include compliance_pair_list.html pairs=pairing_run.pairs partner=include.partner results=true %}{% endcapture %}
+  <span class="compliance-pair-count" title="{{ tested_pairs_title | strip | escape }}">
+    {% if pairing_run.passed_cells == pairing_run.total_cells %}
+      {% unless pairing_run.total_cells == 1 %}All {% endunless %}{{ pairing_run.total_cells }} pair{% unless pairing_run.total_cells == 1 %}s{% endunless %} passed
+    {% else %}
+      {{ pairing_run.passed_cells }}/{{ pairing_run.total_cells }} pair{% unless pairing_run.total_cells == 1 %}s{% endunless %} passed
+    {% endif %}
+  </span>
+  {% if pairing_run.untested_pairs.size > 0 %}
+    {% capture untested_pairs_title %}{% include compliance_pair_list.html pairs=pairing_run.untested_pairs partner=include.partner %}{% endcapture %}
+    <br>
+    <span class="compliance-untested-pairs" title="{{ untested_pairs_title | strip | escape }}. Tested within 30 days, but not in this run.">{{ pairing_run.untested_pairs.size }} pair{% unless pairing_run.untested_pairs.size == 1 %}s{% endunless %} not tested</span>
   {% endif %}
 {% endif %}
