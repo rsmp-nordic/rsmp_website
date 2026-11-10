@@ -1,0 +1,16 @@
+{% assign passing_run = include.run %}
+{% if passing_run %}
+  {% include compliance_run_date.html time=passing_run.completed_at url=passing_run.run_url %}
+  {% if passing_run.total_cells != nil %}
+    <br>{% include compliance_pairing_count.html run=passing_run partner=include.partner %}
+  {% endif %}
+  {% assign passing_tests = passing_run.passed_count %}
+  {% if passing_tests == nil and passing_run.test_count != nil and passing_run.skipped_count != nil %}
+    {% assign passing_failures = passing_run.failed_count | default: 0 %}
+    {% assign passing_errors = passing_run.errored_count | default: 0 %}
+    {% assign passing_tests = passing_run.test_count | minus: passing_run.skipped_count | minus: passing_failures | minus: passing_errors %}
+  {% endif %}
+  {% if passing_tests != nil %}
+    <br><span class="compliance-passed-tests">{{ passing_tests }} test{% unless passing_tests == 1 %}s{% endunless %} passed</span>
+  {% endif %}
+{% endif %}

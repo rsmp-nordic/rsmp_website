@@ -1,0 +1,16 @@
+{%- assign pair_symbol = '' -%}
+{%- assign pair_explanation = 'This combination has not been tested in the collected results.' -%}
+{%- if include.pair.latest_run -%}
+  {%- assign pair_explanation = 'No results within the last 30 days.' -%}
+  {%- if include.pair.last_30_days.total_runs > 0 -%}
+    {%- assign pair_explanation = 'No passing result within the last 30 days.' -%}
+    {%- if include.pair.last_30_days.passed_runs > 0 -%}
+      {%- assign pair_symbol = '(√)' -%}
+      {%- assign pair_explanation = 'Latest run failed; an earlier pass is still within 30 days.' -%}
+      {%- if include.pair.last_status == 'passed' -%}
+        {%- assign pair_symbol = '√' -%}
+        {%- assign pair_explanation = 'Latest run passed within the last 30 days.' -%}
+      {%- endif -%}
+    {%- endif -%}
+  {%- endif -%}
+{%- endif -%}

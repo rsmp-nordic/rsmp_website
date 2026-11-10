@@ -1,0 +1,43 @@
+{% assign device_cores = include.target.core_versions | reverse %}
+{% assign device_sxls = include.target.sxl_versions | reverse %}
+{% if device_cores.size > 0 and device_sxls.size > 0 %}
+<div class="compliance-device" data-compliance-device>
+  <p class="compliance-matrix-help">Select a cell, including a blank one, to see its results below. Overall marks combine the recently tested pairs.</p>
+  <div class="compliance-scroll" role="region" aria-label="Core and SXL combinations for {{ include.target.name | escape }}" tabindex="0">
+    <table class="compliance-device-matrix">
+      <caption class="compliance-visually-hidden">Core and SXL results for {{ include.target.name | escape }}</caption>
+      <thead><tr><th scope="col">Core /<br>SXL</th>
+        {% for device_sxl in device_sxls %}<th scope="col">{{ device_sxl.name | upcase }}<br>{{ device_sxl.version }}</th>{% endfor %}
+        <th scope="col" class="compliance-overall">Overall<br>Core</th>
+      </tr></thead>
+      <tbody>
+        {% for device_core in device_cores %}
+          <tr><th scope="row">{{ device_core.core }}</th>
+            {% for device_sxl in device_sxls %}
+              <td>{% include compliance_pair_cell.html target=include.target anchor=include.anchor core=device_core.core sxl=device_sxl %}</td>
+            {% endfor %}
+            <td class="compliance-overall">{% include compliance_axis_cell.html target=include.target anchor=include.anchor version=device_core %}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+      <tfoot><tr><th scope="row">Overall<br>SXL</th>
+        {% for device_sxl in device_sxls %}<td class="compliance-overall">{% include compliance_axis_cell.html target=include.target anchor=include.anchor version=device_sxl %}</td>{% endfor %}
+        <td></td>
+      </tr></tfoot>
+    </table>
+  </div>
+  <div class="compliance-details" data-compliance-panel>
+    <p data-compliance-prompt>Select a cell above to view results.</p>
+    <button type="button" class="compliance-close" data-compliance-close aria-label="Close details" title="Close details" hidden><span aria-hidden="true">×</span></button>
+    {% for device_core in device_cores %}
+      {% for device_sxl in device_sxls %}
+        {% include compliance_pair_cell.html target=include.target anchor=include.anchor core=device_core.core sxl=device_sxl details=true %}
+      {% endfor %}
+      {% include compliance_axis_details.html target=include.target anchor=include.anchor version=device_core %}
+    {% endfor %}
+    {% for device_sxl in device_sxls %}{% include compliance_axis_details.html target=include.target anchor=include.anchor version=device_sxl %}{% endfor %}
+  </div>
+</div>
+{% else %}
+<p>No Core/SXL pairs have been collected yet.</p>
+{% endif %}

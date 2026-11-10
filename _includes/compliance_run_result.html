@@ -25,10 +25,6 @@
     {% endif %}
   {% elsif run.status == 'passed' %}
     Passed
-  {% elsif run.status == 'failed' %}
-    Not all tests passed
-  {% else %}
-    Test counts unavailable
   {% endif %}
 {% else %}
   {{ missing_text }}

@@ -1,0 +1,28 @@
+{% assign cell_pair = nil %}
+{% for candidate in include.target.versions %}
+  {% if candidate.core == include.core and candidate.sxls[include.sxl.name] == include.sxl.version %}
+    {% assign cell_pair = candidate %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+{% capture cell_key %}core-{{ include.core }}-{{ include.sxl.name }}-{{ include.sxl.version }}{% endcapture %}
+{% assign cell_key = cell_key | slugify %}
+{% assign cell_id = include.anchor | append: '-' | append: cell_key %}
+{% capture cell_label %}Core {{ include.core }} + {{ include.sxl.name | upcase }} {{ include.sxl.version }}{% endcapture %}
+{% include compliance_pair_status.html pair=cell_pair %}
+{% if include.details %}
+  <section id="{{ cell_id }}" class="compliance-detail compliance-pair-detail" tabindex="-1" aria-labelledby="{{ cell_id }}-title">
+    <h5 id="{{ cell_id }}-title">{{ cell_label | escape }}</h5>
+    {% if cell_pair %}
+      <dl class="compliance-detail-stats">
+        <div><dt>30 Days</dt><dd>{% include compliance_last_30_days.html stats=cell_pair.last_30_days %}</dd></div>
+        <div><dt>Latest Run</dt><dd>{% include compliance_run_result.html run=cell_pair.latest_run %}</dd></div>
+        <div><dt>Latest Pass</dt><dd>{% include compliance_latest_pass.html run=cell_pair.latest_passing_run %}</dd></div>
+      </dl>
+    {% else %}
+      <p>No collected results.</p>
+    {% endif %}
+  </section>
+{% else %}
+  <a class="compliance-cell" href="#{{ cell_id }}" data-compliance-select="{{ cell_id }}" aria-controls="{{ cell_id }}" aria-label="{{ cell_label | escape }}. {{ pair_explanation | escape }} Show details." title="{{ cell_label | escape }}. {{ pair_explanation | escape }}">{{ pair_symbol }}</a>
+{% endif %}

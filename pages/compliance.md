@@ -20,29 +20,31 @@ We expect to expand the test suite over time to cover more behavioural aspects.
 
 Tests run on configured combinations of Core and SXL versions. The combinations tested can differ between devices and runs.
 
-## How statistics are calculated
+## Reading the results
 
-For each device, a **run** is one GitHub workflow execution attempt, which may test several Core/SXL pairs. A Core row includes only pairs using that Core version; an SXL row includes only pairs using that SXL version. A run passes for that row only if **all its reported pairs involving the version pass**, even if other versions in the same workflow fail. Rerun attempts count separately.
+The overview tables combine recent results for each Core or SXL version. Each device also has a **Core × SXL matrix** showing the individual combinations.
 
-Statistics and checkmarks use only received test results. Missing reports are excluded, and a workflow with no reported pair involving a version does not count as a run for that row. Passing results therefore do not confirm that every planned pair was tested.
+Select any matrix cell, including a blank one, to open its details below the matrix. Select an **Overall Core** or **Overall SXL** cell to see which pairs contribute to that combined status. The selected cell is highlighted. Close the panel or press Escape to return to the matrix.
 
-The **30 Days** percentage is **passing workflow runs / total workflow runs × 100%**. Each workflow attempt has equal weight, whether curated or full. For example, a workflow testing Core 3.2.2 with five SXL versions counts as one run for Core 3.2.2. If any of those five pairs fails, that run does not pass for the Core row. The additional **pairs passed** count totals individual pair tests across these workflow runs; repeated tests of the same Core/SXL pair count separately. The percentage remains based on workflow runs, not pair tests.
+For an individual pair:
 
-**Latest Run** shows the latest workflow run involving the version: its date, the number of passing pairs, and the summed test results across those pairs. Skipped tests are excluded from the test total; tests that errored count as unsuccessful. If any report lacks enough count information, the outcome is shown without a test subtotal. Workflow runs are dated by the last reported pair's completion time, including for the 30-day cutoff.
+- **√** means its latest result passed within the last 30 days.
+- **(√)** means its latest result failed, but it passed at least once within the last 30 days.
+- A blank means no passing result within 30 days, no recent results, or no collected results for the pair. Select the cell to distinguish these cases. An untested combination is not necessarily unsupported.
 
-**Latest Pass** shows the latest workflow run where all reported pairs involving the version passed, together with the pair count. It can be older than 30 days. A curated run may qualify with fewer pairs than a full run. Both Latest Run and Latest Pass show **pairs not tested** when other pairs involving the version were tested within the current 30-day window but were absent from that workflow. This includes pairs that have never passed. The line is omitted when no such pairs exist. Hover over the pair counts to see the partner versions and, for tested pairs, their results.
+For the combined Core and SXL marks, **√** requires every recently tested pair's latest result to pass. **(√)** requires every recently tested pair to have passed within 30 days, with at least one latest result failing. Otherwise the mark is blank. Pairs with no results in the last 30 days do not contribute. The overview tables and the matrix totals use the same rules.
 
-For each Core or SXL version, checkmarks consider every pair involving that version with a received result in the last 30 days. Each pair's latest result is determined by its own completion time:
+The parenthesized mark gives time to investigate problems with a device, the validator, or the test infrastructure. Its grace period runs from each pair's last passing result, not from its first failure.
 
-- **√** means every recently tested pair's latest result passed.
-- **(√)** means every recently tested pair has passed at least once within 30 days, but at least one pair's latest result did not pass.
-- A blank means at least one recently tested pair has no passing result within 30 days, or there are no results within that window.
+## Detail statistics
 
-The parenthesized checkmark provides a grace period to investigate and fix problems with a device, the validator, or the test infrastructure. The period runs from each pair's last successful test, not from its first failure. A pair that has never passed cannot qualify through another pair's success.
+For a selected pair, **30 Days** shows how many runs passed out of the total. Repeated tests of that pair count separately, including rerun attempts. **Latest Run** shows that pair's most recent result, and **Latest Pass** shows its most recent passing result and the number of tests passed, when available. Both remain visible when older than 30 days, even though those results no longer qualify for a checkmark.
 
-For example, if Core 3.2.2 passes with SXL 1.2.1 but fails with SXL 1.0.15, it receives **(√)** only if the 1.0.15 pair also passed within the last 30 days. Otherwise its status is blank.
+Test totals include only tests that ran. Skipped tests are excluded; errors count as unsuccessful. Older reports that cannot distinguish passed and skipped tests show the outcome without a test total.
 
-Both checkmarks link to the most recent individual passing pair result; that run alone does not demonstrate success for all pairs. Unlike the workflow-based detail columns, checkmarks track each pair across workflows. A passing curated “Latest Run” can therefore coexist with **(√)** if a pair last tested in an earlier full run failed. Pairings with no results in the last 30 days no longer participate in the checkmark assessment. Untested combinations are not covered by either checkmark.
+The combined Core/SXL panels also retain workflow statistics. A workflow attempt passes for a version only if all its reported pairs involving that version pass. Each attempt has equal weight, whether curated or full. The additional pair count totals individual pair tests across those attempts. “Pairs not tested” identifies pairs seen within the current 30-day window but absent from that workflow. A passing curated workflow can therefore coexist with **(√)** when another pair's latest result failed in an earlier workflow.
+
+All statistics use received results only. Missing reports are excluded, so passing results do not establish that every planned combination was tested. The overview marks link to individual passing runs; use the device matrix to inspect the evidence for each pair.
 
 {% assign compliance_targets = site.data.compliance.summary.targets | default: empty %}
 {% assign site_targets = compliance_targets | where: "kind", "site" %}
@@ -69,3 +71,4 @@ The validator connects using the traffic light controller SXL.
 View available [core and SXL versions](https://rsmp-nordic.org/specification/).
 
 {% include compliance_relative_time.html %}
+<script src="{{ '/assets/js/compliance.js' | relative_url }}" defer></script>
