@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'fileutils'
+require 'set'
 require 'time'
 require_relative 'compliance_data_store'
 require_relative 'github_client'
@@ -30,9 +31,11 @@ module RSMP
         def collect
           previous_summary = @full ? empty_summary : @store.read_summary
           stored_runs = @full ? {} : @store.read_runs_by_target
-          reports = @github.reports_since(since: since_for(previous_summary))
+          reports = @github.reports_since(
+            since: since_for(previous_summary), known_artifact_ids: stored_artifact_ids(stored_runs)
+          )
           targets = targets_from_reports(reports)
-          new_runs = runs_by_target(targets, reports)
+          new_runs = runs_by_target(targets, reports, stored_runs)
           summary_runs = merge_runs_by_target(stored_runs, new_runs)
           summary = Summary.new(
             targets: targets,
@@ -46,11 +49,47 @@ module RSMP
 
         private
 
-        def runs_by_target(targets, reports)
+        def stored_artifact_ids(stored_runs)
+          stored_runs.values.flatten.flat_map do |run|
+            Array(run['cells']).filter_map { |cell| cell['report_artifact_id'] }
+          end.to_set
+        end
+
+        def runs_by_target(targets, reports, stored_runs)
           targets.to_h do |target|
-            target_reports = reports.select { |report| report.dig('target', 'id') == target.fetch('id') }
-            [target.fetch('id'), RunBuilder.new(target, target_reports).runs]
+            target_id = target.fetch('id')
+            target_reports = reports.select { |report| report.dig('target', 'id') == target_id }
+            previous = Array(stored_runs[target_id]).to_h { |run| [run_key(run), run] }
+            runs = RunBuilder.new(target, target_reports).runs.map do |run|
+              merge_run(previous[run_key(run)], run)
+            end
+            [target_id, runs]
           end
+        end
+
+        def merge_run(previous, run)
+          return run unless previous
+
+          cells = {}
+          [previous, run].each do |source|
+            Array(source['cells']).each do |cell|
+              key = [cell['core'], cell.fetch('sxls', {}).sort]
+              next if cell['status'] == 'missing' && cells.key?(key)
+
+              # Pin legacy cells to their original fallback time when a late
+              # artifact extends the workflow's completion time.
+              cells[key] = cell.merge('completed_at' => cell['completed_at'] || source['completed_at']).compact
+            end
+          end
+          merged_cells = cells.sort_by { |key, _cell| key }.map(&:last)
+          passed = merged_cells.count { |cell| cell['status'] == 'passed' }
+          previous.merge(run).merge(
+            'cells' => merged_cells,
+            'completed_at' => [previous['completed_at'], run['completed_at']].compact.max,
+            'passed_cells' => passed,
+            'total_cells' => merged_cells.size,
+            'status' => passed == merged_cells.size ? 'passed' : 'failed'
+          )
         end
 
         def merge_runs_by_target(stored_runs, new_runs)

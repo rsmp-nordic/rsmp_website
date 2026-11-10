@@ -2,6 +2,7 @@
 
 require 'json'
 require 'net/http'
+require 'set'
 require 'tmpdir'
 require 'time'
 require 'uri'
@@ -22,8 +23,9 @@ module RSMP
           @events = events
         end
 
-        def reports_since(since:)
-          workflows.flat_map { |workflow| reports_for_workflow(workflow, since: since) }
+        def reports_since(since:, known_artifact_ids: [])
+          known_ids = known_artifact_ids.to_set
+          workflows.flat_map { |workflow| reports_for_workflow(workflow, since: since, known_ids: known_ids) }
         end
 
         private
@@ -33,14 +35,17 @@ module RSMP
           Array(response['workflows']).select { |workflow| workflow['state'] == 'active' }
         end
 
-        def reports_for_workflow(workflow, since:)
+        def reports_for_workflow(workflow, since:, known_ids:)
           @events.flat_map { |event| workflow_runs(workflow.fetch('id'), event: event, since: since) }
-                 .flat_map { |run| reports_for_run(run.fetch('id'), workflow) }
+                 .flat_map { |run| reports_for_run(run.fetch('id'), workflow, known_ids: known_ids) }
         end
 
-        def reports_for_run(run_id, workflow = nil)
-          report_artifacts(run_id).flat_map { |artifact| download_report_artifact(artifact) }
-                                  .map { |report| enrich_workflow_metadata(report, workflow) }
+        def reports_for_run(run_id, workflow = nil, known_ids: Set.new)
+          report_artifacts(run_id).reject { |artifact| known_ids.include?(artifact.fetch('id')) }.flat_map do |artifact|
+            download_report_artifact(artifact).map do |report|
+              enrich_workflow_metadata(report, workflow).merge('report_artifact_id' => artifact.fetch('id'))
+            end
+          end
         end
 
         def enrich_workflow_metadata(report, workflow)

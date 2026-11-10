@@ -75,6 +75,7 @@ module RSMP
             'errored_count' => report.dig('summary', 'errored_count'),
             'log_artifact' => report.dig('run', 'log_artifact'),
             'report_artifact' => report.dig('run', 'report_artifact'),
+            'report_artifact_id' => report['report_artifact_id'],
             'failures' => Array(report['failures']).first(10)
           }.compact
           sxls = report_sxls(report)

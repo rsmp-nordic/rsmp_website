@@ -12,7 +12,7 @@ module ComplianceCollectorSpec
       @since_values = []
     end
 
-    def reports_since(since:)
+    def reports_since(since:, known_artifact_ids: [])
       @since_values << since
       @reports
     end
