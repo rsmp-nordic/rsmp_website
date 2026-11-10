@@ -28,12 +28,14 @@
 {% if has_recent_pair and all_pairs_passed %}
   {% assign latest_pass = version.latest_passing_run %}
   {% assign symbol = '√' %}
+  {% assign pass_label = 'Latest run passed at' %}
   {% unless all_latest_passed %}
     {% assign symbol = '(√)' %}
+    {% assign pass_label = 'Earlier run passed at' %}
   {% endunless %}
   {% if latest_pass.run_url %}
-    <a href="{{ latest_pass.run_url }}" title="{{ latest_pass.completed_at | date: "%Y-%m-%d %H:%M UTC" }}">{{ symbol }}</a>
+    <a href="{{ latest_pass.run_url }}" title="{{ pass_label }} {{ latest_pass.completed_at | date: "%Y-%m-%d %H:%M UTC" }}">{{ symbol }}</a>
   {% else %}
-    <span title="{{ latest_pass.completed_at | date: "%Y-%m-%d %H:%M UTC" }}">{{ symbol }}</span>
+    <span title="{{ pass_label }} {{ latest_pass.completed_at | date: "%Y-%m-%d %H:%M UTC" }}">{{ symbol }}</span>
   {% endif %}
 {% endif %}
