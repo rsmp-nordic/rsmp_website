@@ -49,19 +49,34 @@ module ComplianceFixtures
   # Replace only the HTTP transport. Parsing, filtering, redirects, and ZIP
   # extraction still use the real client. Unexpected requests fail locally.
   class GitHub < RSMP::Website::Compliance::GitHubClient
-    attr_reader :requests
+    attr_reader :requests, :delays, :warnings
 
     def initialize(responses)
       super(repo: REPO, token: 'fixture-token')
       @responses = responses
       @requests = []
+      @delays = []
+      @warnings = []
     end
 
     private
 
     def perform_get(uri)
       @requests << request(uri)
-      @responses.fetch(uri.to_s)
+      response = @responses.fetch(uri.to_s)
+      return response unless response.is_a?(Array)
+
+      raise "No more fixture responses for #{uri.host}" if response.empty?
+
+      response.shift
+    end
+
+    def sleep(delay)
+      @delays << delay
+    end
+
+    def warn(message)
+      @warnings << message
     end
   end
 

@@ -12,6 +12,9 @@ module RSMP
       # Reads completed workflow runs and compliance artifacts from GitHub Actions.
       class GitHubClient
         DEFAULT_EVENTS = %w[schedule].freeze
+        RETRYABLE_STATUS_CODES = %w[429 500 502 503 504].freeze
+        RETRY_DELAYS = [5, 10, 20].freeze
+        MAX_RETRY_DELAY = 60
 
         def initialize(repo:, token:, events: DEFAULT_EVENTS)
           @repo = repo
@@ -106,7 +109,7 @@ module RSMP
         end
 
         def get_json(path, params = {})
-          response = perform_get(api_uri(path, params))
+          response = get_with_retries(api_uri(path, params))
           raise_for_response(response)
           JSON.parse(response.body)
         end
@@ -123,10 +126,36 @@ module RSMP
           end
         end
 
+        def get_with_retries(uri)
+          retries = 0
+          loop do
+            response = perform_get(uri)
+            delay = RETRY_DELAYS[retries]
+            return response unless delay && RETRYABLE_STATUS_CODES.include?(response.code)
+
+            delay = [delay, retry_after_delay(response)].max
+            # Do not retry before the server allows it, or wait indefinitely.
+            return response if delay > MAX_RETRY_DELAY
+
+            warn "HTTP #{response.code} from #{uri.host}; retry #{retries + 1}/#{RETRY_DELAYS.size} in #{delay}s"
+            sleep(delay)
+            retries += 1
+          end
+        end
+
+        def retry_after_delay(response)
+          value = response['Retry-After'].to_s.strip
+          return value.to_i if value.match?(/\A\d+\z/)
+
+          [Time.httpdate(value) - Time.now.utc, 0].max.ceil
+        rescue ArgumentError
+          0
+        end
+
         def download_binary(uri, limit = 5)
           raise 'Too many redirects while downloading artifact' if limit <= 0
 
-          response = perform_get(uri)
+          response = get_with_retries(uri)
           return download_binary(URI(response['location']), limit - 1) if response.is_a?(Net::HTTPRedirection)
 
           raise_for_response(response)
