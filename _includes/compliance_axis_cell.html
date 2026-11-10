@@ -1,0 +1,12 @@
+{% assign axis = include.version %}
+{% if axis.core %}
+  {% capture axis_key %}core-{{ axis.core }}{% endcapture %}
+  {% capture axis_label %}Core {{ axis.core }}{% endcapture %}
+{% else %}
+  {% capture axis_key %}{{ axis.name }}-{{ axis.version }}{% endcapture %}
+  {% capture axis_label %}{{ axis.name | upcase }} {{ axis.version }}{% endcapture %}
+{% endif %}
+{% assign axis_key = axis_key | slugify %}
+{% assign axis_id = include.anchor | append: '-overall-' | append: axis_key %}
+{% capture axis_symbol %}{% include compliance_overview_cell.html version=axis target=include.target plain=true %}{% endcapture %}
+<a class="compliance-cell compliance-axis-cell" href="#{{ axis_id }}" data-compliance-select="{{ axis_id }}" data-version="{% if axis.core %}core {{ axis.core }}{% else %}{{ axis.name }} {{ axis.version }}{% endif %}" aria-controls="{{ axis_id }}" aria-label="Overall {{ axis_label | escape }}. {{ status_explanation | escape }} Show contributing pairs." title="{{ status_explanation | escape }}">{{ axis_symbol | strip }}</a>

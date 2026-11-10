@@ -102,3 +102,127 @@ tr.compliance-section-row td:first-child {
   margin-left: 0.35rem;
   text-decoration: none;
 }
+
+.compliance-scroll {
+  overflow-x: auto;
+}
+
+.compliance-device > .compliance-scroll table {
+  width: 100%;
+  min-width: max-content;
+  table-layout: auto;
+
+  th, td {
+    min-width: 0;
+    text-align: center;
+    white-space: nowrap;
+    padding: 0.3rem;
+  }
+
+  th {
+    font-size: 0.85rem;
+    padding: 0.6rem;
+  }
+
+  th:first-child {
+    text-align: left;
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    background: $body-background-color;
+  }
+  .compliance-overall, tfoot th { background: $grey-lt-000; }
+}
+
+.compliance-device .compliance-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.75rem;
+  min-height: 2.75rem;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 1.25rem;
+
+  &:hover, &:focus-visible {
+    border-color: $link-color;
+    background: $grey-lt-100;
+  }
+
+  &:focus-visible { outline: 2px solid $link-color; }
+  &.is-selected {
+    background: $link-color;
+    color: #fff;
+    border-color: $link-color;
+  }
+}
+
+.compliance-matrix-help, [data-compliance-prompt] {
+  font-size: 0.875rem;
+  color: $grey-dk-000;
+}
+
+.compliance-details {
+  position: relative;
+  margin: 0.75rem 0 2rem;
+  padding: 1rem;
+  border: 1px solid $grey-lt-200;
+  border-radius: 10px;
+
+  &:focus-within { box-shadow: 0 0 0 2px $link-color; }
+
+  [hidden] { display: none !important; }
+  h5 {
+    margin-top: 0;
+    padding-right: 3rem;
+    min-height: 2rem;
+    font-size: 1rem;
+    text-transform: none;
+    letter-spacing: normal;
+  }
+  .compliance-detail:focus { outline: none; }
+}
+
+.compliance-close {
+  position: absolute;
+  z-index: 2;
+  top: 0.5rem;
+  right: 0.5rem;
+  min-width: 2.75rem;
+  min-height: 2.75rem;
+  padding: 0;
+  border: 0;
+  border-radius: 4px;
+  background: transparent;
+  color: $grey-dk-100;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+
+  &:hover { background: $grey-lt-100; color: $link-color; }
+  &:focus-visible { outline: 2px solid $link-color; }
+}
+.main-content .compliance-detail-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  dt { font-weight: 600; text-align: left; }
+  dt::after { content: none; }
+  dd { margin: 0.4rem 0 0; }
+}
+
+.compliance-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (max-width: 40rem) {
+  .main-content .compliance-detail-stats { grid-template-columns: 1fr; }
+}
