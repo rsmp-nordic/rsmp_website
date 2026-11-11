@@ -3,7 +3,7 @@ name: Collect Compliance Results
 on:
   schedule:
     # GitHub cron is UTC; this is 06:00 in Copenhagen during daylight saving time.
-    - cron: '0 4 * * *'
+    - cron: '0 7 * * *'
   workflow_dispatch:
 
 permissions:
