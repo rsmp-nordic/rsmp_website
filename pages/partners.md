@@ -32,6 +32,7 @@ The [RSMP specifications]({% link pages/documentation.md %}) and [open-source to
 ![Tecsen]({{ "/assets/logos/Logo_tecsen.png"}}){:class='logo'}
 ![VisuaLED]({{ "/assets/logos/visualed_black_scaled.png"}}){:class='logo'}
 ![Yunex Traffic]({{ "/assets/logos/logo_yunex.png"}}){:class='logo'}
+![SICE]({{ "/assets/logos/logo_sice.png"}}){:class='logo'}
 
 ## Public Authorities
 ### National
