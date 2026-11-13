@@ -57,6 +57,7 @@ The [RSMP specifications]({% link pages/documentation.md %}) and [open-source to
 - [Kapsch](https://www.kapsch.net/en)
 - [Technolution](https://www.technolution.com)
 - [Tecsen](https://www.tecsen.it/)
+- [SICE](https://www.sice.com/en/)
 
 ### Equipment
 - [Cross](https://www.cross-traffic.com/en/)
