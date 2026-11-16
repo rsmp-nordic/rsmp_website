@@ -1,0 +1,67 @@
+{
+  "target_id": "cross-rs5",
+  "run_id": 43786775844,
+  "run_attempt": 1,
+  "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/43786775844",
+  "event": "schedule",
+  "completed_at": "2026-11-16T01:38:16Z",
+  "status": "failed",
+  "passed_cells": 0,
+  "total_cells": 1,
+  "cells": [
+    {
+      "core": "3.2.0",
+      "completed_at": "2026-11-16T01:38:16Z",
+      "status": "failed",
+      "test_count": 133,
+      "passed_count": 115,
+      "skipped_count": 14,
+      "failed_count": 4,
+      "errored_count": 0,
+      "log_artifact": "validator-cross-rs5-core-3.2.0-run-43786775844-95-1.log",
+      "report_artifact": "compliance-cross-rs5-core-3.2.0-run-43786775844-95-1.json",
+      "report_artifact_id": 14190768373,
+      "failures": [
+        {
+          "id": "test/site/tlc/signal_groups_spec.rb:85",
+          "message": "describe Site::Tlc::SignalGroups it follow startup sequence after yellow flash test/site/tlc/signal_groups_spec.rb:83\n\t✗ Received invalid StatusUpdate: no change for S0001 'signalgroupstatus' test/site/tlc/signal_groups_spec.rb:85",
+          "location": {
+            "path": "/data/rsmp-testing/main-action-runner-rs5/_work/rsmp_validator/rsmp_validator/test/site/tlc/signal_groups_spec.rb",
+            "line": 85
+          },
+          "type": "Sus::Assertions::Assert"
+        },
+        {
+          "id": "test/site/tlc/signal_plans_spec.rb:10",
+          "message": "describe Site::Tlc::SignalPlans it currently active is read with S0014 test/site/tlc/signal_plans_spec.rb:9\n\t✗ Received invalid StatusResponse: /sS/1/s, pattern, test/site/tlc/signal_plans_spec.rb:10",
+          "location": {
+            "path": "/data/rsmp-testing/main-action-runner-rs5/_work/rsmp_validator/rsmp_validator/test/site/tlc/signal_plans_spec.rb",
+            "line": 10
+          },
+          "type": "Sus::Assertions::Assert"
+        },
+        {
+          "id": "test/site/tlc/signal_plans_spec.rb:32",
+          "message": "describe Site::Tlc::SignalPlans it currently active is set with M0002 test/site/tlc/signal_plans_spec.rb:28\n\t✗ Received invalid StatusUpdate: /sS/0/s, pattern, test/site/tlc/signal_plans_spec.rb:32",
+          "location": {
+            "path": "/data/rsmp-testing/main-action-runner-rs5/_work/rsmp_validator/rsmp_validator/test/site/tlc/signal_plans_spec.rb",
+            "line": 32
+          },
+          "type": "Sus::Assertions::Assert"
+        },
+        {
+          "id": "test/site/tlc/signal_plans_spec.rb:279",
+          "message": "describe Site::Tlc::SignalPlans it cycle time is set with M0018 test/site/tlc/signal_plans_spec.rb:278\n\t✗ Received invalid StatusResponse: /sS/0/s, pattern, test/site/tlc/signal_plans_spec.rb:279",
+          "location": {
+            "path": "/data/rsmp-testing/main-action-runner-rs5/_work/rsmp_validator/rsmp_validator/test/site/tlc/signal_plans_spec.rb",
+            "line": 279
+          },
+          "type": "Sus::Assertions::Assert"
+        }
+      ],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    }
+  ]
+}
