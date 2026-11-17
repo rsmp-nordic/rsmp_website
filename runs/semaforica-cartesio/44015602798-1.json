@@ -1,0 +1,162 @@
+{
+  "target_id": "semaforica-cartesio",
+  "run_id": 44015602798,
+  "run_attempt": 1,
+  "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/44015602798",
+  "event": "schedule",
+  "completed_at": "2026-11-17T05:44:03Z",
+  "status": "failed",
+  "passed_cells": 4,
+  "total_cells": 7,
+  "cells": [
+    {
+      "core": "3.1.2",
+      "completed_at": "2026-11-17T05:32:02Z",
+      "status": "passed",
+      "test_count": 147,
+      "passed_count": 119,
+      "skipped_count": 28,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-lasemaforica-cartesio-core-3.1.2-run-44015602798-1378-1.log",
+      "report_artifact": "compliance-tecsen-lasemaforica-cartesio-core-3.1.2-run-44015602798-1378-1.json",
+      "report_artifact_id": 14301803815,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.1.3",
+      "completed_at": "2026-11-17T05:44:03Z",
+      "status": "passed",
+      "test_count": 145,
+      "passed_count": 119,
+      "skipped_count": 26,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-lasemaforica-cartesio-core-3.1.3-run-44015602798-1378-1.log",
+      "report_artifact": "compliance-tecsen-lasemaforica-cartesio-core-3.1.3-run-44015602798-1378-1.json",
+      "report_artifact_id": 14303355902,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.1.4",
+      "completed_at": "2026-11-17T05:08:03Z",
+      "status": "passed",
+      "test_count": 144,
+      "passed_count": 119,
+      "skipped_count": 25,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-lasemaforica-cartesio-core-3.1.4-run-44015602798-1378-1.log",
+      "report_artifact": "compliance-tecsen-lasemaforica-cartesio-core-3.1.4-run-44015602798-1378-1.json",
+      "report_artifact_id": 14301471708,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.1.5",
+      "completed_at": "2026-11-17T05:20:03Z",
+      "status": "passed",
+      "test_count": 142,
+      "passed_count": 119,
+      "skipped_count": 23,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-lasemaforica-cartesio-core-3.1.5-run-44015602798-1378-1.log",
+      "report_artifact": "compliance-tecsen-lasemaforica-cartesio-core-3.1.5-run-44015602798-1378-1.json",
+      "report_artifact_id": 14302271507,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.2.0",
+      "completed_at": "2026-11-17T04:55:04Z",
+      "status": "failed",
+      "test_count": 133,
+      "passed_count": 118,
+      "skipped_count": 14,
+      "failed_count": 1,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-lasemaforica-cartesio-core-3.2.0-run-44015602798-1378-1.log",
+      "report_artifact": "compliance-tecsen-lasemaforica-cartesio-core-3.2.0-run-44015602798-1378-1.json",
+      "report_artifact_id": 14301205529,
+      "failures": [
+        {
+          "id": "test/site/core/message_buffer_spec.rb:121",
+          "message": "describe Message Buffer it marks buffered status values as old for rsmp 3.2.0 and later test/site/core/message_buffer_spec.rb:114\n\t✗ Received StatusUpdate timestamped within window 2026-11-17 04:45:19.118..04:45:20.118 UTC test/site/core/message_buffer_spec.rb:121",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/core/message_buffer_spec.rb",
+            "line": 121
+          },
+          "type": "Sus::Assertions::Assert"
+        }
+      ],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.2.1",
+      "completed_at": "2026-11-17T04:40:03Z",
+      "status": "failed",
+      "test_count": 133,
+      "passed_count": 118,
+      "skipped_count": 14,
+      "failed_count": 1,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-lasemaforica-cartesio-core-3.2.1-run-44015602798-1378-1.log",
+      "report_artifact": "compliance-tecsen-lasemaforica-cartesio-core-3.2.1-run-44015602798-1378-1.json",
+      "report_artifact_id": 14299638882,
+      "failures": [
+        {
+          "id": "test/site/core/message_buffer_spec.rb:121",
+          "message": "describe Message Buffer it marks buffered status values as old for rsmp 3.2.0 and later test/site/core/message_buffer_spec.rb:114\n\t✗ Received StatusUpdate timestamped within window 2026-11-17 04:30:34.805..04:30:35.805 UTC test/site/core/message_buffer_spec.rb:121",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/core/message_buffer_spec.rb",
+            "line": 121
+          },
+          "type": "Sus::Assertions::Assert"
+        }
+      ],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.2.2",
+      "completed_at": "2026-11-17T04:26:03Z",
+      "status": "failed",
+      "test_count": 133,
+      "passed_count": 118,
+      "skipped_count": 14,
+      "failed_count": 1,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-lasemaforica-cartesio-core-3.2.2-run-44015602798-1378-1.log",
+      "report_artifact": "compliance-tecsen-lasemaforica-cartesio-core-3.2.2-run-44015602798-1378-1.json",
+      "report_artifact_id": 14299041885,
+      "failures": [
+        {
+          "id": "test/site/core/message_buffer_spec.rb:121",
+          "message": "describe Message Buffer it marks buffered status values as old for rsmp 3.2.0 and later test/site/core/message_buffer_spec.rb:114\n\t✗ Received StatusUpdate timestamped within window 2026-11-17 04:16:59.603..04:17:00.603 UTC test/site/core/message_buffer_spec.rb:121",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/core/message_buffer_spec.rb",
+            "line": 121
+          },
+          "type": "Sus::Assertions::Assert"
+        }
+      ],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    }
+  ]
+}
