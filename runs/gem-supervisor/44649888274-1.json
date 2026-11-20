@@ -1,0 +1,1373 @@
+{
+  "target_id": "gem-supervisor",
+  "run_id": 44649888274,
+  "run_attempt": 1,
+  "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/44649888274",
+  "event": "schedule",
+  "completed_at": "2026-11-20T00:59:15Z",
+  "status": "passed",
+  "passed_cells": 80,
+  "total_cells": 80,
+  "cells": [
+    {
+      "core": "3.1.2",
+      "completed_at": "2026-11-20T00:58:20Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.2-sxl-1.0.10-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.2-sxl-1.0.10-run-44649888274-5-1.json",
+      "report_artifact_id": 14590351386,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.10"
+      }
+    },
+    {
+      "core": "3.1.2",
+      "completed_at": "2026-11-20T00:58:11Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.2-sxl-1.0.13-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.2-sxl-1.0.13-run-44649888274-5-1.json",
+      "report_artifact_id": 14589823783,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.13"
+      }
+    },
+    {
+      "core": "3.1.2",
+      "completed_at": "2026-11-20T00:58:46Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.2-sxl-1.0.14-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.2-sxl-1.0.14-run-44649888274-5-1.json",
+      "report_artifact_id": 14590950974,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.14"
+      }
+    },
+    {
+      "core": "3.1.2",
+      "completed_at": "2026-11-20T00:58:06Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.2-sxl-1.0.15-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.2-sxl-1.0.15-run-44649888274-5-1.json",
+      "report_artifact_id": 14589164844,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.15"
+      }
+    },
+    {
+      "core": "3.1.2",
+      "completed_at": "2026-11-20T00:57:37Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.2-sxl-1.0.7-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.2-sxl-1.0.7-run-44649888274-5-1.json",
+      "report_artifact_id": 14591410258,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.7"
+      }
+    },
+    {
+      "core": "3.1.2",
+      "completed_at": "2026-11-20T00:58:37Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.2-sxl-1.0.8-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.2-sxl-1.0.8-run-44649888274-5-1.json",
+      "report_artifact_id": 14590961023,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.8"
+      }
+    },
+    {
+      "core": "3.1.2",
+      "completed_at": "2026-11-20T00:57:40Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.2-sxl-1.0.9-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.2-sxl-1.0.9-run-44649888274-5-1.json",
+      "report_artifact_id": 14589648840,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.9"
+      }
+    },
+    {
+      "core": "3.1.2",
+      "completed_at": "2026-11-20T00:58:58Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.2-sxl-1.1.0-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.2-sxl-1.1.0-run-44649888274-5-1.json",
+      "report_artifact_id": 14591115943,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.1.0"
+      }
+    },
+    {
+      "core": "3.1.2",
+      "completed_at": "2026-11-20T00:58:27Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.2-sxl-1.2.0-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.2-sxl-1.2.0-run-44649888274-5-1.json",
+      "report_artifact_id": 14591315327,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.0"
+      }
+    },
+    {
+      "core": "3.1.2",
+      "completed_at": "2026-11-20T00:58:14Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.2-sxl-1.2.1-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.2-sxl-1.2.1-run-44649888274-5-1.json",
+      "report_artifact_id": 14590161762,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.1.3",
+      "completed_at": "2026-11-20T00:58:50Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.3-sxl-1.0.10-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.3-sxl-1.0.10-run-44649888274-5-1.json",
+      "report_artifact_id": 14590186751,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.10"
+      }
+    },
+    {
+      "core": "3.1.3",
+      "completed_at": "2026-11-20T00:57:43Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.3-sxl-1.0.13-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.3-sxl-1.0.13-run-44649888274-5-1.json",
+      "report_artifact_id": 14590067404,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.13"
+      }
+    },
+    {
+      "core": "3.1.3",
+      "completed_at": "2026-11-20T00:57:47Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.3-sxl-1.0.14-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.3-sxl-1.0.14-run-44649888274-5-1.json",
+      "report_artifact_id": 14590101786,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.14"
+      }
+    },
+    {
+      "core": "3.1.3",
+      "completed_at": "2026-11-20T00:58:30Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.3-sxl-1.0.15-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.3-sxl-1.0.15-run-44649888274-5-1.json",
+      "report_artifact_id": 14590106909,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.15"
+      }
+    },
+    {
+      "core": "3.1.3",
+      "completed_at": "2026-11-20T00:57:26Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.3-sxl-1.0.7-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.3-sxl-1.0.7-run-44649888274-5-1.json",
+      "report_artifact_id": 14590391376,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.7"
+      }
+    },
+    {
+      "core": "3.1.3",
+      "completed_at": "2026-11-20T00:57:50Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.3-sxl-1.0.8-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.3-sxl-1.0.8-run-44649888274-5-1.json",
+      "report_artifact_id": 14590506226,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.8"
+      }
+    },
+    {
+      "core": "3.1.3",
+      "completed_at": "2026-11-20T00:59:00Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.3-sxl-1.0.9-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.3-sxl-1.0.9-run-44649888274-5-1.json",
+      "report_artifact_id": 14591330281,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.9"
+      }
+    },
+    {
+      "core": "3.1.3",
+      "completed_at": "2026-11-20T00:58:17Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.3-sxl-1.1.0-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.3-sxl-1.1.0-run-44649888274-5-1.json",
+      "report_artifact_id": 14590780815,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.1.0"
+      }
+    },
+    {
+      "core": "3.1.3",
+      "completed_at": "2026-11-20T00:57:40Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.3-sxl-1.2.0-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.3-sxl-1.2.0-run-44649888274-5-1.json",
+      "report_artifact_id": 14591405312,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.0"
+      }
+    },
+    {
+      "core": "3.1.3",
+      "completed_at": "2026-11-20T00:57:45Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.3-sxl-1.2.1-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.3-sxl-1.2.1-run-44649888274-5-1.json",
+      "report_artifact_id": 14589469120,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.1.4",
+      "completed_at": "2026-11-20T00:58:46Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.4-sxl-1.0.10-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.4-sxl-1.0.10-run-44649888274-5-1.json",
+      "report_artifact_id": 14591200772,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.10"
+      }
+    },
+    {
+      "core": "3.1.4",
+      "completed_at": "2026-11-20T00:58:42Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.4-sxl-1.0.13-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.4-sxl-1.0.13-run-44649888274-5-1.json",
+      "report_artifact_id": 14589758992,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.13"
+      }
+    },
+    {
+      "core": "3.1.4",
+      "completed_at": "2026-11-20T00:57:32Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.4-sxl-1.0.14-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.4-sxl-1.0.14-run-44649888274-5-1.json",
+      "report_artifact_id": 14590690814,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.14"
+      }
+    },
+    {
+      "core": "3.1.4",
+      "completed_at": "2026-11-20T00:58:34Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.4-sxl-1.0.15-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.4-sxl-1.0.15-run-44649888274-5-1.json",
+      "report_artifact_id": 14591240735,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.15"
+      }
+    },
+    {
+      "core": "3.1.4",
+      "completed_at": "2026-11-20T00:58:49Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.4-sxl-1.0.7-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.4-sxl-1.0.7-run-44649888274-5-1.json",
+      "report_artifact_id": 14590691018,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.7"
+      }
+    },
+    {
+      "core": "3.1.4",
+      "completed_at": "2026-11-20T00:58:02Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.4-sxl-1.0.8-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.4-sxl-1.0.8-run-44649888274-5-1.json",
+      "report_artifact_id": 14589963532,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.8"
+      }
+    },
+    {
+      "core": "3.1.4",
+      "completed_at": "2026-11-20T00:57:41Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.4-sxl-1.0.9-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.4-sxl-1.0.9-run-44649888274-5-1.json",
+      "report_artifact_id": 14590106783,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.9"
+      }
+    },
+    {
+      "core": "3.1.4",
+      "completed_at": "2026-11-20T00:58:59Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.4-sxl-1.1.0-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.4-sxl-1.1.0-run-44649888274-5-1.json",
+      "report_artifact_id": 14590421389,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.1.0"
+      }
+    },
+    {
+      "core": "3.1.4",
+      "completed_at": "2026-11-20T00:58:46Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.4-sxl-1.2.0-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.4-sxl-1.2.0-run-44649888274-5-1.json",
+      "report_artifact_id": 14591335630,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.0"
+      }
+    },
+    {
+      "core": "3.1.4",
+      "completed_at": "2026-11-20T00:59:01Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.4-sxl-1.2.1-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.4-sxl-1.2.1-run-44649888274-5-1.json",
+      "report_artifact_id": 14589654052,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.1.5",
+      "completed_at": "2026-11-20T00:57:50Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.5-sxl-1.0.10-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.5-sxl-1.0.10-run-44649888274-5-1.json",
+      "report_artifact_id": 14590715795,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.10"
+      }
+    },
+    {
+      "core": "3.1.5",
+      "completed_at": "2026-11-20T00:58:47Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.5-sxl-1.0.13-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.5-sxl-1.0.13-run-44649888274-5-1.json",
+      "report_artifact_id": 14591260358,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.13"
+      }
+    },
+    {
+      "core": "3.1.5",
+      "completed_at": "2026-11-20T00:58:54Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.5-sxl-1.0.14-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.5-sxl-1.0.14-run-44649888274-5-1.json",
+      "report_artifact_id": 14589499240,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.14"
+      }
+    },
+    {
+      "core": "3.1.5",
+      "completed_at": "2026-11-20T00:59:00Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.5-sxl-1.0.15-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.5-sxl-1.0.15-run-44649888274-5-1.json",
+      "report_artifact_id": 14591105550,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.15"
+      }
+    },
+    {
+      "core": "3.1.5",
+      "completed_at": "2026-11-20T00:59:01Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.5-sxl-1.0.7-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.5-sxl-1.0.7-run-44649888274-5-1.json",
+      "report_artifact_id": 14589948699,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.7"
+      }
+    },
+    {
+      "core": "3.1.5",
+      "completed_at": "2026-11-20T00:58:33Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.5-sxl-1.0.8-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.5-sxl-1.0.8-run-44649888274-5-1.json",
+      "report_artifact_id": 14590780852,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.8"
+      }
+    },
+    {
+      "core": "3.1.5",
+      "completed_at": "2026-11-20T00:58:33Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.5-sxl-1.0.9-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.5-sxl-1.0.9-run-44649888274-5-1.json",
+      "report_artifact_id": 14591470260,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.9"
+      }
+    },
+    {
+      "core": "3.1.5",
+      "completed_at": "2026-11-20T00:58:45Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.5-sxl-1.1.0-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.5-sxl-1.1.0-run-44649888274-5-1.json",
+      "report_artifact_id": 14589134918,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.1.0"
+      }
+    },
+    {
+      "core": "3.1.5",
+      "completed_at": "2026-11-20T00:58:38Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.5-sxl-1.2.0-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.5-sxl-1.2.0-run-44649888274-5-1.json",
+      "report_artifact_id": 14590211694,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.0"
+      }
+    },
+    {
+      "core": "3.1.5",
+      "completed_at": "2026-11-20T00:58:59Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.5-sxl-1.2.1-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.5-sxl-1.2.1-run-44649888274-5-1.json",
+      "report_artifact_id": 14591075985,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.2.0",
+      "completed_at": "2026-11-20T00:58:36Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.0-sxl-1.0.10-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.0-sxl-1.0.10-run-44649888274-5-1.json",
+      "report_artifact_id": 14589689244,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.10"
+      }
+    },
+    {
+      "core": "3.2.0",
+      "completed_at": "2026-11-20T00:58:46Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.0-sxl-1.0.13-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.0-sxl-1.0.13-run-44649888274-5-1.json",
+      "report_artifact_id": 14591515176,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.13"
+      }
+    },
+    {
+      "core": "3.2.0",
+      "completed_at": "2026-11-20T00:58:02Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.0-sxl-1.0.14-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.0-sxl-1.0.14-run-44649888274-5-1.json",
+      "report_artifact_id": 14590945991,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.14"
+      }
+    },
+    {
+      "core": "3.2.0",
+      "completed_at": "2026-11-20T00:59:02Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.0-sxl-1.0.15-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.0-sxl-1.0.15-run-44649888274-5-1.json",
+      "report_artifact_id": 14590551160,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.15"
+      }
+    },
+    {
+      "core": "3.2.0",
+      "completed_at": "2026-11-20T00:58:21Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.0-sxl-1.0.7-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.0-sxl-1.0.7-run-44649888274-5-1.json",
+      "report_artifact_id": 14590685802,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.7"
+      }
+    },
+    {
+      "core": "3.2.0",
+      "completed_at": "2026-11-20T00:58:54Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.0-sxl-1.0.8-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.0-sxl-1.0.8-run-44649888274-5-1.json",
+      "report_artifact_id": 14591370342,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.8"
+      }
+    },
+    {
+      "core": "3.2.0",
+      "completed_at": "2026-11-20T00:57:57Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.0-sxl-1.0.9-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.0-sxl-1.0.9-run-44649888274-5-1.json",
+      "report_artifact_id": 14589648894,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.9"
+      }
+    },
+    {
+      "core": "3.2.0",
+      "completed_at": "2026-11-20T00:58:52Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.0-sxl-1.1.0-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.0-sxl-1.1.0-run-44649888274-5-1.json",
+      "report_artifact_id": 14590521241,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.1.0"
+      }
+    },
+    {
+      "core": "3.2.0",
+      "completed_at": "2026-11-20T00:57:42Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.0-sxl-1.2.0-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.0-sxl-1.2.0-run-44649888274-5-1.json",
+      "report_artifact_id": 14590441227,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.0"
+      }
+    },
+    {
+      "core": "3.2.0",
+      "completed_at": "2026-11-20T00:58:47Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.0-sxl-1.2.1-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.0-sxl-1.2.1-run-44649888274-5-1.json",
+      "report_artifact_id": 14590236863,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.2.1",
+      "completed_at": "2026-11-20T00:58:42Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.1-sxl-1.0.10-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.1-sxl-1.0.10-run-44649888274-5-1.json",
+      "report_artifact_id": 14590436424,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.10"
+      }
+    },
+    {
+      "core": "3.2.1",
+      "completed_at": "2026-11-20T00:59:01Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.1-sxl-1.0.13-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.1-sxl-1.0.13-run-44649888274-5-1.json",
+      "report_artifact_id": 14590536146,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.13"
+      }
+    },
+    {
+      "core": "3.2.1",
+      "completed_at": "2026-11-20T00:57:11Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.1-sxl-1.0.14-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.1-sxl-1.0.14-run-44649888274-5-1.json",
+      "report_artifact_id": 14590731090,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.14"
+      }
+    },
+    {
+      "core": "3.2.1",
+      "completed_at": "2026-11-20T00:57:47Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.1-sxl-1.0.15-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.1-sxl-1.0.15-run-44649888274-5-1.json",
+      "report_artifact_id": 14591490128,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.15"
+      }
+    },
+    {
+      "core": "3.2.1",
+      "completed_at": "2026-11-20T00:57:55Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.1-sxl-1.0.7-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.1-sxl-1.0.7-run-44649888274-5-1.json",
+      "report_artifact_id": 14590890918,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.7"
+      }
+    },
+    {
+      "core": "3.2.1",
+      "completed_at": "2026-11-20T00:59:01Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.1-sxl-1.0.8-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.1-sxl-1.0.8-run-44649888274-5-1.json",
+      "report_artifact_id": 14589883903,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.8"
+      }
+    },
+    {
+      "core": "3.2.1",
+      "completed_at": "2026-11-20T00:58:59Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.1-sxl-1.0.9-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.1-sxl-1.0.9-run-44649888274-5-1.json",
+      "report_artifact_id": 14590641118,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.9"
+      }
+    },
+    {
+      "core": "3.2.1",
+      "completed_at": "2026-11-20T00:57:39Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.1-sxl-1.1.0-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.1-sxl-1.1.0-run-44649888274-5-1.json",
+      "report_artifact_id": 14590831009,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.1.0"
+      }
+    },
+    {
+      "core": "3.2.1",
+      "completed_at": "2026-11-20T00:57:17Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.1-sxl-1.2.0-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.1-sxl-1.2.0-run-44649888274-5-1.json",
+      "report_artifact_id": 14590990744,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.0"
+      }
+    },
+    {
+      "core": "3.2.1",
+      "completed_at": "2026-11-20T00:57:32Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.1-sxl-1.2.1-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.1-sxl-1.2.1-run-44649888274-5-1.json",
+      "report_artifact_id": 14589808586,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.2.2",
+      "completed_at": "2026-11-20T00:58:48Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.2-sxl-1.0.10-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.2-sxl-1.0.10-run-44649888274-5-1.json",
+      "report_artifact_id": 14590735974,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.10"
+      }
+    },
+    {
+      "core": "3.2.2",
+      "completed_at": "2026-11-20T00:59:02Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.2-sxl-1.0.13-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.2-sxl-1.0.13-run-44649888274-5-1.json",
+      "report_artifact_id": 14591035647,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.13"
+      }
+    },
+    {
+      "core": "3.2.2",
+      "completed_at": "2026-11-20T00:59:08Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.2-sxl-1.0.14-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.2-sxl-1.0.14-run-44649888274-5-1.json",
+      "report_artifact_id": 14589649043,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.14"
+      }
+    },
+    {
+      "core": "3.2.2",
+      "completed_at": "2026-11-20T00:59:00Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.2-sxl-1.0.15-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.2-sxl-1.0.15-run-44649888274-5-1.json",
+      "report_artifact_id": 14590966175,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.15"
+      }
+    },
+    {
+      "core": "3.2.2",
+      "completed_at": "2026-11-20T00:58:17Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.2-sxl-1.0.7-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.2-sxl-1.0.7-run-44649888274-5-1.json",
+      "report_artifact_id": 14590620959,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.7"
+      }
+    },
+    {
+      "core": "3.2.2",
+      "completed_at": "2026-11-20T00:58:33Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.2-sxl-1.0.8-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.2-sxl-1.0.8-run-44649888274-5-1.json",
+      "report_artifact_id": 14590048759,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.8"
+      }
+    },
+    {
+      "core": "3.2.2",
+      "completed_at": "2026-11-20T00:57:55Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.2-sxl-1.0.9-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.2-sxl-1.0.9-run-44649888274-5-1.json",
+      "report_artifact_id": 14590296348,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.9"
+      }
+    },
+    {
+      "core": "3.2.2",
+      "completed_at": "2026-11-20T00:59:03Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.2-sxl-1.1.0-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.2-sxl-1.1.0-run-44649888274-5-1.json",
+      "report_artifact_id": 14590048834,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.1.0"
+      }
+    },
+    {
+      "core": "3.2.2",
+      "completed_at": "2026-11-20T00:59:10Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.2-sxl-1.2.0-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.2-sxl-1.2.0-run-44649888274-5-1.json",
+      "report_artifact_id": 14590715972,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.0"
+      }
+    },
+    {
+      "core": "3.2.2",
+      "completed_at": "2026-11-20T00:59:14Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.2-sxl-1.2.1-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.2-sxl-1.2.1-run-44649888274-5-1.json",
+      "report_artifact_id": 14591435187,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.3.0",
+      "completed_at": "2026-11-20T00:59:14Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.3.0-sxl-1.0.10-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.3.0-sxl-1.0.10-run-44649888274-5-1.json",
+      "report_artifact_id": 14590216857,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.10"
+      }
+    },
+    {
+      "core": "3.3.0",
+      "completed_at": "2026-11-20T00:59:12Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.3.0-sxl-1.0.13-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.3.0-sxl-1.0.13-run-44649888274-5-1.json",
+      "report_artifact_id": 14590846260,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.13"
+      }
+    },
+    {
+      "core": "3.3.0",
+      "completed_at": "2026-11-20T00:59:05Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.3.0-sxl-1.0.14-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.3.0-sxl-1.0.14-run-44649888274-5-1.json",
+      "report_artifact_id": 14590896189,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.14"
+      }
+    },
+    {
+      "core": "3.3.0",
+      "completed_at": "2026-11-20T00:59:14Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.3.0-sxl-1.0.15-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.3.0-sxl-1.0.15-run-44649888274-5-1.json",
+      "report_artifact_id": 14591255828,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.15"
+      }
+    },
+    {
+      "core": "3.3.0",
+      "completed_at": "2026-11-20T00:59:03Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.3.0-sxl-1.0.7-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.3.0-sxl-1.0.7-run-44649888274-5-1.json",
+      "report_artifact_id": 14589909187,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.7"
+      }
+    },
+    {
+      "core": "3.3.0",
+      "completed_at": "2026-11-20T00:59:07Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.3.0-sxl-1.0.8-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.3.0-sxl-1.0.8-run-44649888274-5-1.json",
+      "report_artifact_id": 14591235859,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.8"
+      }
+    },
+    {
+      "core": "3.3.0",
+      "completed_at": "2026-11-20T00:59:15Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.3.0-sxl-1.0.9-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.3.0-sxl-1.0.9-run-44649888274-5-1.json",
+      "report_artifact_id": 14590930748,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.9"
+      }
+    },
+    {
+      "core": "3.3.0",
+      "completed_at": "2026-11-20T00:59:02Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.3.0-sxl-1.1.0-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.3.0-sxl-1.1.0-run-44649888274-5-1.json",
+      "report_artifact_id": 14590331471,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.1.0"
+      }
+    },
+    {
+      "core": "3.3.0",
+      "completed_at": "2026-11-20T00:59:15Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.3.0-sxl-1.2.0-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.3.0-sxl-1.2.0-run-44649888274-5-1.json",
+      "report_artifact_id": 14589074985,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.0"
+      }
+    },
+    {
+      "core": "3.3.0",
+      "completed_at": "2026-11-20T00:59:15Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.3.0-sxl-1.2.1-run-44649888274-5-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.3.0-sxl-1.2.1-run-44649888274-5-1.json",
+      "report_artifact_id": 14590356443,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    }
+  ]
+}
