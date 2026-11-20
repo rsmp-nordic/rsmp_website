@@ -1,0 +1,210 @@
+{
+  "target_id": "semaforica-cartesio",
+  "run_id": 44662674128,
+  "run_attempt": 2,
+  "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/44662674128",
+  "event": "schedule",
+  "completed_at": "2026-11-20T11:28:03Z",
+  "status": "failed",
+  "passed_cells": 1,
+  "total_cells": 7,
+  "cells": [
+    {
+      "core": "3.1.2",
+      "completed_at": "2026-11-20T11:28:03Z",
+      "status": "passed",
+      "test_count": 147,
+      "passed_count": 119,
+      "skipped_count": 28,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-lasemaforica-cartesio-core-3.1.2-run-44662674128-1384-2.log",
+      "report_artifact": "compliance-tecsen-lasemaforica-cartesio-core-3.1.2-run-44662674128-1384-2.json",
+      "report_artifact_id": 14625171316,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.1.3",
+      "completed_at": "2026-11-20T10:32:03Z",
+      "status": "failed",
+      "test_count": 145,
+      "passed_count": 117,
+      "skipped_count": 26,
+      "failed_count": 1,
+      "errored_count": 1,
+      "log_artifact": "validator-tecsen-lasemaforica-cartesio-core-3.1.3-run-44662674128-1384-2.log",
+      "report_artifact": "compliance-tecsen-lasemaforica-cartesio-core-3.1.3-run-44662674128-1384-2.json",
+      "report_artifact_id": 14621232196,
+      "failures": [
+        {
+          "id": "test/site/tlc/alarm_spec.rb:28",
+          "message": "describe Site::Tlc::Alarm it raises A0302 when input is activated test/site/tlc/alarm_spec.rb:27\n\t✗ Connection closed by peer test/site/tlc/alarm_spec.rb:28",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/tlc/alarm_spec.rb",
+            "line": 28
+          },
+          "type": "Sus::Assertions::Assert"
+        },
+        {
+          "id": "test/site/tlc/alarm_spec.rb:57",
+          "message": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/site_tester.rb:83:in 'RSMP::Validator::SiteTester#wait_for_handshake': Did not reach state ready within 60s (RSMP::ConnectionError)\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/tester.rb:91:in 'RSMP::Validator::Tester#wait_for_proxy'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/tester.rb:20:in 'RSMP::Validator::Tester#connected'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/site_tester.rb:11:in 'RSMP::Validator::SiteTester.connected'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/helpers/connection.rb:34:in 'Kernel#public_send'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/helpers/connection.rb:34:in 'RSMP::Validator::Helpers::Connection#with_site'\n\tfrom test/site/tlc/alarm_spec.rb:57:in 'block (3 levels) in <top (required)>'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:67:in 'block in Sus::It#handle_skip'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:66:in 'Kernel#catch'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:66:in 'Sus::It#handle_skip'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:56:in 'block (2 levels) in Sus::It#call'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/async_context.rb:8:in 'Kernel#catch'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/async_context.rb:8:in 'block in RSMP::Validator::AsyncContext#around'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.46.0/lib/async/task.rb:225:in 'block in Async::Task#run'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.46.0/lib/async/task.rb:528:in 'block in Async::Task#schedule'",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/tlc/alarm_spec.rb",
+            "line": 57
+          },
+          "type": "Sus::Assertions::Error"
+        }
+      ],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.1.4",
+      "completed_at": "2026-11-20T10:44:03Z",
+      "status": "failed",
+      "test_count": 144,
+      "passed_count": 118,
+      "skipped_count": 25,
+      "failed_count": 0,
+      "errored_count": 1,
+      "log_artifact": "validator-tecsen-lasemaforica-cartesio-core-3.1.4-run-44662674128-1384-2.log",
+      "report_artifact": "compliance-tecsen-lasemaforica-cartesio-core-3.1.4-run-44662674128-1384-2.json",
+      "report_artifact_id": 14621193975,
+      "failures": [
+        {
+          "id": "test/site/tlc/clock_spec.rb:205",
+          "message": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.54.0/lib/rsmp/proxy/proxy.rb:185:in 'block in RSMP::Proxy#sxl_interface': RSMP::Schema::UnknownSchemaTypeError: SXL tlc is not accepted on this connection (RSMP::Validator::Helpers::Connection::UncaughtException)\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.54.0/lib/rsmp/proxy/proxy.rb:184:in 'Hash#fetch'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.54.0/lib/rsmp/proxy/proxy.rb:184:in 'RSMP::Proxy#sxl_interface'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.54.0/lib/rsmp/proxy/proxy.rb:190:in 'RSMP::Proxy#tlc'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/helpers/clock.rb:11:in 'RSMP::Validator::Helpers::Clock#with_clock_set'\n\tfrom test/site/tlc/clock_spec.rb:208:in 'block (5 levels) in <top (required)>'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/rsmp-0.54.0/lib/rsmp/proxy/modules/watchdogs.rb:20:in 'RSMP::Proxy::Modules::Watchdogs#with_watchdog_disabled'\n\tfrom test/site/tlc/clock_spec.rb:206:in 'block (4 levels) in <top (required)>'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/helpers/connection.rb:35:in 'block (2 levels) in RSMP::Validator::Helpers::Connection#with_site'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/helpers/connection.rb:55:in 'RSMP::Validator::Helpers::Connection#run_test'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/helpers/connection.rb:35:in 'block in RSMP::Validator::Helpers::Connection#with_site'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/tester.rb:21:in 'RSMP::Validator::Tester#connected'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/site_tester.rb:11:in 'RSMP::Validator::SiteTester.connected'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/helpers/connection.rb:34:in 'Kernel#public_send'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/helpers/connection.rb:34:in 'RSMP::Validator::Helpers::Connection#with_site'\n\tfrom test/site/tlc/clock_spec.rb:205:in 'block (3 levels) in <top (required)>'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:67:in 'block in Sus::It#handle_skip'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:66:in 'Kernel#catch'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:66:in 'Sus::It#handle_skip'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/sus-0.37.2/lib/sus/it.rb:56:in 'block (2 levels) in Sus::It#call'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/async_context.rb:8:in 'Kernel#catch'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/lib/rsmp/validator/async_context.rb:8:in 'block in RSMP::Validator::AsyncContext#around'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.46.0/lib/async/task.rb:225:in 'block in Async::Task#run'\n\tfrom /opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/vendor/bundle/ruby/4.0.0/gems/async-2.46.0/lib/async/task.rb:528:in 'block in Async::Task#schedule'",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/tlc/clock_spec.rb",
+            "line": 205
+          },
+          "type": "Sus::Assertions::Error"
+        }
+      ],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.1.5",
+      "completed_at": "2026-11-20T10:19:03Z",
+      "status": "failed",
+      "test_count": 142,
+      "passed_count": 118,
+      "skipped_count": 23,
+      "failed_count": 1,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-lasemaforica-cartesio-core-3.1.5-run-44662674128-1384-2.log",
+      "report_artifact": "compliance-tecsen-lasemaforica-cartesio-core-3.1.5-run-44662674128-1384-2.json",
+      "report_artifact_id": 14619674063,
+      "failures": [
+        {
+          "id": "test/site/core/message_buffer_spec.rb:100",
+          "message": "describe Message Buffer it sends status updates timestamped during the communication outage test/site/core/message_buffer_spec.rb:93\n\t✗ Received StatusUpdate timestamped within window 2026-11-20 10:09:42.396..10:09:43.396 UTC test/site/core/message_buffer_spec.rb:100",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/core/message_buffer_spec.rb",
+            "line": 100
+          },
+          "type": "Sus::Assertions::Assert"
+        }
+      ],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.2.0",
+      "completed_at": "2026-11-20T10:04:03Z",
+      "status": "failed",
+      "test_count": 133,
+      "passed_count": 118,
+      "skipped_count": 14,
+      "failed_count": 1,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-lasemaforica-cartesio-core-3.2.0-run-44662674128-1384-2.log",
+      "report_artifact": "compliance-tecsen-lasemaforica-cartesio-core-3.2.0-run-44662674128-1384-2.json",
+      "report_artifact_id": 14619063543,
+      "failures": [
+        {
+          "id": "test/site/core/message_buffer_spec.rb:121",
+          "message": "describe Message Buffer it marks buffered status values as old for rsmp 3.2.0 and later test/site/core/message_buffer_spec.rb:114\n\t✗ Received StatusUpdate timestamped within window 2026-11-20 09:54:07.902..09:54:08.902 UTC test/site/core/message_buffer_spec.rb:121",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/core/message_buffer_spec.rb",
+            "line": 121
+          },
+          "type": "Sus::Assertions::Assert"
+        }
+      ],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.2.1",
+      "completed_at": "2026-11-20T10:58:03Z",
+      "status": "failed",
+      "test_count": 133,
+      "passed_count": 118,
+      "skipped_count": 14,
+      "failed_count": 1,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-lasemaforica-cartesio-core-3.2.1-run-44662674128-1384-2.log",
+      "report_artifact": "compliance-tecsen-lasemaforica-cartesio-core-3.2.1-run-44662674128-1384-2.json",
+      "report_artifact_id": 14622129133,
+      "failures": [
+        {
+          "id": "test/site/core/message_buffer_spec.rb:121",
+          "message": "describe Message Buffer it marks buffered status values as old for rsmp 3.2.0 and later test/site/core/message_buffer_spec.rb:114\n\t✗ Received StatusUpdate timestamped within window 2026-11-20 10:48:55.899..10:48:56.899 UTC test/site/core/message_buffer_spec.rb:121",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/core/message_buffer_spec.rb",
+            "line": 121
+          },
+          "type": "Sus::Assertions::Assert"
+        }
+      ],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.2.2",
+      "completed_at": "2026-11-20T11:15:03Z",
+      "status": "failed",
+      "test_count": 133,
+      "passed_count": 117,
+      "skipped_count": 14,
+      "failed_count": 2,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-lasemaforica-cartesio-core-3.2.2-run-44662674128-1384-2.log",
+      "report_artifact": "compliance-tecsen-lasemaforica-cartesio-core-3.2.2-run-44662674128-1384-2.json",
+      "report_artifact_id": 14624036891,
+      "failures": [
+        {
+          "id": "test/site/core/message_buffer_spec.rb:100",
+          "message": "describe Message Buffer it sends status updates timestamped during the communication outage test/site/core/message_buffer_spec.rb:93\n\t✗ Received StatusUpdate timestamped within window 2026-11-20 11:03:42.915..11:03:43.915 UTC test/site/core/message_buffer_spec.rb:100",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/core/message_buffer_spec.rb",
+            "line": 100
+          },
+          "type": "Sus::Assertions::Assert"
+        },
+        {
+          "id": "test/site/core/message_buffer_spec.rb:121",
+          "message": "describe Message Buffer it marks buffered status values as old for rsmp 3.2.0 and later test/site/core/message_buffer_spec.rb:114\n\t✗ Received StatusUpdate timestamped within window 2026-11-20 11:06:01.502..11:06:02.502 UTC test/site/core/message_buffer_spec.rb:121",
+          "location": {
+            "path": "/opt/actions-runner/runner_cartesio/_work/rsmp_validator/rsmp_validator/test/site/core/message_buffer_spec.rb",
+            "line": 121
+          },
+          "type": "Sus::Assertions::Assert"
+        }
+      ],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    }
+  ]
+}
