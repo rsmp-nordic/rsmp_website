@@ -1,0 +1,787 @@
+{
+  "target_id": "tecsen-tmacs",
+  "run_id": 44858342612,
+  "run_attempt": 1,
+  "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/44858342612",
+  "event": "schedule",
+  "completed_at": "2026-11-21T03:42:40Z",
+  "status": "failed",
+  "passed_cells": 36,
+  "total_cells": 42,
+  "cells": [
+    {
+      "core": "3.1.2",
+      "completed_at": "2026-11-21T02:55:41Z",
+      "status": "failed",
+      "test_count": 18,
+      "passed_count": 9,
+      "skipped_count": 8,
+      "failed_count": 1,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-tmacs-core-3.1.2-sxl-1.0.13-run-44858342612-8-1.log",
+      "report_artifact": "compliance-tecsen-tmacs-core-3.1.2-sxl-1.0.13-run-44858342612-8-1.json",
+      "report_artifact_id": 14688711325,
+      "failures": [
+        {
+          "id": "test/supervisor/connect_spec.rb:23",
+          "message": "describe Connection Sequence it exchanges correct connection sequence of rsmp version 3.1.2 test/supervisor/connect_spec.rb:134\n\t✗ Received invalid StatusSubscribe: /sS/0/sOc, schema, , /sS/1/sOc, schema, , /sS/2/sOc, schema, , /sS/3/sOc, schema, , /sS/4/sOc, schema, , /sS/5/sOc, schema, , /sS/6/sOc, schema, , /sS/7/sOc, schema, , /sS/8/sOc, schema, , /sS/9/sOc, schema, , /sS/10/sOc, schema, , /sS/11/sOc, schema, , /sS/12/sOc, schema, , /sS/13/sOc, schema, test/supervisor/connect_spec.rb:23",
+          "location": {
+            "path": "/opt/actions-runner/runner_tmacs/_work_tmacs/rsmp_validator/rsmp_validator/test/supervisor/connect_spec.rb",
+            "line": 23
+          },
+          "type": "Sus::Assertions::Assert"
+        }
+      ],
+      "sxls": {
+        "tlc": "1.0.13"
+      }
+    },
+    {
+      "core": "3.1.2",
+      "completed_at": "2026-11-21T02:58:14Z",
+      "status": "failed",
+      "test_count": 18,
+      "passed_count": 9,
+      "skipped_count": 8,
+      "failed_count": 1,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-tmacs-core-3.1.2-sxl-1.0.14-run-44858342612-8-1.log",
+      "report_artifact": "compliance-tecsen-tmacs-core-3.1.2-sxl-1.0.14-run-44858342612-8-1.json",
+      "report_artifact_id": 14688716822,
+      "failures": [
+        {
+          "id": "test/supervisor/connect_spec.rb:23",
+          "message": "describe Connection Sequence it exchanges correct connection sequence of rsmp version 3.1.2 test/supervisor/connect_spec.rb:134\n\t✗ Received invalid StatusSubscribe: /sS/0/sOc, schema, , /sS/1/sOc, schema, , /sS/2/sOc, schema, , /sS/3/sOc, schema, , /sS/4/sOc, schema, , /sS/5/sOc, schema, , /sS/6/sOc, schema, , /sS/7/sOc, schema, , /sS/8/sOc, schema, , /sS/9/sOc, schema, , /sS/10/sOc, schema, , /sS/11/sOc, schema, , /sS/12/sOc, schema, , /sS/13/sOc, schema, test/supervisor/connect_spec.rb:23",
+          "location": {
+            "path": "/opt/actions-runner/runner_tmacs/_work_tmacs/rsmp_validator/rsmp_validator/test/supervisor/connect_spec.rb",
+            "line": 23
+          },
+          "type": "Sus::Assertions::Assert"
+        }
+      ],
+      "sxls": {
+        "tlc": "1.0.14"
+      }
+    },
+    {
+      "core": "3.1.2",
+      "completed_at": "2026-11-21T03:00:47Z",
+      "status": "failed",
+      "test_count": 18,
+      "passed_count": 9,
+      "skipped_count": 8,
+      "failed_count": 1,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-tmacs-core-3.1.2-sxl-1.0.15-run-44858342612-8-1.log",
+      "report_artifact": "compliance-tecsen-tmacs-core-3.1.2-sxl-1.0.15-run-44858342612-8-1.json",
+      "report_artifact_id": 14689260709,
+      "failures": [
+        {
+          "id": "test/supervisor/connect_spec.rb:23",
+          "message": "describe Connection Sequence it exchanges correct connection sequence of rsmp version 3.1.2 test/supervisor/connect_spec.rb:134\n\t✗ Received invalid StatusSubscribe: /sS/0/sOc, schema, , /sS/1/sOc, schema, , /sS/2/sOc, schema, , /sS/3/sOc, schema, , /sS/4/sOc, schema, , /sS/5/sOc, schema, , /sS/6/sOc, schema, , /sS/7/sOc, schema, , /sS/8/sOc, schema, , /sS/9/sOc, schema, , /sS/10/sOc, schema, , /sS/11/sOc, schema, , /sS/12/sOc, schema, , /sS/13/sOc, schema, test/supervisor/connect_spec.rb:23",
+          "location": {
+            "path": "/opt/actions-runner/runner_tmacs/_work_tmacs/rsmp_validator/rsmp_validator/test/supervisor/connect_spec.rb",
+            "line": 23
+          },
+          "type": "Sus::Assertions::Assert"
+        }
+      ],
+      "sxls": {
+        "tlc": "1.0.15"
+      }
+    },
+    {
+      "core": "3.1.2",
+      "completed_at": "2026-11-21T03:03:20Z",
+      "status": "failed",
+      "test_count": 18,
+      "passed_count": 9,
+      "skipped_count": 8,
+      "failed_count": 1,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-tmacs-core-3.1.2-sxl-1.1.0-run-44858342612-8-1.log",
+      "report_artifact": "compliance-tecsen-tmacs-core-3.1.2-sxl-1.1.0-run-44858342612-8-1.json",
+      "report_artifact_id": 14689435879,
+      "failures": [
+        {
+          "id": "test/supervisor/connect_spec.rb:23",
+          "message": "describe Connection Sequence it exchanges correct connection sequence of rsmp version 3.1.2 test/supervisor/connect_spec.rb:134\n\t✗ Received invalid StatusSubscribe: /sS/0/sOc, schema, , /sS/1/sOc, schema, , /sS/2/sOc, schema, , /sS/3/sOc, schema, , /sS/4/sOc, schema, , /sS/5/sOc, schema, , /sS/6/sOc, schema, , /sS/7/sOc, schema, , /sS/8/sOc, schema, , /sS/9/sOc, schema, , /sS/10/sOc, schema, , /sS/11/sOc, schema, , /sS/12/sOc, schema, , /sS/13/sOc, schema, , /sS/14/sOc, schema, test/supervisor/connect_spec.rb:23",
+          "location": {
+            "path": "/opt/actions-runner/runner_tmacs/_work_tmacs/rsmp_validator/rsmp_validator/test/supervisor/connect_spec.rb",
+            "line": 23
+          },
+          "type": "Sus::Assertions::Assert"
+        }
+      ],
+      "sxls": {
+        "tlc": "1.1.0"
+      }
+    },
+    {
+      "core": "3.1.2",
+      "completed_at": "2026-11-21T03:04:22Z",
+      "status": "failed",
+      "test_count": 18,
+      "passed_count": 9,
+      "skipped_count": 8,
+      "failed_count": 1,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-tmacs-core-3.1.2-sxl-1.2.0-run-44858342612-8-1.log",
+      "report_artifact": "compliance-tecsen-tmacs-core-3.1.2-sxl-1.2.0-run-44858342612-8-1.json",
+      "report_artifact_id": 14688837549,
+      "failures": [
+        {
+          "id": "test/supervisor/connect_spec.rb:23",
+          "message": "describe Connection Sequence it exchanges correct connection sequence of rsmp version 3.1.2 test/supervisor/connect_spec.rb:134\n\t✗ Received invalid StatusSubscribe: /sS/0/sOc, schema, , /sS/1/sOc, schema, , /sS/2/sOc, schema, , /sS/3/sOc, schema, , /sS/4/sOc, schema, , /sS/5/sOc, schema, , /sS/6/sOc, schema, , /sS/7/sOc, schema, , /sS/8/sOc, schema, , /sS/9/sOc, schema, , /sS/10/sOc, schema, , /sS/11/sOc, schema, , /sS/12/sOc, schema, , /sS/13/sOc, schema, , /sS/14/sOc, schema, test/supervisor/connect_spec.rb:23",
+          "location": {
+            "path": "/opt/actions-runner/runner_tmacs/_work_tmacs/rsmp_validator/rsmp_validator/test/supervisor/connect_spec.rb",
+            "line": 23
+          },
+          "type": "Sus::Assertions::Assert"
+        }
+      ],
+      "sxls": {
+        "tlc": "1.2.0"
+      }
+    },
+    {
+      "core": "3.1.2",
+      "completed_at": "2026-11-21T03:05:24Z",
+      "status": "failed",
+      "test_count": 18,
+      "passed_count": 9,
+      "skipped_count": 8,
+      "failed_count": 1,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-tmacs-core-3.1.2-sxl-1.2.1-run-44858342612-8-1.log",
+      "report_artifact": "compliance-tecsen-tmacs-core-3.1.2-sxl-1.2.1-run-44858342612-8-1.json",
+      "report_artifact_id": 14688444843,
+      "failures": [
+        {
+          "id": "test/supervisor/connect_spec.rb:23",
+          "message": "describe Connection Sequence it exchanges correct connection sequence of rsmp version 3.1.2 test/supervisor/connect_spec.rb:134\n\t✗ Received invalid StatusSubscribe: /sS/0/sOc, schema, , /sS/1/sOc, schema, , /sS/2/sOc, schema, , /sS/3/sOc, schema, , /sS/4/sOc, schema, , /sS/5/sOc, schema, , /sS/6/sOc, schema, , /sS/7/sOc, schema, , /sS/8/sOc, schema, , /sS/9/sOc, schema, , /sS/10/sOc, schema, , /sS/11/sOc, schema, , /sS/12/sOc, schema, , /sS/13/sOc, schema, , /sS/14/sOc, schema, test/supervisor/connect_spec.rb:23",
+          "location": {
+            "path": "/opt/actions-runner/runner_tmacs/_work_tmacs/rsmp_validator/rsmp_validator/test/supervisor/connect_spec.rb",
+            "line": 23
+          },
+          "type": "Sus::Assertions::Assert"
+        }
+      ],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.1.3",
+      "completed_at": "2026-11-21T03:05:51Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-tmacs-core-3.1.3-sxl-1.0.13-run-44858342612-8-1.log",
+      "report_artifact": "compliance-tecsen-tmacs-core-3.1.3-sxl-1.0.13-run-44858342612-8-1.json",
+      "report_artifact_id": 14688673170,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.13"
+      }
+    },
+    {
+      "core": "3.1.3",
+      "completed_at": "2026-11-21T03:06:18Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-tmacs-core-3.1.3-sxl-1.0.14-run-44858342612-8-1.log",
+      "report_artifact": "compliance-tecsen-tmacs-core-3.1.3-sxl-1.0.14-run-44858342612-8-1.json",
+      "report_artifact_id": 14689511226,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.14"
+      }
+    },
+    {
+      "core": "3.1.3",
+      "completed_at": "2026-11-21T03:06:46Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-tmacs-core-3.1.3-sxl-1.0.15-run-44858342612-8-1.log",
+      "report_artifact": "compliance-tecsen-tmacs-core-3.1.3-sxl-1.0.15-run-44858342612-8-1.json",
+      "report_artifact_id": 14688986398,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.15"
+      }
+    },
+    {
+      "core": "3.1.3",
+      "completed_at": "2026-11-21T03:07:12Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-tmacs-core-3.1.3-sxl-1.1.0-run-44858342612-8-1.log",
+      "report_artifact": "compliance-tecsen-tmacs-core-3.1.3-sxl-1.1.0-run-44858342612-8-1.json",
+      "report_artifact_id": 14688966570,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.1.0"
+      }
+    },
+    {
+      "core": "3.1.3",
+      "completed_at": "2026-11-21T03:08:46Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-tmacs-core-3.1.3-sxl-1.2.0-run-44858342612-8-1.log",
+      "report_artifact": "compliance-tecsen-tmacs-core-3.1.3-sxl-1.2.0-run-44858342612-8-1.json",
+      "report_artifact_id": 14689182113,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.0"
+      }
+    },
+    {
+      "core": "3.1.3",
+      "completed_at": "2026-11-21T03:10:19Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-tmacs-core-3.1.3-sxl-1.2.1-run-44858342612-8-1.log",
+      "report_artifact": "compliance-tecsen-tmacs-core-3.1.3-sxl-1.2.1-run-44858342612-8-1.json",
+      "report_artifact_id": 14688952032,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.1.4",
+      "completed_at": "2026-11-21T03:10:47Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-tmacs-core-3.1.4-sxl-1.0.13-run-44858342612-8-1.log",
+      "report_artifact": "compliance-tecsen-tmacs-core-3.1.4-sxl-1.0.13-run-44858342612-8-1.json",
+      "report_artifact_id": 14688812445,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.13"
+      }
+    },
+    {
+      "core": "3.1.4",
+      "completed_at": "2026-11-21T03:12:20Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-tmacs-core-3.1.4-sxl-1.0.14-run-44858342612-8-1.log",
+      "report_artifact": "compliance-tecsen-tmacs-core-3.1.4-sxl-1.0.14-run-44858342612-8-1.json",
+      "report_artifact_id": 14688679374,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.14"
+      }
+    },
+    {
+      "core": "3.1.4",
+      "completed_at": "2026-11-21T03:12:48Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-tmacs-core-3.1.4-sxl-1.0.15-run-44858342612-8-1.log",
+      "report_artifact": "compliance-tecsen-tmacs-core-3.1.4-sxl-1.0.15-run-44858342612-8-1.json",
+      "report_artifact_id": 14688694217,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.15"
+      }
+    },
+    {
+      "core": "3.1.4",
+      "completed_at": "2026-11-21T03:13:16Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-tmacs-core-3.1.4-sxl-1.1.0-run-44858342612-8-1.log",
+      "report_artifact": "compliance-tecsen-tmacs-core-3.1.4-sxl-1.1.0-run-44858342612-8-1.json",
+      "report_artifact_id": 14689073027,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.1.0"
+      }
+    },
+    {
+      "core": "3.1.4",
+      "completed_at": "2026-11-21T03:14:49Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-tmacs-core-3.1.4-sxl-1.2.0-run-44858342612-8-1.log",
+      "report_artifact": "compliance-tecsen-tmacs-core-3.1.4-sxl-1.2.0-run-44858342612-8-1.json",
+      "report_artifact_id": 14688793034,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.0"
+      }
+    },
+    {
+      "core": "3.1.4",
+      "completed_at": "2026-11-21T03:16:23Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-tmacs-core-3.1.4-sxl-1.2.1-run-44858342612-8-1.log",
+      "report_artifact": "compliance-tecsen-tmacs-core-3.1.4-sxl-1.2.1-run-44858342612-8-1.json",
+      "report_artifact_id": 14689667055,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.1.5",
+      "completed_at": "2026-11-21T03:16:51Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-tmacs-core-3.1.5-sxl-1.0.13-run-44858342612-8-1.log",
+      "report_artifact": "compliance-tecsen-tmacs-core-3.1.5-sxl-1.0.13-run-44858342612-8-1.json",
+      "report_artifact_id": 14689503075,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.13"
+      }
+    },
+    {
+      "core": "3.1.5",
+      "completed_at": "2026-11-21T03:18:23Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-tmacs-core-3.1.5-sxl-1.0.14-run-44858342612-8-1.log",
+      "report_artifact": "compliance-tecsen-tmacs-core-3.1.5-sxl-1.0.14-run-44858342612-8-1.json",
+      "report_artifact_id": 14689875144,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.14"
+      }
+    },
+    {
+      "core": "3.1.5",
+      "completed_at": "2026-11-21T03:18:50Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-tmacs-core-3.1.5-sxl-1.0.15-run-44858342612-8-1.log",
+      "report_artifact": "compliance-tecsen-tmacs-core-3.1.5-sxl-1.0.15-run-44858342612-8-1.json",
+      "report_artifact_id": 14688879975,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.15"
+      }
+    },
+    {
+      "core": "3.1.5",
+      "completed_at": "2026-11-21T03:20:22Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-tmacs-core-3.1.5-sxl-1.1.0-run-44858342612-8-1.log",
+      "report_artifact": "compliance-tecsen-tmacs-core-3.1.5-sxl-1.1.0-run-44858342612-8-1.json",
+      "report_artifact_id": 14689830681,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.1.0"
+      }
+    },
+    {
+      "core": "3.1.5",
+      "completed_at": "2026-11-21T03:20:51Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-tmacs-core-3.1.5-sxl-1.2.0-run-44858342612-8-1.log",
+      "report_artifact": "compliance-tecsen-tmacs-core-3.1.5-sxl-1.2.0-run-44858342612-8-1.json",
+      "report_artifact_id": 14689900412,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.0"
+      }
+    },
+    {
+      "core": "3.1.5",
+      "completed_at": "2026-11-21T03:22:24Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-tmacs-core-3.1.5-sxl-1.2.1-run-44858342612-8-1.log",
+      "report_artifact": "compliance-tecsen-tmacs-core-3.1.5-sxl-1.2.1-run-44858342612-8-1.json",
+      "report_artifact_id": 14688978406,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.2.0",
+      "completed_at": "2026-11-21T03:23:57Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-tmacs-core-3.2.0-sxl-1.0.13-run-44858342612-8-1.log",
+      "report_artifact": "compliance-tecsen-tmacs-core-3.2.0-sxl-1.0.13-run-44858342612-8-1.json",
+      "report_artifact_id": 14688684438,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.13"
+      }
+    },
+    {
+      "core": "3.2.0",
+      "completed_at": "2026-11-21T03:24:25Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-tmacs-core-3.2.0-sxl-1.0.14-run-44858342612-8-1.log",
+      "report_artifact": "compliance-tecsen-tmacs-core-3.2.0-sxl-1.0.14-run-44858342612-8-1.json",
+      "report_artifact_id": 14688604571,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.14"
+      }
+    },
+    {
+      "core": "3.2.0",
+      "completed_at": "2026-11-21T03:25:58Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-tmacs-core-3.2.0-sxl-1.0.15-run-44858342612-8-1.log",
+      "report_artifact": "compliance-tecsen-tmacs-core-3.2.0-sxl-1.0.15-run-44858342612-8-1.json",
+      "report_artifact_id": 14689866564,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.15"
+      }
+    },
+    {
+      "core": "3.2.0",
+      "completed_at": "2026-11-21T03:27:31Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-tmacs-core-3.2.0-sxl-1.1.0-run-44858342612-8-1.log",
+      "report_artifact": "compliance-tecsen-tmacs-core-3.2.0-sxl-1.1.0-run-44858342612-8-1.json",
+      "report_artifact_id": 14689614141,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.1.0"
+      }
+    },
+    {
+      "core": "3.2.0",
+      "completed_at": "2026-11-21T03:29:04Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-tmacs-core-3.2.0-sxl-1.2.0-run-44858342612-8-1.log",
+      "report_artifact": "compliance-tecsen-tmacs-core-3.2.0-sxl-1.2.0-run-44858342612-8-1.json",
+      "report_artifact_id": 14688799822,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.0"
+      }
+    },
+    {
+      "core": "3.2.0",
+      "completed_at": "2026-11-21T03:30:36Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-tmacs-core-3.2.0-sxl-1.2.1-run-44858342612-8-1.log",
+      "report_artifact": "compliance-tecsen-tmacs-core-3.2.0-sxl-1.2.1-run-44858342612-8-1.json",
+      "report_artifact_id": 14689618112,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.2.1",
+      "completed_at": "2026-11-21T03:32:10Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-tmacs-core-3.2.1-sxl-1.0.13-run-44858342612-8-1.log",
+      "report_artifact": "compliance-tecsen-tmacs-core-3.2.1-sxl-1.0.13-run-44858342612-8-1.json",
+      "report_artifact_id": 14690430289,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.13"
+      }
+    },
+    {
+      "core": "3.2.1",
+      "completed_at": "2026-11-21T03:32:39Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-tmacs-core-3.2.1-sxl-1.0.14-run-44858342612-8-1.log",
+      "report_artifact": "compliance-tecsen-tmacs-core-3.2.1-sxl-1.0.14-run-44858342612-8-1.json",
+      "report_artifact_id": 14690130545,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.14"
+      }
+    },
+    {
+      "core": "3.2.1",
+      "completed_at": "2026-11-21T03:34:12Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-tmacs-core-3.2.1-sxl-1.0.15-run-44858342612-8-1.log",
+      "report_artifact": "compliance-tecsen-tmacs-core-3.2.1-sxl-1.0.15-run-44858342612-8-1.json",
+      "report_artifact_id": 14690270629,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.15"
+      }
+    },
+    {
+      "core": "3.2.1",
+      "completed_at": "2026-11-21T03:35:46Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-tmacs-core-3.2.1-sxl-1.1.0-run-44858342612-8-1.log",
+      "report_artifact": "compliance-tecsen-tmacs-core-3.2.1-sxl-1.1.0-run-44858342612-8-1.json",
+      "report_artifact_id": 14690635407,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.1.0"
+      }
+    },
+    {
+      "core": "3.2.1",
+      "completed_at": "2026-11-21T03:36:13Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-tmacs-core-3.2.1-sxl-1.2.0-run-44858342612-8-1.log",
+      "report_artifact": "compliance-tecsen-tmacs-core-3.2.1-sxl-1.2.0-run-44858342612-8-1.json",
+      "report_artifact_id": 14689927938,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.0"
+      }
+    },
+    {
+      "core": "3.2.1",
+      "completed_at": "2026-11-21T03:36:39Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-tmacs-core-3.2.1-sxl-1.2.1-run-44858342612-8-1.log",
+      "report_artifact": "compliance-tecsen-tmacs-core-3.2.1-sxl-1.2.1-run-44858342612-8-1.json",
+      "report_artifact_id": 14689828528,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.2.2",
+      "completed_at": "2026-11-21T03:37:07Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-tmacs-core-3.2.2-sxl-1.0.13-run-44858342612-8-1.log",
+      "report_artifact": "compliance-tecsen-tmacs-core-3.2.2-sxl-1.0.13-run-44858342612-8-1.json",
+      "report_artifact_id": 14690426571,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.13"
+      }
+    },
+    {
+      "core": "3.2.2",
+      "completed_at": "2026-11-21T03:37:35Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-tmacs-core-3.2.2-sxl-1.0.14-run-44858342612-8-1.log",
+      "report_artifact": "compliance-tecsen-tmacs-core-3.2.2-sxl-1.0.14-run-44858342612-8-1.json",
+      "report_artifact_id": 14689953039,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.14"
+      }
+    },
+    {
+      "core": "3.2.2",
+      "completed_at": "2026-11-21T03:39:07Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-tmacs-core-3.2.2-sxl-1.0.15-run-44858342612-8-1.log",
+      "report_artifact": "compliance-tecsen-tmacs-core-3.2.2-sxl-1.0.15-run-44858342612-8-1.json",
+      "report_artifact_id": 14690545756,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.15"
+      }
+    },
+    {
+      "core": "3.2.2",
+      "completed_at": "2026-11-21T03:40:39Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-tmacs-core-3.2.2-sxl-1.1.0-run-44858342612-8-1.log",
+      "report_artifact": "compliance-tecsen-tmacs-core-3.2.2-sxl-1.1.0-run-44858342612-8-1.json",
+      "report_artifact_id": 14690041725,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.1.0"
+      }
+    },
+    {
+      "core": "3.2.2",
+      "completed_at": "2026-11-21T03:41:07Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-tmacs-core-3.2.2-sxl-1.2.0-run-44858342612-8-1.log",
+      "report_artifact": "compliance-tecsen-tmacs-core-3.2.2-sxl-1.2.0-run-44858342612-8-1.json",
+      "report_artifact_id": 14689948601,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.0"
+      }
+    },
+    {
+      "core": "3.2.2",
+      "completed_at": "2026-11-21T03:42:40Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-tecsen-tmacs-core-3.2.2-sxl-1.2.1-run-44858342612-8-1.log",
+      "report_artifact": "compliance-tecsen-tmacs-core-3.2.2-sxl-1.2.1-run-44858342612-8-1.json",
+      "report_artifact_id": 14690247788,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    }
+  ]
+}
