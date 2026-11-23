@@ -1,0 +1,233 @@
+{
+  "target_id": "kapsch-etx",
+  "run_id": 45099720597,
+  "run_attempt": 1,
+  "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/45099720597",
+  "event": "schedule",
+  "completed_at": "2026-11-23T02:49:09Z",
+  "status": "failed",
+  "passed_cells": 5,
+  "total_cells": 7,
+  "cells": [
+    {
+      "core": "3.1.2",
+      "completed_at": "2026-11-23T02:44:34Z",
+      "status": "passed",
+      "test_count": 147,
+      "passed_count": 119,
+      "skipped_count": 28,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-kapsch-etx-core-3.1.2-run-45099720597-1106-1.log",
+      "report_artifact": "compliance-kapsch-etx-core-3.1.2-run-45099720597-1106-1.json",
+      "report_artifact_id": 14785633455,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.1.3",
+      "completed_at": "2026-11-23T02:36:32Z",
+      "status": "passed",
+      "test_count": 145,
+      "passed_count": 119,
+      "skipped_count": 26,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-kapsch-etx-core-3.1.3-run-45099720597-1106-1.log",
+      "report_artifact": "compliance-kapsch-etx-core-3.1.3-run-45099720597-1106-1.json",
+      "report_artifact_id": 14785467603,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.1.4",
+      "completed_at": "2026-11-23T02:40:36Z",
+      "status": "passed",
+      "test_count": 144,
+      "passed_count": 119,
+      "skipped_count": 25,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-kapsch-etx-core-3.1.4-run-45099720597-1106-1.log",
+      "report_artifact": "compliance-kapsch-etx-core-3.1.4-run-45099720597-1106-1.json",
+      "report_artifact_id": 14785463387,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.1.5",
+      "completed_at": "2026-11-23T02:32:34Z",
+      "status": "passed",
+      "test_count": 142,
+      "passed_count": 119,
+      "skipped_count": 23,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-kapsch-etx-core-3.1.5-run-45099720597-1106-1.log",
+      "report_artifact": "compliance-kapsch-etx-core-3.1.5-run-45099720597-1106-1.json",
+      "report_artifact_id": 14785700905,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.2.0",
+      "completed_at": "2026-11-23T02:25:40Z",
+      "status": "passed",
+      "test_count": 133,
+      "passed_count": 119,
+      "skipped_count": 14,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-kapsch-etx-core-3.2.0-run-45099720597-1106-1.log",
+      "report_artifact": "compliance-kapsch-etx-core-3.2.0-run-45099720597-1106-1.json",
+      "report_artifact_id": 14785540186,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.2.1",
+      "completed_at": "2026-11-23T02:49:09Z",
+      "status": "failed",
+      "test_count": 133,
+      "passed_count": 118,
+      "skipped_count": 14,
+      "failed_count": 1,
+      "errored_count": 0,
+      "log_artifact": "validator-kapsch-etx-core-3.2.1-run-45099720597-1106-1.log",
+      "report_artifact": "compliance-kapsch-etx-core-3.2.1-run-45099720597-1106-1.json",
+      "report_artifact_id": 14785519721,
+      "failures": [
+        {
+          "id": "test/site/tlc/signal_priority_spec.rb:109",
+          "message": "describe Site::Tlc::SignalPriority it becomes stale if not cancelled test/site/tlc/signal_priority_spec.rb:108\n\t✗ No message was received within s test/site/tlc/signal_priority_spec.rb:109",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/signal_priority_spec.rb",
+            "line": 109
+          },
+          "type": "Sus::Assertions::Assert"
+        }
+      ],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.2.2",
+      "completed_at": "2026-11-23T02:28:31Z",
+      "status": "failed",
+      "test_count": 133,
+      "passed_count": 95,
+      "skipped_count": 14,
+      "failed_count": 24,
+      "errored_count": 0,
+      "log_artifact": "validator-kapsch-etx-core-3.2.2-run-45099720597-1106-1.log",
+      "report_artifact": "compliance-kapsch-etx-core-3.2.2-run-45099720597-1106-1.json",
+      "report_artifact_id": 14784604872,
+      "failures": [
+        {
+          "id": "test/site/tlc/modes_spec.rb:36",
+          "message": "describe Site::Tlc::Modes it startup status is read with S0005 by intersection test/site/tlc/modes_spec.rb:34\n\t✗ Could not send StatusRequest: Broken pipe test/site/tlc/modes_spec.rb:36",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/modes_spec.rb",
+            "line": 36
+          },
+          "type": "Sus::Assertions::Assert"
+        },
+        {
+          "id": "test/site/tlc/modes_spec.rb:48",
+          "message": "describe Site::Tlc::Modes it switched on is read with S0007 test/site/tlc/modes_spec.rb:47\n\t✗ Could not send StatusRequest: Broken pipe test/site/tlc/modes_spec.rb:48",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/modes_spec.rb",
+            "line": 48
+          },
+          "type": "Sus::Assertions::Assert"
+        },
+        {
+          "id": "test/site/tlc/modes_spec.rb:60",
+          "message": "describe Site::Tlc::Modes it switched on is read with S0007 with source test/site/tlc/modes_spec.rb:59\n\t✗ Could not send StatusRequest: Broken pipe test/site/tlc/modes_spec.rb:60",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/modes_spec.rb",
+            "line": 60
+          },
+          "type": "Sus::Assertions::Assert"
+        },
+        {
+          "id": "test/site/tlc/modes_spec.rb:72",
+          "message": "describe Site::Tlc::Modes it manual control is read with S0008 test/site/tlc/modes_spec.rb:71\n\t✗ Could not send StatusRequest: Broken pipe test/site/tlc/modes_spec.rb:72",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/modes_spec.rb",
+            "line": 72
+          },
+          "type": "Sus::Assertions::Assert"
+        },
+        {
+          "id": "test/site/tlc/modes_spec.rb:89",
+          "message": "describe Site::Tlc::Modes it fixed time control is read with S0009 test/site/tlc/modes_spec.rb:88\n\t✗ Could not send StatusRequest: Broken pipe test/site/tlc/modes_spec.rb:89",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/modes_spec.rb",
+            "line": 89
+          },
+          "type": "Sus::Assertions::Assert"
+        },
+        {
+          "id": "test/site/tlc/modes_spec.rb:108",
+          "message": "describe Site::Tlc::Modes it fixed time control can be activated with M0007 test/site/tlc/modes_spec.rb:107\n\t✗ Could not send CommandRequest: Broken pipe test/site/tlc/modes_spec.rb:108",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/modes_spec.rb",
+            "line": 108
+          },
+          "type": "Sus::Assertions::Assert"
+        },
+        {
+          "id": "test/site/tlc/modes_spec.rb:124",
+          "message": "describe Site::Tlc::Modes it isolated control is read with S0010 test/site/tlc/modes_spec.rb:123\n\t✗ Could not send StatusRequest: Broken pipe test/site/tlc/modes_spec.rb:124",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/modes_spec.rb",
+            "line": 124
+          },
+          "type": "Sus::Assertions::Assert"
+        },
+        {
+          "id": "test/site/tlc/modes_spec.rb:141",
+          "message": "describe Site::Tlc::Modes it coordinated control is read with S0032 test/site/tlc/modes_spec.rb:140\n\t✗ Could not send StatusRequest: Broken pipe test/site/tlc/modes_spec.rb:141",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/modes_spec.rb",
+            "line": 141
+          },
+          "type": "Sus::Assertions::Assert"
+        },
+        {
+          "id": "test/site/tlc/modes_spec.rb:153",
+          "message": "describe Site::Tlc::Modes it yellow flash can be read with S0011 test/site/tlc/modes_spec.rb:152\n\t✗ Could not send StatusRequest: Broken pipe test/site/tlc/modes_spec.rb:153",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/modes_spec.rb",
+            "line": 153
+          },
+          "type": "Sus::Assertions::Assert"
+        },
+        {
+          "id": "test/site/tlc/modes_spec.rb:172",
+          "message": "describe Site::Tlc::Modes it yellow flash can be activated with M0001 test/site/tlc/modes_spec.rb:171\n\t✗ Could not send CommandRequest: Broken pipe test/site/tlc/modes_spec.rb:172",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/modes_spec.rb",
+            "line": 172
+          },
+          "type": "Sus::Assertions::Assert"
+        }
+      ],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    }
+  ]
+}
