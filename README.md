@@ -10,6 +10,12 @@ pair includes its GitHub `report_artifact_id`, so subsequent collections skip
 downloading that immutable artifact. The workflow checks out these records on
 each run; caching does not depend on files surviving on the runner.
 
+In `runs/<target>/<run_id>-<attempt>.json`, each Core/SXL pair keeps the
+validator's `test_outcomes` map when supplied. Look up a test ID there to see
+whether it passed, failed, errored or was skipped on that attempt. An absent
+field means individual outcomes are unknown. An empty map means the validator
+reported zero examples. The website's `summary.json` keeps aggregate counts.
+
 New artifacts are merged into existing run records, preserving previously
 collected pairs. Records without artifact IDs are downloaded again when they
 fall within the collection window, then saved with their IDs. Failed downloads

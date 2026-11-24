@@ -40,6 +40,7 @@ describe RSMP::Website::Compliance::Collector do
   it 'uses persisted artifact IDs across fresh collectors and retains pairs when another report arrives' do
     fixtures = ComplianceArtifactCacheFixtures
     first = ComplianceFixtures.report
+    first['test_outcomes'] = { 'connect_spec.rb#Device#connects' => 'passed', 'clock_spec.rb#Device#syncs' => 'skipped' }
     second = ComplianceFixtures.report(sxl: '1.0.15', status: 'failed', at: '2026-06-17T01:00:00Z')
     Dir.mktmpdir do |dir|
       fixtures.collect(dir, fixtures.client([101], 101 => first))
@@ -53,8 +54,11 @@ describe RSMP::Website::Compliance::Collector do
       expect(stored['cells'].map { |cell| cell['report_artifact_id'] }.sort).to be == [101, 103]
       expect(stored.slice('status', 'passed_cells', 'total_cells'))
         .to be == { 'status' => 'failed', 'passed_cells' => 1, 'total_cells' => 2 }
-      expect(stored['cells'].find { |cell| cell['report_artifact_id'] == 101 }['completed_at'])
-        .to be == first['generated_at']
+      cells = stored['cells'].to_h { |cell| [cell.fetch('report_artifact_id'), cell] }
+      expect(cells[101]['completed_at']).to be == first['generated_at']
+      expect(cells[101].fetch('test_outcomes')).to be == first['test_outcomes']
+      expect(cells[103].key?('test_outcomes')).to be == false
+      expect(JSON.generate(summary).include?('"test_outcomes"')).to be == false
       target = summary.fetch('targets').first
       expect(target['last_30_days']).to be == { 'passed_cells' => 1, 'total_cells' => 2, 'pass_percentage' => 50.0 }
       expect(target['core_versions'].first.dig('latest_run', 'status')).to be == 'failed'
@@ -64,9 +68,13 @@ describe RSMP::Website::Compliance::Collector do
       expect(File.read(fixtures.record_path(dir))).to be == saved
 
       rerun = ComplianceFixtures.report(attempt: 2, at: '2026-06-17T02:00:00Z')
+      rerun['test_outcomes'] = {}
+      rerun['summary']['test_count'] = 0
       summary = fixtures.collect(dir, fixtures.client([101, 103, 104], 104 => rerun))
       expect(File.read(fixtures.record_path(dir))).to be == saved
-      expect(JSON.parse(File.read(fixtures.record_path(dir, 2)))['cells'].first['report_artifact_id']).to be == 104
+      rerun_cell = JSON.parse(File.read(fixtures.record_path(dir, 2)))['cells'].first
+      expect(rerun_cell['report_artifact_id']).to be == 104
+      expect(rerun_cell.fetch('test_outcomes')).to be == {}
       expect(summary.fetch('targets').first['last_30_days'])
         .to be == { 'passed_cells' => 2, 'total_cells' => 3, 'pass_percentage' => 66.7 }
     end
