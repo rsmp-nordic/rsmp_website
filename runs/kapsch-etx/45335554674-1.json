@@ -1,0 +1,180 @@
+{
+  "target_id": "kapsch-etx",
+  "run_id": 45335554674,
+  "run_attempt": 1,
+  "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/45335554674",
+  "event": "schedule",
+  "completed_at": "2026-11-24T06:15:26Z",
+  "status": "failed",
+  "passed_cells": 4,
+  "total_cells": 7,
+  "cells": [
+    {
+      "core": "3.1.2",
+      "completed_at": "2026-11-24T06:11:20Z",
+      "status": "passed",
+      "test_count": 147,
+      "passed_count": 119,
+      "skipped_count": 28,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-kapsch-etx-core-3.1.2-run-45335554674-1107-1.log",
+      "report_artifact": "compliance-kapsch-etx-core-3.1.2-run-45335554674-1107-1.json",
+      "report_artifact_id": 14894772303,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.1.3",
+      "completed_at": "2026-11-24T06:03:22Z",
+      "status": "passed",
+      "test_count": 145,
+      "passed_count": 119,
+      "skipped_count": 26,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-kapsch-etx-core-3.1.3-run-45335554674-1107-1.log",
+      "report_artifact": "compliance-kapsch-etx-core-3.1.3-run-45335554674-1107-1.json",
+      "report_artifact_id": 14894264306,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.1.4",
+      "completed_at": "2026-11-24T06:07:22Z",
+      "status": "passed",
+      "test_count": 144,
+      "passed_count": 119,
+      "skipped_count": 25,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-kapsch-etx-core-3.1.4-run-45335554674-1107-1.log",
+      "report_artifact": "compliance-kapsch-etx-core-3.1.4-run-45335554674-1107-1.json",
+      "report_artifact_id": 14894986024,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.1.5",
+      "completed_at": "2026-11-24T06:15:26Z",
+      "status": "passed",
+      "test_count": 142,
+      "passed_count": 119,
+      "skipped_count": 23,
+      "failed_count": 0,
+      "errored_count": 0,
+      "log_artifact": "validator-kapsch-etx-core-3.1.5-run-45335554674-1107-1.log",
+      "report_artifact": "compliance-kapsch-etx-core-3.1.5-run-45335554674-1107-1.json",
+      "report_artifact_id": 14894862175,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.2.0",
+      "completed_at": "2026-11-24T05:50:02Z",
+      "status": "failed",
+      "test_count": 133,
+      "passed_count": 118,
+      "skipped_count": 14,
+      "failed_count": 1,
+      "errored_count": 0,
+      "log_artifact": "validator-kapsch-etx-core-3.2.0-run-45335554674-1107-1.log",
+      "report_artifact": "compliance-kapsch-etx-core-3.2.0-run-45335554674-1107-1.json",
+      "report_artifact_id": 14893178423,
+      "failures": [
+        {
+          "id": "test/site/tlc/signal_priority_spec.rb:109",
+          "message": "describe Site::Tlc::SignalPriority it becomes stale if not cancelled test/site/tlc/signal_priority_spec.rb:108\n\t✗ No message was received within s test/site/tlc/signal_priority_spec.rb:109",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/signal_priority_spec.rb",
+            "line": 109
+          },
+          "type": "Sus::Assertions::Assert"
+        }
+      ],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.2.1",
+      "completed_at": "2026-11-24T05:54:45Z",
+      "status": "failed",
+      "test_count": 133,
+      "passed_count": 117,
+      "skipped_count": 14,
+      "failed_count": 2,
+      "errored_count": 0,
+      "log_artifact": "validator-kapsch-etx-core-3.2.1-run-45335554674-1107-1.log",
+      "report_artifact": "compliance-kapsch-etx-core-3.2.1-run-45335554674-1107-1.json",
+      "report_artifact_id": 14893283868,
+      "failures": [
+        {
+          "id": "test/site/tlc/signal_priority_spec.rb:64",
+          "message": "describe Site::Tlc::SignalPriority it becomes completed when cancelled test/site/tlc/signal_priority_spec.rb:63\n\t✗ No message was received within s test/site/tlc/signal_priority_spec.rb:64",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/signal_priority_spec.rb",
+            "line": 64
+          },
+          "type": "Sus::Assertions::Assert"
+        },
+        {
+          "id": "test/site/tlc/signal_priority_spec.rb:109",
+          "message": "describe Site::Tlc::SignalPriority it becomes stale if not cancelled test/site/tlc/signal_priority_spec.rb:108\n\t✗ No message was received within s test/site/tlc/signal_priority_spec.rb:109",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/signal_priority_spec.rb",
+            "line": 109
+          },
+          "type": "Sus::Assertions::Assert"
+        }
+      ],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.2.2",
+      "completed_at": "2026-11-24T05:59:31Z",
+      "status": "failed",
+      "test_count": 133,
+      "passed_count": 117,
+      "skipped_count": 14,
+      "failed_count": 2,
+      "errored_count": 0,
+      "log_artifact": "validator-kapsch-etx-core-3.2.2-run-45335554674-1107-1.log",
+      "report_artifact": "compliance-kapsch-etx-core-3.2.2-run-45335554674-1107-1.json",
+      "report_artifact_id": 14894258141,
+      "failures": [
+        {
+          "id": "test/site/tlc/signal_priority_spec.rb:64",
+          "message": "describe Site::Tlc::SignalPriority it becomes completed when cancelled test/site/tlc/signal_priority_spec.rb:63\n\t✗ No message was received within s test/site/tlc/signal_priority_spec.rb:64",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/signal_priority_spec.rb",
+            "line": 64
+          },
+          "type": "Sus::Assertions::Assert"
+        },
+        {
+          "id": "test/site/tlc/signal_priority_spec.rb:109",
+          "message": "describe Site::Tlc::SignalPriority it becomes stale if not cancelled test/site/tlc/signal_priority_spec.rb:108\n\t✗ No message was received within s test/site/tlc/signal_priority_spec.rb:109",
+          "location": {
+            "path": "/mnt/sdb1/rsmp/actions-runner/_work/rsmp_validator/rsmp_validator/test/site/tlc/signal_priority_spec.rb",
+            "line": 109
+          },
+          "type": "Sus::Assertions::Assert"
+        }
+      ],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    }
+  ]
+}
