@@ -73,6 +73,7 @@ module RSMP
             'skipped_count' => report.dig('summary', 'skipped_count'),
             'failed_count' => report.dig('summary', 'failed_count'),
             'errored_count' => report.dig('summary', 'errored_count'),
+            'test_outcomes' => report['test_outcomes'],
             'log_artifact' => report.dig('run', 'log_artifact'),
             'report_artifact' => report.dig('run', 'report_artifact'),
             'report_artifact_id' => report['report_artifact_id'],
