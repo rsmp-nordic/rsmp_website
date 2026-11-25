@@ -1,0 +1,2333 @@
+{
+  "target_id": "gem-supervisor",
+  "run_id": 45535712236,
+  "run_attempt": 1,
+  "run_url": "https://github.com/rsmp-nordic/rsmp_validator/actions/runs/45535712236",
+  "event": "schedule",
+  "completed_at": "2026-11-25T02:52:00Z",
+  "status": "passed",
+  "passed_cells": 80,
+  "total_cells": 80,
+  "cells": [
+    {
+      "core": "3.1.2",
+      "completed_at": "2026-11-25T02:50:31Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.2-sxl-1.0.10-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.2-sxl-1.0.10-run-45535712236-20-1.json",
+      "report_artifact_id": 14986732935,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.10"
+      }
+    },
+    {
+      "core": "3.1.2",
+      "completed_at": "2026-11-25T02:50:21Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.2-sxl-1.0.13-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.2-sxl-1.0.13-run-45535712236-20-1.json",
+      "report_artifact_id": 14986527357,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.13"
+      }
+    },
+    {
+      "core": "3.1.2",
+      "completed_at": "2026-11-25T02:50:15Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.2-sxl-1.0.14-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.2-sxl-1.0.14-run-45535712236-20-1.json",
+      "report_artifact_id": 14986128125,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.14"
+      }
+    },
+    {
+      "core": "3.1.2",
+      "completed_at": "2026-11-25T02:51:31Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.2-sxl-1.0.15-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.2-sxl-1.0.15-run-45535712236-20-1.json",
+      "report_artifact_id": 14987272172,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.15"
+      }
+    },
+    {
+      "core": "3.1.2",
+      "completed_at": "2026-11-25T02:50:47Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.2-sxl-1.0.7-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.2-sxl-1.0.7-run-45535712236-20-1.json",
+      "report_artifact_id": 14987082796,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.7"
+      }
+    },
+    {
+      "core": "3.1.2",
+      "completed_at": "2026-11-25T02:50:26Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.2-sxl-1.0.8-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.2-sxl-1.0.8-run-45535712236-20-1.json",
+      "report_artifact_id": 14987107621,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.8"
+      }
+    },
+    {
+      "core": "3.1.2",
+      "completed_at": "2026-11-25T02:51:01Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.2-sxl-1.0.9-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.2-sxl-1.0.9-run-45535712236-20-1.json",
+      "report_artifact_id": 14986293565,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.9"
+      }
+    },
+    {
+      "core": "3.1.2",
+      "completed_at": "2026-11-25T02:50:38Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.2-sxl-1.1.0-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.2-sxl-1.1.0-run-45535712236-20-1.json",
+      "report_artifact_id": 14985934512,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.1.0"
+      }
+    },
+    {
+      "core": "3.1.2",
+      "completed_at": "2026-11-25T02:50:44Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.2-sxl-1.2.0-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.2-sxl-1.2.0-run-45535712236-20-1.json",
+      "report_artifact_id": 14986577380,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.0"
+      }
+    },
+    {
+      "core": "3.1.2",
+      "completed_at": "2026-11-25T02:51:15Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.2-sxl-1.2.1-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.2-sxl-1.2.1-run-45535712236-20-1.json",
+      "report_artifact_id": 14986428487,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.1.3",
+      "completed_at": "2026-11-25T02:51:14Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.3-sxl-1.0.10-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.3-sxl-1.0.10-run-45535712236-20-1.json",
+      "report_artifact_id": 14986983080,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.10"
+      }
+    },
+    {
+      "core": "3.1.3",
+      "completed_at": "2026-11-25T02:50:26Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.3-sxl-1.0.13-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.3-sxl-1.0.13-run-45535712236-20-1.json",
+      "report_artifact_id": 14986982929,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.13"
+      }
+    },
+    {
+      "core": "3.1.3",
+      "completed_at": "2026-11-25T02:50:17Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.3-sxl-1.0.14-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.3-sxl-1.0.14-run-45535712236-20-1.json",
+      "report_artifact_id": 14986238750,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.14"
+      }
+    },
+    {
+      "core": "3.1.3",
+      "completed_at": "2026-11-25T02:50:53Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.3-sxl-1.0.15-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.3-sxl-1.0.15-run-45535712236-20-1.json",
+      "report_artifact_id": 14986602383,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.15"
+      }
+    },
+    {
+      "core": "3.1.3",
+      "completed_at": "2026-11-25T02:51:16Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.3-sxl-1.0.7-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.3-sxl-1.0.7-run-45535712236-20-1.json",
+      "report_artifact_id": 14987177534,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.7"
+      }
+    },
+    {
+      "core": "3.1.3",
+      "completed_at": "2026-11-25T02:50:21Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.3-sxl-1.0.8-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.3-sxl-1.0.8-run-45535712236-20-1.json",
+      "report_artifact_id": 14986173002,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.8"
+      }
+    },
+    {
+      "core": "3.1.3",
+      "completed_at": "2026-11-25T02:51:35Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.3-sxl-1.0.9-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.3-sxl-1.0.9-run-45535712236-20-1.json",
+      "report_artifact_id": 14986173176,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.9"
+      }
+    },
+    {
+      "core": "3.1.3",
+      "completed_at": "2026-11-25T02:50:22Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.3-sxl-1.1.0-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.3-sxl-1.1.0-run-45535712236-20-1.json",
+      "report_artifact_id": 14985844803,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.1.0"
+      }
+    },
+    {
+      "core": "3.1.3",
+      "completed_at": "2026-11-25T02:51:31Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.3-sxl-1.2.0-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.3-sxl-1.2.0-run-45535712236-20-1.json",
+      "report_artifact_id": 14986198884,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.0"
+      }
+    },
+    {
+      "core": "3.1.3",
+      "completed_at": "2026-11-25T02:51:25Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.3-sxl-1.2.1-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.3-sxl-1.2.1-run-45535712236-20-1.json",
+      "report_artifact_id": 14986903060,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.1.4",
+      "completed_at": "2026-11-25T02:51:45Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.4-sxl-1.0.10-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.4-sxl-1.0.10-run-45535712236-20-1.json",
+      "report_artifact_id": 14986818221,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.10"
+      }
+    },
+    {
+      "core": "3.1.4",
+      "completed_at": "2026-11-25T02:51:09Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.4-sxl-1.0.13-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.4-sxl-1.0.13-run-45535712236-20-1.json",
+      "report_artifact_id": 14987291523,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.13"
+      }
+    },
+    {
+      "core": "3.1.4",
+      "completed_at": "2026-11-25T02:51:38Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.4-sxl-1.0.14-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.4-sxl-1.0.14-run-45535712236-20-1.json",
+      "report_artifact_id": 14986928117,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.14"
+      }
+    },
+    {
+      "core": "3.1.4",
+      "completed_at": "2026-11-25T02:51:28Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.4-sxl-1.0.15-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.4-sxl-1.0.15-run-45535712236-20-1.json",
+      "report_artifact_id": 14987267400,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.15"
+      }
+    },
+    {
+      "core": "3.1.4",
+      "completed_at": "2026-11-25T02:51:31Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.4-sxl-1.0.7-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.4-sxl-1.0.7-run-45535712236-20-1.json",
+      "report_artifact_id": 14986392634,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.7"
+      }
+    },
+    {
+      "core": "3.1.4",
+      "completed_at": "2026-11-25T02:50:30Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.4-sxl-1.0.8-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.4-sxl-1.0.8-run-45535712236-20-1.json",
+      "report_artifact_id": 14986298563,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.8"
+      }
+    },
+    {
+      "core": "3.1.4",
+      "completed_at": "2026-11-25T02:50:46Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.4-sxl-1.0.9-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.4-sxl-1.0.9-run-45535712236-20-1.json",
+      "report_artifact_id": 14986927964,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.9"
+      }
+    },
+    {
+      "core": "3.1.4",
+      "completed_at": "2026-11-25T02:51:33Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.4-sxl-1.1.0-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.4-sxl-1.1.0-run-45535712236-20-1.json",
+      "report_artifact_id": 14987172586,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.1.0"
+      }
+    },
+    {
+      "core": "3.1.4",
+      "completed_at": "2026-11-25T02:51:43Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.4-sxl-1.2.0-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.4-sxl-1.2.0-run-45535712236-20-1.json",
+      "report_artifact_id": 14987102857,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.0"
+      }
+    },
+    {
+      "core": "3.1.4",
+      "completed_at": "2026-11-25T02:51:36Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.4-sxl-1.2.1-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.4-sxl-1.2.1-run-45535712236-20-1.json",
+      "report_artifact_id": 14987102843,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.1.5",
+      "completed_at": "2026-11-25T02:50:47Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.5-sxl-1.0.10-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.5-sxl-1.0.10-run-45535712236-20-1.json",
+      "report_artifact_id": 14986248672,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.10"
+      }
+    },
+    {
+      "core": "3.1.5",
+      "completed_at": "2026-11-25T02:51:30Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.5-sxl-1.0.13-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.5-sxl-1.0.13-run-45535712236-20-1.json",
+      "report_artifact_id": 14986878121,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.13"
+      }
+    },
+    {
+      "core": "3.1.5",
+      "completed_at": "2026-11-25T02:51:24Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.5-sxl-1.0.14-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.5-sxl-1.0.14-run-45535712236-20-1.json",
+      "report_artifact_id": 14986447655,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.14"
+      }
+    },
+    {
+      "core": "3.1.5",
+      "completed_at": "2026-11-25T02:51:19Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.5-sxl-1.0.15-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.5-sxl-1.0.15-run-45535712236-20-1.json",
+      "report_artifact_id": 14985983449,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.15"
+      }
+    },
+    {
+      "core": "3.1.5",
+      "completed_at": "2026-11-25T02:50:19Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.5-sxl-1.0.7-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.5-sxl-1.0.7-run-45535712236-20-1.json",
+      "report_artifact_id": 14987002782,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.7"
+      }
+    },
+    {
+      "core": "3.1.5",
+      "completed_at": "2026-11-25T02:51:17Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.5-sxl-1.0.8-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.5-sxl-1.0.8-run-45535712236-20-1.json",
+      "report_artifact_id": 14986367795,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.8"
+      }
+    },
+    {
+      "core": "3.1.5",
+      "completed_at": "2026-11-25T02:51:40Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.5-sxl-1.0.9-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.5-sxl-1.0.9-run-45535712236-20-1.json",
+      "report_artifact_id": 14987112794,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.9"
+      }
+    },
+    {
+      "core": "3.1.5",
+      "completed_at": "2026-11-25T02:51:17Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.5-sxl-1.1.0-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.5-sxl-1.1.0-run-45535712236-20-1.json",
+      "report_artifact_id": 14986049184,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.1.0"
+      }
+    },
+    {
+      "core": "3.1.5",
+      "completed_at": "2026-11-25T02:51:03Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.5-sxl-1.2.0-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.5-sxl-1.2.0-run-45535712236-20-1.json",
+      "report_artifact_id": 14986907909,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.0"
+      }
+    },
+    {
+      "core": "3.1.5",
+      "completed_at": "2026-11-25T02:51:15Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.1.5-sxl-1.2.1-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.1.5-sxl-1.2.1-run-45535712236-20-1.json",
+      "report_artifact_id": 14986417600,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.2.0",
+      "completed_at": "2026-11-25T02:50:35Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.0-sxl-1.0.10-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.0-sxl-1.0.10-run-45535712236-20-1.json",
+      "report_artifact_id": 14986702846,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.10"
+      }
+    },
+    {
+      "core": "3.2.0",
+      "completed_at": "2026-11-25T02:51:00Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.0-sxl-1.0.13-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.0-sxl-1.0.13-run-45535712236-20-1.json",
+      "report_artifact_id": 14987052030,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.13"
+      }
+    },
+    {
+      "core": "3.2.0",
+      "completed_at": "2026-11-25T02:51:43Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.0-sxl-1.0.14-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.0-sxl-1.0.14-run-45535712236-20-1.json",
+      "report_artifact_id": 14986953094,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.14"
+      }
+    },
+    {
+      "core": "3.2.0",
+      "completed_at": "2026-11-25T02:51:08Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.0-sxl-1.0.15-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.0-sxl-1.0.15-run-45535712236-20-1.json",
+      "report_artifact_id": 14987450329,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.15"
+      }
+    },
+    {
+      "core": "3.2.0",
+      "completed_at": "2026-11-25T02:51:01Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.0-sxl-1.0.7-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.0-sxl-1.0.7-run-45535712236-20-1.json",
+      "report_artifact_id": 14986553335,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.7"
+      }
+    },
+    {
+      "core": "3.2.0",
+      "completed_at": "2026-11-25T02:50:27Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.0-sxl-1.0.8-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.0-sxl-1.0.8-run-45535712236-20-1.json",
+      "report_artifact_id": 14987177393,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.8"
+      }
+    },
+    {
+      "core": "3.2.0",
+      "completed_at": "2026-11-25T02:50:50Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.0-sxl-1.0.9-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.0-sxl-1.0.9-run-45535712236-20-1.json",
+      "report_artifact_id": 14986413291,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.9"
+      }
+    },
+    {
+      "core": "3.2.0",
+      "completed_at": "2026-11-25T02:51:33Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.0-sxl-1.1.0-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.0-sxl-1.1.0-run-45535712236-20-1.json",
+      "report_artifact_id": 14986688157,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.1.0"
+      }
+    },
+    {
+      "core": "3.2.0",
+      "completed_at": "2026-11-25T02:50:18Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.0-sxl-1.2.0-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.0-sxl-1.2.0-run-45535712236-20-1.json",
+      "report_artifact_id": 14987057768,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.0"
+      }
+    },
+    {
+      "core": "3.2.0",
+      "completed_at": "2026-11-25T02:50:42Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.0-sxl-1.2.1-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.0-sxl-1.2.1-run-45535712236-20-1.json",
+      "report_artifact_id": 14985978351,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.2.1",
+      "completed_at": "2026-11-25T02:51:43Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.1-sxl-1.0.10-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.1-sxl-1.0.10-run-45535712236-20-1.json",
+      "report_artifact_id": 14986099089,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.10"
+      }
+    },
+    {
+      "core": "3.2.1",
+      "completed_at": "2026-11-25T02:51:28Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.1-sxl-1.0.13-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.1-sxl-1.0.13-run-45535712236-20-1.json",
+      "report_artifact_id": 14985904641,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.13"
+      }
+    },
+    {
+      "core": "3.2.1",
+      "completed_at": "2026-11-25T02:51:20Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.1-sxl-1.0.14-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.1-sxl-1.0.14-run-45535712236-20-1.json",
+      "report_artifact_id": 14985974282,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.14"
+      }
+    },
+    {
+      "core": "3.2.1",
+      "completed_at": "2026-11-25T02:50:31Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.1-sxl-1.0.15-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.1-sxl-1.0.15-run-45535712236-20-1.json",
+      "report_artifact_id": 14987416118,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.15"
+      }
+    },
+    {
+      "core": "3.2.1",
+      "completed_at": "2026-11-25T02:50:31Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.1-sxl-1.0.7-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.1-sxl-1.0.7-run-45535712236-20-1.json",
+      "report_artifact_id": 14986198723,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.7"
+      }
+    },
+    {
+      "core": "3.2.1",
+      "completed_at": "2026-11-25T02:51:44Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.1-sxl-1.0.8-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.1-sxl-1.0.8-run-45535712236-20-1.json",
+      "report_artifact_id": 14987012869,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.8"
+      }
+    },
+    {
+      "core": "3.2.1",
+      "completed_at": "2026-11-25T02:51:13Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.1-sxl-1.0.9-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.1-sxl-1.0.9-run-45535712236-20-1.json",
+      "report_artifact_id": 14986452592,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.9"
+      }
+    },
+    {
+      "core": "3.2.1",
+      "completed_at": "2026-11-25T02:51:50Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.1-sxl-1.1.0-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.1-sxl-1.1.0-run-45535712236-20-1.json",
+      "report_artifact_id": 14987058030,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.1.0"
+      }
+    },
+    {
+      "core": "3.2.1",
+      "completed_at": "2026-11-25T02:51:39Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.1-sxl-1.2.0-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.1-sxl-1.2.0-run-45535712236-20-1.json",
+      "report_artifact_id": 14987161923,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.0"
+      }
+    },
+    {
+      "core": "3.2.1",
+      "completed_at": "2026-11-25T02:51:23Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.1-sxl-1.2.1-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.1-sxl-1.2.1-run-45535712236-20-1.json",
+      "report_artifact_id": 14986567452,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.2.2",
+      "completed_at": "2026-11-25T02:51:19Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.2-sxl-1.0.10-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.2-sxl-1.0.10-run-45535712236-20-1.json",
+      "report_artifact_id": 14986303908,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.10"
+      }
+    },
+    {
+      "core": "3.2.2",
+      "completed_at": "2026-11-25T02:51:49Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.2-sxl-1.0.13-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.2-sxl-1.0.13-run-45535712236-20-1.json",
+      "report_artifact_id": 14986833221,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.13"
+      }
+    },
+    {
+      "core": "3.2.2",
+      "completed_at": "2026-11-25T02:51:53Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.2-sxl-1.0.14-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.2-sxl-1.0.14-run-45535712236-20-1.json",
+      "report_artifact_id": 14985853940,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.14"
+      }
+    },
+    {
+      "core": "3.2.2",
+      "completed_at": "2026-11-25T02:51:50Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.2-sxl-1.0.15-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.2-sxl-1.0.15-run-45535712236-20-1.json",
+      "report_artifact_id": 14986918063,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.15"
+      }
+    },
+    {
+      "core": "3.2.2",
+      "completed_at": "2026-11-25T02:51:35Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.2-sxl-1.0.7-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.2-sxl-1.0.7-run-45535712236-20-1.json",
+      "report_artifact_id": 14985949620,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.7"
+      }
+    },
+    {
+      "core": "3.2.2",
+      "completed_at": "2026-11-25T02:51:36Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.2-sxl-1.0.8-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.2-sxl-1.0.8-run-45535712236-20-1.json",
+      "report_artifact_id": 14987322238,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.8"
+      }
+    },
+    {
+      "core": "3.2.2",
+      "completed_at": "2026-11-25T02:51:36Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.2-sxl-1.0.9-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.2-sxl-1.0.9-run-45535712236-20-1.json",
+      "report_artifact_id": 14986598225,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.9"
+      }
+    },
+    {
+      "core": "3.2.2",
+      "completed_at": "2026-11-25T02:51:47Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.2-sxl-1.1.0-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.2-sxl-1.1.0-run-45535712236-20-1.json",
+      "report_artifact_id": 14985983514,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.1.0"
+      }
+    },
+    {
+      "core": "3.2.2",
+      "completed_at": "2026-11-25T02:51:47Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.2-sxl-1.2.0-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.2-sxl-1.2.0-run-45535712236-20-1.json",
+      "report_artifact_id": 14987161934,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.0"
+      }
+    },
+    {
+      "core": "3.2.2",
+      "completed_at": "2026-11-25T02:51:53Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "skipped"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.2.2-sxl-1.2.1-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.2.2-sxl-1.2.1-run-45535712236-20-1.json",
+      "report_artifact_id": 14986928169,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    },
+    {
+      "core": "3.3.0",
+      "completed_at": "2026-11-25T02:51:48Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "passed"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.3.0-sxl-1.0.10-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.3.0-sxl-1.0.10-run-45535712236-20-1.json",
+      "report_artifact_id": 14987470292,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.10"
+      }
+    },
+    {
+      "core": "3.3.0",
+      "completed_at": "2026-11-25T02:51:41Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "passed"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.3.0-sxl-1.0.13-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.3.0-sxl-1.0.13-run-45535712236-20-1.json",
+      "report_artifact_id": 14986227908,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.13"
+      }
+    },
+    {
+      "core": "3.3.0",
+      "completed_at": "2026-11-25T02:51:55Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "passed"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.3.0-sxl-1.0.14-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.3.0-sxl-1.0.14-run-45535712236-20-1.json",
+      "report_artifact_id": 14987366525,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.14"
+      }
+    },
+    {
+      "core": "3.3.0",
+      "completed_at": "2026-11-25T02:51:52Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "passed"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.3.0-sxl-1.0.15-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.3.0-sxl-1.0.15-run-45535712236-20-1.json",
+      "report_artifact_id": 14986443707,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.15"
+      }
+    },
+    {
+      "core": "3.3.0",
+      "completed_at": "2026-11-25T02:51:49Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "passed"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.3.0-sxl-1.0.7-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.3.0-sxl-1.0.7-run-45535712236-20-1.json",
+      "report_artifact_id": 14986807276,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.7"
+      }
+    },
+    {
+      "core": "3.3.0",
+      "completed_at": "2026-11-25T02:51:54Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "passed"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.3.0-sxl-1.0.8-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.3.0-sxl-1.0.8-run-45535712236-20-1.json",
+      "report_artifact_id": 14987003058,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.8"
+      }
+    },
+    {
+      "core": "3.3.0",
+      "completed_at": "2026-11-25T02:51:48Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "passed"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.3.0-sxl-1.0.9-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.3.0-sxl-1.0.9-run-45535712236-20-1.json",
+      "report_artifact_id": 14986173214,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.0.9"
+      }
+    },
+    {
+      "core": "3.3.0",
+      "completed_at": "2026-11-25T02:52:00Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "passed"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.3.0-sxl-1.1.0-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.3.0-sxl-1.1.0-run-45535712236-20-1.json",
+      "report_artifact_id": 14987490130,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.1.0"
+      }
+    },
+    {
+      "core": "3.3.0",
+      "completed_at": "2026-11-25T02:51:57Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "passed"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.3.0-sxl-1.2.0-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.3.0-sxl-1.2.0-run-45535712236-20-1.json",
+      "report_artifact_id": 14985904716,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.0"
+      }
+    },
+    {
+      "core": "3.3.0",
+      "completed_at": "2026-11-25T02:51:46Z",
+      "status": "passed",
+      "test_count": 18,
+      "passed_count": 10,
+      "skipped_count": 8,
+      "failed_count": 0,
+      "errored_count": 0,
+      "test_outcomes": {
+        "test/supervisor/aggregated_status_spec.rb#Supervisor#Aggregated Status#receives aggregated status": "passed",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.3": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.4": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.1.5": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.0": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.1": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.2.2": "skipped",
+        "test/supervisor/connect_spec.rb#Supervisor#Connection Sequence#exchanges correct connection sequence of rsmp version 3.3.0": "passed"
+      },
+      "log_artifact": "validator-gem-supervisor-ubuntu-latest-core-3.3.0-sxl-1.2.1-run-45535712236-20-1.log",
+      "report_artifact": "compliance-gem-supervisor-ubuntu-latest-core-3.3.0-sxl-1.2.1-run-45535712236-20-1.json",
+      "report_artifact_id": 14987401409,
+      "failures": [],
+      "sxls": {
+        "tlc": "1.2.1"
+      }
+    }
+  ]
+}
